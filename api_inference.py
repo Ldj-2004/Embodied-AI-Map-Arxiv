@@ -484,6 +484,11 @@ def main():
                 final_db[lab].insert(0, paper_info)
                 count += 1
 
+    # [核心改动] 如果今天没分析出任何符合条件的论文，直接退出，不覆盖旧文件
+    if not final_db:
+        print("⚠️ [提示] 今日未发现目标论文。保持旧的 daily_papers.json 不变。")
+        return
+    
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_db, f, ensure_ascii=False, indent=2)
 
@@ -493,4 +498,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
