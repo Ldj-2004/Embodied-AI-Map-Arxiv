@@ -51,7 +51,8 @@ setup_proxy()
 # 自动获取当前 UTC 日期 (ArXiv OAI 接口使用 UTC 时间戳)
 # 如果你发现抓取时间太早导致数据还没出来，可以改为：
 # (dt.datetime.now(timezone.utc)).strftime("%Y-%m-%d")
-TARGET_DATE = dt.datetime.now(timezone.utc).strftime("%Y-%m-%d")
+TARGET_DATE = "2026-01-23"
+# TARGET_DATE = dt.datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 print(f">>> [配置] 当前抓取目标日期设定为: {TARGET_DATE} (UTC)")
 
@@ -322,4 +323,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
