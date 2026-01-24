@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <style>
+            /* --- 地图底图滤镜：赛博霓虹风格 --- */
+            /* invert(1): 反转颜色 (白变黑) */
+            /* hue-rotate(180deg): 旋转色相 (让反转后的颜色回归冷暖逻辑) */
+            /* saturate(300%): 极大增加饱和度 (拒绝灰色，要五彩斑斓) */
+            /* brightness(0.8): 压暗背景，突出光路 */
+            .leaflet-tile-pane {
+                filter: invert(100%) hue-rotate(180deg) saturate(300%) brightness(85%) contrast(110%) !important;
+            }
+
+            /* --- 弹窗样式 --- */
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+                background: rgba(15, 23, 42, 0.95) !important;
+                backdrop-filter: blur(12px);
+                color: #f8fafc !important;
+                border: 1px solid #00e5ff; 
+                box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+                border-radius: 8px;
+            }
+            .leaflet-popup-close-button {
+                color: #fff !important; 
+                font-size: 20px !important;
+            }
+        </style>
+        
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cec361ed62d1c4c1da428a84d6600dfc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cec361ed62d1c4c1da428a84d6600dfc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cec361ed62d1c4c1da428a84d6600dfc = L.map(
+                "map_cec361ed62d1c4c1da428a84d6600dfc",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff5d903c5e9af15067a6f0baa5a43974 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; CARTO", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_ff5d903c5e9af15067a6f0baa5a43974.addTo(map_cec361ed62d1c4c1da428a84d6600dfc);
+        
+    
+            var heat_map_02107a4904d9b3b037d557f95bd16b6c = L.heatLayer(
+                [[39.992194050081956, 116.30979304906596, 1.0], [39.994232512560835, 116.304843242458, 1.0], [39.99312732429175, 116.30885804470498, 1.0], [39.99427437159841, 116.30670048215444, 1.0], [40.00311141341455, 116.32346773562296, 0.4], [40.004913756040175, 116.32854210891044, 0.4], [40.00168642506387, 116.3244432937947, 0.4], [39.95283879922082, -75.18811211778407, 0.4], [51.49566276639154, -0.17547499090065855, 0.4], [31.299706129105207, 121.30960173829038, 1.0], [31.29629753772992, 121.30641140527383, 1.0], [31.295290791849656, 121.30989161831818, 1.0], [45.74110206297983, 126.6390598880151, 0.4], [42.37723533267371, -71.12015066943572, 0.4], [42.37968803763882, -71.11968746751542, 0.4], [37.87060003050906, -122.25639338232777, 0.4], [32.87731574041741, -117.23562001781525, 1.0], [34.138319483598444, -118.12779210041829, 0.4], [52.20154256676362, 0.12069861137808244, 0.4], [52.20517324235543, 0.12053174888545946, 0.4], [49.01512003748804, 8.415509680409961, 0.4], [40.445482412235336, -79.9449196810526, 1.0], [51.52510503420255, -0.13347638559936587, 1.0], [42.35899291738497, -71.09102800384223, 0.4], [42.35881175160623, -71.09197869616901, 0.4], [1.3487466429594621, 103.67796851068591, 1.0], [1.3505084987449993, 103.67822144149598, 1.0], [1.3515888642729668, 103.67736475790416, 1.0], [1.3477406295169476, 103.68120640741111, 1.0], [1.348820560959434, 103.67873200396755, 1.0], [1.3513961231466423, 103.68299482437112, 1.0], [51.75799310950661, -1.2592753700897128, 1.0], [22.604739706141025, 114.05793134943131, 0.4], [39.99982855615925, 116.33024219982762, 1.0], [40.00679549225511, 116.3257631918636, 1.0], [40.0032908001272, 116.32715379865797, 1.0], [40.00317177244026, 116.33011655258831, 1.0], [40.00234911123993, 116.3260220726621, 1.0], [40.00022911037739, 116.32764983185916, 1.0], [40.00165999803811, 116.3266611948761, 1.0], [31.02381756282136, 121.43189996538892, 0.4], [31.02371084414307, 121.432115617983, 0.4], [31.018435337434397, 121.43021016190073, 0.4], [31.02342372366923, 121.4297854859342, 0.4], [31.022046204053293, 121.4303097549291, 0.4], [31.017956829025927, 121.43299604286649, 0.4], [37.42767961324873, -122.16913266890843, 1.0], [37.42638610661094, -122.16705062328747, 1.0], [37.42433038290239, -122.17187076343885, 1.0], [37.42593539733214, -122.17132708717747, 1.0], [37.42493856562392, -122.17040967084644, 1.0], [47.378925253288664, 8.545742651189038, 0.4], [47.37616065912375, 8.54569696727604, 0.4], [31.278483298083426, 121.50765285923634, 1.0], [30.183613838034674, 120.0839291270662, 0.4], [22.418981954272308, 114.20106176752415, 1.0], [22.265337521813667, 114.14665056880419, 1.0], [22.265143716200228, 114.145138607956, 1.0], [22.265757958232157, 114.14490659182752, 1.0], [22.271177169335537, 114.1466882850292, 1.0], [22.267927655808624, 114.14446115973239, 1.0], [22.337051082940874, 113.97761204439058, 1.0], [22.33733718706535, 113.97805971881874, 1.0], [22.337209060694136, 113.9757860073442, 1.0], [22.33890768199832, 113.97873975821028, 1.0], [22.638442273680514, 113.39727897067786, 1.0], [22.636907025304726, 113.39683036869194, 1.0], [22.697299312656142, 114.17856994720746, 1.0], [22.423295055752728, 114.20520270877748, 1.0], [22.424513479209697, 114.20412205558797, 1.0], [22.420240385791057, 114.20112457945872, 1.0], [22.69432760044916, 114.18225347286429, 1.0], [22.6955159931114, 114.17619736902103, 1.0], [1.2982628143951982, 103.77929776586791, 1.0], [1.293160052233929, 103.78096933692017, 1.0], [1.2952310882324043, 103.7811523635868, 1.0], [1.297017954170417, 103.78037726902392, 1.0], [23.094244062463012, 113.30884895543034, 0.4], [34.24543079693299, 108.91300378526789, 0.4], [34.23686139579509, 108.97851700284485, 0.4], [39.989250876401854, 116.23302515699369, 0.4], [30.281705226916884, 120.13165525432736, 1.0], [32.05286559941074, 118.77812947786427, 0.4], [30.668214178802423, 103.93781973393908, 0.4], [39.94801831985106, 116.31344500396176, 1.0], [31.84241794748962, 117.26008996491849, 1.0], [39.9224659244049, 116.39728088563807, 1.0], [30.539774962317434, 114.37329452074039, 1.0], [24.438528992405715, 118.07722265596661, 0.4], [39.12302059645414, 117.27888108004524, 1.0], [22.538859007349405, 114.04751142415263, 0.4], [31.29724653044634, 120.61665411172984, 0.4], [39.07768653197096, 117.15893476178269, 0.4], [34.12184234458244, 108.90180420692108, 0.4], [31.226820110673764, 121.90233263647944, 0.4], [22.59949431761288, 113.94003544779981, 1.0], [30.671520071804743, 104.07278346794564, 0.4], [31.202448119157864, 121.47057988426134, 0.4], [59.44, 10.66, 0.5], [44.89, -122.96, 0.5], [30.4, -97.71, 0.5], [42.42, -71.25, 0.5], [29.91, -95.62, 0.5], [33.65, -117.71, 0.5], [37.41, -121.95, 0.5], [25.77, -80.14, 0.5], [37.42, -122.09, 0.5], [37.37, -121.97, 0.5], [37.76, -122.41, 0.5], [29.88, 121.64, 0.5], [49.27, -123.1, 0.5], [34.15, -118.15, 0.5], [30.23, -97.62, 0.5], [37.43, -122.17, 0.5], [22.74, 113.96, 0.5], [31.0, 121.37, 0.5], [31.03, 121.47, 0.5], [31.13, 121.61, 0.5], [40.04, 116.36, 0.5], [31.19, 121.62, 0.5], [22.56, 113.96, 0.5], [22.72, 113.86, 0.5], [22.58, 113.95, 0.5], [30.25, 120.25, 0.5], [31.03, 121.47, 0.5], [40.13, 116.43, 0.5], [40.05, 116.32, 0.5], [22.53, 113.95, 0.5], [40.0, 116.34, 0.5], [31.3, 120.78, 0.5], [40.04, 116.38, 0.5], [39.99, 116.32, 0.5], [39.8, 116.56, 0.5], [30.25, 119.91, 0.5], [30.19, 120.22, 0.5], [30.33, 120.07, 0.5], [31.14, 121.61, 0.5], [39.79, 116.56, 0.5], [22.58, 113.96, 0.5], [31.21, 120.57, 0.5], [22.58, 113.93, 0.5]],
+                {"blur": 18, "gradient": {"0.3": "#0000ff", "0.6": "#00ffff", "1": "#ffffff"}, "maxZoom": 18, "minOpacity": 0.3, "radius": 25}
+            );
+        
+    
+            heat_map_02107a4904d9b3b037d557f95bd16b6c.addTo(map_cec361ed62d1c4c1da428a84d6600dfc);
+        
+    
+            var marker_cluster_94ae582a7a11c330ecc18f445fc5db11 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 6, "maxClusterRadius": 15}
+            );
+        
+    
+            var marker_577769a83bd01a49bbc05a9961ac7246 = L.marker(
+                [37.87060003050906, -122.25639338232777],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_f2451237cad8e95bf79aeabfb40cf1ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_577769a83bd01a49bbc05a9961ac7246.setIcon(icon_f2451237cad8e95bf79aeabfb40cf1ea);
+        
+    
+        var popup_d623e0f06284709ce42e02521fda145d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0e009b535b1b7174dfd0e778a3866bf5 = $(`<div id="html_0e009b535b1b7174dfd0e778a3866bf5" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 加州大学伯克利分校             </h3>              <div class="css-tabs-12531">                 <input type="radio" name="grp-12531" id="t1-12531" checked style="display:none">                 <input type="radio" name="grp-12531" id="t2-12531" style="display:none">                 <input type="radio" name="grp-12531" id="t3-12531" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-12531" class="tab-btn">详细信息</label>                     <label for="t2-12531" class="tab-btn">相关论文</label>                     <label for="t3-12531" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Berkeley Artificial Intelligence Research Lab (BAIR)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 计算机视觉、机器学习、NLP、规划、控制、机器人                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Peter L. Bartlett, Jacob Steinhardt, John Canny                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     汇集了加州大学伯克利分校在人工智能多<br>个领域的研究人员。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://bair.berkeley.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Berkeley Artificial Intelligence Research Lab (BAIR) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-12531 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-12531:checked ~ div label[for="t1-12531"],                 #t2-12531:checked ~ div label[for="t2-12531"],                 #t3-12531:checked ~ div label[for="t3-12531"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-12531 .tab-pane { display: none; color: #fff; }                 #t1-12531:checked ~ .pane-1 { display: block; }                 #t2-12531:checked ~ .pane-2 { display: block; }                 #t3-12531:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_d623e0f06284709ce42e02521fda145d.setContent(html_0e009b535b1b7174dfd0e778a3866bf5);
+            
+        
+
+        marker_577769a83bd01a49bbc05a9961ac7246.bindPopup(popup_d623e0f06284709ce42e02521fda145d)
+        ;
+
+        
+    
+    
+            marker_577769a83bd01a49bbc05a9961ac7246.bindTooltip(
+                `<div>
+                     🎓 加州大学伯克利分校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24608806f6d63b9b0d9e95155b2d8368 = L.marker(
+                [32.87731574041741, -117.23562001781525],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_37d59cbc57df91657a444cdb6d5ba4f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_24608806f6d63b9b0d9e95155b2d8368.setIcon(icon_37d59cbc57df91657a444cdb6d5ba4f8);
+        
+    
+        var popup_1c259e5784c642316b9750ac09224a26 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7640cf0fabf0a5009a47047b0543a391 = $(`<div id="html_7640cf0fabf0a5009a47047b0543a391" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 加州大学圣地亚哥分校             </h3>              <div class="css-tabs-69978">                 <input type="radio" name="grp-69978" id="t1-69978" checked style="display:none">                 <input type="radio" name="grp-69978" id="t2-69978" style="display:none">                 <input type="radio" name="grp-69978" id="t3-69978" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-69978" class="tab-btn">详细信息</label>                     <label for="t2-69978" class="tab-btn">相关论文</label>                     <label for="t3-69978" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     SU Lab                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 计算机视觉、图形学、机器人学                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Hao Su                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     致力于开发先进的算法和系统，以实现对<br>复杂三维场景的理解和交互。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;">                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16065" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 DTP: A Simple yet Effective Distracting Token Pruning Framework for Vision-Language Action Models                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://cseweb.ucsd.edu/~haosu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 SU Lab 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-69978 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-69978:checked ~ div label[for="t1-69978"],                 #t2-69978:checked ~ div label[for="t2-69978"],                 #t3-69978:checked ~ div label[for="t3-69978"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-69978 .tab-pane { display: none; color: #fff; }                 #t1-69978:checked ~ .pane-1 { display: block; }                 #t2-69978:checked ~ .pane-2 { display: block; }                 #t3-69978:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_1c259e5784c642316b9750ac09224a26.setContent(html_7640cf0fabf0a5009a47047b0543a391);
+            
+        
+
+        marker_24608806f6d63b9b0d9e95155b2d8368.bindPopup(popup_1c259e5784c642316b9750ac09224a26)
+        ;
+
+        
+    
+    
+            marker_24608806f6d63b9b0d9e95155b2d8368.bindTooltip(
+                `<div>
+                     🎓 加州大学圣地亚哥分校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a91f0670d0b3e677a9b437d865686544 = L.marker(
+                [34.138319483598444, -118.12779210041829],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_70900522109da2867eea086a09fe36a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a91f0670d0b3e677a9b437d865686544.setIcon(icon_70900522109da2867eea086a09fe36a0);
+        
+    
+        var popup_0f65314f5465febc90bf3847448bdb8f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7f8c3d94b73ff9fed35469fe90e760c7 = $(`<div id="html_7f8c3d94b73ff9fed35469fe90e760c7" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 加州理工学院             </h3>              <div class="css-tabs-76877">                 <input type="radio" name="grp-76877" id="t1-76877" checked style="display:none">                 <input type="radio" name="grp-76877" id="t2-76877" style="display:none">                 <input type="radio" name="grp-76877" id="t3-76877" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-76877" class="tab-btn">详细信息</label>                     <label for="t2-76877" class="tab-btn">相关论文</label>                     <label for="t3-76877" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     加州理工-机器人实验室                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 自主系统与技术 (CAST)、机器人自主操作                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Mory Gharib                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     跨学科研究中心，旨在开发能够在复杂环<br>境中自主导航和响应变化的自主机器。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://robotics.caltech.edu/wiki/index.php/Robotics' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 加州理工-机器人实验室 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-76877 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-76877:checked ~ div label[for="t1-76877"],                 #t2-76877:checked ~ div label[for="t2-76877"],                 #t3-76877:checked ~ div label[for="t3-76877"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-76877 .tab-pane { display: none; color: #fff; }                 #t1-76877:checked ~ .pane-1 { display: block; }                 #t2-76877:checked ~ .pane-2 { display: block; }                 #t3-76877:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_0f65314f5465febc90bf3847448bdb8f.setContent(html_7f8c3d94b73ff9fed35469fe90e760c7);
+            
+        
+
+        marker_a91f0670d0b3e677a9b437d865686544.bindPopup(popup_0f65314f5465febc90bf3847448bdb8f)
+        ;
+
+        
+    
+    
+            marker_a91f0670d0b3e677a9b437d865686544.bindTooltip(
+                `<div>
+                     🎓 加州理工学院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d91c9e2f5c3f6a46933a614a09831228 = L.marker(
+                [40.445482412235336, -79.9449196810526],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_8d65011c8b4a3bc4f4002dff9ada37bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d91c9e2f5c3f6a46933a614a09831228.setIcon(icon_8d65011c8b4a3bc4f4002dff9ada37bb);
+        
+    
+        var popup_dc53f4e076560e66d9744e8b76bbc5f8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2223ed5eb1693d2fe19911d5555672b1 = $(`<div id="html_2223ed5eb1693d2fe19911d5555672b1" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 卡内基梅隆大学             </h3>              <div class="css-tabs-80162">                 <input type="radio" name="grp-80162" id="t1-80162" checked style="display:none">                 <input type="radio" name="grp-80162" id="t2-80162" style="display:none">                 <input type="radio" name="grp-80162" id="t3-80162" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-80162" class="tab-btn">详细信息</label>                     <label for="t2-80162" class="tab-btn">相关论文</label>                     <label for="t3-80162" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     卡内基-机器人研究所                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 机器人感知、控制、规划、智能系统                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Martial Hebert                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     成立于 1979 年，是全球领先的机器人研<br>究机构之一，研究涵盖多个应用领域。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;">                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.11109" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.15607" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Airflow Source Seeking on Small Quadrotors Using a Single Flow Sensor                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://www.ri.cmu.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 卡内基-机器人研究所 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-80162 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-80162:checked ~ div label[for="t1-80162"],                 #t2-80162:checked ~ div label[for="t2-80162"],                 #t3-80162:checked ~ div label[for="t3-80162"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-80162 .tab-pane { display: none; color: #fff; }                 #t1-80162:checked ~ .pane-1 { display: block; }                 #t2-80162:checked ~ .pane-2 { display: block; }                 #t3-80162:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_dc53f4e076560e66d9744e8b76bbc5f8.setContent(html_2223ed5eb1693d2fe19911d5555672b1);
+            
+        
+
+        marker_d91c9e2f5c3f6a46933a614a09831228.bindPopup(popup_dc53f4e076560e66d9744e8b76bbc5f8)
+        ;
+
+        
+    
+    
+            marker_d91c9e2f5c3f6a46933a614a09831228.bindTooltip(
+                `<div>
+                     🎓 卡内基梅隆大学
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0626502e6482303e6a867c1b3ead5426 = L.marker(
+                [42.35899291738497, -71.09102800384223],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_cde2f1e52d6375414ebceb6dbec30b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0626502e6482303e6a867c1b3ead5426.setIcon(icon_cde2f1e52d6375414ebceb6dbec30b5c);
+        
+    
+        var popup_d75a2d11e33c06562b87957dade5001f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d488e3b5b38869a2bf482886d8f5f9b9 = $(`<div id="html_d488e3b5b38869a2bf482886d8f5f9b9" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 麻省理工学院 (MIT)             </h3>              <div class="css-tabs-53911">                 <input type="radio" name="grp-53911" id="t1-53911" checked style="display:none">                 <input type="radio" name="grp-53911" id="t2-53911" style="display:none">                 <input type="radio" name="grp-53911" id="t3-53911" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-53911" class="tab-btn">详细信息</label>                     <label for="t2-53911" class="tab-btn">相关论文</label>                     <label for="t3-53911" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     CSAIL Embodied Intelligence Labs                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 感知、传感、语言、学习、规划、具身智能                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Ted Adelson, Pulkit Agrawal, Jacob Andreas                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     目标是通过研究人类智能和设计智能机器<br>人，来理解物理世界中智能行为的本质，下<br>设多个子实验室。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Quest for Intelligence                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 自然智能的科学理论、计算模型、机器人/具身智能                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Pulkit Agrawal, Cynthia Breazeal, James DiCarlo                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     旨在理解智能的本质——大脑如何产生智能<br>以及如何在人工系统中复制智能，是一个<br>跨学科的整合计划。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://ei.csail.mit.edu/index.html' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 CSAIL Embodied Intelligence Labs 官网             </a>                          <a href='https://quest.mit.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Quest for Intelligence 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-53911 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-53911:checked ~ div label[for="t1-53911"],                 #t2-53911:checked ~ div label[for="t2-53911"],                 #t3-53911:checked ~ div label[for="t3-53911"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-53911 .tab-pane { display: none; color: #fff; }                 #t1-53911:checked ~ .pane-1 { display: block; }                 #t2-53911:checked ~ .pane-2 { display: block; }                 #t3-53911:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_d75a2d11e33c06562b87957dade5001f.setContent(html_d488e3b5b38869a2bf482886d8f5f9b9);
+            
+        
+
+        marker_0626502e6482303e6a867c1b3ead5426.bindPopup(popup_d75a2d11e33c06562b87957dade5001f)
+        ;
+
+        
+    
+    
+            marker_0626502e6482303e6a867c1b3ead5426.bindTooltip(
+                `<div>
+                     🎓 麻省理工学院 (MIT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4af5d3f853946b93d77d288af83ce4fe = L.marker(
+                [37.42767961324873, -122.16913266890843],
+                {}
+            ).addTo(marker_cluster_94ae582a7a11c330ecc18f445fc5db11);
+        
+    
+            var icon_f7e0c219cc8411470d27250c3c1407f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4af5d3f853946b93d77d288af83ce4fe.setIcon(icon_f7e0c219cc8411470d27250c3c1407f0);
+        
+    
+        var popup_222903f4be4c02c491286cd4c88a049a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1b5c2e422e2dd84b8cd4ca97fc83ef73 = $(`<div id="html_1b5c2e422e2dd84b8cd4ca97fc83ef73" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 斯坦福大学             </h3>              <div class="css-tabs-34160">                 <input type="radio" name="grp-34160" id="t1-34160" checked style="display:none">                 <input type="radio" name="grp-34160" id="t2-34160" style="display:none">                 <input type="radio" name="grp-34160" id="t3-34160" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-34160" class="tab-btn">详细信息</label>                     <label for="t2-34160" class="tab-btn">相关论文</label>                     <label for="t3-34160" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Stanford AI Lab (SAIL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 计算机视觉、NLP、强化学习、机器人技术、计算神经科学等                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> 李飞飞, Jiajun Wu, Dan Jurafsky, Percy Liang                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究领域涵盖人工智能的各个方面，下设<br>多个研究小组，如NLP组和视觉与学习实验<br>室(SVL)。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Robotics and Embodied Artificial Intelligence Lab (REAL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 多机器人协作、机器人技能学习、机器人操作、导航与场景理解                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Shuran Song                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     专注于机器人与具身人工智能的研究。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     斯坦福-视觉与学习实验室 (SVL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 计算机视觉基础、多模态融合、具身 AI 与机器人感知                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> 李飞飞                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     世界领先的实验室之一，成果广泛应用于<br>机器人、AR 等领域。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     斯坦福-人工智能实验室 (SAIL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 机器学习、自然语言处理、计算机视觉、智能机器人                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Christopher Manning                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     成立于 1962 年，是全球顶尖的人工智能<br>研究机构。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     斯坦福-机器人与具身智能实验室 (REAL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 机器人感知、自主学习、人机交互、具身人工智能                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Shuran Song                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     专注于开发学习算法，让机器人通过与物<br>理世界的交互来执行复杂任务并协助人类<br>。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Stanford AI Lab (SAIL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16163" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Robotics and Embodied Artificial Intelligence Lab (REAL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16163" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[斯坦福-视觉与学习实验室 (SVL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16163" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[斯坦福-人工智能实验室 (SAIL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16163" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[斯坦福-机器人与具身智能实验室 (REAL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2601.16163" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://ai.stanford.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Stanford AI Lab (SAIL) 官网             </a>                          <a href='https://real.stanford.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Robotics and Embodied Artificial Intelligence Lab (REAL) 官网             </a>                          <a href='https://svl.stanford.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 斯坦福-视觉与学习实验室 (SVL) 官网             </a>                          <a href='https://ai.stanford.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 斯坦福-人工智能实验室 (SAIL) 官网             </a>                          <a href='https://real.stanford.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 斯坦福-机器人与具身智能实验室 (REAL) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-34160 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-34160:checked ~ div label[for="t1-34160"],                 #t2-34160:checked ~ div label[for="t2-34160"],                 #t3-34160:checked ~ div label[for="t3-34160"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-34160 .tab-pane { display: none; color: #fff; }                 #t1-34160:checked ~ .pane-1 { display: block; }                 #t2-34160:checked ~ .pane-2 { display: block; }                 #t3-34160:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_222903f4be4c02c491286cd4c88a049a.setContent(html_1b5c2e422e2dd84b8cd4ca97fc83ef73);
+            
+        
+
+        marker_4af5d3f853946b93d77d288af83ce4fe.bindPopup(popup_222903f4be4c02c491286cd4c88a049a)
+        ;
+
+        
+    
+    
+            marker_4af5d3f853946b93d77d288af83ce4fe.bindTooltip(
+                `<div>
+                     🎓 斯坦福大学
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_94ae582a7a11c330ecc18f445fc5db11.addTo(map_cec361ed62d1c4c1da428a84d6600dfc);
+        
+    
+            var marker_cluster_9d35717fe5475b95a8158943d68a1693 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 10}
+            );
+        
+    
+            var marker_cb1f8a5318dca5d41d91326ae469dc9b = L.marker(
+                [44.89, -122.96],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_86c15790398004b1cf69ac672cd3e2f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb1f8a5318dca5d41d91326ae469dc9b.setIcon(icon_86c15790398004b1cf69ac672cd3e2f2);
+        
+    
+        var popup_443c757594e92e12d64d8274a57e5abf = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5ebcb818bc96e4b62a3114c830f18988 = $(`<div id="html_5ebcb818bc96e4b62a3114c830f18988" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Agility Robotics             </h3>              <div class="css-tabs-34455">                 <input type="radio" name="grp-34455" id="t1-34455" checked style="display:none">                 <input type="radio" name="grp-34455" id="t2-34455" style="display:none">                 <input type="radio" name="grp-34455" id="t3-34455" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-34455" class="tab-btn">详细信息</label>                     <label for="t2-34455" class="tab-btn">相关论文</label>                     <label for="t3-34455" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Agility Robotics                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 人形机器人 | <span style="opacity:0.7">成立:</span> 2015年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Peggy Johnson（前Qualcomm/前Microsoft）；CTO/联合创始人: Jonathan Hurst（OSU教授）；CBO: Aindrea Campbell；联合创始人: Damion Shelton                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Digit（双足人形机器人，高5英尺9英寸、负载35磅/22.68kg，单台25万美金）；Agility Arc（云自动化平台）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     混合AI+硬件路径：使用AI控制层次，实现<br>动态平衡与步行；提升复杂地形适应能力<br>。其腿部结构折叠后仅占 0.2 立方米空间<br>，便于运输和仓储。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.agilityrobotics.com' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Agility Robotics 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-34455 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-34455:checked ~ div label[for="t1-34455"],                 #t2-34455:checked ~ div label[for="t2-34455"],                 #t3-34455:checked ~ div label[for="t3-34455"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-34455 .tab-pane { display: none; color: #fff; }                 #t1-34455:checked ~ .pane-1 { display: block; }                 #t2-34455:checked ~ .pane-2 { display: block; }                 #t3-34455:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_443c757594e92e12d64d8274a57e5abf.setContent(html_5ebcb818bc96e4b62a3114c830f18988);
+            
+        
+
+        marker_cb1f8a5318dca5d41d91326ae469dc9b.bindPopup(popup_443c757594e92e12d64d8274a57e5abf)
+        ;
+
+        
+    
+    
+            var marker_0880317311a9663957f43ef7309e14a7 = L.marker(
+                [30.4, -97.71],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_18ebc43f1afb2ba21c3d894af9527f07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0880317311a9663957f43ef7309e14a7.setIcon(icon_18ebc43f1afb2ba21c3d894af9527f07);
+        
+    
+        var popup_add8f1b7e5e73b44d0c12b61af0837b9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_242f2b91bb2ac5213f5ee042b3db5615 = $(`<div id="html_242f2b91bb2ac5213f5ee042b3db5615" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Apptronik             </h3>              <div class="css-tabs-95735">                 <input type="radio" name="grp-95735" id="t1-95735" checked style="display:none">                 <input type="radio" name="grp-95735" id="t2-95735" style="display:none">                 <input type="radio" name="grp-95735" id="t3-95735" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-95735" class="tab-btn">详细信息</label>                     <label for="t2-95735" class="tab-btn">相关论文</label>                     <label for="t3-95735" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Apptronik                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 通用人形机器人 | <span style="opacity:0.7">成立:</span> 2016年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Jeff Cardenas（前通用汽车工程师）；CTO: Nick Paine（前NASA）；联合创始人: Luis Sentis（UT Austin副教授，NASA Valkyrie 项目核心成员）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Apollo（通用人形机器人，高1.75米、负载20kg，支持自主导航与工具使用；模块化设计，可以轮式/足式）；Valkyrie（前五年和NASA合作的原型）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     模块化设计+AI路径：电动关节驱动、AI视<br>觉/力控，实现拾取/码垛；轻量化材料降低<br>成本（< $5万美元/台）                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.apptronik.com' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Apptronik 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-95735 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-95735:checked ~ div label[for="t1-95735"],                 #t2-95735:checked ~ div label[for="t2-95735"],                 #t3-95735:checked ~ div label[for="t3-95735"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-95735 .tab-pane { display: none; color: #fff; }                 #t1-95735:checked ~ .pane-1 { display: block; }                 #t2-95735:checked ~ .pane-2 { display: block; }                 #t3-95735:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_add8f1b7e5e73b44d0c12b61af0837b9.setContent(html_242f2b91bb2ac5213f5ee042b3db5615);
+            
+        
+
+        marker_0880317311a9663957f43ef7309e14a7.bindPopup(popup_add8f1b7e5e73b44d0c12b61af0837b9)
+        ;
+
+        
+    
+    
+            var marker_b8494c96b4a63cbd9e2814f004aff61a = L.marker(
+                [42.42, -71.25],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_51bd6e390e174ef48f5a70b7339cefd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b8494c96b4a63cbd9e2814f004aff61a.setIcon(icon_51bd6e390e174ef48f5a70b7339cefd8);
+        
+    
+        var popup_ae528b546898ec782b86ee1d916003a0 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e1c6cb3d74e2f87ad85d15b0ee8f44a8 = $(`<div id="html_e1c6cb3d74e2f87ad85d15b0ee8f44a8" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Boston Dynamics             </h3>              <div class="css-tabs-49665">                 <input type="radio" name="grp-49665" id="t1-49665" checked style="display:none">                 <input type="radio" name="grp-49665" id="t2-49665" style="display:none">                 <input type="radio" name="grp-49665" id="t3-49665" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-49665" class="tab-btn">详细信息</label>                     <label for="t2-49665" class="tab-btn">相关论文</label>                     <label for="t3-49665" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Boston Dynamics                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 国际人形/四足机器人 | <span style="opacity:0.7">成立:</span> 1992年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Marc Raibert                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Atlas、Spot                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     全球技术标杆，Atlas双足机器人、Spot四<br>足机器人                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.bostondynamics.com' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Boston Dynamics 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-49665 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-49665:checked ~ div label[for="t1-49665"],                 #t2-49665:checked ~ div label[for="t2-49665"],                 #t3-49665:checked ~ div label[for="t3-49665"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-49665 .tab-pane { display: none; color: #fff; }                 #t1-49665:checked ~ .pane-1 { display: block; }                 #t2-49665:checked ~ .pane-2 { display: block; }                 #t3-49665:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_ae528b546898ec782b86ee1d916003a0.setContent(html_e1c6cb3d74e2f87ad85d15b0ee8f44a8);
+            
+        
+
+        marker_b8494c96b4a63cbd9e2814f004aff61a.bindPopup(popup_ae528b546898ec782b86ee1d916003a0)
+        ;
+
+        
+    
+    
+            var marker_0acd909cddc17526f4be012d65ec278d = L.marker(
+                [29.91, -95.62],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_70616474c2df53d1449778de9eb25dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0acd909cddc17526f4be012d65ec278d.setIcon(icon_70616474c2df53d1449778de9eb25dc7);
+        
+    
+        var popup_adbdd8e05812b1514cf099647822d87b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cac37cb9a60c4fb97b4c1e219f5623cb = $(`<div id="html_cac37cb9a60c4fb97b4c1e219f5623cb" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Dyna Robotics             </h3>              <div class="css-tabs-76675">                 <input type="radio" name="grp-76675" id="t1-76675" checked style="display:none">                 <input type="radio" name="grp-76675" id="t2-76675" style="display:none">                 <input type="radio" name="grp-76675" id="t3-76675" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-76675" class="tab-btn">详细信息</label>                     <label for="t2-76675" class="tab-btn">相关论文</label>                     <label for="t3-76675" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Dyna Robotics                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 机器人开发 | <span style="opacity:0.7">成立:</span> 未明确                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Lindon Gao 与 York Yang 联合创办，Jason Ma 参与                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> 开发具身智能机器人，“DYNA‑1”基础模型机器人                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     开发端到端人形机器人平台，简化开发流<br>程                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.dyna.co/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Dyna Robotics 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-76675 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-76675:checked ~ div label[for="t1-76675"],                 #t2-76675:checked ~ div label[for="t2-76675"],                 #t3-76675:checked ~ div label[for="t3-76675"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-76675 .tab-pane { display: none; color: #fff; }                 #t1-76675:checked ~ .pane-1 { display: block; }                 #t2-76675:checked ~ .pane-2 { display: block; }                 #t3-76675:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_adbdd8e05812b1514cf099647822d87b.setContent(html_cac37cb9a60c4fb97b4c1e219f5623cb);
+            
+        
+
+        marker_0acd909cddc17526f4be012d65ec278d.bindPopup(popup_adbdd8e05812b1514cf099647822d87b)
+        ;
+
+        
+    
+    
+            var marker_de212e528b67ca49f99e206de9ecc774 = L.marker(
+                [33.65, -117.71],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_f3d71f7d5ce3174efcff889cae2dfeeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_de212e528b67ca49f99e206de9ecc774.setIcon(icon_f3d71f7d5ce3174efcff889cae2dfeeb);
+        
+    
+        var popup_90e6e9a70572b0631ec875d0a5e2095f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b289ab897b09f912da5772a9094db40b = $(`<div id="html_b289ab897b09f912da5772a9094db40b" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Field AI             </h3>              <div class="css-tabs-12646">                 <input type="radio" name="grp-12646" id="t1-12646" checked style="display:none">                 <input type="radio" name="grp-12646" id="t2-12646" style="display:none">                 <input type="radio" name="grp-12646" id="t3-12646" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-12646" class="tab-btn">详细信息</label>                     <label for="t2-12646" class="tab-btn">相关论文</label>                     <label for="t3-12646" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Field AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 机器人AI系统 | <span style="opacity:0.7">成立:</span> 未明确                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Ali Agha 创办                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> 开发工业现场用机器人“脑”软件／自主模型赋能多种机器人                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     开发多模态基础模型，包括LLM用于规划、<br>视觉语言模型、世界模型等                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.fieldai.com/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Field AI 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-12646 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-12646:checked ~ div label[for="t1-12646"],                 #t2-12646:checked ~ div label[for="t2-12646"],                 #t3-12646:checked ~ div label[for="t3-12646"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-12646 .tab-pane { display: none; color: #fff; }                 #t1-12646:checked ~ .pane-1 { display: block; }                 #t2-12646:checked ~ .pane-2 { display: block; }                 #t3-12646:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_90e6e9a70572b0631ec875d0a5e2095f.setContent(html_b289ab897b09f912da5772a9094db40b);
+            
+        
+
+        marker_de212e528b67ca49f99e206de9ecc774.bindPopup(popup_90e6e9a70572b0631ec875d0a5e2095f)
+        ;
+
+        
+    
+    
+            var marker_4f099c76f8a61d6961eabd9e171a331e = L.marker(
+                [37.41, -121.95],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_7230d01bcbacc69a3db1474cbaa482ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f099c76f8a61d6961eabd9e171a331e.setIcon(icon_7230d01bcbacc69a3db1474cbaa482ce);
+        
+    
+        var popup_07372b7ad3b1552c1930a272fec2577d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b42340f3525003fdd2aefb67854702cd = $(`<div id="html_b42340f3525003fdd2aefb67854702cd" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Figure AI             </h3>              <div class="css-tabs-36100">                 <input type="radio" name="grp-36100" id="t1-36100" checked style="display:none">                 <input type="radio" name="grp-36100" id="t2-36100" style="display:none">                 <input type="radio" name="grp-36100" id="t3-36100" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-36100" class="tab-btn">详细信息</label>                     <label for="t2-36100" class="tab-btn">相关论文</label>                     <label for="t3-36100" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Figure AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 通用人形机器人 | <span style="opacity:0.7">成立:</span> 2022年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> CEO/创始人: Brett Adcock（前Archer Aviation创始人）；CTO: Jerry Pratt（前Boston Dynamics工程师，现在已经离开创办新公司）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Figure 01、Figure 02（商用自主人形机器人）；Helix（25年2月发布的端到端控制模型，支持多机器人协作如咖啡制作、冰箱整理、25年8月演示叠毛巾）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     端到端AI机器人堆栈；多模态训练（200Hz<br>响应）；垂直硬件-软件集成，实现精细操作<br>与人类形态适应                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.figure.ai' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Figure AI 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-36100 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-36100:checked ~ div label[for="t1-36100"],                 #t2-36100:checked ~ div label[for="t2-36100"],                 #t3-36100:checked ~ div label[for="t3-36100"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-36100 .tab-pane { display: none; color: #fff; }                 #t1-36100:checked ~ .pane-1 { display: block; }                 #t2-36100:checked ~ .pane-2 { display: block; }                 #t3-36100:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_07372b7ad3b1552c1930a272fec2577d.setContent(html_b42340f3525003fdd2aefb67854702cd);
+            
+        
+
+        marker_4f099c76f8a61d6961eabd9e171a331e.bindPopup(popup_07372b7ad3b1552c1930a272fec2577d)
+        ;
+
+        
+    
+    
+            var marker_f0613d308a04588381d325359caab6c0 = L.marker(
+                [25.77, -80.14],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_96501a9530d7d2b19ddbbd04e88cc44d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f0613d308a04588381d325359caab6c0.setIcon(icon_96501a9530d7d2b19ddbbd04e88cc44d);
+        
+    
+        var popup_3a1cb86aefee4201de6679517a731f17 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d6739638ac94b7df9cf5856c3828b2bf = $(`<div id="html_d6739638ac94b7df9cf5856c3828b2bf" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Genesis AI             </h3>              <div class="css-tabs-92169">                 <input type="radio" name="grp-92169" id="t1-92169" checked style="display:none">                 <input type="radio" name="grp-92169" id="t2-92169" style="display:none">                 <input type="radio" name="grp-92169" id="t3-92169" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-92169" class="tab-btn">详细信息</label>                     <label for="t2-92169" class="tab-btn">相关论文</label>                     <label for="t3-92169" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Genesis AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 通用机器人 | <span style="opacity:0.7">成立:</span> 未明确                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Zhou Xian & Theophile Gervet 创立（2024 年）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> 全栈物理AI 实验室 + 通用机器人平台                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     构建通用机器人系统，支持复杂环境中的<br>运动与灵巧操作                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://genesis-ai.company/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Genesis AI 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-92169 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-92169:checked ~ div label[for="t1-92169"],                 #t2-92169:checked ~ div label[for="t2-92169"],                 #t3-92169:checked ~ div label[for="t3-92169"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-92169 .tab-pane { display: none; color: #fff; }                 #t1-92169:checked ~ .pane-1 { display: block; }                 #t2-92169:checked ~ .pane-2 { display: block; }                 #t3-92169:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_3a1cb86aefee4201de6679517a731f17.setContent(html_d6739638ac94b7df9cf5856c3828b2bf);
+            
+        
+
+        marker_f0613d308a04588381d325359caab6c0.bindPopup(popup_3a1cb86aefee4201de6679517a731f17)
+        ;
+
+        
+    
+    
+            var marker_345fd67b92eadbce9e16006475d075ea = L.marker(
+                [37.42, -122.09],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_49403723cffe6723e5a3a4b6baa1f7c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_345fd67b92eadbce9e16006475d075ea.setIcon(icon_49403723cffe6723e5a3a4b6baa1f7c5);
+        
+    
+        var popup_904480c6a0e8f6e79b20cdaafff89a1b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6f444411f816fb7bc3c9eaab58baf1f8 = $(`<div id="html_6f444411f816fb7bc3c9eaab58baf1f8" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Google DeepMind             </h3>              <div class="css-tabs-55209">                 <input type="radio" name="grp-55209" id="t1-55209" checked style="display:none">                 <input type="radio" name="grp-55209" id="t2-55209" style="display:none">                 <input type="radio" name="grp-55209" id="t3-55209" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-55209" class="tab-btn">详细信息</label>                     <label for="t2-55209" class="tab-btn">相关论文</label>                     <label for="t3-55209" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Google DeepMind                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> Gemini Robotics模型(与Apptronik和波士顿动力合作) | <span style="opacity:0.7">成立:</span> 2025年3月推出                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> 与Apptronik、波士顿动力合作                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Gemini Robotics是基于Gemini 2.0基础模型的VLA模型，半开源，包括标准版和Gemini Robotics-ER（Embodied Reasoning，具身推理版）,Genie 3世界模型, ASIMOV数据集与安全框架                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     采用VLA框架，将视觉理解与行动规划集成<br>；支持零-shot（零样本）和few-shot学习，<br>无需大量特定训练数据即可泛化。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://deepmind.google' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Google DeepMind 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-55209 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-55209:checked ~ div label[for="t1-55209"],                 #t2-55209:checked ~ div label[for="t2-55209"],                 #t3-55209:checked ~ div label[for="t3-55209"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-55209 .tab-pane { display: none; color: #fff; }                 #t1-55209:checked ~ .pane-1 { display: block; }                 #t2-55209:checked ~ .pane-2 { display: block; }                 #t3-55209:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_904480c6a0e8f6e79b20cdaafff89a1b.setContent(html_6f444411f816fb7bc3c9eaab58baf1f8);
+            
+        
+
+        marker_345fd67b92eadbce9e16006475d075ea.bindPopup(popup_904480c6a0e8f6e79b20cdaafff89a1b)
+        ;
+
+        
+    
+    
+            var marker_179c53150e3463f39376b6585ae84f05 = L.marker(
+                [37.37, -121.97],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_8b75c3ca0d130c99490f2703fc02e900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_179c53150e3463f39376b6585ae84f05.setIcon(icon_8b75c3ca0d130c99490f2703fc02e900);
+        
+    
+        var popup_02406821022728f9b6651748a0d55202 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8c895a3c367d385339988c7f99d888dd = $(`<div id="html_8c895a3c367d385339988c7f99d888dd" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 NVIDIA             </h3>              <div class="css-tabs-36038">                 <input type="radio" name="grp-36038" id="t1-36038" checked style="display:none">                 <input type="radio" name="grp-36038" id="t2-36038" style="display:none">                 <input type="radio" name="grp-36038" id="t3-36038" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-36038" class="tab-btn">详细信息</label>                     <label for="t2-36038" class="tab-btn">相关论文</label>                     <label for="t3-36038" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     NVIDIA                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 机器人平台 | <span style="opacity:0.7">成立:</span> 未明确                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Dr. Jim Fan（资深研究科学家）和Prof. Yuke Zhu（教授级研究科学家），都来自李飞飞组                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> GROOT开源VLA+COSMOS世界模型                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     开发多模态基础模型，包括LLM用于规划、<br>视觉语言模型、世界模型；通用机器人系统<br>，支持复杂环境中的运动和灵巧操纵；基础<br>代理如大型行动模型，在游戏和模拟中自<br>主探索。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.nvidia.com' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 NVIDIA 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-36038 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-36038:checked ~ div label[for="t1-36038"],                 #t2-36038:checked ~ div label[for="t2-36038"],                 #t3-36038:checked ~ div label[for="t3-36038"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-36038 .tab-pane { display: none; color: #fff; }                 #t1-36038:checked ~ .pane-1 { display: block; }                 #t2-36038:checked ~ .pane-2 { display: block; }                 #t3-36038:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_02406821022728f9b6651748a0d55202.setContent(html_8c895a3c367d385339988c7f99d888dd);
+            
+        
+
+        marker_179c53150e3463f39376b6585ae84f05.bindPopup(popup_02406821022728f9b6651748a0d55202)
+        ;
+
+        
+    
+    
+            var marker_bd41a98bad88e57abc7701bd70122e0b = L.marker(
+                [37.76, -122.41],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_e0ff48c88b9a817637dcfcefd62b76ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bd41a98bad88e57abc7701bd70122e0b.setIcon(icon_e0ff48c88b9a817637dcfcefd62b76ed);
+        
+    
+        var popup_b09b2aa74dcda788327e9c258cf2506f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_db27b9fd74c277c9019e1d7597a78f88 = $(`<div id="html_db27b9fd74c277c9019e1d7597a78f88" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Physical Intelligence             </h3>              <div class="css-tabs-82009">                 <input type="radio" name="grp-82009" id="t1-82009" checked style="display:none">                 <input type="radio" name="grp-82009" id="t2-82009" style="display:none">                 <input type="radio" name="grp-82009" id="t3-82009" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-82009" class="tab-btn">详细信息</label>                     <label for="t2-82009" class="tab-btn">相关论文</label>                     <label for="t3-82009" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Physical Intelligence                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 人形机器人 | <span style="opacity:0.7">成立:</span> 2023年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Karol Hausman（前Google机器人科学家）；联合创始人: Sergey Levine（UC Berkeley副教授）、Chelsea Finn（Stanford助理教授，18年博士毕业，前UC berkeley Sergey Levine的学生）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> π0、π0.5（通用机器人策略模型）；VLAs（视觉-语言-动作模型）用于机器人控制，支持灵巧操作，强调高变形任务（如处理柔软织物、洗衣服、清理桌子）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     一家专注于开发具身人工智能以驱动机器<br>人学习和执行复杂任务的初创公司，旨在<br>使机器人能够在现实世界中进行泛化操作<br>。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.physicalintelligence.company/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Physical Intelligence 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-82009 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-82009:checked ~ div label[for="t1-82009"],                 #t2-82009:checked ~ div label[for="t2-82009"],                 #t3-82009:checked ~ div label[for="t3-82009"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-82009 .tab-pane { display: none; color: #fff; }                 #t1-82009:checked ~ .pane-1 { display: block; }                 #t2-82009:checked ~ .pane-2 { display: block; }                 #t3-82009:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_b09b2aa74dcda788327e9c258cf2506f.setContent(html_db27b9fd74c277c9019e1d7597a78f88);
+            
+        
+
+        marker_bd41a98bad88e57abc7701bd70122e0b.bindPopup(popup_b09b2aa74dcda788327e9c258cf2506f)
+        ;
+
+        
+    
+    
+            var marker_58552769e7c74aba22a96e89cf701cbc = L.marker(
+                [49.27, -123.1],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_656ef9863231d49c452e978a1232a8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58552769e7c74aba22a96e89cf701cbc.setIcon(icon_656ef9863231d49c452e978a1232a8de);
+        
+    
+        var popup_e12b271b359903679eaeffc8c14bb640 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b7255b75a1036c8bc089955efbc1b408 = $(`<div id="html_b7255b75a1036c8bc089955efbc1b408" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Sanctuary AI             </h3>              <div class="css-tabs-43876">                 <input type="radio" name="grp-43876" id="t1-43876" checked style="display:none">                 <input type="radio" name="grp-43876" id="t2-43876" style="display:none">                 <input type="radio" name="grp-43876" id="t3-43876" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-43876" class="tab-btn">详细信息</label>                     <label for="t2-43876" class="tab-btn">相关论文</label>                     <label for="t3-43876" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Sanctuary AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 通用服务机器人 | <span style="opacity:0.7">成立:</span> 2018年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Geordie Rose（D-Wave创始人）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Phoenix人形机器人                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     开发具备人类级灵巧操作能力的通用人形<br>机器人                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://sanctuary.ai' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Sanctuary AI 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-43876 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-43876:checked ~ div label[for="t1-43876"],                 #t2-43876:checked ~ div label[for="t2-43876"],                 #t3-43876:checked ~ div label[for="t3-43876"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-43876 .tab-pane { display: none; color: #fff; }                 #t1-43876:checked ~ .pane-1 { display: block; }                 #t2-43876:checked ~ .pane-2 { display: block; }                 #t3-43876:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_e12b271b359903679eaeffc8c14bb640.setContent(html_b7255b75a1036c8bc089955efbc1b408);
+            
+        
+
+        marker_58552769e7c74aba22a96e89cf701cbc.bindPopup(popup_e12b271b359903679eaeffc8c14bb640)
+        ;
+
+        
+    
+    
+            var marker_a173e5778026a813df113d61dd6b3625 = L.marker(
+                [34.15, -118.15],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_339347c746570408f06885bed8be4097 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a173e5778026a813df113d61dd6b3625.setIcon(icon_339347c746570408f06885bed8be4097);
+        
+    
+        var popup_bdbc6bfb1428ffbb146b2b21b62962da = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_647d4e952eb55cb3773d1bc8a10feeb2 = $(`<div id="html_647d4e952eb55cb3773d1bc8a10feeb2" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Skild AI             </h3>              <div class="css-tabs-38975">                 <input type="radio" name="grp-38975" id="t1-38975" checked style="display:none">                 <input type="radio" name="grp-38975" id="t2-38975" style="display:none">                 <input type="radio" name="grp-38975" id="t3-38975" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-38975" class="tab-btn">详细信息</label>                     <label for="t2-38975" class="tab-btn">相关论文</label>                     <label for="t3-38975" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Skild AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 具身智能, 通用人工智能 | <span style="opacity:0.7">成立:</span> 2023年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Abhinav Gupta, Deepak Pathak（前CMU教授）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Skild Brain（机器人基础模型，支持“一脑多机体”通用控制，如抓取鸡蛋、巡视、导航）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     开发omni-bodied intelligence（全形态<br>智能），即一个单一的 “大脑”，能够适配任<br>何任务、任何机器人，不受机器人类型或任<br>务范围限制，最终迈向扎根现实世界的人<br>工通用智能（AGI）                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://skild.ai' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Skild AI 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-38975 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-38975:checked ~ div label[for="t1-38975"],                 #t2-38975:checked ~ div label[for="t2-38975"],                 #t3-38975:checked ~ div label[for="t3-38975"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-38975 .tab-pane { display: none; color: #fff; }                 #t1-38975:checked ~ .pane-1 { display: block; }                 #t2-38975:checked ~ .pane-2 { display: block; }                 #t3-38975:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_bdbc6bfb1428ffbb146b2b21b62962da.setContent(html_647d4e952eb55cb3773d1bc8a10feeb2);
+            
+        
+
+        marker_a173e5778026a813df113d61dd6b3625.bindPopup(popup_bdbc6bfb1428ffbb146b2b21b62962da)
+        ;
+
+        
+    
+    
+            var marker_f1bfa22a10c28de9cc0024d82ac23a21 = L.marker(
+                [30.23, -97.62],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_fb21b904cb3dce63e886699f2932d058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f1bfa22a10c28de9cc0024d82ac23a21.setIcon(icon_fb21b904cb3dce63e886699f2932d058);
+        
+    
+        var popup_6a73790fc4bf4f958b96c7df073cf2e3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_70c5c7efb44639969f8a8894b0facfe5 = $(`<div id="html_70c5c7efb44639969f8a8894b0facfe5" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 Tesla Optimus             </h3>              <div class="css-tabs-58812">                 <input type="radio" name="grp-58812" id="t1-58812" checked style="display:none">                 <input type="radio" name="grp-58812" id="t2-58812" style="display:none">                 <input type="radio" name="grp-58812" id="t3-58812" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-58812" class="tab-btn">详细信息</label>                     <label for="t2-58812" class="tab-btn">相关论文</label>                     <label for="t3-58812" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     Tesla Optimus                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 人形机器人 | <span style="opacity:0.7">成立:</span> 2021年 (项目启动)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Elon Musk / 特斯拉Optimus团队负责人Ashok Elluswamy（AI软件副总裁，原Optimus项目主管Milan Kovac于2025年6月离职）；核心成员包括Ashish Kumar（机器人学习专家）、Julian Ibarz（前google）、Russell Mendonca（cmu deepak的博士）                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> Optimus (Gen 1, Gen 2)                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     特斯拉旗下的人形机器人项目，旨在开发<br>能够执行危险、重复或枯燥任务的通用机<br>器人，以替代人类劳动力。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.tesla.com' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Tesla Optimus 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-58812 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-58812:checked ~ div label[for="t1-58812"],                 #t2-58812:checked ~ div label[for="t2-58812"],                 #t3-58812:checked ~ div label[for="t3-58812"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-58812 .tab-pane { display: none; color: #fff; }                 #t1-58812:checked ~ .pane-1 { display: block; }                 #t2-58812:checked ~ .pane-2 { display: block; }                 #t3-58812:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_6a73790fc4bf4f958b96c7df073cf2e3.setContent(html_70c5c7efb44639969f8a8894b0facfe5);
+            
+        
+
+        marker_f1bfa22a10c28de9cc0024d82ac23a21.bindPopup(popup_6a73790fc4bf4f958b96c7df073cf2e3)
+        ;
+
+        
+    
+    
+            var marker_ea45b09cdb7699a9d5f48c419997bc64 = L.marker(
+                [37.43, -122.17],
+                {}
+            ).addTo(marker_cluster_9d35717fe5475b95a8158943d68a1693);
+        
+    
+            var icon_80b1d9f18d9f6ef1432ac9763d0db1f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "robot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea45b09cdb7699a9d5f48c419997bc64.setIcon(icon_80b1d9f18d9f6ef1432ac9763d0db1f4);
+        
+    
+        var popup_0470be8422d72b0ce1398c74d129a1c7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7c226b2a10034eda395deff790421c85 = $(`<div id="html_7c226b2a10034eda395deff790421c85" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 World Labs             </h3>              <div class="css-tabs-48775">                 <input type="radio" name="grp-48775" id="t1-48775" checked style="display:none">                 <input type="radio" name="grp-48775" id="t2-48775" style="display:none">                 <input type="radio" name="grp-48775" id="t3-48775" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-48775" class="tab-btn">详细信息</label>                     <label for="t2-48775" class="tab-btn">相关论文</label>                     <label for="t3-48775" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     World Labs                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 机器人AI | <span style="opacity:0.7">成立:</span> 2024年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> 李飞飞                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> 空间智能                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     由李飞飞创办，专注于“空间智能”与具身<br>智能研究                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.worldlabs.ai/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 World Labs 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-48775 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-48775:checked ~ div label[for="t1-48775"],                 #t2-48775:checked ~ div label[for="t2-48775"],                 #t3-48775:checked ~ div label[for="t3-48775"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-48775 .tab-pane { display: none; color: #fff; }                 #t1-48775:checked ~ .pane-1 { display: block; }                 #t2-48775:checked ~ .pane-2 { display: block; }                 #t3-48775:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_0470be8422d72b0ce1398c74d129a1c7.setContent(html_7c226b2a10034eda395deff790421c85);
+            
+        
+
+        marker_ea45b09cdb7699a9d5f48c419997bc64.bindPopup(popup_0470be8422d72b0ce1398c74d129a1c7)
+        ;
+
+        
+    
+    
+            marker_cluster_9d35717fe5475b95a8158943d68a1693.addTo(map_cec361ed62d1c4c1da428a84d6600dfc);
+        
+</script>
+</html>

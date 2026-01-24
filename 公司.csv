@@ -1,0 +1,44 @@
+﻿公司名,地区,Region,分类,成立时间,公司简要介绍,创始人/团队,代表产品,公司主页,经度,纬度
+1X Technologies,挪威奥斯陆,Europe,通用机器人,2014年,取代Figure成为Open AI协作最紧密机器人公司。通过 VR 训练与真实场景数据闭环实现能力进化，自研的视觉操控模型（Visual Manipulation Model）可直接从原始传感器数据预动作轨迹；腱绳驱动，NEO Gamma 采用日本 Shemiseki 技术编织的尼龙外壳，结合接触式力反馈机制，将意外碰撞力控制在 2N 以下,Bernt Øivind Børnich（领导公司从Halodi Robotics转型为1X，推动与OpenAI合作，实现机器人AI集成）；Eric Jang（前google机器人研究 ）作为AI leader,EVE（轮式企业机器人）；NEO（双足家用人形机器人，高1.65米、负载10kg、成本目标2万美元）；Redwood （1.6亿参数VLA+RL运动控制、5Hz端侧运行）、1X World Model世界模型（模拟器）,https://www.1x.tech/,10.66,59.44
+Agility Robotics,美国俄勒冈州Salem,USA,人形机器人,2015年,混合AI+硬件路径：使用AI控制层次，实现动态平衡与步行；提升复杂地形适应能力。其腿部结构折叠后仅占 0.2 立方米空间，便于运输和仓储。,Peggy Johnson（前Qualcomm/前Microsoft）；CTO/联合创始人: Jonathan Hurst（OSU教授）；CBO: Aindrea Campbell；联合创始人: Damion Shelton,Digit（双足人形机器人，高5英尺9英寸、负载35磅/22.68kg，单台25万美金）；Agility Arc（云自动化平台）,https://www.agilityrobotics.com,-122.96,44.89
+Apptronik,美国德州Austin,USA,通用人形机器人,2016年,模块化设计+AI路径：电动关节驱动、AI视觉/力控，实现拾取/码垛；轻量化材料降低成本（< $5万美元/台）,Jeff Cardenas（前通用汽车工程师）；CTO: Nick Paine（前NASA）；联合创始人: Luis Sentis（UT Austin副教授，NASA Valkyrie 项目核心成员）,Apollo（通用人形机器人，高1.75米、负载20kg，支持自主导航与工具使用；模块化设计，可以轮式/足式）；Valkyrie（前五年和NASA合作的原型）,https://www.apptronik.com,-97.71,30.4
+Boston Dynamics,美国马萨诸塞州,USA,国际人形/四足机器人,1992年,全球技术标杆，Atlas双足机器人、Spot四足机器人,Marc Raibert,Atlas、Spot,https://www.bostondynamics.com,-71.25,42.42
+Dyna Robotics,美国,USA,机器人开发,未明确,开发端到端人形机器人平台，简化开发流程,Lindon Gao 与 York Yang 联合创办，Jason Ma 参与,开发具身智能机器人，“DYNA‑1”基础模型机器人,https://www.dyna.co/,-95.62,29.91
+Field AI,美国,USA,机器人AI系统,未明确,开发多模态基础模型，包括LLM用于规划、视觉语言模型、世界模型等,Ali Agha 创办,开发工业现场用机器人“脑”软件／自主模型赋能多种机器人,https://www.fieldai.com/,-117.71,33.65
+Figure AI,美国加州,USA,通用人形机器人,2022年,端到端AI机器人堆栈；多模态训练（200Hz响应）；垂直硬件-软件集成，实现精细操作与人类形态适应,CEO/创始人: Brett Adcock（前Archer Aviation创始人）；CTO: Jerry Pratt（前Boston Dynamics工程师，现在已经离开创办新公司）,Figure 01、Figure 02（商用自主人形机器人）；Helix（25年2月发布的端到端控制模型，支持多机器人协作如咖啡制作、冰箱整理、25年8月演示叠毛巾）,https://www.figure.ai,-121.95,37.41
+Genesis AI,美国,USA,通用机器人,未明确,构建通用机器人系统，支持复杂环境中的运动与灵巧操作,Zhou Xian & Theophile Gervet 创立（2024 年）,全栈物理AI 实验室 + 通用机器人平台,https://genesis-ai.company/,-80.14,25.77
+Google DeepMind,美国,USA,Gemini Robotics模型(与Apptronik和波士顿动力合作),2025年3月推出,采用VLA框架，将视觉理解与行动规划集成；支持零-shot（零样本）和few-shot学习，无需大量特定训练数据即可泛化。,与Apptronik、波士顿动力合作,"Gemini Robotics是基于Gemini 2.0基础模型的VLA模型，半开源，包括标准版和Gemini Robotics-ER（Embodied Reasoning，具身推理版）,Genie 3世界模型, ASIMOV数据集与安全框架",https://deepmind.google,-122.09,37.42
+NVIDIA,美国,USA,机器人平台,未明确,开发多模态基础模型，包括LLM用于规划、视觉语言模型、世界模型；通用机器人系统，支持复杂环境中的运动和灵巧操纵；基础代理如大型行动模型，在游戏和模拟中自主探索。,Dr. Jim Fan（资深研究科学家）和Prof. Yuke Zhu（教授级研究科学家），都来自李飞飞组,GROOT开源VLA+COSMOS世界模型,https://www.nvidia.com,-121.97,37.37
+Physical Intelligence,美国加州,USA,人形机器人,2023年,一家专注于开发具身人工智能以驱动机器人学习和执行复杂任务的初创公司，旨在使机器人能够在现实世界中进行泛化操作。,Karol Hausman（前Google机器人科学家）；联合创始人: Sergey Levine（UC Berkeley副教授）、Chelsea Finn（Stanford助理教授，18年博士毕业，前UC berkeley Sergey Levine的学生）,π0、π0.5（通用机器人策略模型）；VLAs（视觉-语言-动作模型）用于机器人控制，支持灵巧操作，强调高变形任务（如处理柔软织物、洗衣服、清理桌子）,https://www.physicalintelligence.company/,-122.41,37.76
+PNDbotics,中国浙江,China,机器人开发平台,2023年,构建端到端人形机器人平台，简化开发流程,韩立华,人形机器人 “Adam” 系列,https://pndbotics.com/,121.64,29.88
+Sanctuary AI,加拿大,USA,通用服务机器人,2018年,开发具备人类级灵巧操作能力的通用人形机器人,Geordie Rose（D-Wave创始人）,Phoenix人形机器人,https://sanctuary.ai,-123.1,49.27
+Skild AI,美国宾州,USA,"具身智能, 通用人工智能",2023年,开发omni-bodied intelligence（全形态智能），即一个单一的 “大脑”，能够适配任何任务、任何机器人，不受机器人类型或任务范围限制，最终迈向扎根现实世界的人工通用智能（AGI）,"Abhinav Gupta, Deepak Pathak（前CMU教授）",Skild Brain（机器人基础模型，支持“一脑多机体”通用控制，如抓取鸡蛋、巡视、导航）,https://skild.ai,-118.15,34.15
+Tesla Optimus,美国德州,USA,人形机器人,2021年 (项目启动),特斯拉旗下的人形机器人项目，旨在开发能够执行危险、重复或枯燥任务的通用机器人，以替代人类劳动力。,Elon Musk / 特斯拉Optimus团队负责人Ashok Elluswamy（AI软件副总裁，原Optimus项目主管Milan Kovac于2025年6月离职）；核心成员包括Ashish Kumar（机器人学习专家）、Julian Ibarz（前google）、Russell Mendonca（cmu deepak的博士）,"Optimus (Gen 1, Gen 2)",https://www.tesla.com,-97.62,30.23
+World Labs,美国,USA,机器人AI,2024年,由李飞飞创办，专注于“空间智能”与具身智能研究,李飞飞,空间智能,https://www.worldlabs.ai/,-122.17,37.43
+艾欧智能,中国北京,China,数据与解决方案,2023年,提供具身智能基础数据，创始团队来自腾讯、鹏行智能等,陈相羽,TeleXperience II遥操作产品，数采头盔等,https://io-ai.tech/,113.96,22.74
+达闼机器人,中国上海,China,通用服务机器人,2015年,云端机器人领导者，覆盖清洁、巡检、人形机器人,黄晓庆（前中国移动研究院院长）,GingerXR人形机器人,https://www.cloudminds.com,121.37,31
+非夕机器人,上海,China,智能机器人/自适应机器人,2016年,全球技术领先的通用智能机器人公司，研发集工业级力控、计算机视觉和人工智能技术于一体的自适应机器人，为制造业、食品、医疗等行业提供整体解决方案。,王世全（CEO）、叶熙阳、钟书耘、卢策吾等，核心团队均来自斯坦福大学机器人与人工智能实验室,拂晓（Rizon）系列自适应机器人、穹知AI系统、力控夹爪,https://www.flexiv.com,121.47,31.03
+傅里叶机器人,中国上海,China,医疗机器人,2015年,专注康复医疗，推出GR系列康复机器人,顾捷,GR系列,https://www.fftai.cn/,121.61,31.13
+加速进化,中国北京,China,人形机器人,2023年,提供开发者双足机器人Booster T1，强调运动能力与稳定性,程昊、赵国明（清华）,Booster T1,https://www.booster.tech/zh/,116.36,40.04
+开普勒机器人,中国上海,China,工业应用机器人,2023年,提供智能制造、仓储物流等行业的自动化解决方案,创始人 杨华；联合创始人／CEO 胡德波。m.mp.oeeee.com+1,人形机器人“先行者 K1/K2”系列。m.mp.oeeee.com+1,https://gotokepler.com/home,121.62,31.19
+乐聚,中国深圳,China,人形机器人,2016年,专注于小型人形机器人研发，面向教育与科研市场,冷晓琨（哈工大）,Aelos、Pando系列,http://www.lejurobot.com,113.96,22.56
+灵初智能,中国深圳,China,机器人AI,2023年,聚焦具身智能与大模型结合，开发机器人“大脑”,王启斌（北京大学团队）,Psi R0，R0.5等具身VLA模型,https://www.psibot.ai/,113.86,22.72
+普渡,中国深圳,China,服务机器人,2016年,餐饮配送机器人领先企业，产品广泛应用于全球,张涛,Bella、HolaBot、PUDU SLAM,https://www.pudurobotics.com,113.95,22.58
+千寻智能,中国杭州,China,具身智能解决方案,2023年,构建高泛化机器人大脑，结合ViLa和CoPa多模态模型提升交互性,清华高阳,ViLa模型支持跨模态推理，CoPa模型优化物理约束下的动作规划,https://www.qxintech.com/,120.25,30.25
+穹彻智能,中国上海,China,具身智能解决方案,2023年11月,上海交大背景，展示AnySkill通用技能（清洁、柔性操作等）,卢策吾（上海交大）,AnySkill系列,https://www.noematrix.ai/,121.47,31.03
+松延动力,中国北京,China,人形机器人,未明确,开发高动态人形机器人，强调运动控制能力,姜哲源（创始人、董事长）,人形机器人 “N2” 系列（高机动/跑跳能力）jfdaily.com,https://noetixrobotics.com/,116.43,40.13
+小米机器人,中国北京,China,人形机器人,-,国内大厂代表，推出全尺寸人形机器人CyberOne，布局智能制造6,雷军（小米集团）,CyberOne、CyberDog,https://www.mi.com,116.32,40.05
+星尘智能,中国深圳,China,AI机器人助理,2022年,研发可落地的AI助理机器人，S1机器人操作性能接近人类,来杰（腾讯背景）,S1机器人,https://www.astribot.com/en,113.95,22.53
+星动纪元,中国北京,China,AGI与通用人形机器人,2023年,清华孵化，研发适应多场景的高智能通用人形机器人,陈建宇 清华叉院,技术路线：聚焦宽领域、多情景的AGI应用,https://www.robotera.com/,116.34,40
+星海图,中国苏州,China,具身智能平台,2023年,主打“一脑多形”架构，荣登2024中国AGI创新Top50,高继扬|赵行|许华哲,全尺寸双臂仿人形机器人GALAXEA R1,https://galaxea-ai.com/cn/about,120.78,31.3
+维他动力,中国北京,China,通用机器人,未明确,开发通用人形机器人，聚焦家庭与商业服务场景,余轶南（创始人兼 CEO）,具身智能/家庭服务型机器人产品方向,https://www.vita.cn/,116.38,40.04
+银河通用,中国北京,China,通用服务机器人,2023年,北大团队主导，聚焦工业/家庭场景的通用服务机器人,王鹤（北大教授）,研发方向：结合具身大模型实现自适应环境交互,https://www.galbot.com/,116.32,39.99
+优必选,中国北京,China,人形机器人,2012年,全球人形机器人领导者，全栈技术覆盖运动控制、AI算法、操作系统ROSA，率先实现商业化,周剑,Walker系列、Jimu机器人、Qrobot Alpha,https://www.ubtrobot.com,116.56,39.8
+有鹿机器人,中国杭州,China,轮式机器人,2023年,达摩院背景，聚焦轮式清扫机器人,陈俊波,轮式清扫机器人,https://udeer.ai/about,119.91,30.25
+宇树科技,中国杭州,China,四足/人形机器人,2016年,专注高性能足式机器人，自研核心部件与运动控制算法，全球首个可后空翻商业化人形机器人,王兴兴,Unitree H1、G1、Aliengo四足,https://www.unitree.com,120.22,30.19
+云深处科技,中国杭州,China,四足机器人,2017年,中国四足机器人先锋，“绝影”系列实现全自主巡检,浙大团队,绝影系列,https://www.deeprobotics.cn,120.07,30.33
+智元机器人,中国上海,China,人形机器人,2023年,华为天才少年创立，快速融资并推出远征A1系列，技术迭代迅速,智晖君,远征A1/A2,https://www.agibot.com,121.61,31.14
+众擎机器人,中国北京,China,低价人形机器人,2023年,推出低价双足机器人SA01，定位普惠型产品,赵同阳,SA01,https://www.engineai.com.cn/,116.56,39.79
+逐际动力,中国深圳,China,通用机器人研发,2022年1月,聚焦全尺寸人形机器人，衍生双足/四轮足产品，结合具身大模型,张巍（南科大）,逐际人形机器人、四轮足机器人,https://www.limxdynamics.com,113.96,22.58
+追觅,中国苏州,China,家用机器人,2017年,深耕扫地机、洗地机，积累机器人技术,俞浩,扫地机器人系列,https://www.dreame.tech/,120.57,31.21
+自变量机器人,中国上海,China,AGI研发,2023年,卡内基梅隆团队创立，目标开发通用人形机器人,Abhinav Gupta等,量子 1 号，量子2号通用轮式双臂机器人,https://www.x2robot.com/about,113.93,22.58
