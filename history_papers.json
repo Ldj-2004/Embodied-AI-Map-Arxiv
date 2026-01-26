@@ -23,6 +23,16 @@
   ],
   "NUS AI LAB": [
     {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
+    },
+    {
       "title": "Virtual Traffic Police: Large Language Model-Augmented Traffic Signal Control for Unforeseen Incidents",
       "url": "https://arxiv.org/abs/2601.15816",
       "date": "2026-01-22",
@@ -54,6 +64,16 @@
     }
   ],
   "Advanced Robotics Centre": [
+    {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
+    },
     {
       "title": "Virtual Traffic Police: Large Language Model-Augmented Traffic Signal Control for Unforeseen Incidents",
       "url": "https://arxiv.org/abs/2601.15816",
@@ -87,6 +107,16 @@
   ],
   "Synteraction Lab": [
     {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
+    },
+    {
       "title": "Virtual Traffic Police: Large Language Model-Augmented Traffic Signal Control for Unforeseen Incidents",
       "url": "https://arxiv.org/abs/2601.15816",
       "date": "2026-01-22",
@@ -118,6 +148,16 @@
     }
   ],
   "Microsystem Engineering and Robotics": [
+    {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
+    },
     {
       "title": "Virtual Traffic Police: Large Language Model-Augmented Traffic Signal Control for Unforeseen Incidents",
       "url": "https://arxiv.org/abs/2601.15816",
@@ -283,6 +323,16 @@
   ],
   "武汉大学": [
     {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
       "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "url": "https://arxiv.org/abs/2601.15724",
       "date": "2026-01-22",
@@ -315,6 +365,16 @@
   ],
   "S-Lab for Advanced Intelligence": [
     {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
       "date": "2026-01-22",
@@ -326,6 +386,16 @@
     }
   ],
   "ROSE Lab": [
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
     {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
@@ -339,6 +409,16 @@
   ],
   "PINE Lab": [
     {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
       "date": "2026-01-22",
@@ -350,6 +430,16 @@
     }
   ],
   "MARS Lab": [
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
     {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
@@ -363,6 +453,16 @@
   ],
   "MReaLLab": [
     {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
       "date": "2026-01-22",
@@ -375,6 +475,16 @@
   ],
   "MMLab@NTU": [
     {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
       "title": "Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems",
       "url": "https://arxiv.org/abs/2601.15946",
       "date": "2026-01-22",
@@ -386,6 +496,56 @@
     }
   ],
   "浙江大学": [
+    {
+      "title": "IBISAgent: Reinforcing Pixel-Level Visual Reasoning in MLLMs for Universal Biomedical Object Referring and Segmentation",
+      "url": "https://arxiv.org/abs/2601.03054",
+      "date": "2026-01-23",
+      "authors_text": "Yankai Jiang, Qiaoru Li, Binlu Xu, Haoran Sun, Chao Ding",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "IBISAgent enhances pixel-level visual reasoning in medical MLLMs through iterative decision-making and reinforcement learning, outperforming existing methods in segmentation tasks.",
+      "debug_abstract": "Recent research on medical MLLMs has gradually shifted its focus from image-level understanding to fine-grained, pixel-level comprehension. Although segmentation serves as the foundation for pixel-level understanding, existing approaches face two major challenges. First, they introduce implicit segmentation tokens and require simultaneous fine-tuning of both the MLLM and external pixel decoders, which increases the risk of catastrophic forgetting and limits generalization to out-of-domain scenarios. Second, most methods rely on single-pass reasoning and lack the capability to iteratively refine segmentation results, leading to suboptimal performance. To overcome these limitations, we propose a novel agentic MLLM, named IBISAgent, that reformulates segmentation as a vision-centric, multi-step decision-making process. IBISAgent enables MLLMs to generate interleaved reasoning and text-based click actions, invoke segmentation tools, and produce high-quality masks without architectural modifications. By iteratively performing multi-step visual reasoning on masked image features, IBISAgent naturally supports mask refinement and promotes the development of pixel-level visual reasoning capabilities. We further design a two-stage training framework consisting of cold-start supervised fine-tuning and agentic reinforcement learning with tailored, fine-grained rewards, enhancing the model&#39;s robustness in complex medical referring and reasoning segmentation tasks. Extensive experiments demonstrate that IBISAgent consistently outperforms both closed-source and open-source SOTA methods. All datasets, code, and trained models will be released publicly."
+    },
+    {
+      "title": "Collision-Free Humanoid Traversal in Cluttered Indoor Scenes",
+      "url": "https://arxiv.org/abs/2601.16035",
+      "date": "2026-01-23",
+      "authors_text": "Han Xue, Sikai Liang, Zhikai Zhang, Zicheng Zeng, Yun Liu",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "The paper presents Humanoid Potential Field (HumanoidPF) for enabling collision-free traversal of humanoids in cluttered indoor environments, enhancing RL-based skill learning and sim-to-real transfer.",
+      "debug_abstract": "We study the problem of collision-free humanoid traversal in cluttered indoor scenes, such as hurdling over objects scattered on the floor, crouching under low-hanging obstacles, or squeezing through narrow passages. To achieve this goal, the humanoid needs to map its perception of surrounding obstacles with diverse spatial layouts and geometries to the corresponding traversal skills. However, the lack of an effective representation that captures humanoid-obstacle relationships during collision avoidance makes directly learning such mappings difficult. We therefore propose Humanoid Potential Field (HumanoidPF), which encodes these relationships as collision-free motion directions, significantly facilitating RL-based traversal skill learning. We also find that HumanoidPF exhibits a surprisingly negligible sim-to-real gap as a perceptual representation. To further enable generalizable traversal skills through diverse and challenging cluttered indoor scenes, we further propose a hybrid scene generation method, incorporating crops of realistic 3D indoor scenes and procedurally synthesized obstacles. We successfully transfer our policy to the real world and develop a teleoperation system where users could command the humanoid to traverse in cluttered indoor scenes with just a single click. Extensive experiments are conducted in both simulation and the real world to validate the effectiveness of our method. Demos and code can be found in our website: this https URL."
+    },
+    {
+      "title": "kNN-Graph: An adaptive graph model for $k$-nearest neighbors",
+      "url": "https://arxiv.org/abs/2601.16509",
+      "date": "2026-01-23",
+      "authors_text": "Jiaye Li, Gang Chen, Hang Xu, Shichao Zhang",
+      "is_highlight": false,
+      "score": 50.0,
+      "summary": "The kNN-Graph introduces an adaptive graph model that enhances k-nearest neighbors' inference speed and accuracy by decoupling computational complexity from neighbor selection during training.",
+      "debug_abstract": "The k-nearest neighbors (kNN) algorithm is a cornerstone of non-parametric classification in artificial intelligence, yet its deployment in large-scale applications is persistently constrained by the computational trade-off between inference speed and accuracy. Existing approximate nearest neighbor solutions accelerate retrieval but often degrade classification precision and lack adaptability in selecting the optimal neighborhood size (k). Here, we present an adaptive graph model that decouples inference latency from computational complexity. By integrating a Hierarchical Navigable Small World (HNSW) graph with a pre-computed voting mechanism, our framework completely transfers the computational burden of neighbor selection and weighting to the training phase. Within this topological structure, higher graph layers enable rapid navigation, while lower layers encode precise, node-specific decision boundaries with adaptive neighbor counts. Benchmarking against eight state-of-the-art baselines across six diverse datasets, we demonstrate that this architecture significantly accelerates inference speeds, achieving real-time performance, without compromising classification accuracy. These findings offer a scalable, robust solution to the long-standing inference bottleneck of kNN, establishing a new structural paradigm for graph-based nonparametric learning."
+    },
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    },
+    {
+      "title": "REL-SF4PASS: Panoramic Semantic Segmentation with REL Depth Representation and Spherical Fusion",
+      "url": "https://arxiv.org/abs/2601.16788",
+      "date": "2026-01-23",
+      "authors_text": "Xuewei Li, Xinghan Bao, Zhimin Chen, Xi Li",
+      "is_highlight": false,
+      "score": 67.0,
+      "summary": "The REL-SF4PASS method enhances panoramic semantic segmentation by utilizing a novel REL depth representation and Spherical-dynamic Multi-Modal Fusion, improving accuracy and robustness significantly.",
+      "debug_abstract": "As an important and challenging problem in computer vision, Panoramic Semantic Segmentation (PASS) aims to give complete scene perception based on an ultra-wide angle of view. Most PASS methods often focus on spherical geometry with RGB input or using the depth information in original or HHA format, which does not make full use of panoramic image geometry. To address these shortcomings, we propose REL-SF4PASS with our REL depth representation based on cylindrical coordinate and Spherical-dynamic Multi-Modal Fusion SMMF. REL is made up of Rectified Depth, Elevation-Gained Vertical Inclination Angle, and Lateral Orientation Angle, which fully represents 3D space in cylindrical coordinate style and the surface normal direction. SMMF aims to ensure the diversity of fusion for different panoramic image regions and reduce the breakage of cylinder side surface expansion in ERP projection, which uses different fusion strategies to match the different regions in panoramic images. Experimental results show that REL-SF4PASS considerably improves performance and robustness on popular benchmark, Stanford2D3D Panoramic datasets. It gains 2.35% average mIoU improvement on all 3 folds and reduces the performance variance by approximately 70% when facing 3D disturbance."
+    },
     {
       "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "url": "https://arxiv.org/abs/2601.15724",
@@ -419,6 +579,56 @@
   ],
   "MARS多模态学习实验室": [
     {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -450,6 +660,56 @@
     }
   ],
   "机器人控制实验室": [
+    {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
     {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
@@ -483,6 +743,56 @@
   ],
   "具身智能实验室 (TEA Lab)": [
     {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -514,6 +824,36 @@
     }
   ],
   "机器人与人工智能实验室 (RAIL)": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
     {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
@@ -557,6 +897,56 @@
   ],
   "智能技术与系统实验室": [
     {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -588,6 +978,56 @@
     }
   ],
   "智能系统与机器人实验室 (ISR Lab)": [
+    {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
     {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
@@ -621,6 +1061,56 @@
   ],
   "具身视觉与机器人实验室 (EVAR Lab)": [
     {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -652,6 +1142,56 @@
     }
   ],
   "智能产业研究院 (AIR)": [
+    {
+      "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2601.13976",
+      "date": "2026-01-23",
+      "authors_text": "Jing Zuo, Lingzhou Mu, Fan Jiang, Chengcheng Ma, Mu Xu",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FantasyVLN introduces a unified implicit reasoning framework for Vision-Language Navigation that enhances efficiency and success rates by optimizing Chain-of-Thought reasoning without excessive token overhead.",
+      "debug_abstract": "Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods."
+    },
+    {
+      "title": "TangramPuzzle: Evaluating Multimodal Large Language Models with Compositional Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2601.16520",
+      "date": "2026-01-23",
+      "authors_text": "Daixian Liu, Jiayi Kuang, Yinghui Li, Yangning Li, Di Yin",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The TangramPuzzle benchmark evaluates multimodal large language models' compositional spatial reasoning through precise geometric tasks, revealing their tendency to prioritize silhouette matching over geometric accuracy.",
+      "debug_abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in visual recognition and semantic understanding. Nevertheless, their ability to perform precise compositional spatial reasoning remains largely unexplored. Existing benchmarks often involve relatively simple tasks and rely on semantic approximations or coarse relative positioning, while their evaluation metrics are typically limited and lack rigorous mathematical formulations. To bridge this gap, we introduce TangramPuzzle, a geometry-grounded benchmark designed to evaluate compositional spatial reasoning through the lens of the classic Tangram game. We propose the Tangram Construction Expression (TCE), a symbolic geometric framework that grounds tangram assemblies in exact, machine-verifiable coordinate specifications, to mitigate the ambiguity of visual approximation. We design two complementary tasks: Outline Prediction, which demands inferring global shapes from local components, and End-to-End Code Generation, which requires solving inverse geometric assembly problems. We conduct extensive evaluation experiments on advanced open-source and proprietary models, revealing an interesting insight: MLLMs tend to prioritize matching the target silhouette while neglecting geometric constraints, leading to distortions or deformations of the pieces."
+    },
+    {
+      "title": "AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding",
+      "url": "https://arxiv.org/abs/2601.16532",
+      "date": "2026-01-23",
+      "authors_text": "Runmao Yao, Junsheng Zhou, Zhen Dong, Yu-Shen Liu",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "AnchoredDream introduces a zero-shot method for generating 360° indoor scenes from a single image, enhancing appearance consistency and geometric plausibility through a mutual boosting mechanism.",
+      "debug_abstract": "Single-view indoor scene generation plays a crucial role in a range of real-world applications. However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem. Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation. To address this, we propose AnchoredDream, a novel zero-shot pipeline that anchors 360° scene generation on high-fidelity geometry via an appearance-geometry mutual boosting mechanism. Given a single-view image, our method first performs appearance-guided geometry generation to construct a reliable 3D scene layout. Then, we progressively generate the complete scene through a series of modules: warp-and-inpaint, warp-and-refine, post-optimization, and a novel Grouting Block, which ensures seamless transitions between the input view and generated regions. Extensive experiments demonstrate that AnchoredDream outperforms existing methods by a large margin in both appearance consistency and geometric plausibility--all in a zero-shot manner. Our results highlight the potential of geometric grounding for high-quality, zero-shot single-view scene generation."
+    },
+    {
+      "title": "OnlineSI: Taming Large Language Model for Online 3D Understanding and Grounding",
+      "url": "https://arxiv.org/abs/2601.16538",
+      "date": "2026-01-23",
+      "authors_text": "Zixian Liu, Zhaoxi Chen, Liang Pan, Ziwei Liu",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "OnlineSI is a framework that enhances Multimodal Large Language Models' spatial understanding in dynamic environments by integrating continuous learning from video streams and 3D point cloud data.",
+      "debug_abstract": "In recent years, researchers have increasingly been interested in how to enable Multimodal Large Language Models (MLLM) to possess spatial understanding and reasoning capabilities. However, most existing methods overlook the importance of the ability to continuously work in an ever-changing world, and lack the possibility of deployment on embodied systems in real-world environments. In this work, we introduce OnlineSI, a framework that can continuously improve its spatial understanding of its surroundings given a video stream. Our core idea is to maintain a finite spatial memory to retain past observations, ensuring the computation required for each inference does not increase as the input accumulates. We further integrate 3D point cloud information with semantic information, helping MLLM to better locate and identify objects in the scene. To evaluate our method, we introduce the Fuzzy $F_1$-Score to mitigate ambiguity, and test our method on two representative datasets. Experiments demonstrate the effectiveness of our method, paving the way towards real-world embodied systems."
+    },
+    {
+      "title": "GRIP: Algorithm-Agnostic Machine Unlearning for Mixture-of-Experts via Geometric Router Constraints",
+      "url": "https://arxiv.org/abs/2601.16905",
+      "date": "2026-01-23",
+      "authors_text": "Andy Zhu, Rongzhe Wei, Yupu Gu, Pan Li",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "The GRIP framework enables effective machine unlearning in Mixture-of-Experts models by imposing geometric constraints on router updates, ensuring knowledge erasure without sacrificing model utility.",
+      "debug_abstract": "Machine unlearning (MU) for large language models has become critical for AI safety, yet existing methods fail to generalize to Mixture-of-Experts (MoE) architectures. We identify that traditional unlearning methods exploit MoE&#39;s architectural vulnerability: they manipulate routers to redirect queries away from knowledgeable experts rather than erasing knowledge, causing a loss of model utility and superficial forgetting. We propose Geometric Routing Invariance Preservation (GRIP), an algorithm-agnostic framework for unlearning for MoE. Our core contribution is a geometric constraint, implemented by projecting router gradient updates into an expert-specific null-space. Crucially, this decouples routing stability from parameter rigidity: while discrete expert selections remain stable for retained knowledge, the continuous router parameters remain plastic within the null space, allowing the model to undergo necessary internal reconfiguration to satisfy unlearning objectives. This forces the unlearning optimization to erase knowledge directly from expert parameters rather than exploiting the superficial router manipulation shortcut. GRIP functions as an adapter, constraining router parameter updates without modifying the underlying unlearning algorithm. Extensive experiments on large-scale MoE models demonstrate that our adapter eliminates expert selection shift (achieving over 95% routing stability) across all tested unlearning methods while preserving their utility. By preventing existing algorithms from exploiting MoE model&#39;s router vulnerability, GRIP adapts existing unlearning research from dense architectures to MoEs."
+    },
     {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
@@ -757,6 +1297,16 @@
   ],
   "HMI Lab": [
     {
+      "title": "Order from Chaos: Physical World Understanding from Glitchy Gameplay Videos",
+      "url": "https://arxiv.org/abs/2601.16471",
+      "date": "2026-01-23",
+      "authors_text": "Meng Cao, Haoran Tang, Haoze Zhao, Mingfei Han, Ruyang Liu",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "This paper introduces PhysGame, a dataset leveraging gameplay glitches to enhance AI's understanding of physical principles, demonstrating improved reasoning capabilities through extensive experimentation.",
+      "debug_abstract": "Understanding the physical world, including object dynamics, material properties, and causal interactions, remains a core challenge in artificial intelligence. Although recent multi-modal large language models (MLLMs) have demonstrated impressive general reasoning capabilities, they still fall short of achieving human-level understanding of physical principles. Existing datasets for physical reasoning either rely on real-world videos, which incur high annotation costs, or on synthetic simulations, which suffer from limited realism and diversity. In this paper, we propose a novel paradigm that leverages glitches in gameplay videos, referring to visual anomalies that violate predefined physical laws, as a rich and scalable supervision source for physical world understanding. We introduce PhysGame, an meta information guided instruction-tuning dataset containing 140,057 glitch-centric question-answer pairs across five physical domains and sixteen fine-grained categories. To ensure data accuracy, we design a prompting strategy that utilizes gameplay metadata such as titles and descriptions to guide high-quality QA generation. Complementing PhysGame, we construct GameBench, an expert-annotated benchmark with 880 glitch-identified gameplay videos designed to evaluate physical reasoning capabilities. Extensive experiments show that PhysGame significantly enhances both Game2Real transferability, improving the real world physical reasoning performance of Qwen2.5VL by 2.5% on PhysBench, and Game2General transferability, yielding a 1.9% gain on the MVBench benchmark. Moreover, PhysGame-tuned models achieve a 3.7% absolute improvement on GameBench, demonstrating enhanced robustness in detecting physical implausibilities. These results indicate that learning from gameplay anomalies offers a scalable and effective pathway toward advancing physical world understanding in multimodal intelligence."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -798,6 +1348,16 @@
     }
   ],
   "具身感知与交互实验室 (EPIC Lab)": [
+    {
+      "title": "Order from Chaos: Physical World Understanding from Glitchy Gameplay Videos",
+      "url": "https://arxiv.org/abs/2601.16471",
+      "date": "2026-01-23",
+      "authors_text": "Meng Cao, Haoran Tang, Haoze Zhao, Mingfei Han, Ruyang Liu",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "This paper introduces PhysGame, a dataset leveraging gameplay glitches to enhance AI's understanding of physical principles, demonstrating improved reasoning capabilities through extensive experimentation.",
+      "debug_abstract": "Understanding the physical world, including object dynamics, material properties, and causal interactions, remains a core challenge in artificial intelligence. Although recent multi-modal large language models (MLLMs) have demonstrated impressive general reasoning capabilities, they still fall short of achieving human-level understanding of physical principles. Existing datasets for physical reasoning either rely on real-world videos, which incur high annotation costs, or on synthetic simulations, which suffer from limited realism and diversity. In this paper, we propose a novel paradigm that leverages glitches in gameplay videos, referring to visual anomalies that violate predefined physical laws, as a rich and scalable supervision source for physical world understanding. We introduce PhysGame, an meta information guided instruction-tuning dataset containing 140,057 glitch-centric question-answer pairs across five physical domains and sixteen fine-grained categories. To ensure data accuracy, we design a prompting strategy that utilizes gameplay metadata such as titles and descriptions to guide high-quality QA generation. Complementing PhysGame, we construct GameBench, an expert-annotated benchmark with 880 glitch-identified gameplay videos designed to evaluate physical reasoning capabilities. Extensive experiments show that PhysGame significantly enhances both Game2Real transferability, improving the real world physical reasoning performance of Qwen2.5VL by 2.5% on PhysBench, and Game2General transferability, yielding a 1.9% gain on the MVBench benchmark. Moreover, PhysGame-tuned models achieve a 3.7% absolute improvement on GameBench, demonstrating enhanced robustness in detecting physical implausibilities. These results indicate that learning from gameplay anomalies offers a scalable and effective pathway toward advancing physical world understanding in multimodal intelligence."
+    },
     {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
@@ -841,6 +1401,16 @@
   ],
   "智元机器人联合实验室 (PKU-Agibot)": [
     {
+      "title": "Order from Chaos: Physical World Understanding from Glitchy Gameplay Videos",
+      "url": "https://arxiv.org/abs/2601.16471",
+      "date": "2026-01-23",
+      "authors_text": "Meng Cao, Haoran Tang, Haoze Zhao, Mingfei Han, Ruyang Liu",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "This paper introduces PhysGame, a dataset leveraging gameplay glitches to enhance AI's understanding of physical principles, demonstrating improved reasoning capabilities through extensive experimentation.",
+      "debug_abstract": "Understanding the physical world, including object dynamics, material properties, and causal interactions, remains a core challenge in artificial intelligence. Although recent multi-modal large language models (MLLMs) have demonstrated impressive general reasoning capabilities, they still fall short of achieving human-level understanding of physical principles. Existing datasets for physical reasoning either rely on real-world videos, which incur high annotation costs, or on synthetic simulations, which suffer from limited realism and diversity. In this paper, we propose a novel paradigm that leverages glitches in gameplay videos, referring to visual anomalies that violate predefined physical laws, as a rich and scalable supervision source for physical world understanding. We introduce PhysGame, an meta information guided instruction-tuning dataset containing 140,057 glitch-centric question-answer pairs across five physical domains and sixteen fine-grained categories. To ensure data accuracy, we design a prompting strategy that utilizes gameplay metadata such as titles and descriptions to guide high-quality QA generation. Complementing PhysGame, we construct GameBench, an expert-annotated benchmark with 880 glitch-identified gameplay videos designed to evaluate physical reasoning capabilities. Extensive experiments show that PhysGame significantly enhances both Game2Real transferability, improving the real world physical reasoning performance of Qwen2.5VL by 2.5% on PhysBench, and Game2General transferability, yielding a 1.9% gain on the MVBench benchmark. Moreover, PhysGame-tuned models achieve a 3.7% absolute improvement on GameBench, demonstrating enhanced robustness in detecting physical implausibilities. These results indicate that learning from gameplay anomalies offers a scalable and effective pathway toward advancing physical world understanding in multimodal intelligence."
+    },
+    {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
       "date": "2026-01-22",
@@ -882,6 +1452,16 @@
     }
   ],
   "情感与认知智能机器人实验室 (ACIR)": [
+    {
+      "title": "Order from Chaos: Physical World Understanding from Glitchy Gameplay Videos",
+      "url": "https://arxiv.org/abs/2601.16471",
+      "date": "2026-01-23",
+      "authors_text": "Meng Cao, Haoran Tang, Haoze Zhao, Mingfei Han, Ruyang Liu",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "This paper introduces PhysGame, a dataset leveraging gameplay glitches to enhance AI's understanding of physical principles, demonstrating improved reasoning capabilities through extensive experimentation.",
+      "debug_abstract": "Understanding the physical world, including object dynamics, material properties, and causal interactions, remains a core challenge in artificial intelligence. Although recent multi-modal large language models (MLLMs) have demonstrated impressive general reasoning capabilities, they still fall short of achieving human-level understanding of physical principles. Existing datasets for physical reasoning either rely on real-world videos, which incur high annotation costs, or on synthetic simulations, which suffer from limited realism and diversity. In this paper, we propose a novel paradigm that leverages glitches in gameplay videos, referring to visual anomalies that violate predefined physical laws, as a rich and scalable supervision source for physical world understanding. We introduce PhysGame, an meta information guided instruction-tuning dataset containing 140,057 glitch-centric question-answer pairs across five physical domains and sixteen fine-grained categories. To ensure data accuracy, we design a prompting strategy that utilizes gameplay metadata such as titles and descriptions to guide high-quality QA generation. Complementing PhysGame, we construct GameBench, an expert-annotated benchmark with 880 glitch-identified gameplay videos designed to evaluate physical reasoning capabilities. Extensive experiments show that PhysGame significantly enhances both Game2Real transferability, improving the real world physical reasoning performance of Qwen2.5VL by 2.5% on PhysBench, and Game2General transferability, yielding a 1.9% gain on the MVBench benchmark. Moreover, PhysGame-tuned models achieve a 3.7% absolute improvement on GameBench, demonstrating enhanced robustness in detecting physical implausibilities. These results indicate that learning from gameplay anomalies offers a scalable and effective pathway toward advancing physical world understanding in multimodal intelligence."
+    },
     {
       "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
       "url": "https://arxiv.org/abs/2601.14750",
@@ -959,6 +1539,26 @@
   ],
   "机器人与自动化研究中心": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -991,6 +1591,26 @@
   ],
   "机器人与人工智能实验室": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -1012,6 +1632,26 @@
     }
   ],
   "Hengshuang Zhao老师实验室": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
     {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
@@ -1045,6 +1685,26 @@
   ],
   "香港大学机械工程系机器人实验室": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -1077,6 +1737,26 @@
   ],
   "深圳市人工智能与机器人研究院 (AIRS)": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -1099,6 +1779,26 @@
   ],
   "Multimedia Lab (MMLab)": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -1120,6 +1820,26 @@
     }
   ],
   "OpenDriveLab": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
     {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
@@ -1153,6 +1873,26 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
+    {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
       "date": "2026-01-22",
@@ -1184,6 +1924,26 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation",
+      "url": "https://arxiv.org/abs/2601.16686",
+      "date": "2026-01-23",
+      "authors_text": "Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The paper presents ARMS, a hybrid control framework combining reinforcement learning and model predictive control for safe human-robot navigation, achieving superior performance in cluttered environments.",
+      "debug_abstract": "This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL."
+    },
     {
       "title": "Natural Language-Driven Global Mapping of Martian Landforms",
       "url": "https://arxiv.org/abs/2601.15949",
@@ -1217,6 +1977,26 @@
   ],
   "集群机器人系统实验室 (MagicLab)": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    },
+    {
       "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "url": "https://arxiv.org/abs/2601.15724",
       "date": "2026-01-22",
@@ -1238,6 +2018,26 @@
     }
   ],
   "智能感知与无人系统实验室": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    },
     {
       "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "url": "https://arxiv.org/abs/2601.15724",
@@ -1261,6 +2061,26 @@
   ],
   "智能人机交互实验室 (MemX)": [
     {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    },
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    },
+    {
       "title": "VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning",
       "url": "https://arxiv.org/abs/2601.15724",
       "date": "2026-01-22",
@@ -1282,6 +2102,16 @@
     }
   ],
   "机器人与机械智能实验室 (ROMI Lab)": [
+    {
+      "title": "DCCS-Det: Directional Context and Cross-Scale-Aware Detector for Infrared Small Target",
+      "url": "https://arxiv.org/abs/2601.16428",
+      "date": "2026-01-23",
+      "authors_text": "Shuying Li, Qiang Ma, San Zhang, Chuang Yang",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "DCCS-Det enhances infrared small target detection by integrating a Dual-stream Saliency Enhancement block and Latent-aware Semantic Extraction module for improved feature representation and accuracy.",
+      "debug_abstract": "Infrared small target detection (IRSTD) is critical for applications like remote sensing and surveillance, which aims to identify small, low-contrast targets against complex backgrounds. However, existing methods often struggle with inadequate joint modeling of local-global features (harming target-background discrimination) or feature redundancy and semantic dilution (degrading target representation quality). To tackle these issues, we propose DCCS-Det (Directional Context and Cross-Scale Aware Detector for Infrared Small Target), a novel detector that incorporates a Dual-stream Saliency Enhancement (DSE) block and a Latent-aware Semantic Extraction and Aggregation (LaSEA) module. The DSE block integrates localized perception with direction-aware context aggregation to help capture long-range spatial dependencies and local details. On this basis, the LaSEA module mitigates feature degradation via cross-scale feature extraction and random pooling sampling strategies, enhancing discriminative features and suppressing noise. Extensive experiments show that DCCS-Det achieves state-of-the-art detection accuracy with competitive efficiency across multiple datasets. Ablation studies further validate the contributions of DSE and LaSEA in improving target perception and feature representation under complex scenarios. \\href{this https URL}{DCCS-Det Official Code is Available Here!}"
+    },
     {
       "title": "PhysicsMind: Sim and Real Mechanics Benchmarking for Physical Reasoning and Prediction in Foundational VLMs and World Models",
       "url": "https://arxiv.org/abs/2601.16007",
@@ -1351,6 +2181,122 @@
       "score": 72.0,
       "summary": "MarScope is a vision-language framework that enables natural language-driven, label-free mapping of Martian landforms, enhancing global geomorphic analysis and user query flexibility.",
       "debug_abstract": "Planetary surfaces are typically analyzed using high-level semantic concepts in natural language, yet vast orbital image archives remain organized at the pixel level. This mismatch limits scalable, open-ended exploration of planetary surfaces. Here we present MarScope, a planetary-scale vision-language framework enabling natural language-driven, label-free mapping of Martian landforms. MarScope aligns planetary images and text in a shared semantic space, trained on over 200,000 curated image-text pairs. This framework transforms global geomorphic mapping on Mars by replacing pre-defined classifications with flexible semantic retrieval, enabling arbitrary user queries across the entire planet in 5 seconds with F1 scores up to 0.978. Applications further show that it extends beyond morphological classification to facilitate process-oriented analysis and similarity-based geomorphological mapping at a planetary scale. MarScope establishes a new paradigm where natural language serves as a direct interface for scientific discovery over massive geospatial datasets."
+    }
+  ],
+  "Bio-Inspired Robotics Laboratory (BIRL)": [
+    {
+      "title": "GameTalk: Training LLMs for Strategic Conversation",
+      "url": "https://arxiv.org/abs/2601.16276",
+      "date": "2026-01-22",
+      "authors_text": "Victor Conchello Vendrell, Max Ruiz Luyten, Mihaela van der Schaar",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "GameTalk is a framework that trains LLMs for strategic decision-making through multi-turn conversations, optimizing long-term objectives and outperforming untrained models in complex games.",
+      "debug_abstract": "Strategic decision-making in multi-agent settings is a key challenge for large language models (LLMs), particularly when coordination and negotiation must unfold over extended conversations. While recent work has explored the use of LLMs in isolated decision tasks, little attention has been given to optimizing long-term objectives through dialogue. We introduce \\textbf{GameTalk}, a framework for training LLMs to make strategic decisions via multi-turn interactions. Unlike prior work that focuses on single-turn objectives or static action prediction, we train LLMs to optimize a global objective across full conversations. We achieve this by adapting fine-tuning methods like GRPO, DPO, and STaR to incorporate reward signals that depend on the entire interaction. We evaluate this approach on a suite of increasingly complex games, designed to stress different aspects of reasoning, coordination, and opponent modeling. Our results show that GameTalk significantly outperforms untrained models, especially under reward shaping, with DPO consistently yielding the strongest gains. These findings position conversational fine-tuning as a promising path for LLMs to reason, negotiate, and act in interactive environments."
+    }
+  ],
+  "Affective Intelligence and Robotics Laboratory (AFAR)": [
+    {
+      "title": "GameTalk: Training LLMs for Strategic Conversation",
+      "url": "https://arxiv.org/abs/2601.16276",
+      "date": "2026-01-22",
+      "authors_text": "Victor Conchello Vendrell, Max Ruiz Luyten, Mihaela van der Schaar",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "GameTalk is a framework that trains LLMs for strategic decision-making through multi-turn conversations, optimizing long-term objectives and outperforming untrained models in complex games.",
+      "debug_abstract": "Strategic decision-making in multi-agent settings is a key challenge for large language models (LLMs), particularly when coordination and negotiation must unfold over extended conversations. While recent work has explored the use of LLMs in isolated decision tasks, little attention has been given to optimizing long-term objectives through dialogue. We introduce \\textbf{GameTalk}, a framework for training LLMs to make strategic decisions via multi-turn interactions. Unlike prior work that focuses on single-turn objectives or static action prediction, we train LLMs to optimize a global objective across full conversations. We achieve this by adapting fine-tuning methods like GRPO, DPO, and STaR to incorporate reward signals that depend on the entire interaction. We evaluate this approach on a suite of increasingly complex games, designed to stress different aspects of reasoning, coordination, and opponent modeling. Our results show that GameTalk significantly outperforms untrained models, especially under reward shaping, with DPO consistently yielding the strongest gains. These findings position conversational fine-tuning as a promising path for LLMs to reason, negotiate, and act in interactive environments."
+    }
+  ],
+  "人机物智能融合实验室 (HCP)": [
+    {
+      "title": "ResAgent: Entropy-based Prior Point Discovery and Visual Reasoning for Referring Expression Segmentation",
+      "url": "https://arxiv.org/abs/2601.16394",
+      "date": "2026-01-23",
+      "authors_text": "Yihao Wang, Jusheng Zhang, Ziyi Tang, Keze Wang, Meng Yang",
+      "is_highlight": true,
+      "score": 75.0,
+      "summary": "ResAgent introduces an innovative RES framework combining entropy-based point discovery and vision-based reasoning, achieving state-of-the-art segmentation performance across multiple benchmarks.",
+      "debug_abstract": "Referring Expression Segmentation (RES) is a core vision-language segmentation task that enables pixel-level understanding of targets via free-form linguistic expressions, supporting critical applications such as human-robot interaction and augmented reality. Despite the progress of Multimodal Large Language Model (MLLM)-based approaches, existing RES methods still suffer from two key limitations: first, the coarse bounding boxes from MLLMs lead to redundant or non-discriminative point prompts; second, the prevalent reliance on textual coordinate reasoning is unreliable, as it fails to distinguish targets from visually similar distractors. To address these issues, we propose \\textbf{\\model}, a novel RES framework integrating \\textbf{E}ntropy-\\textbf{B}ased Point \\textbf{D}iscovery (\\textbf{EBD}) and \\textbf{V}ision-\\textbf{B}ased \\textbf{R}easoning (\\textbf{VBR}). Specifically, EBD identifies high-information candidate points by modeling spatial uncertainty within coarse bounding boxes, treating point selection as an information maximization process. VBR verifies point correctness through joint visual-semantic alignment, abandoning text-only coordinate inference for more robust validation. Built on these components, \\model implements a coarse-to-fine workflow: bounding box initialization, entropy-guided point discovery, vision-based validation, and mask decoding. Extensive evaluations on four benchmark datasets (RefCOCO, RefCOCO+, RefCOCOg, and ReasonSeg) demonstrate that \\model achieves new state-of-the-art performance across all four benchmarks, highlighting its effectiveness in generating accurate and semantically grounded segmentation masks with minimal prompts."
+    },
+    {
+      "title": "Order from Chaos: Physical World Understanding from Glitchy Gameplay Videos",
+      "url": "https://arxiv.org/abs/2601.16471",
+      "date": "2026-01-23",
+      "authors_text": "Meng Cao, Haoran Tang, Haoze Zhao, Mingfei Han, Ruyang Liu",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "This paper introduces PhysGame, a dataset leveraging gameplay glitches to enhance AI's understanding of physical principles, demonstrating improved reasoning capabilities through extensive experimentation.",
+      "debug_abstract": "Understanding the physical world, including object dynamics, material properties, and causal interactions, remains a core challenge in artificial intelligence. Although recent multi-modal large language models (MLLMs) have demonstrated impressive general reasoning capabilities, they still fall short of achieving human-level understanding of physical principles. Existing datasets for physical reasoning either rely on real-world videos, which incur high annotation costs, or on synthetic simulations, which suffer from limited realism and diversity. In this paper, we propose a novel paradigm that leverages glitches in gameplay videos, referring to visual anomalies that violate predefined physical laws, as a rich and scalable supervision source for physical world understanding. We introduce PhysGame, an meta information guided instruction-tuning dataset containing 140,057 glitch-centric question-answer pairs across five physical domains and sixteen fine-grained categories. To ensure data accuracy, we design a prompting strategy that utilizes gameplay metadata such as titles and descriptions to guide high-quality QA generation. Complementing PhysGame, we construct GameBench, an expert-annotated benchmark with 880 glitch-identified gameplay videos designed to evaluate physical reasoning capabilities. Extensive experiments show that PhysGame significantly enhances both Game2Real transferability, improving the real world physical reasoning performance of Qwen2.5VL by 2.5% on PhysBench, and Game2General transferability, yielding a 1.9% gain on the MVBench benchmark. Moreover, PhysGame-tuned models achieve a 3.7% absolute improvement on GameBench, demonstrating enhanced robustness in detecting physical implausibilities. These results indicate that learning from gameplay anomalies offers a scalable and effective pathway toward advancing physical world understanding in multimodal intelligence."
+    },
+    {
+      "title": "ReViP: Reducing False Completion in Vision-Language-Action Models with Vision-Proprioception Rebalance",
+      "url": "https://arxiv.org/abs/2601.16667",
+      "date": "2026-01-23",
+      "authors_text": "Zhuohao Li, Yinghao Li, Jian-Jian Jiang, Lang Zhou, Tianyu Zhang",
+      "is_highlight": false,
+      "score": 91.0,
+      "summary": "ReViP enhances Vision-Language-Action models by rebalancing vision and proprioception to reduce false completions and improve robustness through task-aware visual cues.",
+      "debug_abstract": "Vision-Language-Action (VLA) models have advanced robotic manipulation by combining vision, language, and proprioception to predict actions. However, previous methods fuse proprioceptive signals directly with VLM-encoded vision-language features, resulting in state-dominant bias and false completions despite visible execution failures. We attribute this to modality imbalance, where policies over-rely on internal state while underusing visual evidence. To address this, we present ReViP, a novel VLA framework with Vision-Proprioception Rebalance to enhance visual grounding and robustness under perturbations. The key insight is to introduce auxiliary task-aware environment priors to adaptively modulate the coupling between semantic perception and proprioceptive dynamics. Specifically, we use an external VLM as a task-stage observer to extract real-time task-centric visual cues from visual observations, which drive a Vision-Proprioception Feature-wise Linear Modulation to enhance environmental awareness and reduce state-driven errors. Moreover, to evaluate false completion, we propose the first False-Completion Benchmark Suite built on LIBERO with controlled settings such as Object-Drop. Extensive experiments show that ReViP effectively reduces false-completion rates and improves success rates over strong VLA baselines on our suite, with gains extending to LIBERO, RoboTwin 2.0, and real-world evaluations."
+    }
+  ],
+  "上海人工智能实验室": [
+    {
+      "title": "Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic",
+      "url": "https://arxiv.org/abs/2601.16486",
+      "date": "2026-01-23",
+      "authors_text": "Yichuan Ma, Linyang Li, Yongkang chen, Peiji Li, Xiaozhe Li",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "The paper introduces Timely Machine, redefining test-time scaling for LLMs based on wall-clock time, enhancing performance through dynamic strategy adjustments and reinforcement learning.",
+      "debug_abstract": "As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era."
+    }
+  ],
+  "多智能体与具身智能研究所": [
+    {
+      "title": "ReViP: Reducing False Completion in Vision-Language-Action Models with Vision-Proprioception Rebalance",
+      "url": "https://arxiv.org/abs/2601.16667",
+      "date": "2026-01-23",
+      "authors_text": "Zhuohao Li, Yinghao Li, Jian-Jian Jiang, Lang Zhou, Tianyu Zhang",
+      "is_highlight": false,
+      "score": 91.0,
+      "summary": "ReViP enhances Vision-Language-Action models by rebalancing vision and proprioception to reduce false completions and improve robustness through task-aware visual cues.",
+      "debug_abstract": "Vision-Language-Action (VLA) models have advanced robotic manipulation by combining vision, language, and proprioception to predict actions. However, previous methods fuse proprioceptive signals directly with VLM-encoded vision-language features, resulting in state-dominant bias and false completions despite visible execution failures. We attribute this to modality imbalance, where policies over-rely on internal state while underusing visual evidence. To address this, we present ReViP, a novel VLA framework with Vision-Proprioception Rebalance to enhance visual grounding and robustness under perturbations. The key insight is to introduce auxiliary task-aware environment priors to adaptively modulate the coupling between semantic perception and proprioceptive dynamics. Specifically, we use an external VLM as a task-stage observer to extract real-time task-centric visual cues from visual observations, which drive a Vision-Proprioception Feature-wise Linear Modulation to enhance environmental awareness and reduce state-driven errors. Moreover, to evaluate false completion, we propose the first False-Completion Benchmark Suite built on LIBERO with controlled settings such as Object-Drop. Extensive experiments show that ReViP effectively reduces false-completion rates and improves success rates over strong VLA baselines on our suite, with gains extending to LIBERO, RoboTwin 2.0, and real-world evaluations."
+    }
+  ],
+  "西湖机器人科技 / 机器智能实验室 (MiLAB)": [
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    }
+  ],
+  "西安电子科技大学": [
+    {
+      "title": "ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction",
+      "url": "https://arxiv.org/abs/2601.16672",
+      "date": "2026-01-23",
+      "authors_text": "Ming Li, Hui Shan, Kai Zheng, Chentao Shen, Siyu Liu",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "ReWeaver is a novel framework for accurate 3D garment reconstruction from sparse images, enhancing topology fidelity for simulations and robotic applications.",
+      "debug_abstract": "High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation. However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures. As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation. We propose ReWeaver, a novel framework for topology-accurate 3D garment and sewing pattern reconstruction from sparse multi-view RGB images. Given as few as four input views, ReWeaver predicts seams and panels as well as their connectivities in both the 2D UV space and the 3D space. The predicted seams and panels align precisely with the multi-view images, yielding structured 2D--3D garment representations suitable for 3D perception, high-fidelity physical simulation, and robotic manipulation. To enable effective training, we construct a large-scale dataset GCD-TS, comprising multi-view RGB images, 3D garment geometries, textured human body meshes and annotated sewing patterns. The dataset contains over 100,000 synthetic samples covering a wide range of complex geometries and topologies. Extensive experiments show that ReWeaver consistently outperforms existing methods in terms of topology accuracy, geometry alignment and seam-panel consistency."
+    }
+  ],
+  "深圳大学": [
+    {
+      "title": "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding",
+      "url": "https://arxiv.org/abs/2601.16449",
+      "date": "2026-01-23",
+      "authors_text": "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "Emotion-LLaMAv2 and MMEVerse introduce a comprehensive framework and benchmark for enhanced multimodal emotion understanding through advanced encoding, feature interaction, and large-scale dataset integration.",
+      "debug_abstract": "Understanding human emotions from multimodal signals poses a significant challenge in affective computing and human-robot interaction. While multimodal large language models (MLLMs) have excelled in general vision-language tasks, their capabilities in emotional reasoning remain limited. The field currently suffers from a scarcity of large-scale datasets with high-quality, descriptive emotion annotations and lacks standardized benchmarks for evaluation. Our preliminary framework, Emotion-LLaMA, pioneered instruction-tuned multimodal learning for emotion reasoning but was restricted by explicit face detectors, implicit fusion strategies, and low-quality training data with limited scale. To address these limitations, we present Emotion-LLaMAv2 and the MMEVerse benchmark, establishing an end-to-end pipeline together with a standardized evaluation setting for emotion recognition and reasoning. Emotion-LLaMAv2 introduces three key advances. First, an end-to-end multiview encoder eliminates external face detection and captures nuanced emotional cues via richer spatial and temporal multiview tokens. Second, a Conv Attention pre-fusion module is designed to enable simultaneous local and global multimodal feature interactions external to the LLM backbone. Third, a perception-to-cognition curriculum instruction tuning scheme within the LLaMA2 backbone unifies emotion recognition and free-form emotion reasoning. To support large-scale training and reproducible evaluation, MMEVerse aggregates twelve publicly available emotion datasets, including IEMOCAP, MELD, DFEW, and MAFW, into a unified multimodal instruction format. The data are re-annotated via a multi-agent pipeline involving Qwen2 Audio, Qwen2.5 VL, and GPT 4o, producing 130k training clips and 36k testing clips across 18 evaluation benchmarks."
     }
   ]
 }
