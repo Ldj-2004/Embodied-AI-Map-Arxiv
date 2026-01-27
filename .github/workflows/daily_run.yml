@@ -1,74 +1,75 @@
 name: Embodied AI Daily Monitor Pipeline
 
-# 1. 触发机制
 on:
   schedule:
-    # 每天北京时间 12:00 运行 (对应 UTC 时间 04:00)
-    # ArXiv 通常在早晨更新，12:00 可以确保数据已全部索引
-    - cron: '17 4 * * *'
-  workflow_dispatch:
-    # 允许你在 GitHub 页面上点击 "Run workflow" 手动触发测试
+    # 稍微错开热门时间点。12:25 北京时间 (UTC 04:25)
+    # 使用双引号，这是最规范的写法
+    - cron: "25 4 * * *"
+  # 保持手动触发，方便调试
+  workflow_dispatch: {}
 
-# 2. 权限设置：必须显式开启“写”权限，否则机器人无法把处理好的数据提交回仓库
-permissions:
-  contents: write
+# 确保同一时间只有一个任务在跑，防止多次提交冲突
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build_and_run:
     runs-on: ubuntu-latest
+    # 设置超时时间，防止脚本卡死占用额度
+    timeout-minutes: 60
+    
+    # 权限声明：这是你回写仓库的核心
+    permissions:
+      contents: write
 
     steps:
-      # --- 第一步：拉取仓库代码 ---
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          # 获取全量历史，增加提交稳定性
+          fetch-depth: 0
 
-      # --- 第二步：配置 Python 环境 ---
-      - name: Set up Python 3.10
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
+          # 使用缓存可以加速运行（参考了师兄的写法）
+          cache: "pip"
 
-      # --- 第三步：安装依赖库 ---
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # --- 第四步：执行数据抓取 (ArXiv -> raw_papers.json) ---
-      - name: Fetch Raw Papers from ArXiv
-        run: python fetch_arxiv_raw.py
-
-      # --- 第五步：执行 AI 推理分析 (raw -> daily_papers.json) ---
-      # 注意：这里从 GitHub Secrets 安全地注入 API KEY
-      - name: AI Inference and Filtering
+      - name: Run Pipeline Steps
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # 如果你的 API 需要自定义 Base URL，也可以在这里添加
-          # OPENAI_API_BASE: "http://35.220.164.252:3888/v1/"
-        run: python api_inference.py
+        run: |
+          echo ">>> Starting ArXiv Fetcher..."
+          python fetch_arxiv_raw.py
+          
+          echo ">>> Starting AI Inference..."
+          python api_inference.py
+          
+          echo ">>> Updating Database..."
+          python update_database.py
+          
+          echo ">>> Generating Dashboard..."
+          python generate_dashboard.py
 
-      # --- 第六步：更新历史数据库 (daily -> history_papers.json) ---
-      - name: Update History Database
-        run: python update_database.py
-
-      # --- 第七步：生成可视化看板 (history -> index.html & maps) ---
-      - name: Generate Dashboard and Maps
-        run: python generate_dashboard.py
-
-      # --- 第八步：提交并推送更改 ---
-      # 这一步会将生成的 JSON 和 HTML 文件保存回你的仓库
       - name: Commit and Push Changes
+        # 这一步参考师兄的简洁思路，但加入你的 Git 提交逻辑
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 添加所有发生变化的文件
-          git add raw_papers.json daily_papers.json history_papers.json dashboard_index.html map_*.html
+          # 仅提交核心变化文件
+          git add history_papers.json daily_papers.json dashboard_index.html map_*.html
           
-          # 检查是否有文件变动，如果有则提交
           if git diff --cached --quiet; then
-            echo "No changes detected, skipping commit."
+            echo "No changes to commit."
           else
-            git commit -m "Auto Update: $(date +'%Y-%m-%d %H:%M:%S') Beijing Time"
-            git push
+            git commit -m "Auto Update: $(date -u -d '+8 hours' '+%Y-%m-%d %H:%M:%S') CST"
+            git push origin main
           fi
