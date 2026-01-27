@@ -351,6 +351,16 @@
   ],
   "范明明老师实验室": [
     {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
+    {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
       "date": "2026-01-24",
@@ -412,6 +422,16 @@
     }
   ],
   "机器人研究所 (CKSRI)": [
+    {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
     {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
@@ -475,6 +495,16 @@
   ],
   "Precognition Lab": [
     {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
+    {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
       "date": "2026-01-24",
@@ -536,6 +566,16 @@
     }
   ],
   "机器人研究所": [
+    {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
     {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
@@ -599,6 +639,16 @@
   ],
   "Jun MA老师实验室": [
     {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
+    {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
       "date": "2026-01-24",
@@ -660,6 +710,16 @@
     }
   ],
   "Cheng Kar-Shun Robotics Institute (CKSRI)": [
+    {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2601.17835",
+      "date": "2026-01-25",
+      "authors_text": "Baowen Zhang, Chenxing Jiang, Heng Li, Shaojie Shen, Ping Tan",
+      "is_highlight": true,
+      "score": 53.0,
+      "summary": "This paper introduces Geometry-Grounded Gaussian Splatting, enhancing shape extraction from Gaussian primitives by treating them as stochastic solids for improved depth map rendering and reconstruction quality.",
+      "debug_abstract": "Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis. However, shape extraction from Gaussian primitives remains an open problem. Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters. In this paper, we present a rigorous theoretical derivation that establishes Gaussian primitives as a specific type of stochastic solids. This theoretical framework provides a principled foundation for Geometry-Grounded Gaussian Splatting by enabling the direct treatment of Gaussian primitives as explicit geometric representations. Using the volumetric nature of stochastic solids, our method efficiently renders high-quality depth maps for fine-grained geometry extraction. Experiments show that our method achieves the best shape reconstruction results among all Gaussian Splatting-based methods on public datasets."
+    },
     {
       "title": "CoT-Seg: Rethinking Segmentation with Chain-of-Thought Reasoning and Self-Correction",
       "url": "https://arxiv.org/abs/2601.17420",
@@ -2799,6 +2859,16 @@
   ],
   "机器人与自动化研究中心": [
     {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
+    {
       "title": "AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning",
       "url": "https://arxiv.org/abs/2601.18631",
       "date": "2026-01-26",
@@ -2913,6 +2983,16 @@
   ],
   "Hengshuang Zhao老师实验室": [
     {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
+    {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
       "date": "2026-01-26",
@@ -2994,6 +3074,16 @@
     }
   ],
   "香港大学机械工程系机器人实验室": [
+    {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
     {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
@@ -3181,6 +3271,16 @@
   ],
   "OpenDriveLab": [
     {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
+    {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
       "date": "2026-01-26",
@@ -3263,6 +3363,16 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
+    {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
       "date": "2026-01-26",
@@ -3344,6 +3454,16 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Advances and Innovations in the Multi-Agent Robotic System (MARS) Challenge",
+      "url": "https://arxiv.org/abs/2601.18733",
+      "date": "2026-01-26",
+      "authors_text": "Li Kang, Heng Zhou, Xiufeng Song, Rui Li, Bruno N. Y. Chen",
+      "is_highlight": false,
+      "score": 94.0,
+      "summary": "The MARS Challenge promotes advancements in multi-agent robotic systems by exploring vision-language models for collaborative task execution and planning in dynamic environments.",
+      "debug_abstract": "Recent advancements in multimodal large language models and vision-languageaction models have significantly driven progress in Embodied AI. As the field transitions toward more complex task scenarios, multi-agent system frameworks are becoming essential for achieving scalable, efficient, and collaborative solutions. This shift is fueled by three primary factors: increasing agent capabilities, enhancing system efficiency through task delegation, and enabling advanced human-agent interactions. To address the challenges posed by multi-agent collaboration, we propose the Multi-Agent Robotic System (MARS) Challenge, held at the NeurIPS 2025 Workshop on SpaVLE. The competition focuses on two critical areas: planning and control, where participants explore multi-agent embodied planning using vision-language models (VLMs) to coordinate tasks and policy execution to perform robotic manipulation in dynamic environments. By evaluating solutions submitted by participants, the challenge provides valuable insights into the design and coordination of embodied multi-agent systems, contributing to the future development of advanced collaborative AI systems."
+    },
     {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
@@ -3984,6 +4104,16 @@
     }
   ],
   "南京大学": [
+    {
+      "title": "Flatten The Complex: Joint B-Rep Generation via Compositional $k$-Cell Particles",
+      "url": "https://arxiv.org/abs/2601.17733",
+      "date": "2026-01-25",
+      "authors_text": "Junran Lu, Yuanqi Li, Hengji Li, Jie Guo, Yanwen Guo",
+      "is_highlight": false,
+      "score": 58.0,
+      "summary": "This paper presents a novel method for generating Boundary Representations (B-Reps) using compositional $k$-cell particles, enhancing topology-geometry coupling and context awareness for improved CAD modeling.",
+      "debug_abstract": "Boundary Representation (B-Rep) is the widely adopted standard in Computer-Aided Design (CAD) and manufacturing. However, generative modeling of B-Reps remains a formidable challenge due to their inherent heterogeneity as geometric cell complexes, which entangles topology with geometry across cells of varying orders (i.e., $k$-cells such as vertices, edges, faces). Previous methods typically rely on cascaded sequences to handle this hierarchy, which fails to fully exploit the geometric relationships between cells, such as adjacency and sharing, limiting context awareness and error recovery. To fill this gap, we introduce a novel paradigm that reformulates B-Reps into sets of compositional $k$-cell particles. Our approach encodes each topological entity as a composition of particles, where adjacent cells share identical latents at their interfaces, thereby promoting geometric coupling along shared boundaries. By decoupling the rigid hierarchy, our representation unifies vertices, edges, and faces, enabling the joint generation of topology and geometry with global context awareness. We synthesize these particle sets using a multi-modal flow matching framework to handle unconditional generation as well as precise conditional tasks, such as 3D reconstruction from single-view or point cloud. Furthermore, the explicit and localized nature of our representation naturally extends to downstream tasks like local in-painting and enables the direct synthesis of non-manifold structures (e.g., wireframes). Extensive experiments demonstrate that our method produces high-fidelity CAD models with superior validity and editability compared to state-of-the-art methods."
+    },
     {
       "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
       "url": "https://arxiv.org/abs/2601.17383",
