@@ -469,6 +469,7 @@ def main():
             "is_highlight": is_highlight,
             "score": item.get('ai_score', 0),
             "summary": item.get('ai_summary', ""),  # 存入 AI 生成的精简摘要
+            "teaser_image": paper.get('teaser_image', None),  # [新增] 透传图片 URL
         }
 
         # 方便调试：如果开关打开，把完整摘要也存进 daily_papers.json
@@ -500,3 +501,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
