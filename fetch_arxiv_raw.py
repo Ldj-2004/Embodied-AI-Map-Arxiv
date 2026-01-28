@@ -88,6 +88,56 @@ def strip_version(arxiv_id):
     return re.sub(r"v\d+$", "", arxiv_id or "")
 
 
+def extract_best_image_url(html_content, arxiv_id):
+    """
+    从 arXiv HTML 中嗅探主图 URL。
+    优先级：包含关键词的 Figure > 页面第2张图 > 第1张图
+    """
+    if not html_content: return None
+
+    clean_id = strip_version(arxiv_id)
+    # arXiv HTML 图片的基础路径通常是：https://arxiv.org/html/{id}/
+    base_url = f"https://arxiv.org/html/{clean_id}/"
+
+    # 1. 寻找所有 Figure 块
+    figures = re.findall(r'<figure[^>]*>(.*?)</figure>', html_content, re.DOTALL | re.IGNORECASE)
+    keywords = ["overview", "pipeline", "framework", "architecture", "methodology", "teaser"]
+
+    best_img_src = None
+
+    # 策略 A: 关键词匹配
+    for fig in figures:
+        if any(kw in fig.lower() for kw in keywords):
+            img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', fig, re.IGNORECASE)
+            if img_match:
+                best_img_src = img_match.group(1)
+                break
+
+                # 策略 B: 兜底方案 - 寻找页面中非图标类图片
+    if not best_img_src:
+        # 寻找所有图片 src
+        all_imgs = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html_content, re.IGNORECASE)
+        # 排除掉常见的 UI 图标和无意义的小图
+        filtered_imgs = [img for img in all_imgs if
+                         not any(x in img.lower() for x in ["icon", "logo", "github", "button", "external"])]
+
+        if len(filtered_imgs) >= 2:
+            best_img_src = filtered_imgs[1]  # 用户要求的第二张图
+        elif len(filtered_imgs) == 1:
+            best_img_src = filtered_imgs[0]
+
+    if best_img_src:
+        # 如果已经是绝对路径则直接返回
+        if best_img_src.startswith(('http://', 'https://')):
+            return best_img_src
+        # 拼接为绝对路径
+        return base_url + best_img_src
+    return None
+
+
+
+
+
 def clean_html_content(html):
     """
     [核心逻辑] HTML 强力清洗
@@ -128,7 +178,7 @@ def clean_html_content(html):
 
 
 def fetch_arxiv_html(arxiv_id):
-    """爬取 arXiv HTML5 页面并清洗"""
+    """爬取 arXiv HTML5 页面并清洗，同时提取主图"""
     clean_id = strip_version(arxiv_id)
     url = f"https://arxiv.org/html/{clean_id}"
 
@@ -137,18 +187,23 @@ def fetch_arxiv_html(arxiv_id):
     try:
         resp = requests.get(url, headers=HEADERS, timeout=30)
         if resp.status_code == 200:
-            cleaned_text = clean_html_content(resp.text)
-            print(f" [成功] 长度: {len(cleaned_text)}")
-            return cleaned_text
+            raw_html = resp.text
+            # --- 新增图片提取 ---
+            image_url = extract_best_image_url(raw_html, arxiv_id)
+            # --- 原有清洗逻辑 ---
+            cleaned_text = clean_html_content(raw_html)
+
+            print(f" [成功] 长度: {len(cleaned_text)}, 图片: {'有' if image_url else '无'}")
+            return cleaned_text, image_url  # 修改返回值为元组
         elif resp.status_code == 404:
-            print(" [404 Not Found] (可能未生成HTML)")
-            return None
+            print(" [404 Not Found]")
+            return None, None
         else:
             print(f" [失败: {resp.status_code}]")
-            return None
+            return None, None
     except Exception as e:
         print(f" [错误: {e}]")
-        return None
+        return None, None
 
 
 # ================= 2. XML 解析与列表获取 =================
@@ -303,11 +358,13 @@ def main():
         print(f"[{i + 1}/{len(papers)}] {paper['id']} : {paper['title'][:40]}...")
 
         # 爬取清洗后的全文
-        html_text = fetch_arxiv_html(paper['id'])
+        # html_text = fetch_arxiv_html(paper['id'])
+        html_text, teaser_image = fetch_arxiv_html(paper['id'])
 
         # 无论是否成功爬取 HTML，保留 Metadata
         # (如果 HTML 是 None，后续 LLM 只能基于 Title/Abstract 判断，精度下降但不会 Crash)
         paper['html_content'] = html_text
+        paper['teaser_image'] = teaser_image  # 存入新字段
         processed_papers.append(paper)
 
         # 礼貌延时，防止 IP 被封
@@ -325,4 +382,3 @@ def main():
 if __name__ == "__main__":
 
     main()
-
