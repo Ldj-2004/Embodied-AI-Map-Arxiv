@@ -1567,6 +1567,17 @@
   ],
   "浙江大学": [
     {
+      "title": "KeepLoRA: Continual Learning with Residual Gradient Adaptation",
+      "url": "https://arxiv.org/abs/2601.19659",
+      "date": "2026-01-27",
+      "authors_text": "Mao-Lin Luo, Zi-Hao Zhou, Yi-Lin Zhang, Yuanyu Wan, Tong Wei",
+      "is_highlight": false,
+      "score": 64.0,
+      "summary": "KeepLoRA is a novel approach for continual learning in vision-language models that effectively balances knowledge retention and task plasticity by restricting updates to a residual subspace.",
+      "teaser_image": "https://arxiv.org/html/2601.19659/x2.png",
+      "debug_abstract": "Continual learning for pre-trained vision-language models requires balancing three competing objectives: retaining pre-trained knowledge, preserving knowledge from a sequence of learned tasks, and maintaining the plasticity to acquire new knowledge. This paper presents a simple but effective approach called KeepLoRA to effectively balance these objectives. We first analyze the knowledge retention mechanism within the model parameter space and find that general knowledge is mainly encoded in the principal subspace, while task-specific knowledge is encoded in the residual subspace. Motivated by this finding, KeepLoRA learns new tasks by restricting LoRA parameter updates in the residual subspace to prevent interfering with previously learned capabilities. Specifically, we infuse knowledge for a new task by projecting its gradient onto a subspace orthogonal to both the principal subspace of pre-trained model and the dominant directions of previous task features. Our theoretical and empirical analyses confirm that KeepLoRA balances the three objectives and achieves state-of-the-art performance. The implementation code is available at this https URL."
+    },
+    {
       "title": "A DVL Aided Loosely Coupled Inertial Navigation Strategy for AUVs with Attitude Error Modeling and Variance Propagation",
       "url": "https://arxiv.org/abs/2601.19509",
       "date": "2026-01-27",
@@ -3007,6 +3018,17 @@
   ],
   "Stanford AI Lab (SAIL)": [
     {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
+    },
+    {
       "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
       "url": "https://arxiv.org/abs/2601.09658",
       "date": "2026-01-25",
@@ -3038,6 +3060,17 @@
     }
   ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
+    {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
+    },
     {
       "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
       "url": "https://arxiv.org/abs/2601.09658",
@@ -3071,6 +3104,17 @@
   ],
   "斯坦福-人工智能实验室 (SAIL)": [
     {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
+    },
+    {
       "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
       "url": "https://arxiv.org/abs/2601.09658",
       "date": "2026-01-25",
@@ -3103,6 +3147,17 @@
   ],
   "斯坦福-机器人与具身智能实验室 (REAL)": [
     {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
+    },
+    {
       "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
       "url": "https://arxiv.org/abs/2601.09658",
       "date": "2026-01-25",
@@ -3134,6 +3189,17 @@
     }
   ],
   "斯坦福-视觉与学习实验室 (SVL)": [
+    {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
+    },
     {
       "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
       "url": "https://arxiv.org/abs/2601.09658",
@@ -5331,6 +5397,17 @@
   ],
   "ReThinkLab": [
     {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
+    {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
       "date": "2026-01-24",
@@ -5382,6 +5459,17 @@
     }
   ],
   "赵波老师实验室": [
+    {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
     {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
@@ -5435,6 +5523,17 @@
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
     {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
+    {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
       "date": "2026-01-24",
@@ -5486,6 +5585,17 @@
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
+    {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
     {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
@@ -5539,6 +5649,17 @@
   ],
   "IWIN-FINS实验室": [
     {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
+    {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
       "date": "2026-01-24",
@@ -5590,6 +5711,17 @@
     }
   ],
   "数字媒体与计算机视觉实验室": [
+    {
+      "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2601.19325",
+      "date": "2026-01-27",
+      "authors_text": "Zichen Wen, Boxue Yang, Shuang Chen, Yaojie Zhang, Yuhang Han",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "Innovator-VL is a multimodal large language model that enhances scientific discovery through efficient training, transparency, and strong generalization without relying on extensive pretraining.",
+      "teaser_image": "https://arxiv.org/html/2601.19325/x8.png",
+      "debug_abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research."
+    },
     {
       "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
       "url": "https://arxiv.org/abs/2601.17440",
@@ -5654,6 +5786,17 @@
     }
   ],
   "通用机器人、自动化、传感和感知实验室 (GRASP)": [
+    {
+      "title": "FreeOrbit4D: Training-Free Arbitrary Camera Redirection for Monocular Videos via Geometry-Complete 4D Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18993",
+      "date": "2026-01-26",
+      "authors_text": "Wei Cao, Hao Zhang, Fengrui Tian, Yulun Wu, Yingying Li",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "FreeOrbit4D introduces a training-free method for effective camera redirection in monocular videos by reconstructing a geometry-complete 4D proxy to resolve geometric ambiguities.",
+      "teaser_image": "https://arxiv.org/html/2601.18993/x3.png",
+      "debug_abstract": "Camera redirection aims to replay a dynamic scene from a single monocular video under a user-specified camera trajectory. However, large-angle redirection is inherently ill-posed: a monocular video captures only a narrow spatio-temporal view of a dynamic 3D scene, providing highly partial observations of the underlying 4D world. The key challenge is therefore to recover a complete and coherent representation from this limited input, with consistent geometry and motion. While recent diffusion-based methods achieve impressive results, they often break down under large-angle viewpoint changes far from the original trajectory, where missing visual grounding leads to severe geometric ambiguity and temporal inconsistency. To address this, we present FreeOrbit4D, an effective training-free framework that tackles this geometric ambiguity by recovering a geometry-complete 4D proxy as structural grounding for video generation. We obtain this proxy by decoupling foreground and background reconstructions: we unproject the monocular video into a static background and geometry-incomplete foreground point clouds in a unified global space, then leverage an object-centric multi-view diffusion model to synthesize multi-view images and reconstruct geometry-complete foreground point clouds in canonical object space. By aligning the canonical foreground point cloud to the global scene space via dense pixel-synchronized 3D--3D correspondences and projecting the geometry-complete 4D proxy onto target camera viewpoints, we provide geometric scaffolds that guide a conditional video diffusion model. Extensive experiments show that FreeOrbit4D produces more faithful redirected videos under challenging large-angle trajectories, and our geometry-complete 4D proxy further opens a potential avenue for practical applications such as edit propagation and 4D data generation. Project page and code will be released soon."
+    },
     {
       "title": "Paying Less Generalization Tax: A Cross-Domain Generalization Study of RL Training for LLM Agents",
       "url": "https://arxiv.org/abs/2601.18217",
@@ -5787,6 +5930,19 @@
       "score": 72.0,
       "summary": "TIGaussian enhances cross-modal alignment by utilizing 3D Gaussian Splatting for improved feature extraction and integration of text, image, and 3D data.",
       "debug_abstract": "While visual-language models have profoundly linked features between texts and images, the incorporation of 3D modality data, such as point clouds and 3D Gaussians, further enables pretraining for 3D-related tasks, e.g., cross-modal retrieval, zero-shot classification, and scene recognition. As challenges remain in extracting 3D modal features and bridging the gap between different modalities, we propose TIGaussian, a framework that harnesses 3D Gaussian Splatting (3DGS) characteristics to strengthen cross-modality alignment through multi-branch 3DGS tokenizer and modality-specific 3D feature alignment strategies. Specifically, our multi-branch 3DGS tokenizer decouples the intrinsic properties of 3DGS structures into compact latent representations, enabling more generalizable feature extraction. To further bridge the modality gap, we develop a bidirectional cross-modal alignment strategies: a multi-view feature fusion mechanism that leverages diffusion priors to resolve perspective ambiguity in image-3D alignment, while a text-3D projection module adaptively maps 3D features to text embedding space for better text-3D alignment. Extensive experiments on various datasets demonstrate the state-of-the-art performance of TIGaussian in multiple tasks."
+    }
+  ],
+  "Berkeley Artificial Intelligence Research Lab (BAIR)": [
+    {
+      "title": "DeFM: Learning Foundation Representations from Depth for Robotics",
+      "url": "https://arxiv.org/abs/2601.18923",
+      "date": "2026-01-26",
+      "authors_text": "Manthan Patel, Jonas Frey, Mayank Mittal, Fan Yang, Alexander Hansson",
+      "is_highlight": true,
+      "score": 94.0,
+      "summary": "DeFM is a self-supervised foundation model that learns robust geometric and semantic representations from depth images, achieving state-of-the-art performance in various robotic tasks and environments.",
+      "teaser_image": "https://arxiv.org/html/2601.18923/x1.png",
+      "debug_abstract": "Depth sensors are widely deployed across robotic platforms, and advances in fast, high-fidelity depth simulation have enabled robotic policies trained on depth observations to achieve robust sim-to-real transfer for a wide range of tasks. Despite this, representation learning for depth modality remains underexplored compared to RGB, where large-scale foundation models now define the state of the art. To address this gap, we present DeFM, a self-supervised foundation model trained entirely on depth images for robotic applications. Using a DINO-style self-distillation objective on a curated dataset of 60M depth images, DeFM learns geometric and semantic representations that generalize to diverse environments, tasks, and sensors. To retain metric awareness across multiple scales, we introduce a novel input normalization strategy. We further distill DeFM into compact models suitable for resource-constrained robotic systems. When evaluated on depth-based classification, segmentation, navigation, locomotion, and manipulation benchmarks, DeFM achieves state-of-the-art performance and demonstrates strong generalization from simulation to real-world environments. We release all our pretrained models, which can be adopted off-the-shelf for depth-based robotic learning without task-specific fine-tuning. Webpage: this https URL"
     }
   ]
 }
