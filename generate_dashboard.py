@@ -435,6 +435,8 @@ class MapGenerator:
 # ================= 4. 仪表盘生成 (视觉升级: 巨型卡片 + 丰富信息) =================
 
 beijing_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
+
+
 def create_dashboard(map_files, hot_papers):
     recs_html = ""
 
@@ -455,6 +457,17 @@ def create_dashboard(map_files, hot_papers):
         if not summary_text or summary_text == "No summary available.":
             summary_text = p.get('abstract', 'No details provided.')[:120] + "..."
 
+        # 主图 HTML 处理逻辑
+        teaser_url = p.get('teaser_image')
+        teaser_html = ""
+        if teaser_url:
+            teaser_html = f"""
+            <div class="p-image-container">
+                <img src="{teaser_url}" class="p-teaser" alt="Teaser Image" loading="lazy" 
+                     onerror="this.parentElement.style.display='none';">
+            </div>
+            """
+
         recs_html += f"""
         <div class="paper-card">
             <div class="card-left">
@@ -466,6 +479,9 @@ def create_dashboard(map_files, hot_papers):
                     <span class="date-badge">{p.get('date', 'Today')}</span>
                 </div>
                 <a href="{p['url']}" target="_blank" class="p-title">{p['title']}</a>
+
+                {teaser_html}
+
                 <div class="p-abstract">
                     {summary_text}
                 </div>
@@ -492,28 +508,27 @@ def create_dashboard(map_files, hot_papers):
 
             body {{
                 margin: 0; padding: 0; background-color: var(--bg-root);
-                /* [优化] 字体升级 */
                 font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                 height: 100vh; overflow: hidden;
                 display: grid;
-                grid-template-rows: 60px 1fr 1fr;
+                /* 修改布局：左侧三个地图等高，右侧列表铺满全高 */
+                grid-template-rows: 60px 1fr 1fr 1fr; 
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: 
                     "header header"
-                    "map1 map2"
+                    "map1 feed"
+                    "map2 feed"
                     "map3 feed";
                 gap: 4px;
                 background: #000;
             }}
 
-            /* --- 顶部标题栏 (居中优化) --- */
             .dashboard-header {{
                 grid-area: header;
                 background: #020617;
                 border-bottom: 2px solid var(--accent-uni);
                 display: flex;
                 align-items: center;
-                /* [优化] 让内容居中，position relative 方便子元素绝对定位 */
                 justify-content: center; 
                 position: relative;
                 padding: 0 30px;
@@ -538,7 +553,6 @@ def create_dashboard(map_files, hot_papers):
                 font-family: 'Courier New', monospace;
                 display: flex;
                 gap: 20px;
-                /* [优化] 绝对定位到右侧，不干扰中间的标题 */
                 position: absolute;
                 right: 30px;
             }}
@@ -558,14 +572,13 @@ def create_dashboard(map_files, hot_papers):
             iframe {{ width: 100%; height: 100%; border: none; }}
 
             .map-label {{
-                position: absolute; top: 15px; left: 15px; z-index: 999;
+                position: absolute; top: 10px; left: 10px; z-index: 999;
                 background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px);
-                padding: 6px 12px; border-radius: 4px;
+                padding: 4px 10px; border-radius: 4px;
                 border-left-width: 4px; border-left-style: solid;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.4);
             }}
-            .map-title {{ color: #fff; font-size: 14px; font-weight: 700; letter-spacing: 1px; margin: 0; }}
-            /* 删除了 map-sub 样式 */
+            .map-title {{ color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 1px; margin: 0; }}
 
             .rec-container {{
                 background: #0b1121;
@@ -597,7 +610,6 @@ def create_dashboard(map_files, hot_papers):
                 margin-bottom: 12px;
                 border-radius: 8px; overflow: hidden; position: relative;
                 transition: all 0.3s ease;
-                min-height: 80px; /* 稍微调小一点 */
             }}
             .paper-card:hover {{ 
                 background: rgba(30, 41, 59, 0.9); 
@@ -620,15 +632,31 @@ def create_dashboard(map_files, hot_papers):
             .date-badge {{ color: #64748b; font-family: monospace; }}
             .p-title {{
                 color: #f1f5f9; font-size: 14px; font-weight: 600; line-height: 1.3;
-                text-decoration: none; margin-bottom: 6px; display: block;
+                text-decoration: none; margin-bottom: 8px; display: block;
             }}
             .p-title:hover {{ color: var(--accent-uni); text-shadow: 0 0 10px rgba(0, 229, 255, 0.3); }}
 
-            /* [优化] Summary 样式调整：去斜体，颜色微调 */
+            .p-image-container {{
+                width: 100%;
+                margin-bottom: 10px;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }}
+            .p-teaser {{
+                max-width: 100%;
+                max-height: 220px;
+                object-fit: contain;
+                display: block;
+            }}
+
             .p-abstract {{ 
                 font-size: 12px; color: #94a3b8; margin-bottom: 4px; line-height: 1.5; 
-                font-style: normal; /* 去掉斜体 */
-                display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; 
+                font-style: normal;
+                display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; 
             }}
 
             .glow-bar {{ position: absolute; left: 0; top: 0; bottom: 0; width: 3px; box-shadow: 0 0 8px currentColor; }}
@@ -639,13 +667,12 @@ def create_dashboard(map_files, hot_papers):
             <div class="header-title">EMBODIED AI GLOBAL MONITOR</div>
             <div class="header-meta">
                 <span>SYSTEM: ONLINE</span>
-                <span>DATA: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')} (CST)</span>
+                <span>DATA: {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')} (CST)</span>
             </div>
         </div>
 
         <div class="grid-item area-map1">
             <div class="map-label" style="border-left-color: var(--accent-comp);">
-                <!-- [修改] 去掉了下面的小字 -->
                 <div class="map-title">CHINA / APAC</div>
             </div>
             <iframe src="{map_files['China']}"></iframe>
@@ -668,20 +695,45 @@ def create_dashboard(map_files, hot_papers):
         <div class="grid-item area-feed">
             <div class="rec-container">
                 <div class="rec-header">
-                    <!-- [修改] 标题文案 -->
                     <div class="rec-title"> DAILY TOP PAPERS</div>
                     <div class="live-indicator">● AI RANKING</div>
                 </div>
-                <div class="rec-list">{recs_html}</div>
+                <div class="rec-list" id="auto-scroller">{recs_html}</div>
             </div>
         </div>
+
+        <script>
+            // 自动滚动逻辑
+            const scrollContainer = document.getElementById('auto-scroller');
+            let scrollSpeed = 1.5; // 速度调快：从 1 增加到 1.5
+            let isAutoScrolling = true;
+
+            function autoScroll() {{
+                if (isAutoScrolling) {{
+                    // 增加滚动位置
+                    scrollContainer.scrollTop += scrollSpeed;
+                    
+                    // 边界检测：使用 Math.ceil 并预留 2px 误差范围确保触发回弹
+                    if (Math.ceil(scrollContainer.scrollTop + scrollContainer.clientHeight) >= scrollContainer.scrollHeight - 2) {{
+                        scrollContainer.scrollTop = 0; 
+                    }}
+                }}
+            }}
+
+            // 保持每 50 毫秒执行一次，通过修改步长来控制视觉速度
+            let scrollInterval = setInterval(autoScroll, 50);
+
+            // 鼠标交互逻辑保持不变...
+            scrollContainer.addEventListener('mouseenter', () => {{ isAutoScrolling = false; }});
+            scrollContainer.addEventListener('mouseleave', () => {{ isAutoScrolling = true; }});
+        </script>
     </body>
     </html>
     """
 
     with open("dashboard_index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
-    print(">>> Dashboard index generated!")
+    print(">>> Dashboard index generated with Auto-Scroll!")
 
 # ================= 5. 主程序 =================
 
