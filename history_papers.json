@@ -5209,6 +5209,28 @@
   ],
   "Hengshuang Zhao老师实验室": [
     {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
+    {
+      "title": "LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18475",
+      "date": "2026-01-26",
+      "authors_text": "Xinhui Liu, Can Wang, Lei Liu, Zhenghao Chen, Wei Jiang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "The StreamLoD-GS framework enhances Streaming Free-Viewpoint Video reconstruction by optimizing 3D Gaussian Splatting for efficient, high-fidelity rendering with reduced storage needs.",
+      "teaser_image": null,
+      "debug_abstract": "Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints. While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints. To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV. Our approach integrates three core innovations: 1) an Anchor- and Octree-based LoD-structured 3DGS with a hierarchical Gaussian dropout technique to ensure efficient and stable optimization while maintaining high-quality rendering; 2) a GMM-based motion partitioning mechanism that separates dynamic and static content, refining dynamic regions while preserving background stability; and 3) a quantized residual refinement framework that significantly reduces storage requirements without compromising visual fidelity. Extensive experiments demonstrate that StreamLoD-GS achieves competitive or state-of-the-art performance in terms of quality, efficiency, and storage."
+    },
+    {
       "title": "Heterogeneous Vertiport Selection Optimization for On-Demand Air Taxi Services: A Deep Reinforcement Learning Approach",
       "url": "https://arxiv.org/abs/2601.21316",
       "date": "2026-01-29",
@@ -5396,6 +5418,28 @@
     }
   ],
   "香港大学机械工程系机器人实验室": [
+    {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
+    {
+      "title": "LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18475",
+      "date": "2026-01-26",
+      "authors_text": "Xinhui Liu, Can Wang, Lei Liu, Zhenghao Chen, Wei Jiang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "The StreamLoD-GS framework enhances Streaming Free-Viewpoint Video reconstruction by optimizing 3D Gaussian Splatting for efficient, high-fidelity rendering with reduced storage needs.",
+      "teaser_image": null,
+      "debug_abstract": "Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints. While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints. To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV. Our approach integrates three core innovations: 1) an Anchor- and Octree-based LoD-structured 3DGS with a hierarchical Gaussian dropout technique to ensure efficient and stable optimization while maintaining high-quality rendering; 2) a GMM-based motion partitioning mechanism that separates dynamic and static content, refining dynamic regions while preserving background stability; and 3) a quantized residual refinement framework that significantly reduces storage requirements without compromising visual fidelity. Extensive experiments demonstrate that StreamLoD-GS achieves competitive or state-of-the-art performance in terms of quality, efficiency, and storage."
+    },
     {
       "title": "Heterogeneous Vertiport Selection Optimization for On-Demand Air Taxi Services: A Deep Reinforcement Learning Approach",
       "url": "https://arxiv.org/abs/2601.21316",
@@ -5795,6 +5839,28 @@
   ],
   "OpenDriveLab": [
     {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
+    {
+      "title": "LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18475",
+      "date": "2026-01-26",
+      "authors_text": "Xinhui Liu, Can Wang, Lei Liu, Zhenghao Chen, Wei Jiang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "The StreamLoD-GS framework enhances Streaming Free-Viewpoint Video reconstruction by optimizing 3D Gaussian Splatting for efficient, high-fidelity rendering with reduced storage needs.",
+      "teaser_image": null,
+      "debug_abstract": "Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints. While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints. To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV. Our approach integrates three core innovations: 1) an Anchor- and Octree-based LoD-structured 3DGS with a hierarchical Gaussian dropout technique to ensure efficient and stable optimization while maintaining high-quality rendering; 2) a GMM-based motion partitioning mechanism that separates dynamic and static content, refining dynamic regions while preserving background stability; and 3) a quantized residual refinement framework that significantly reduces storage requirements without compromising visual fidelity. Extensive experiments demonstrate that StreamLoD-GS achieves competitive or state-of-the-art performance in terms of quality, efficiency, and storage."
+    },
+    {
       "title": "Heterogeneous Vertiport Selection Optimization for On-Demand Air Taxi Services: A Deep Reinforcement Learning Approach",
       "url": "https://arxiv.org/abs/2601.21316",
       "date": "2026-01-29",
@@ -5983,6 +6049,28 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
+    {
+      "title": "LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18475",
+      "date": "2026-01-26",
+      "authors_text": "Xinhui Liu, Can Wang, Lei Liu, Zhenghao Chen, Wei Jiang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "The StreamLoD-GS framework enhances Streaming Free-Viewpoint Video reconstruction by optimizing 3D Gaussian Splatting for efficient, high-fidelity rendering with reduced storage needs.",
+      "teaser_image": null,
+      "debug_abstract": "Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints. While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints. To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV. Our approach integrates three core innovations: 1) an Anchor- and Octree-based LoD-structured 3DGS with a hierarchical Gaussian dropout technique to ensure efficient and stable optimization while maintaining high-quality rendering; 2) a GMM-based motion partitioning mechanism that separates dynamic and static content, refining dynamic regions while preserving background stability; and 3) a quantized residual refinement framework that significantly reduces storage requirements without compromising visual fidelity. Extensive experiments demonstrate that StreamLoD-GS achieves competitive or state-of-the-art performance in terms of quality, efficiency, and storage."
+    },
+    {
       "title": "Heterogeneous Vertiport Selection Optimization for On-Demand Air Taxi Services: A Deep Reinforcement Learning Approach",
       "url": "https://arxiv.org/abs/2601.21316",
       "date": "2026-01-29",
@@ -6170,6 +6258,28 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
+    {
+      "title": "LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction",
+      "url": "https://arxiv.org/abs/2601.18475",
+      "date": "2026-01-26",
+      "authors_text": "Xinhui Liu, Can Wang, Lei Liu, Zhenghao Chen, Wei Jiang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "The StreamLoD-GS framework enhances Streaming Free-Viewpoint Video reconstruction by optimizing 3D Gaussian Splatting for efficient, high-fidelity rendering with reduced storage needs.",
+      "teaser_image": null,
+      "debug_abstract": "Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints. While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints. To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV. Our approach integrates three core innovations: 1) an Anchor- and Octree-based LoD-structured 3DGS with a hierarchical Gaussian dropout technique to ensure efficient and stable optimization while maintaining high-quality rendering; 2) a GMM-based motion partitioning mechanism that separates dynamic and static content, refining dynamic regions while preserving background stability; and 3) a quantized residual refinement framework that significantly reduces storage requirements without compromising visual fidelity. Extensive experiments demonstrate that StreamLoD-GS achieves competitive or state-of-the-art performance in terms of quality, efficiency, and storage."
+    },
     {
       "title": "Heterogeneous Vertiport Selection Optimization for On-Demand Air Taxi Services: A Deep Reinforcement Learning Approach",
       "url": "https://arxiv.org/abs/2601.21316",
@@ -7216,6 +7326,17 @@
     }
   ],
   "深圳大学": [
+    {
+      "title": "Diffusion Model-based Reinforcement Learning for Version Age of Information Scheduling: Average and Tail-Risk-Sensitive Control",
+      "url": "https://arxiv.org/abs/2601.18069",
+      "date": "2026-01-26",
+      "authors_text": "Haoyuan Pan, Sizhao Chen, Zhaorui Wang, Tse-Tin Chan",
+      "is_highlight": false,
+      "score": 57.0,
+      "summary": "This paper presents a novel reinforcement learning approach, RS-D3SAC, for optimizing Version Age of Information scheduling by minimizing both average and tail-risk-sensitive metrics in wireless systems.",
+      "teaser_image": null,
+      "debug_abstract": "Ensuring timely and semantically accurate information delivery is critical in real-time wireless systems. While Age of Information (AoI) quantifies temporal freshness, Version Age of Information (VAoI) captures semantic staleness by accounting for version evolution between transmitters and receivers. Existing VAoI scheduling approaches primarily focus on minimizing average VAoI, overlooking rare but severe staleness events that can compromise reliability under stochastic packet arrivals and unreliable channels. This paper investigates both average-oriented and tail-risk-sensitive VAoI scheduling in a multi-user status update system with long-term transmission cost constraints. We first formulate the average VAoI minimization problem as a constrained Markov decision process and introduce a deep diffusion-based Soft Actor-Critic (D2SAC) algorithm. By generating actions through a diffusion-based denoising process, D2SAC enhances policy expressiveness and establishes a strong baseline for mean performance. Building on this foundation, we put forth RS-D3SAC, a risk-sensitive deep distributional diffusion-based Soft Actor-Critic algorithm. RS-D3SAC integrates a diffusion-based actor with a quantile-based distributional critic, explicitly modeling the full VAoI return distribution. This enables principled tail-risk optimization via Conditional Value-at-Risk (CVaR) while satisfying long-term transmission cost constraints. Extensive simulations show that, while D2SAC reduces average VAoI, RS-D3SAC consistently achieves substantial reductions in CVaR without sacrificing mean performance. The dominant gain in tail-risk reduction stems from the distributional critic, with the diffusion-based actor providing complementary refinement to stabilize and enrich policy decisions, highlighting their effectiveness for robust and risk-aware VAoI scheduling in multi-user wireless systems."
+    },
     {
       "title": "YOLO-DS: Fine-Grained Feature Decoupling via Dual-Statistic Synergy Operator for Object Detection",
       "url": "https://arxiv.org/abs/2601.18172",
