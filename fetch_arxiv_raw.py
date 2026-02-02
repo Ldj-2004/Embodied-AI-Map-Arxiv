@@ -60,15 +60,21 @@ print(f">>> [配置] 当前抓取目标日期设定为: {TARGET_DATE} (UTC)")
 OUTPUT_FILE = "raw_papers.json"
 
 # arXiv OAI 接口
-OAI_BASE = "https://export.arxiv.org/oai2"
+OAI_BASE = "https://export.arxiv.org/oai"
 NS = {
     "oai": "http://www.openarchives.org/OAI/2.0/",
     "arxiv": "http://arxiv.org/OAI/arXiv/",
 }
 
 # 请求头 (防止被 arXiv 封禁，请保持礼貌)
+# HEADERS = {
+#     "User-Agent": "Arxiv-Daily-Fetcher/1.0 (mailto:your-email@example.com)",
+#     "Accept-Encoding": "gzip, deflate",
+# }
 HEADERS = {
-    "User-Agent": "Arxiv-Daily-Fetcher/1.0 (mailto:your-email@example.com)",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/xml,application/xml,application/xhtml+xml,*/*",
+    "Accept-Language": "en-US,en;q=0.9",
     "Accept-Encoding": "gzip, deflate",
 }
 
@@ -382,3 +388,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
