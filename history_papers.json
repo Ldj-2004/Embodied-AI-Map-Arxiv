@@ -1,6 +1,17 @@
 {
   "卡内基-机器人研究所": [
     {
+      "title": "Egocentric Bias in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2602.15892",
+      "date": "2026-02-10",
+      "authors_text": "Maijunxian Wang, Yijiang Li, Bingyang Wang, Tianwei Zhao, Ran Ji",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "The paper introduces FlipSet, a benchmark revealing that vision-language models exhibit egocentric bias and compositional deficits in visual perspective taking, highlighting limitations in spatial reasoning.",
+      "teaser_image": "https://arxiv.org/html/2602.15892/x2.png",
+      "debug_abstract": "Visual perspective taking--inferring how the world appears from another&#39;s viewpoint--is foundational to social cognition. We introduce FlipSet, a diagnostic benchmark for Level-2 visual perspective taking (L2 VPT) in vision-language models. The task requires simulating 180-degree rotations of 2D character strings from another agent&#39;s perspective, isolating spatial transformation from 3D scene complexity. Evaluating 103 VLMs reveals systematic egocentric bias: the vast majority perform below chance, with roughly three-quarters of errors reproducing the camera viewpoint. Control experiments expose a compositional deficit--models achieve high theory-of-mind accuracy and above-chance mental rotation in isolation, yet fail catastrophically when integration is required. This dissociation indicates that current VLMs lack the mechanisms needed to bind social awareness to spatial operations, suggesting fundamental limitations in model-based spatial reasoning. FlipSet provides a cognitively grounded testbed for diagnosing perspective-taking capabilities in multimodal systems."
+    },
+    {
       "title": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems",
       "url": "https://arxiv.org/abs/2602.15382",
       "date": "2026-02-17",
@@ -2156,6 +2167,17 @@
   ],
   "范明明老师实验室": [
     {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
+    {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
       "date": "2026-02-17",
@@ -2665,6 +2687,17 @@
     }
   ],
   "机器人研究所 (CKSRI)": [
+    {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
     {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
@@ -3176,6 +3209,17 @@
   ],
   "Precognition Lab": [
     {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
+    {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
       "date": "2026-02-17",
@@ -3685,6 +3729,17 @@
     }
   ],
   "机器人研究所": [
+    {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
     {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
@@ -4196,6 +4251,17 @@
   ],
   "Jun MA老师实验室": [
     {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
+    {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
       "date": "2026-02-17",
@@ -4705,6 +4771,17 @@
     }
   ],
   "Cheng Kar-Shun Robotics Institute (CKSRI)": [
+    {
+      "title": "Dual-Quadruped Collaborative Transportation in Narrow Environments via Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2602.16353",
+      "date": "2026-02-18",
+      "authors_text": "Zhezhi Lei, Zhihai Bi, Wenxin Wang, Jun Ma",
+      "is_highlight": true,
+      "score": 91.0,
+      "summary": "The paper presents a safe reinforcement learning approach for dual-quadruped collaborative transportation in narrow environments, enhancing performance through constraint management and autonomous task assignment.",
+      "teaser_image": "https://arxiv.org/html/2602.16353/1Introduction/illustration3.jpg",
+      "debug_abstract": "Collaborative transportation, where multiple robots collaboratively transport a payload, has garnered significant attention in recent years. While ensuring safe and high-performance inter-robot collaboration is critical for effective task execution, it is difficult to pursue in narrow environments where the feasible region is extremely limited. To address this challenge, we propose a novel approach for dual-quadruped collaborative transportation via safe reinforcement learning (RL). Specifically, we model the task as a fully cooperative constrained Markov game, where collision avoidance is formulated as constraints. We introduce a cost-advantage decomposition method that enforces the sum of team constraints to remain below an upper bound, thereby guaranteeing task safety within an RL framework. Furthermore, we propose a constraint allocation method that assigns shared constraints to individual robots to maximize the overall task reward, encouraging autonomous task-assignment among robots, thereby improving collaborative task performance. Simulation and real-time experimental results demonstrate that the proposed approach achieves superior performance and a higher success rate in dual-quadruped collaborative transportation compared to existing methods."
+    },
     {
       "title": "SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms",
       "url": "https://arxiv.org/abs/2602.15633",
@@ -8464,6 +8541,17 @@
   ],
   "浙江大学": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "One Agent to Guide Them All: Empowering MLLMs for Vision-and-Language Navigation via Explicit World Representation",
       "url": "https://arxiv.org/abs/2602.15400",
       "date": "2026-02-17",
@@ -9059,6 +9147,17 @@
     }
   ],
   "MARS多模态学习实验室": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
@@ -9892,6 +9991,17 @@
   ],
   "机器人控制实验室": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
       "date": "2026-02-17",
@@ -10723,6 +10833,17 @@
     }
   ],
   "具身智能实验室 (TEA Lab)": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
@@ -11556,6 +11677,17 @@
   ],
   "机器人与人工智能实验室 (RAIL)": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction",
       "url": "https://arxiv.org/abs/2602.15733",
       "date": "2026-02-17",
@@ -12107,6 +12239,17 @@
     }
   ],
   "智能技术与系统实验室": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
@@ -12940,6 +13083,17 @@
   ],
   "智能系统与机器人实验室 (ISR Lab)": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
       "date": "2026-02-17",
@@ -13772,6 +13926,17 @@
   ],
   "具身视觉与机器人实验室 (EVAR Lab)": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
       "date": "2026-02-17",
@@ -14603,6 +14768,17 @@
     }
   ],
   "智能产业研究院 (AIR)": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
       "url": "https://arxiv.org/abs/2602.15620",
@@ -15492,6 +15668,17 @@
   ],
   "Stanford AI Lab (SAIL)": [
     {
+      "title": "World Model Failure Classification and Anomaly Detection for Autonomous Inspection",
+      "url": "https://arxiv.org/abs/2602.16182",
+      "date": "2026-02-18",
+      "authors_text": "Michelle Ho, Muhammad Fadhil Ginting, Isaac R. Ward, Andrzej Reinke, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "This paper presents a hybrid framework for autonomous inspection robots that combines supervised failure classification and anomaly detection, achieving over 90% accuracy in real-time task evaluations.",
+      "teaser_image": "https://arxiv.org/html/2602.16182/x1.png",
+      "debug_abstract": "Autonomous inspection robots for monitoring industrial sites can reduce costs and risks associated with human-led inspection. However, accurate readings can be challenging due to occlusions, limited viewpoints, or unexpected environmental conditions. We propose a hybrid framework that combines supervised failure classification with anomaly detection, enabling classification of inspection tasks as a success, known failure, or anomaly (i.e., out-of-distribution) case. Our approach uses a world model backbone with compressed video inputs. This policy-agnostic, distribution-free framework determines classifications based on two decision functions set by conformal prediction (CP) thresholds before a human observer does. We evaluate the framework on gauge inspection feeds collected from office and industrial sites and demonstrate real-time deployment on a Boston Dynamics Spot. Experiments show over 90% accuracy in distinguishing between successes, failures, and OOD cases, with classifications occurring earlier than a human observer. These results highlight the potential for robust, anticipatory failure detection in autonomous inspection tasks or as a feedback signal for model training to assess and improve the quality of training data. Project website: this https URL"
+    },
+    {
       "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
       "url": "https://arxiv.org/abs/2602.15827",
       "date": "2026-02-17",
@@ -15787,6 +15974,17 @@
     }
   ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
+    {
+      "title": "World Model Failure Classification and Anomaly Detection for Autonomous Inspection",
+      "url": "https://arxiv.org/abs/2602.16182",
+      "date": "2026-02-18",
+      "authors_text": "Michelle Ho, Muhammad Fadhil Ginting, Isaac R. Ward, Andrzej Reinke, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "This paper presents a hybrid framework for autonomous inspection robots that combines supervised failure classification and anomaly detection, achieving over 90% accuracy in real-time task evaluations.",
+      "teaser_image": "https://arxiv.org/html/2602.16182/x1.png",
+      "debug_abstract": "Autonomous inspection robots for monitoring industrial sites can reduce costs and risks associated with human-led inspection. However, accurate readings can be challenging due to occlusions, limited viewpoints, or unexpected environmental conditions. We propose a hybrid framework that combines supervised failure classification with anomaly detection, enabling classification of inspection tasks as a success, known failure, or anomaly (i.e., out-of-distribution) case. Our approach uses a world model backbone with compressed video inputs. This policy-agnostic, distribution-free framework determines classifications based on two decision functions set by conformal prediction (CP) thresholds before a human observer does. We evaluate the framework on gauge inspection feeds collected from office and industrial sites and demonstrate real-time deployment on a Boston Dynamics Spot. Experiments show over 90% accuracy in distinguishing between successes, failures, and OOD cases, with classifications occurring earlier than a human observer. These results highlight the potential for robust, anticipatory failure detection in autonomous inspection tasks or as a feedback signal for model training to assess and improve the quality of training data. Project website: this https URL"
+    },
     {
       "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
       "url": "https://arxiv.org/abs/2602.15827",
@@ -16084,6 +16282,17 @@
   ],
   "斯坦福-人工智能实验室 (SAIL)": [
     {
+      "title": "World Model Failure Classification and Anomaly Detection for Autonomous Inspection",
+      "url": "https://arxiv.org/abs/2602.16182",
+      "date": "2026-02-18",
+      "authors_text": "Michelle Ho, Muhammad Fadhil Ginting, Isaac R. Ward, Andrzej Reinke, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "This paper presents a hybrid framework for autonomous inspection robots that combines supervised failure classification and anomaly detection, achieving over 90% accuracy in real-time task evaluations.",
+      "teaser_image": "https://arxiv.org/html/2602.16182/x1.png",
+      "debug_abstract": "Autonomous inspection robots for monitoring industrial sites can reduce costs and risks associated with human-led inspection. However, accurate readings can be challenging due to occlusions, limited viewpoints, or unexpected environmental conditions. We propose a hybrid framework that combines supervised failure classification with anomaly detection, enabling classification of inspection tasks as a success, known failure, or anomaly (i.e., out-of-distribution) case. Our approach uses a world model backbone with compressed video inputs. This policy-agnostic, distribution-free framework determines classifications based on two decision functions set by conformal prediction (CP) thresholds before a human observer does. We evaluate the framework on gauge inspection feeds collected from office and industrial sites and demonstrate real-time deployment on a Boston Dynamics Spot. Experiments show over 90% accuracy in distinguishing between successes, failures, and OOD cases, with classifications occurring earlier than a human observer. These results highlight the potential for robust, anticipatory failure detection in autonomous inspection tasks or as a feedback signal for model training to assess and improve the quality of training data. Project website: this https URL"
+    },
+    {
       "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
       "url": "https://arxiv.org/abs/2602.15827",
       "date": "2026-02-17",
@@ -16379,6 +16588,17 @@
     }
   ],
   "斯坦福-机器人与具身智能实验室 (REAL)": [
+    {
+      "title": "World Model Failure Classification and Anomaly Detection for Autonomous Inspection",
+      "url": "https://arxiv.org/abs/2602.16182",
+      "date": "2026-02-18",
+      "authors_text": "Michelle Ho, Muhammad Fadhil Ginting, Isaac R. Ward, Andrzej Reinke, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "This paper presents a hybrid framework for autonomous inspection robots that combines supervised failure classification and anomaly detection, achieving over 90% accuracy in real-time task evaluations.",
+      "teaser_image": "https://arxiv.org/html/2602.16182/x1.png",
+      "debug_abstract": "Autonomous inspection robots for monitoring industrial sites can reduce costs and risks associated with human-led inspection. However, accurate readings can be challenging due to occlusions, limited viewpoints, or unexpected environmental conditions. We propose a hybrid framework that combines supervised failure classification with anomaly detection, enabling classification of inspection tasks as a success, known failure, or anomaly (i.e., out-of-distribution) case. Our approach uses a world model backbone with compressed video inputs. This policy-agnostic, distribution-free framework determines classifications based on two decision functions set by conformal prediction (CP) thresholds before a human observer does. We evaluate the framework on gauge inspection feeds collected from office and industrial sites and demonstrate real-time deployment on a Boston Dynamics Spot. Experiments show over 90% accuracy in distinguishing between successes, failures, and OOD cases, with classifications occurring earlier than a human observer. These results highlight the potential for robust, anticipatory failure detection in autonomous inspection tasks or as a feedback signal for model training to assess and improve the quality of training data. Project website: this https URL"
+    },
     {
       "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
       "url": "https://arxiv.org/abs/2602.15827",
@@ -16676,6 +16896,17 @@
   ],
   "斯坦福-视觉与学习实验室 (SVL)": [
     {
+      "title": "World Model Failure Classification and Anomaly Detection for Autonomous Inspection",
+      "url": "https://arxiv.org/abs/2602.16182",
+      "date": "2026-02-18",
+      "authors_text": "Michelle Ho, Muhammad Fadhil Ginting, Isaac R. Ward, Andrzej Reinke, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "This paper presents a hybrid framework for autonomous inspection robots that combines supervised failure classification and anomaly detection, achieving over 90% accuracy in real-time task evaluations.",
+      "teaser_image": "https://arxiv.org/html/2602.16182/x1.png",
+      "debug_abstract": "Autonomous inspection robots for monitoring industrial sites can reduce costs and risks associated with human-led inspection. However, accurate readings can be challenging due to occlusions, limited viewpoints, or unexpected environmental conditions. We propose a hybrid framework that combines supervised failure classification with anomaly detection, enabling classification of inspection tasks as a success, known failure, or anomaly (i.e., out-of-distribution) case. Our approach uses a world model backbone with compressed video inputs. This policy-agnostic, distribution-free framework determines classifications based on two decision functions set by conformal prediction (CP) thresholds before a human observer does. We evaluate the framework on gauge inspection feeds collected from office and industrial sites and demonstrate real-time deployment on a Boston Dynamics Spot. Experiments show over 90% accuracy in distinguishing between successes, failures, and OOD cases, with classifications occurring earlier than a human observer. These results highlight the potential for robust, anticipatory failure detection in autonomous inspection tasks or as a feedback signal for model training to assess and improve the quality of training data. Project website: this https URL"
+    },
+    {
       "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
       "url": "https://arxiv.org/abs/2602.15827",
       "date": "2026-02-17",
@@ -16971,6 +17202,28 @@
     }
   ],
   "HMI Lab": [
+    {
+      "title": "RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation",
+      "url": "https://arxiv.org/abs/2602.16444",
+      "date": "2026-02-18",
+      "authors_text": "Yixue Zhang, Kun Wu, Zhi Gao, Zhen Zhao, Pei Ren",
+      "is_highlight": false,
+      "score": 93.0,
+      "summary": "RoboGene automates the generation of diverse, physically plausible robotic manipulation tasks, significantly enhancing VLA pre-training and outperforming existing models in real-world applications.",
+      "teaser_image": "https://arxiv.org/html/2602.16444/x1.png",
+      "debug_abstract": "The pursuit of general-purpose robotic manipulation is hindered by the scarcity of diverse, real-world interaction data. Unlike data collection from web in vision or language, robotic data collection is an active process incurring prohibitive physical costs. Consequently, automated task curation to maximize data value remains a critical yet under-explored challenge. Existing manual methods are unscalable and biased toward common tasks, while off-the-shelf foundation models often hallucinate physically infeasible instructions. To address this, we introduce RoboGene, an agentic framework designed to automate the generation of diverse, physically plausible manipulation tasks across single-arm, dual-arm, and mobile robots. RoboGene integrates three core components: diversity-driven sampling for broad task coverage, self-reflection mechanisms to enforce physical constraints, and human-in-the-loop refinement for continuous improvement. We conduct extensive quantitative analysis and large-scale real-world experiments, collecting datasets of 18k trajectories and introducing novel metrics to assess task quality, feasibility, and diversity. Results demonstrate that RoboGene significantly outperforms state-of-the-art foundation models (e.g., GPT-4o, Gemini 2.5 Pro). Furthermore, real-world experiments show that VLA models pre-trained with RoboGene achieve higher success rates and superior generalization, underscoring the importance of high-quality task generation. Our project is available at this https URL."
+    },
+    {
+      "title": "MMA: Multimodal Memory Agent",
+      "url": "https://arxiv.org/abs/2602.16493",
+      "date": "2026-02-18",
+      "authors_text": "Yihao Lu, Wanru Cheng, Zeyu Zhang, Hao Tang",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "The Multimodal Memory Agent (MMA) enhances long-horizon multimodal retrieval by dynamically scoring memory reliability, improving accuracy and reducing variance in belief dynamics.",
+      "teaser_image": "https://arxiv.org/html/2602.16493/figure/MMA_figure.png",
+      "debug_abstract": "Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the &#34;Visual Placebo Effect&#34;, revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: this https URL."
+    },
     {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
@@ -17505,6 +17758,28 @@
   ],
   "具身感知与交互实验室 (EPIC Lab)": [
     {
+      "title": "RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation",
+      "url": "https://arxiv.org/abs/2602.16444",
+      "date": "2026-02-18",
+      "authors_text": "Yixue Zhang, Kun Wu, Zhi Gao, Zhen Zhao, Pei Ren",
+      "is_highlight": false,
+      "score": 93.0,
+      "summary": "RoboGene automates the generation of diverse, physically plausible robotic manipulation tasks, significantly enhancing VLA pre-training and outperforming existing models in real-world applications.",
+      "teaser_image": "https://arxiv.org/html/2602.16444/x1.png",
+      "debug_abstract": "The pursuit of general-purpose robotic manipulation is hindered by the scarcity of diverse, real-world interaction data. Unlike data collection from web in vision or language, robotic data collection is an active process incurring prohibitive physical costs. Consequently, automated task curation to maximize data value remains a critical yet under-explored challenge. Existing manual methods are unscalable and biased toward common tasks, while off-the-shelf foundation models often hallucinate physically infeasible instructions. To address this, we introduce RoboGene, an agentic framework designed to automate the generation of diverse, physically plausible manipulation tasks across single-arm, dual-arm, and mobile robots. RoboGene integrates three core components: diversity-driven sampling for broad task coverage, self-reflection mechanisms to enforce physical constraints, and human-in-the-loop refinement for continuous improvement. We conduct extensive quantitative analysis and large-scale real-world experiments, collecting datasets of 18k trajectories and introducing novel metrics to assess task quality, feasibility, and diversity. Results demonstrate that RoboGene significantly outperforms state-of-the-art foundation models (e.g., GPT-4o, Gemini 2.5 Pro). Furthermore, real-world experiments show that VLA models pre-trained with RoboGene achieve higher success rates and superior generalization, underscoring the importance of high-quality task generation. Our project is available at this https URL."
+    },
+    {
+      "title": "MMA: Multimodal Memory Agent",
+      "url": "https://arxiv.org/abs/2602.16493",
+      "date": "2026-02-18",
+      "authors_text": "Yihao Lu, Wanru Cheng, Zeyu Zhang, Hao Tang",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "The Multimodal Memory Agent (MMA) enhances long-horizon multimodal retrieval by dynamically scoring memory reliability, improving accuracy and reducing variance in belief dynamics.",
+      "teaser_image": "https://arxiv.org/html/2602.16493/figure/MMA_figure.png",
+      "debug_abstract": "Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the &#34;Visual Placebo Effect&#34;, revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: this https URL."
+    },
+    {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
       "date": "2026-02-13",
@@ -18037,6 +18312,28 @@
     }
   ],
   "智元机器人联合实验室 (PKU-Agibot)": [
+    {
+      "title": "RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation",
+      "url": "https://arxiv.org/abs/2602.16444",
+      "date": "2026-02-18",
+      "authors_text": "Yixue Zhang, Kun Wu, Zhi Gao, Zhen Zhao, Pei Ren",
+      "is_highlight": false,
+      "score": 93.0,
+      "summary": "RoboGene automates the generation of diverse, physically plausible robotic manipulation tasks, significantly enhancing VLA pre-training and outperforming existing models in real-world applications.",
+      "teaser_image": "https://arxiv.org/html/2602.16444/x1.png",
+      "debug_abstract": "The pursuit of general-purpose robotic manipulation is hindered by the scarcity of diverse, real-world interaction data. Unlike data collection from web in vision or language, robotic data collection is an active process incurring prohibitive physical costs. Consequently, automated task curation to maximize data value remains a critical yet under-explored challenge. Existing manual methods are unscalable and biased toward common tasks, while off-the-shelf foundation models often hallucinate physically infeasible instructions. To address this, we introduce RoboGene, an agentic framework designed to automate the generation of diverse, physically plausible manipulation tasks across single-arm, dual-arm, and mobile robots. RoboGene integrates three core components: diversity-driven sampling for broad task coverage, self-reflection mechanisms to enforce physical constraints, and human-in-the-loop refinement for continuous improvement. We conduct extensive quantitative analysis and large-scale real-world experiments, collecting datasets of 18k trajectories and introducing novel metrics to assess task quality, feasibility, and diversity. Results demonstrate that RoboGene significantly outperforms state-of-the-art foundation models (e.g., GPT-4o, Gemini 2.5 Pro). Furthermore, real-world experiments show that VLA models pre-trained with RoboGene achieve higher success rates and superior generalization, underscoring the importance of high-quality task generation. Our project is available at this https URL."
+    },
+    {
+      "title": "MMA: Multimodal Memory Agent",
+      "url": "https://arxiv.org/abs/2602.16493",
+      "date": "2026-02-18",
+      "authors_text": "Yihao Lu, Wanru Cheng, Zeyu Zhang, Hao Tang",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "The Multimodal Memory Agent (MMA) enhances long-horizon multimodal retrieval by dynamically scoring memory reliability, improving accuracy and reducing variance in belief dynamics.",
+      "teaser_image": "https://arxiv.org/html/2602.16493/figure/MMA_figure.png",
+      "debug_abstract": "Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the &#34;Visual Placebo Effect&#34;, revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: this https URL."
+    },
     {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
@@ -18571,6 +18868,28 @@
   ],
   "情感与认知智能机器人实验室 (ACIR)": [
     {
+      "title": "RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation",
+      "url": "https://arxiv.org/abs/2602.16444",
+      "date": "2026-02-18",
+      "authors_text": "Yixue Zhang, Kun Wu, Zhi Gao, Zhen Zhao, Pei Ren",
+      "is_highlight": false,
+      "score": 93.0,
+      "summary": "RoboGene automates the generation of diverse, physically plausible robotic manipulation tasks, significantly enhancing VLA pre-training and outperforming existing models in real-world applications.",
+      "teaser_image": "https://arxiv.org/html/2602.16444/x1.png",
+      "debug_abstract": "The pursuit of general-purpose robotic manipulation is hindered by the scarcity of diverse, real-world interaction data. Unlike data collection from web in vision or language, robotic data collection is an active process incurring prohibitive physical costs. Consequently, automated task curation to maximize data value remains a critical yet under-explored challenge. Existing manual methods are unscalable and biased toward common tasks, while off-the-shelf foundation models often hallucinate physically infeasible instructions. To address this, we introduce RoboGene, an agentic framework designed to automate the generation of diverse, physically plausible manipulation tasks across single-arm, dual-arm, and mobile robots. RoboGene integrates three core components: diversity-driven sampling for broad task coverage, self-reflection mechanisms to enforce physical constraints, and human-in-the-loop refinement for continuous improvement. We conduct extensive quantitative analysis and large-scale real-world experiments, collecting datasets of 18k trajectories and introducing novel metrics to assess task quality, feasibility, and diversity. Results demonstrate that RoboGene significantly outperforms state-of-the-art foundation models (e.g., GPT-4o, Gemini 2.5 Pro). Furthermore, real-world experiments show that VLA models pre-trained with RoboGene achieve higher success rates and superior generalization, underscoring the importance of high-quality task generation. Our project is available at this https URL."
+    },
+    {
+      "title": "MMA: Multimodal Memory Agent",
+      "url": "https://arxiv.org/abs/2602.16493",
+      "date": "2026-02-18",
+      "authors_text": "Yihao Lu, Wanru Cheng, Zeyu Zhang, Hao Tang",
+      "is_highlight": false,
+      "score": 76.0,
+      "summary": "The Multimodal Memory Agent (MMA) enhances long-horizon multimodal retrieval by dynamically scoring memory reliability, improving accuracy and reducing variance in belief dynamics.",
+      "teaser_image": "https://arxiv.org/html/2602.16493/figure/MMA_figure.png",
+      "debug_abstract": "Long-horizon multimodal agents depend on external memory; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility, temporal decay, and conflict-aware network consensus, and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench, a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the &#34;Visual Placebo Effect&#34;, revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench, MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: this https URL."
+    },
+    {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
       "date": "2026-02-13",
@@ -19104,6 +19423,17 @@
   ],
   "北京航空航天大学": [
     {
+      "title": "RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation",
+      "url": "https://arxiv.org/abs/2602.16444",
+      "date": "2026-02-18",
+      "authors_text": "Yixue Zhang, Kun Wu, Zhi Gao, Zhen Zhao, Pei Ren",
+      "is_highlight": false,
+      "score": 93.0,
+      "summary": "RoboGene automates the generation of diverse, physically plausible robotic manipulation tasks, significantly enhancing VLA pre-training and outperforming existing models in real-world applications.",
+      "teaser_image": "https://arxiv.org/html/2602.16444/x1.png",
+      "debug_abstract": "The pursuit of general-purpose robotic manipulation is hindered by the scarcity of diverse, real-world interaction data. Unlike data collection from web in vision or language, robotic data collection is an active process incurring prohibitive physical costs. Consequently, automated task curation to maximize data value remains a critical yet under-explored challenge. Existing manual methods are unscalable and biased toward common tasks, while off-the-shelf foundation models often hallucinate physically infeasible instructions. To address this, we introduce RoboGene, an agentic framework designed to automate the generation of diverse, physically plausible manipulation tasks across single-arm, dual-arm, and mobile robots. RoboGene integrates three core components: diversity-driven sampling for broad task coverage, self-reflection mechanisms to enforce physical constraints, and human-in-the-loop refinement for continuous improvement. We conduct extensive quantitative analysis and large-scale real-world experiments, collecting datasets of 18k trajectories and introducing novel metrics to assess task quality, feasibility, and diversity. Results demonstrate that RoboGene significantly outperforms state-of-the-art foundation models (e.g., GPT-4o, Gemini 2.5 Pro). Furthermore, real-world experiments show that VLA models pre-trained with RoboGene achieve higher success rates and superior generalization, underscoring the importance of high-quality task generation. Our project is available at this https URL."
+    },
+    {
       "title": "EventMemAgent: Hierarchical Event-Centric Memory for Online Video Understanding with Adaptive Tool Use",
       "url": "https://arxiv.org/abs/2602.15329",
       "date": "2026-02-17",
@@ -19389,6 +19719,17 @@
   ],
   "Oxford Robotics Institute (ORI)": [
     {
+      "title": "ODYN: An All-Shifted Non-Interior-Point Method for Quadratic Programming in Robotics and AI",
+      "url": "https://arxiv.org/abs/2602.16005",
+      "date": "2026-02-17",
+      "authors_text": "Jose Rojas, Aristotelis Papatheodorou, Sergi Martinez, Ioannis Havoutis, Carlos Mastalli",
+      "is_highlight": false,
+      "score": 80.0,
+      "summary": "ODYN is a novel non-interior-point quadratic programming solver that efficiently addresses dense and sparse problems in robotics and AI, showcasing superior warm-start performance and state-of-the-art convergence.",
+      "teaser_image": "https://arxiv.org/html/2602.16005/x6.png",
+      "debug_abstract": "We introduce ODYN, a novel all-shifted primal-dual non-interior-point quadratic programming (QP) solver designed to efficiently handle challenging dense and sparse QPs. ODYN combines all-shifted nonlinear complementarity problem (NCP) functions with proximal method of multipliers to robustly address ill-conditioned and degenerate problems, without requiring linear independence of the constraints. It exhibits strong warm-start performance and is well suited to both general-purpose optimization, and robotics and AI applications, including model-based control, estimation, and kernel-based learning methods. We provide an open-source implementation and benchmark ODYN on the Maros-Mészáros test set, demonstrating state-of-the-art convergence performance in small-to-high-scale problems. The results highlight ODYN&#39;s superior warm-starting capabilities, which are critical in sequential and real-time settings common in robotics and AI. These advantages are further demonstrated by deploying ODYN as the backend of an SQP-based predictive control framework (OdynSQP), as the implicitly differentiable optimization layer for deep learning (ODYNLayer), and the optimizer of a contact-dynamics simulation (ODYNSim)."
+    },
+    {
       "title": "EmbeWebAgent: Embedding Web Agents into Any Customized UI",
       "url": "https://arxiv.org/abs/2602.14865",
       "date": "2026-02-16",
@@ -19477,6 +19818,17 @@
     }
   ],
   "机器人与自动化研究中心": [
+    {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
     {
       "title": "MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction",
       "url": "https://arxiv.org/abs/2602.15733",
@@ -19976,6 +20328,17 @@
   ],
   "机器人与人工智能实验室": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction",
       "url": "https://arxiv.org/abs/2602.15733",
       "date": "2026-02-17",
@@ -20399,6 +20762,17 @@
     }
   ],
   "Hengshuang Zhao老师实验室": [
+    {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
     {
       "title": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspired Memory Modeling",
       "url": "https://arxiv.org/abs/2602.15513",
@@ -21160,6 +21534,17 @@
   ],
   "香港大学机械工程系机器人实验室": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspired Memory Modeling",
       "url": "https://arxiv.org/abs/2602.15513",
       "date": "2026-02-17",
@@ -21920,6 +22305,17 @@
   ],
   "深圳市人工智能与机器人研究院 (AIRS)": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction",
       "url": "https://arxiv.org/abs/2602.15733",
       "date": "2026-02-17",
@@ -22344,6 +22740,17 @@
   ],
   "Multimedia Lab (MMLab)": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction",
       "url": "https://arxiv.org/abs/2602.15733",
       "date": "2026-02-17",
@@ -22767,6 +23174,17 @@
     }
   ],
   "OpenDriveLab": [
+    {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
     {
       "title": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspired Memory Modeling",
       "url": "https://arxiv.org/abs/2602.15513",
@@ -23528,6 +23946,17 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspired Memory Modeling",
       "url": "https://arxiv.org/abs/2602.15513",
       "date": "2026-02-17",
@@ -24287,6 +24716,17 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
     {
       "title": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspired Memory Modeling",
       "url": "https://arxiv.org/abs/2602.15513",
@@ -26378,6 +26818,28 @@
   ],
   "Robot Perception and Learning Lab": [
     {
+      "title": "A Comprehensive Survey on Deep Learning-Based LiDAR Super-Resolution for Autonomous Driving",
+      "url": "https://arxiv.org/abs/2602.15904",
+      "date": "2026-02-15",
+      "authors_text": "June Moh Goo, Zichao Zeng, Jan Boehm",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "This paper surveys deep learning-based LiDAR super-resolution methods for autonomous driving, categorizing approaches and highlighting trends, challenges, and future research directions.",
+      "teaser_image": "https://arxiv.org/html/2602.15904/figures/lidar_SR_pipeline.png",
+      "debug_abstract": "LiDAR sensors are often considered essential for autonomous driving, but high-resolution sensors remain expensive while affordable low-resolution sensors produce sparse point clouds that miss critical details. LiDAR super-resolution addresses this challenge by using deep learning to enhance sparse point clouds, bridging the gap between different sensor types and enabling cross-sensor compatibility in real-world deployments. This paper presents the first comprehensive survey of LiDAR super-resolution methods for autonomous driving. Despite the importance of practical deployment, no systematic review has been conducted until now. We organize existing approaches into four categories: CNN-based architectures, model-based deep unrolling, implicit representation methods, and Transformer and Mamba-based approaches. We establish fundamental concepts including data representations, problem formulation, benchmark datasets and evaluation metrics. Current trends include the adoption of range image representation for efficient processing, extreme model compression and the development of resolution-flexible architectures. Recent research prioritizes real-time inference and cross-sensor generalization for practical deployment. We conclude by identifying open challenges and future research directions for advancing LiDAR super-resolution technology."
+    },
+    {
+      "title": "A Contrastive Learning Framework Empowered by Attention-based Feature Adaptation for Street-View Image Classification",
+      "url": "https://arxiv.org/abs/2602.16590",
+      "date": "2026-02-18",
+      "authors_text": "Qi You, Yitai Cheng, Zichao Zeng, James Haworth",
+      "is_highlight": false,
+      "score": 74.0,
+      "summary": "The paper introduces CLIP-MHAdapter, a lightweight model enhancing street-view image classification through multi-head self-attention on patch tokens, achieving state-of-the-art accuracy with low computational cost.",
+      "teaser_image": "https://arxiv.org/html/2602.16590/total-framework.png",
+      "debug_abstract": "Street-view image attribute classification is a vital downstream task of image classification, enabling applications such as autonomous driving, urban analytics, and high-definition map construction. It remains computationally demanding whether training from scratch, initialising from pre-trained weights, or fine-tuning large models. Although pre-trained vision-language models such as CLIP offer rich image representations, existing adaptation or fine-tuning methods often rely on their global image embeddings, limiting their ability to capture fine-grained, localised attributes essential in complex, cluttered street scenes. To address this, we propose CLIP-MHAdapter, a variant of the current lightweight CLIP adaptation paradigm that appends a bottleneck MLP equipped with multi-head self-attention operating on patch tokens to model inter-patch dependencies. With approximately 1.4 million trainable parameters, CLIP-MHAdapter achieves superior or competitive accuracy across eight attribute classification tasks on the Global StreetScapes dataset, attaining new state-of-the-art results while maintaining low computational cost. The code is available at this https URL."
+    },
+    {
       "title": "See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers",
       "url": "https://arxiv.org/abs/2602.02063",
       "date": "2026-02-02",
@@ -27257,6 +27719,17 @@
   ],
   "上海人工智能实验室": [
     {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "url": "https://arxiv.org/abs/2602.16455",
+      "date": "2026-02-18",
+      "authors_text": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang",
+      "is_highlight": false,
+      "score": 68.0,
+      "summary": "The paper introduces Visual Self-Refine (VSR), a paradigm for accurate chart parsing that utilizes pixel-level localization and visual feedback to correct perception errors.",
+      "teaser_image": "https://arxiv.org/html/2602.16455/x1.png",
+      "debug_abstract": "While Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities for reasoning and self-correction at the textual level, these strengths provide minimal benefits for complex tasks centered on visual perception, such as Chart Parsing. Existing models often struggle with visually dense charts, leading to errors like data omission, misalignment, and hallucination. Inspired by the human strategy of using a finger as a ``visual anchor&#39;&#39; to ensure accuracy when reading complex charts, we propose a new paradigm named Visual Self-Refine (VSR). The core idea of VSR is to enable a model to generate pixel-level localization outputs, visualize them, and then feed these visualizations back to itself, allowing it to intuitively inspect and correct its own potential visual perception errors. We instantiate the VSR paradigm in the domain of Chart Parsing by proposing ChartVSR. This model decomposes the parsing process into two stages: a Refine Stage, where it iteratively uses visual feedback to ensure the accuracy of all data points&#39; Pixel-level Localizations, and a Decode Stage, where it uses these verified localizations as precise visual anchors to parse the final structured data. To address the limitations of existing benchmarks, we also construct ChartP-Bench, a new and highly challenging benchmark for chart parsing. Our work also highlights VSR as a general-purpose visual feedback mechanism, offering a promising new direction for enhancing accuracy on a wide range of vision-centric tasks."
+    },
+    {
       "title": "Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5",
       "url": "https://arxiv.org/abs/2602.14457",
       "date": "2026-02-16",
@@ -27576,6 +28049,17 @@
     }
   ],
   "西安电子科技大学": [
+    {
+      "title": "Statistical-Geometric Degeneracy in UAV Search: A Physics-Aware Asymmetric Filtering Approach",
+      "url": "https://arxiv.org/abs/2602.15893",
+      "date": "2026-02-11",
+      "authors_text": "Zhiyuan Ren, Yudong Fang, Tao Zhang, Wenchi Cheng, Ben Lan",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This paper introduces the AsymmetricHuberEKF, a physics-aware filtering approach that addresses Non-Line-of-Sight biases in UAV survivor localization, overcoming Statistical-Geometric Degeneracy through asymmetric loss functions and active sensing.",
+      "teaser_image": "https://arxiv.org/html/2602.15893/x1.png",
+      "debug_abstract": "Post-disaster survivor localization using Unmanned Aerial Vehicles (UAVs) faces a fundamental physical challenge: the prevalence of Non-Line-of-Sight (NLOS) propagation in collapsed structures. Unlike standard Gaussian noise, signal reflection from debris introduces strictly non-negative ranging biases. Existing robust estimators, typically designed with symmetric loss functions (e.g., Huber or Tukey), implicitly rely on the assumption of error symmetry. Consequently, they experience a theoretical mismatch in this regime, leading to a phenomenon we formally identify as Statistical-Geometric Degeneracy (SGD)-a state where the estimator stagnates due to the coupling of persistent asymmetric bias and limited observation geometry. While emerging data-driven approaches offer alternatives, they often struggle with the scarcity of training data and the sim-to-real gap inherent in unstructured disaster zones. In this work, we propose a physically-grounded solution, the AsymmetricHuberEKF, which explicitly incorporates the non-negative physical prior of NLOS biases via a derived asymmetric loss function. Theoretically, we show that standard symmetric filters correspond to a degenerate case of our framework where the physical constraint is relaxed. Furthermore, we demonstrate that resolving SGD requires not just a robust filter, but specific bilateral information, which we achieve through a co-designed active sensing strategy. Validated in a 2D nadir-view scanning scenario, our approach significantly accelerates convergence compared to symmetric baselines, offering a resilient building block for search operations where data is scarce and geometry is constrained."
+    },
     {
       "title": "STVG-R1: Incentivizing Instance-Level Reasoning and Grounding in Videos via Reinforcement Learning",
       "url": "https://arxiv.org/abs/2602.11730",
@@ -28114,16 +28598,6 @@
       "summary": "This paper presents a method combining off-policy Soft Actor-Critic for efficient pretraining and model-based techniques for safe finetuning of humanoid locomotion policies.",
       "teaser_image": "https://arxiv.org/html/2601.21363/x1.png",
       "debug_abstract": "Reinforcement learning (RL) is widely used for humanoid control, with on-policy methods such as Proximal Policy Optimization (PPO) enabling robust training via large-scale parallel simulation and, in some cases, zero-shot deployment to real robots. However, the low sample efficiency of on-policy algorithms limits safe adaptation to new environments. Although off-policy RL and model-based RL have shown improved sample efficiency, the gap between large-scale pretraining and efficient finetuning on humanoids still exists. In this paper, we find that off-policy Soft Actor-Critic (SAC), with large-batch update and a high Update-To-Data (UTD) ratio, reliably supports large-scale pretraining of humanoid locomotion policies, achieving zero-shot deployment on real robots. For adaptation, we demonstrate that these SAC-pretrained policies can be finetuned in new environments and out-of-distribution tasks using model-based methods. Data collection in the new environment executes a deterministic policy while stochastic exploration is instead confined to a physics-informed world model. This separation mitigates the risks of random exploration during adaptation while preserving exploratory coverage for improvement. Overall, the approach couples the wall-clock efficiency of large-scale simulation during pretraining with the sample efficiency of model-based learning during fine-tuning."
-    },
-    {
-      "title": "Hybrid Deep Feature Extraction and ML for Construction and Demolition Debris Classification",
-      "url": "https://arxiv.org/abs/2601.17038",
-      "date": "2026-01-20",
-      "authors_text": "Obai Alashram, Nejad Alagha, Mahmoud AlKakuri, Zeeshan Swaveel, Abigail Copiaco",
-      "is_highlight": false,
-      "score": 65.0,
-      "summary": "This study introduces a hybrid pipeline combining deep feature extraction and classical ML classifiers for high-accuracy classification of construction debris, achieving up to 99.5% accuracy.",
-      "debug_abstract": "The construction industry produces significant volumes of debris, making effective sorting and classification critical for sustainable waste management and resource recovery. This study presents a hybrid vision-based pipeline that integrates deep feature extraction with classical machine learning (ML) classifiers for automated construction and demolition (C\\&amp;D) debris classification. A novel dataset comprising 1,800 balanced, high-quality images representing four material categories, Ceramic/Tile, Concrete, Trash/Waste, and Wood was collected from real construction sites in the UAE, capturing diverse real-world conditions. Deep features were extracted using a pre-trained Xception network, and multiple ML classifiers, including SVM, kNN, Bagged Trees, LDA, and Logistic Regression, were systematically evaluated. The results demonstrate that hybrid pipelines using Xception features with simple classifiers such as Linear SVM, kNN, and Bagged Trees achieve state-of-the-art performance, with up to 99.5\\% accuracy and macro-F1 scores, surpassing more complex or end-to-end deep learning approaches. The analysis highlights the operational benefits of this approach for robust, field-deployable debris identification and provides pathways for future integration with robotics and onsite automation systems."
     }
   ],
   "南京大学": [
@@ -28673,6 +29147,17 @@
   ],
   "ReThinkLab": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
       "date": "2026-02-13",
@@ -29131,6 +29616,17 @@
     }
   ],
   "赵波老师实验室": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
@@ -29591,6 +30087,17 @@
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
       "date": "2026-02-13",
@@ -30049,6 +30556,17 @@
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
@@ -30509,6 +31027,17 @@
   ],
   "IWIN-FINS实验室": [
     {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
+    {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
       "date": "2026-02-13",
@@ -30967,6 +31496,17 @@
     }
   ],
   "数字媒体与计算机视觉实验室": [
+    {
+      "title": "Coverage Path Planning for Autonomous Sailboats in Inhomogeneous and Time-Varying Oceans: A Spatiotemporal Optimization Approach",
+      "url": "https://arxiv.org/abs/2602.15901",
+      "date": "2026-02-13",
+      "authors_text": "Yang An, Zhikang Ge, Taiyu Zhang, Jean-Baptiste R. G. Souppez, Gaofei Xu",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper introduces a novel spatiotemporal coverage path planning framework for autonomous sailboats, addressing challenges posed by inhomogeneous and time-varying ocean conditions.",
+      "teaser_image": "https://arxiv.org/html/2602.15901/Graph-based.jpg",
+      "debug_abstract": "Autonomous sailboats are well suited for long-duration ocean observation due to their wind-driven endurance. However, their performance is highly anisotropic and strongly influenced by inhomogeneous and time-varying wind and current fields, limiting the effectiveness of existing coverage methods such as boustrophedon sweeping. Planning under these environmental and maneuvering constraints remains underexplored. This paper presents a spatiotemporal coverage path planning framework tailored to autonomous sailboats, combining (1) topology-based morphological constraints in the spatial domain to promote compact and continuous coverage, and (2) forecast-aware look-ahead planning in the temporal domain to anticipate environmental evolution and enable foresighted decision-making. Simulations conducted under stochastic inhomogeneous and time-varying ocean environments, including scenarios with partial directional accessibility, demonstrate that the proposed method generates efficient and feasible coverage paths where traditional strategies often fail. To the best of our knowledge, this study provides the first dedicated solution to the coverage path planning problem for autonomous sailboats operating in inhomogeneous and time-varying ocean environments, establishing a foundation for future cooperative multi-sailboat coverage."
+    },
     {
       "title": "Safe-SDL:Establishing Safety Boundaries and Control Mechanisms for AI-Driven Self-Driving Laboratories",
       "url": "https://arxiv.org/abs/2602.15061",
@@ -31472,6 +32012,28 @@
   ],
   "通用机器人、自动化、传感和感知实验室 (GRASP)": [
     {
+      "title": "SIT-LMPC: Safe Information-Theoretic Learning Model Predictive Control for Iterative Tasks",
+      "url": "https://arxiv.org/abs/2602.16187",
+      "date": "2026-02-18",
+      "authors_text": "Zirui Zang, Ahmad Amine, Nick-Marios T. Kokolakis, Truong X. Nghiem, Ugo Rosolia",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "The paper presents SIT-LMPC, a safe, information-theoretic learning model predictive control algorithm that enhances iterative task performance in uncertain environments while ensuring safety and robustness.",
+      "teaser_image": "https://arxiv.org/html/2602.16187/imgs/title/flow_diagram2.png",
+      "debug_abstract": "Robots executing iterative tasks in complex, uncertain environments require control strategies that balance robustness, safety, and high performance. This paper introduces a safe information-theoretic learning model predictive control (SIT-LMPC) algorithm for iterative tasks. Specifically, we design an iterative control framework based on an information-theoretic model predictive control algorithm to address a constrained infinite-horizon optimal control problem for discrete-time nonlinear stochastic systems. An adaptive penalty method is developed to ensure safety while balancing optimality. Trajectories from previous iterations are utilized to learn a value function using normalizing flows, which enables richer uncertainty modeling compared to Gaussian priors. SIT-LMPC is designed for highly parallel execution on graphics processing units, allowing efficient real-time optimization. Benchmark simulations and hardware experiments demonstrate that SIT-LMPC iteratively improves system performance while robustly satisfying system constraints."
+    },
+    {
+      "title": "Nonplanar Model Predictive Control for Autonomous Vehicles with Recursive Sparse Gaussian Process Dynamics",
+      "url": "https://arxiv.org/abs/2602.16206",
+      "date": "2026-02-18",
+      "authors_text": "Ahmad Amine, Kabir Puri, Viet-Anh Le, Rahul Mangharam",
+      "is_highlight": false,
+      "score": 87.0,
+      "summary": "The paper presents a nonplanar MPC framework utilizing a recursive sparse Gaussian Process for real-time vehicle dynamics adaptation on complex terrains, validated through a reference-tracking task.",
+      "teaser_image": "https://arxiv.org/html/2602.16206/x2.png",
+      "debug_abstract": "This paper proposes a nonplanar model predictive control (MPC) framework for autonomous vehicles operating on nonplanar terrain. To approximate complex vehicle dynamics in such environments, we develop a geometry-aware modeling approach that learns a residual Gaussian Process (GP). By utilizing a recursive sparse GP, the framework enables real-time adaptation to varying terrain geometry. The effectiveness of the learned model is demonstrated in a reference-tracking task using a Model Predictive Path Integral (MPPI) controller. Validation within a custom Isaac Sim environment confirms the framework&#39;s capability to maintain high tracking accuracy on challenging 3D surfaces."
+    },
+    {
       "title": "Experiential Reinforcement Learning",
       "url": "https://arxiv.org/abs/2602.13949",
       "date": "2026-02-15",
@@ -31649,6 +32211,17 @@
     }
   ],
   "电子科技大学": [
+    {
+      "title": "Parameter-Free Adaptive Multi-Scale Channel-Spatial Attention Aggregation framework for 3D Indoor Semantic Scene Completion Toward Assisting Visually Impaired",
+      "url": "https://arxiv.org/abs/2602.16385",
+      "date": "2026-02-18",
+      "authors_text": "Qi He, XiangXiang Wang, Jingtao Zhang, Yongbin Yu, Hongxiang Chu",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "The paper introduces the Adaptive Multi-scale Attention Aggregation framework, enhancing 3D Semantic Scene Completion for visually impaired users by improving feature reliability and information propagation without increasing complexity.",
+      "teaser_image": "https://arxiv.org/html/2602.16385/all.png",
+      "debug_abstract": "In indoor assistive perception for visually impaired users, 3D Semantic Scene Completion (SSC) is expected to provide structurally coherent and semantically consistent occupancy under strictly monocular vision for safety-critical scene understanding. However, existing monocular SSC approaches often lack explicit modeling of voxel-feature reliability and regulated cross-scale information propagation during 2D-3D projection and multi-scale fusion, making them vulnerable to projection diffusion and feature entanglement and thus limiting structural this http URL address these challenges, this paper presents an Adaptive Multi-scale Attention Aggregation (AMAA) framework built upon the MonoScene pipeline. Rather than introducing a heavier backbone, AMAA focuses on reliability-oriented feature regulation within a monocular SSC framework. Specifically, lifted voxel features are jointly calibrated in semantic and spatial dimensions through parallel channel-spatial attention aggregation, while multi-scale encoder-decoder fusion is stabilized via a hierarchical adaptive feature-gating strategy that regulates information injection across this http URL on the NYUv2 benchmark demonstrate consistent improvements over MonoScene without significantly increasing system complexity: AMAA achieves 27.25% SSC mIoU (+0.31) and 43.10% SC IoU (+0.59). In addition, system-level deployment on an NVIDIA Jetson platform verifies that the complete AMAA framework can be executed stably on embedded hardware. Overall, AMAA improves monocular SSC quality and provides a reliable and deployable perception framework for indoor assistive systems targeting visually impaired users."
+    },
     {
       "title": "Detection of On-Ground Chestnuts Using Artificial Intelligence Toward Automated Picking",
       "url": "https://arxiv.org/abs/2602.14140",
@@ -32410,6 +32983,17 @@
   ],
   "高性能人形技术实验室 (H²T)": [
     {
+      "title": "Markerless Robot Detection and 6D Pose Estimation for Multi-Agent SLAM",
+      "url": "https://arxiv.org/abs/2602.16308",
+      "date": "2026-02-18",
+      "authors_text": "Markus Rueggeberg, Maximilian Ulmer, Maximilian Durner, Wout Boerdijk, Marcus Gerhard Mueller",
+      "is_highlight": false,
+      "score": 89.0,
+      "summary": "This paper presents a markerless 6D pose estimation method for decentralized multi-robot SLAM, enhancing localization accuracy without relying on fiducial markers.",
+      "teaser_image": "https://arxiv.org/html/2602.16308/images/multirobot_detection_slam_system.png",
+      "debug_abstract": "The capability of multi-robot SLAM approaches to merge localization history and maps from different observers is often challenged by the difficulty in establishing data association. Loop closure detection between perceptual inputs of different robotic agents is easily compromised in the context of perceptual aliasing, or when perspectives differ significantly. For this reason, direct mutual observation among robots is a powerful way to connect partial SLAM graphs, but often relies on the presence of calibrated arrays of fiducial markers (e.g., AprilTag arrays), which severely limits the range of observations and frequently fails under sharp lighting conditions, e.g., reflections or overexposure. In this work, we propose a novel solution to this problem leveraging recent advances in Deep-Learning-based 6D pose estimation. We feature markerless pose estimation as part of a decentralized multi-robot SLAM system and demonstrate the benefit to the relative localization accuracy among the robotic team. The solution is validated experimentally on data recorded in a test field campaign on a planetary analogous environment."
+    },
+    {
       "title": "Bayesian Optimization for Design Parameters of 3D Image Data Analysis",
       "url": "https://arxiv.org/abs/2602.15660",
       "date": "2026-02-17",
@@ -32455,6 +33039,17 @@
     }
   ],
   "Multi-Scale Embodied Intelligence Lab": [
+    {
+      "title": "Learning to unfold cloth: Scaling up world models to deformable object manipulation",
+      "url": "https://arxiv.org/abs/2602.16675",
+      "date": "2026-02-18",
+      "authors_text": "Jack Rome, Stephen James, Subramanian Ramamoorthy",
+      "is_highlight": false,
+      "score": 92.0,
+      "summary": "This paper presents an enhanced reinforcement learning approach for in-air cloth manipulation using DreamerV2, improving generalization through modified input and data handling techniques.",
+      "teaser_image": "https://arxiv.org/html/2602.16675/media/system_diagram2.png",
+      "debug_abstract": "Learning to manipulate cloth is both a paradigmatic problem for robotic research and a problem of immediate relevance to a variety of applications ranging from assistive care to the service industry. The complex physics of the deformable object makes this problem of cloth manipulation nontrivial. In order to create a general manipulation strategy that addresses a variety of shapes, sizes, fold and wrinkle patterns, in addition to the usual problems of appearance variations, it becomes important to carefully consider model structure and their implications for generalisation performance. In this paper, we present an approach to in-air cloth manipulation that uses a variation of a recently proposed reinforcement learning architecture, DreamerV2. Our implementation modifies this architecture to utilise surface normals input, in addition to modiying the replay buffer and data augmentation procedures. Taken together these modifications represent an enhancement to the world model used by the robot, addressing the physical complexity of the object being manipulated by the robot. We present evaluations both in simulation and in a zero-shot deployment of the trained policies in a physical robot setup, performing in-air unfolding of a variety of different cloth types, demonstrating the generalisation benefits of our proposed architecture."
+    },
     {
       "title": "Augmenting Human Balance with Generic Supernumerary Robotic Limbs",
       "url": "https://arxiv.org/abs/2602.15092",
