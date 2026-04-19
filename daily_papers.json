@@ -12,204 +12,7 @@
       "debug_abstract": "The construction industry produces significant volumes of debris, making effective sorting and classification critical for sustainable waste management and resource recovery. This study presents a hybrid vision-based pipeline that integrates deep feature extraction with classical machine learning (ML) classifiers for automated construction and demolition (C\\&amp;D) debris classification. A novel dataset comprising 1,800 balanced, high-quality images representing four material categories, Ceramic/Tile, Concrete, Trash/Waste, and Wood was collected from real construction sites in the UAE, capturing diverse real-world conditions. Deep features were extracted using a pre-trained Xception network, and multiple ML classifiers, including SVM, kNN, Bagged Trees, LDA, and Logistic Regression, were systematically evaluated. The results demonstrate that hybrid pipelines using Xception features with simple classifiers such as Linear SVM, kNN, and Bagged Trees achieve state-of-the-art performance, with up to 99.5\\% accuracy and macro-F1 scores, surpassing more complex or end-to-end deep learning approaches. The analysis highlights the operational benefits of this approach for robust, field-deployable debris identification and provides pathways for future integration with robotics and onsite automation systems."
     }
   ],
-  "武汉大学": [
-    {
-      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2601.17383",
-      "date": "2026-01-24",
-      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
-    }
-  ],
   "MARS Lab": [
-    {
-      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
-      "url": "https://arxiv.org/abs/2601.08641",
-      "date": "2026-01-26",
-      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
-    },
-    {
-      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
-      "url": "https://arxiv.org/abs/2601.01155",
-      "date": "2026-01-26",
-      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    },
-    {
-      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
-      "url": "https://arxiv.org/abs/2601.17812",
-      "date": "2026-01-25",
-      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
-    },
-    {
-      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2601.17383",
-      "date": "2026-01-24",
-      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
-    }
-  ],
-  "S-Lab for Advanced Intelligence": [
-    {
-      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
-      "url": "https://arxiv.org/abs/2601.08641",
-      "date": "2026-01-26",
-      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
-    },
-    {
-      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
-      "url": "https://arxiv.org/abs/2601.01155",
-      "date": "2026-01-26",
-      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    },
-    {
-      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
-      "url": "https://arxiv.org/abs/2601.17812",
-      "date": "2026-01-25",
-      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
-    },
-    {
-      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2601.17383",
-      "date": "2026-01-24",
-      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
-    }
-  ],
-  "PINE Lab": [
-    {
-      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
-      "url": "https://arxiv.org/abs/2601.08641",
-      "date": "2026-01-26",
-      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
-    },
-    {
-      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
-      "url": "https://arxiv.org/abs/2601.01155",
-      "date": "2026-01-26",
-      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    },
-    {
-      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
-      "url": "https://arxiv.org/abs/2601.17812",
-      "date": "2026-01-25",
-      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
-    },
-    {
-      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2601.17383",
-      "date": "2026-01-24",
-      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
-    }
-  ],
-  "MMLab@NTU": [
-    {
-      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
-      "url": "https://arxiv.org/abs/2601.08641",
-      "date": "2026-01-26",
-      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
-    },
-    {
-      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
-      "url": "https://arxiv.org/abs/2601.01155",
-      "date": "2026-01-26",
-      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    },
-    {
-      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
-      "url": "https://arxiv.org/abs/2601.17812",
-      "date": "2026-01-25",
-      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
-    },
-    {
-      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2601.17383",
-      "date": "2026-01-24",
-      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
-    }
-  ],
-  "MReaLLab": [
     {
       "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
       "url": "https://arxiv.org/abs/2601.08641",
@@ -301,6 +104,144 @@
       "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
     }
   ],
+  "MMLab@NTU": [
+    {
+      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2601.08641",
+      "date": "2026-01-26",
+      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
+    },
+    {
+      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+      "url": "https://arxiv.org/abs/2601.01155",
+      "date": "2026-01-26",
+      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
+    },
+    {
+      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
+      "url": "https://arxiv.org/abs/2601.17812",
+      "date": "2026-01-25",
+      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
+    },
+    {
+      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2601.17383",
+      "date": "2026-01-24",
+      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
+    }
+  ],
+  "S-Lab for Advanced Intelligence": [
+    {
+      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2601.08641",
+      "date": "2026-01-26",
+      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
+    },
+    {
+      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+      "url": "https://arxiv.org/abs/2601.01155",
+      "date": "2026-01-26",
+      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
+    },
+    {
+      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
+      "url": "https://arxiv.org/abs/2601.17812",
+      "date": "2026-01-25",
+      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
+    },
+    {
+      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2601.17383",
+      "date": "2026-01-24",
+      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
+    }
+  ],
+  "MReaLLab": [
+    {
+      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2601.08641",
+      "date": "2026-01-26",
+      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
+    },
+    {
+      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+      "url": "https://arxiv.org/abs/2601.01155",
+      "date": "2026-01-26",
+      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
+    },
+    {
+      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
+      "url": "https://arxiv.org/abs/2601.17812",
+      "date": "2026-01-25",
+      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
+    },
+    {
+      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2601.17383",
+      "date": "2026-01-24",
+      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
+    }
+  ],
   "南京大学": [
     {
       "title": "PEAfowl: Perception-Enhanced Multi-View Vision-Language-Action for Bimanual Manipulation",
@@ -325,17 +266,63 @@
       "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
     }
   ],
-  "Sensing, Interaction & Perception Lab (SIPLAB)": [
+  "PINE Lab": [
     {
-      "title": "Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2601.17428",
-      "date": "2026-01-24",
-      "authors_text": "Ziming Li, Chenhao Li, Marco Hutter",
-      "is_highlight": true,
+      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2601.08641",
+      "date": "2026-01-26",
+      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
+      "is_highlight": false,
       "score": 0,
       "summary": "NO",
       "teaser_image": null,
-      "debug_abstract": "Curriculum learning has demonstrated substantial effectiveness in robot learning. However, it still faces limitations when scaling to complex, wide-ranging task spaces. Such task spaces often lack a well-defined difficulty structure, making the difficulty ordering required by previous methods challenging to define. We propose a Learning Progress-based Automatic Curriculum Reinforcement Learning (LP-ACRL) framework, which estimates the agent&#39;s learning progress online and adaptively adjusts the task-sampling distribution, thereby enabling automatic curriculum generation without prior knowledge of the difficulty distribution over the task space. Policies trained with LP-ACRL enable the ANYmal D quadruped to achieve and maintain stable, high-speed locomotion at 2.5 m/s linear velocity and 3.0 rad/s angular velocity across diverse terrains, including stairs, slopes, gravel, and low-friction flat surfaces--whereas previous methods have generally been limited to high speeds on flat terrain or low speeds on complex terrain. Experimental results demonstrate that LP-ACRL exhibits strong scalability and real-world applicability, providing a robust baseline for future research on curriculum generation in complex, wide-ranging robotic learning task spaces."
+      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
+    },
+    {
+      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+      "url": "https://arxiv.org/abs/2601.01155",
+      "date": "2026-01-26",
+      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
+    },
+    {
+      "title": "Delay-Compensated Stiffness Estimation for Robot-Mediated Dyadic Interaction",
+      "url": "https://arxiv.org/abs/2601.17812",
+      "date": "2026-01-25",
+      "authors_text": "Mingtian Du, Suhas Raghavendra Kulkarni, Bernardo Noronha, Domenico Campolo",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Robot-mediated human-human (dyadic) interactions enable therapists to provide physical therapy remotely, yet an accurate perception of patient stiffness remains challenging due to network-induced haptic delays. Conventional stiffness estimation methods, which neglect delay, suffer from temporal misalignment between force and position signals, leading to significant estimation errors as delays increase. To address this, we propose a robust, delay-compensated stiffness estimation framework by deriving an algebraic estimator based on quasi-static equilibrium that explicitly accounts for temporally aligning the expert&#39;s input with the novice&#39;s response. A Normalised Weighted Least Squares (NWLS) implementation is then introduced to robustly filter dynamic bias resulting from the algebraic derivation. Experiments using commercial rehabilitation robots (H-MAN) as the platform demonstrate that the proposed method significantly outperforms the standard estimator, maintaining consistent tracking accuracy under multiple introduced delays. These findings offer a promising solution for achieving high-fidelity haptic perception in remote dyadic interaction, potentially facilitating reliable stiffness assessment in therapeutic settings across networks."
+    },
+    {
+      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2601.17383",
+      "date": "2026-01-24",
+      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
+    }
+  ],
+  "武汉大学": [
+    {
+      "title": "Physical Prompt Injection Attacks on Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2601.17383",
+      "date": "2026-01-24",
+      "authors_text": "Chen Ling, Kai Hu, Hangcheng Liu, Xingshuo Han, Tianwei Zhang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Large Vision-Language Models (LVLMs) are increasingly deployed in real-world intelligent systems for perception and reasoning in open physical environments. While LVLMs are known to be vulnerable to prompt injection attacks, existing methods either require access to input channels or depend on knowledge of user queries, assumptions that rarely hold in practical deployments. We propose the first Physical Prompt Injection Attack (PPIA), a black-box, query-agnostic attack that embeds malicious typographic instructions into physical objects perceivable by the LVLM. PPIA requires no access to the model, its inputs, or internal pipeline, and operates solely through visual observation. It combines offline selection of highly recognizable and semantically effective visual prompts with strategic environment-aware placement guided by spatiotemporal attention, ensuring that the injected prompts are both perceivable and influential on model behavior. We evaluate PPIA across 10 state-of-the-art LVLMs in both simulated and real-world settings on tasks including visual question answering, planning, and navigation, PPIA achieves attack success rates up to 98%, with strong robustness under varying physical conditions such as distance, viewpoint, and illumination. Our code is publicly available at this https URL."
     }
   ],
   "机器人系统实验室 (RSL)": [
@@ -351,7 +338,20 @@
       "debug_abstract": "Curriculum learning has demonstrated substantial effectiveness in robot learning. However, it still faces limitations when scaling to complex, wide-ranging task spaces. Such task spaces often lack a well-defined difficulty structure, making the difficulty ordering required by previous methods challenging to define. We propose a Learning Progress-based Automatic Curriculum Reinforcement Learning (LP-ACRL) framework, which estimates the agent&#39;s learning progress online and adaptively adjusts the task-sampling distribution, thereby enabling automatic curriculum generation without prior knowledge of the difficulty distribution over the task space. Policies trained with LP-ACRL enable the ANYmal D quadruped to achieve and maintain stable, high-speed locomotion at 2.5 m/s linear velocity and 3.0 rad/s angular velocity across diverse terrains, including stairs, slopes, gravel, and low-friction flat surfaces--whereas previous methods have generally been limited to high speeds on flat terrain or low speeds on complex terrain. Experimental results demonstrate that LP-ACRL exhibits strong scalability and real-world applicability, providing a robust baseline for future research on curriculum generation in complex, wide-ranging robotic learning task spaces."
     }
   ],
-  "数字媒体与计算机视觉实验室": [
+  "Sensing, Interaction & Perception Lab (SIPLAB)": [
+    {
+      "title": "Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2601.17428",
+      "date": "2026-01-24",
+      "authors_text": "Ziming Li, Chenhao Li, Marco Hutter",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Curriculum learning has demonstrated substantial effectiveness in robot learning. However, it still faces limitations when scaling to complex, wide-ranging task spaces. Such task spaces often lack a well-defined difficulty structure, making the difficulty ordering required by previous methods challenging to define. We propose a Learning Progress-based Automatic Curriculum Reinforcement Learning (LP-ACRL) framework, which estimates the agent&#39;s learning progress online and adaptively adjusts the task-sampling distribution, thereby enabling automatic curriculum generation without prior knowledge of the difficulty distribution over the task space. Policies trained with LP-ACRL enable the ANYmal D quadruped to achieve and maintain stable, high-speed locomotion at 2.5 m/s linear velocity and 3.0 rad/s angular velocity across diverse terrains, including stairs, slopes, gravel, and low-friction flat surfaces--whereas previous methods have generally been limited to high speeds on flat terrain or low speeds on complex terrain. Experimental results demonstrate that LP-ACRL exhibits strong scalability and real-world applicability, providing a robust baseline for future research on curriculum generation in complex, wide-ranging robotic learning task spaces."
+    }
+  ],
+  "机器视觉与智能学习实验室 (MVIG)": [
     {
       "title": "ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection",
       "url": "https://arxiv.org/abs/2601.18629",
@@ -421,7 +421,7 @@
       "debug_abstract": "Humanoid robots hold great potential for diverse interactions and daily service tasks within human-centered environments, necessitating controllers that seamlessly integrate precise locomotion with dexterous manipulation. However, most existing whole-body controllers lack exteroceptive awareness of the surrounding environment, rendering them insufficient for stable task execution in complex, unstructured this http URL address this challenge, we propose PILOT, a unified single-stage reinforcement learning (RL) framework tailored for perceptive loco-manipulation, which synergizes perceptive locomotion and expansive whole-body control within a single policy. To enhance terrain awareness and ensure precise foot placement, we design a cross-modal context encoder that fuses prediction-based proprioceptive features with attention-based perceptive representations. Furthermore, we introduce a Mixture-of-Experts (MoE) policy architecture to coordinate diverse motor skills, facilitating better specialization across distinct motion patterns. Extensive experiments in both simulation and on the physical Unitree G1 humanoid robot validate the efficacy of our framework. PILOT demonstrates superior stability, command tracking precision, and terrain traversability compared to existing baselines. These results highlight its potential to serve as a robust, foundational low-level controller for loco-manipulation in unstructured scenes."
     }
   ],
-  "机器视觉与智能学习实验室 (MVIG)": [
+  "赵波老师实验室": [
     {
       "title": "ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection",
       "url": "https://arxiv.org/abs/2601.18629",
@@ -491,41 +491,6 @@
       "debug_abstract": "Humanoid robots hold great potential for diverse interactions and daily service tasks within human-centered environments, necessitating controllers that seamlessly integrate precise locomotion with dexterous manipulation. However, most existing whole-body controllers lack exteroceptive awareness of the surrounding environment, rendering them insufficient for stable task execution in complex, unstructured this http URL address this challenge, we propose PILOT, a unified single-stage reinforcement learning (RL) framework tailored for perceptive loco-manipulation, which synergizes perceptive locomotion and expansive whole-body control within a single policy. To enhance terrain awareness and ensure precise foot placement, we design a cross-modal context encoder that fuses prediction-based proprioceptive features with attention-based perceptive representations. Furthermore, we introduce a Mixture-of-Experts (MoE) policy architecture to coordinate diverse motor skills, facilitating better specialization across distinct motion patterns. Extensive experiments in both simulation and on the physical Unitree G1 humanoid robot validate the efficacy of our framework. PILOT demonstrates superior stability, command tracking precision, and terrain traversability compared to existing baselines. These results highlight its potential to serve as a robust, foundational low-level controller for loco-manipulation in unstructured scenes."
     }
   ],
-  "赵波老师实验室": [
-    {
-      "title": "ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection",
-      "url": "https://arxiv.org/abs/2601.18629",
-      "date": "2026-01-26",
-      "authors_text": "Yiming Wang, Ruogu Zhang, Minyang Li, Hao Shi, Junbo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Real-to-Sim-to-Real technique is gaining increasing interest for robotic manipulation, as it can generate scalable data in simulation while having narrower sim-to-real gap. However, previous methods mainly focused on environment-level visual real-to-sim transfer, ignoring the transfer of interactions, which could be challenging and inefficient to obtain purely in simulation especially for contact-rich tasks. We propose ExoGS, a robot-free 4D Real-to-Sim-to-Real framework that captures both static environments and dynamic interactions in the real world and transfers them seamlessly to a simulated environment. It provides a new solution for scalable manipulation data collection and policy learning. ExoGS employs a self-designed robot-isomorphic passive exoskeleton AirExo-3 to capture kinematically consistent trajectories with millimeter-level accuracy and synchronized RGB observations during direct human demonstrations. The robot, objects, and environment are reconstructed as editable 3D Gaussian Splatting assets, enabling geometry-consistent replay and large-scale data augmentation. Additionally, a lightweight Mask Adapter injects instance-level semantics into the policy to enhance robustness under visual domain shifts. Real-world experiments demonstrate that ExoGS significantly improves data efficiency and policy generalization compared to teleoperation-based baselines. Code and hardware files have been released on this https URL."
-    },
-    {
-      "title": "BMDS-Net: A Bayesian Multi-Modal Deep Supervision Network for Robust Brain Tumor Segmentation",
-      "url": "https://arxiv.org/abs/2601.17504",
-      "date": "2026-01-24",
-      "authors_text": "Yan Zhou, Zhen Huang, Yingqiu Li, Yue Ouyang, Suncheng Xiang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Accurate brain tumor segmentation from multi-modal magnetic resonance imaging (MRI) is a prerequisite for precise radiotherapy planning and surgical navigation. While recent Transformer-based models such as Swin UNETR have achieved impressive benchmark performance, their clinical utility is often compromised by two critical issues: sensitivity to missing modalities (common in clinical practice) and a lack of confidence calibration. Merely chasing higher Dice scores on idealized data fails to meet the safety requirements of real-world medical deployment. In this work, we propose BMDS-Net, a unified framework that prioritizes clinical robustness and trustworthiness over simple metric maximization. Our contribution is three-fold. First, we construct a robust deterministic backbone by integrating a Zero-Init Multimodal Contextual Fusion (MMCF) module and a Residual-Gated Deep Decoder Supervision (DDS) mechanism, enabling stable feature learning and precise boundary delineation with significantly reduced Hausdorff Distance, even under modality corruption. Second, and most importantly, we introduce a memory-efficient Bayesian fine-tuning strategy that transforms the network into a probabilistic predictor, providing voxel-wise uncertainty maps to highlight potential errors for clinicians. Third, comprehensive experiments on the BraTS 2021 dataset demonstrate that BMDS-Net not only maintains competitive accuracy but, more importantly, exhibits superior stability in missing-modality scenarios where baseline models fail. The source code is publicly available at this https URL."
-    },
-    {
-      "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
-      "url": "https://arxiv.org/abs/2601.17440",
-      "date": "2026-01-24",
-      "authors_text": "Xinru Cui, Linxi Feng, Yixuan Zhou, Haoqi Han, Zhe Liu",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Humanoid robots hold great potential for diverse interactions and daily service tasks within human-centered environments, necessitating controllers that seamlessly integrate precise locomotion with dexterous manipulation. However, most existing whole-body controllers lack exteroceptive awareness of the surrounding environment, rendering them insufficient for stable task execution in complex, unstructured this http URL address this challenge, we propose PILOT, a unified single-stage reinforcement learning (RL) framework tailored for perceptive loco-manipulation, which synergizes perceptive locomotion and expansive whole-body control within a single policy. To enhance terrain awareness and ensure precise foot placement, we design a cross-modal context encoder that fuses prediction-based proprioceptive features with attention-based perceptive representations. Furthermore, we introduce a Mixture-of-Experts (MoE) policy architecture to coordinate diverse motor skills, facilitating better specialization across distinct motion patterns. Extensive experiments in both simulation and on the physical Unitree G1 humanoid robot validate the efficacy of our framework. PILOT demonstrates superior stability, command tracking precision, and terrain traversability compared to existing baselines. These results highlight its potential to serve as a robust, foundational low-level controller for loco-manipulation in unstructured scenes."
-    }
-  ],
   "智能机器人与机器视觉(IRMV)实验室": [
     {
       "title": "ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection",
@@ -561,103 +526,42 @@
       "debug_abstract": "Humanoid robots hold great potential for diverse interactions and daily service tasks within human-centered environments, necessitating controllers that seamlessly integrate precise locomotion with dexterous manipulation. However, most existing whole-body controllers lack exteroceptive awareness of the surrounding environment, rendering them insufficient for stable task execution in complex, unstructured this http URL address this challenge, we propose PILOT, a unified single-stage reinforcement learning (RL) framework tailored for perceptive loco-manipulation, which synergizes perceptive locomotion and expansive whole-body control within a single policy. To enhance terrain awareness and ensure precise foot placement, we design a cross-modal context encoder that fuses prediction-based proprioceptive features with attention-based perceptive representations. Furthermore, we introduce a Mixture-of-Experts (MoE) policy architecture to coordinate diverse motor skills, facilitating better specialization across distinct motion patterns. Extensive experiments in both simulation and on the physical Unitree G1 humanoid robot validate the efficacy of our framework. PILOT demonstrates superior stability, command tracking precision, and terrain traversability compared to existing baselines. These results highlight its potential to serve as a robust, foundational low-level controller for loco-manipulation in unstructured scenes."
     }
   ],
-  "智能系统与机器人实验室 (ISR Lab)": [
+  "数字媒体与计算机视觉实验室": [
     {
-      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
-      "url": "https://arxiv.org/abs/2601.18222",
+      "title": "ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection",
+      "url": "https://arxiv.org/abs/2601.18629",
       "date": "2026-01-26",
-      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
+      "authors_text": "Yiming Wang, Ruogu Zhang, Minyang Li, Hao Shi, Junbo Wang",
       "is_highlight": false,
       "score": 0,
       "summary": "NO",
       "teaser_image": null,
-      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+      "debug_abstract": "Real-to-Sim-to-Real technique is gaining increasing interest for robotic manipulation, as it can generate scalable data in simulation while having narrower sim-to-real gap. However, previous methods mainly focused on environment-level visual real-to-sim transfer, ignoring the transfer of interactions, which could be challenging and inefficient to obtain purely in simulation especially for contact-rich tasks. We propose ExoGS, a robot-free 4D Real-to-Sim-to-Real framework that captures both static environments and dynamic interactions in the real world and transfers them seamlessly to a simulated environment. It provides a new solution for scalable manipulation data collection and policy learning. ExoGS employs a self-designed robot-isomorphic passive exoskeleton AirExo-3 to capture kinematically consistent trajectories with millimeter-level accuracy and synchronized RGB observations during direct human demonstrations. The robot, objects, and environment are reconstructed as editable 3D Gaussian Splatting assets, enabling geometry-consistent replay and large-scale data augmentation. Additionally, a lightweight Mask Adapter injects instance-level semantics into the policy to enhance robustness under visual domain shifts. Real-world experiments demonstrate that ExoGS significantly improves data efficiency and policy generalization compared to teleoperation-based baselines. Code and hardware files have been released on this https URL."
     },
     {
-      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
-      "url": "https://arxiv.org/abs/2601.17507",
+      "title": "BMDS-Net: A Bayesian Multi-Modal Deep Supervision Network for Robust Brain Tumor Segmentation",
+      "url": "https://arxiv.org/abs/2601.17504",
       "date": "2026-01-24",
-      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
+      "authors_text": "Yan Zhou, Zhen Huang, Yingqiu Li, Yue Ouyang, Suncheng Xiang",
       "is_highlight": false,
       "score": 0,
       "summary": "NO",
       "teaser_image": null,
-      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
-    }
-  ],
-  "智能技术与系统实验室": [
-    {
-      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
-      "url": "https://arxiv.org/abs/2601.18222",
-      "date": "2026-01-26",
-      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+      "debug_abstract": "Accurate brain tumor segmentation from multi-modal magnetic resonance imaging (MRI) is a prerequisite for precise radiotherapy planning and surgical navigation. While recent Transformer-based models such as Swin UNETR have achieved impressive benchmark performance, their clinical utility is often compromised by two critical issues: sensitivity to missing modalities (common in clinical practice) and a lack of confidence calibration. Merely chasing higher Dice scores on idealized data fails to meet the safety requirements of real-world medical deployment. In this work, we propose BMDS-Net, a unified framework that prioritizes clinical robustness and trustworthiness over simple metric maximization. Our contribution is three-fold. First, we construct a robust deterministic backbone by integrating a Zero-Init Multimodal Contextual Fusion (MMCF) module and a Residual-Gated Deep Decoder Supervision (DDS) mechanism, enabling stable feature learning and precise boundary delineation with significantly reduced Hausdorff Distance, even under modality corruption. Second, and most importantly, we introduce a memory-efficient Bayesian fine-tuning strategy that transforms the network into a probabilistic predictor, providing voxel-wise uncertainty maps to highlight potential errors for clinicians. Third, comprehensive experiments on the BraTS 2021 dataset demonstrate that BMDS-Net not only maintains competitive accuracy but, more importantly, exhibits superior stability in missing-modality scenarios where baseline models fail. The source code is publicly available at this https URL."
     },
     {
-      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
-      "url": "https://arxiv.org/abs/2601.17507",
+      "title": "PILOT: A Perceptive Integrated Low-level Controller for Loco-manipulation over Unstructured Scenes",
+      "url": "https://arxiv.org/abs/2601.17440",
       "date": "2026-01-24",
-      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
-      "is_highlight": false,
+      "authors_text": "Xinru Cui, Linxi Feng, Yixuan Zhou, Haoqi Han, Zhe Liu",
+      "is_highlight": true,
       "score": 0,
       "summary": "NO",
       "teaser_image": null,
-      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
+      "debug_abstract": "Humanoid robots hold great potential for diverse interactions and daily service tasks within human-centered environments, necessitating controllers that seamlessly integrate precise locomotion with dexterous manipulation. However, most existing whole-body controllers lack exteroceptive awareness of the surrounding environment, rendering them insufficient for stable task execution in complex, unstructured this http URL address this challenge, we propose PILOT, a unified single-stage reinforcement learning (RL) framework tailored for perceptive loco-manipulation, which synergizes perceptive locomotion and expansive whole-body control within a single policy. To enhance terrain awareness and ensure precise foot placement, we design a cross-modal context encoder that fuses prediction-based proprioceptive features with attention-based perceptive representations. Furthermore, we introduce a Mixture-of-Experts (MoE) policy architecture to coordinate diverse motor skills, facilitating better specialization across distinct motion patterns. Extensive experiments in both simulation and on the physical Unitree G1 humanoid robot validate the efficacy of our framework. PILOT demonstrates superior stability, command tracking precision, and terrain traversability compared to existing baselines. These results highlight its potential to serve as a robust, foundational low-level controller for loco-manipulation in unstructured scenes."
     }
   ],
-  "MARS多模态学习实验室": [
-    {
-      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
-      "url": "https://arxiv.org/abs/2601.18222",
-      "date": "2026-01-26",
-      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
-    },
-    {
-      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
-      "url": "https://arxiv.org/abs/2601.17507",
-      "date": "2026-01-24",
-      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
-    }
-  ],
-  "集群机器人系统实验室 (MagicLab)": [
-    {
-      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
-      "url": "https://arxiv.org/abs/2601.17507",
-      "date": "2026-01-24",
-      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
-    }
-  ],
-  "具身智能实验室 (TEA Lab)": [
-    {
-      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
-      "url": "https://arxiv.org/abs/2601.18222",
-      "date": "2026-01-26",
-      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
-    },
+  "智能感知与无人系统实验室": [
     {
       "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
       "url": "https://arxiv.org/abs/2601.17507",
@@ -707,7 +611,18 @@
       "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
     }
   ],
-  "智能感知与无人系统实验室": [
+  "智能系统与机器人实验室 (ISR Lab)": [
+    {
+      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
+      "url": "https://arxiv.org/abs/2601.18222",
+      "date": "2026-01-26",
+      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+    },
     {
       "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
       "url": "https://arxiv.org/abs/2601.17507",
@@ -768,6 +683,115 @@
       "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
     }
   ],
+  "集群机器人系统实验室 (MagicLab)": [
+    {
+      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
+      "url": "https://arxiv.org/abs/2601.17507",
+      "date": "2026-01-24",
+      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
+    }
+  ],
+  "智能技术与系统实验室": [
+    {
+      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
+      "url": "https://arxiv.org/abs/2601.18222",
+      "date": "2026-01-26",
+      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+    },
+    {
+      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
+      "url": "https://arxiv.org/abs/2601.17507",
+      "date": "2026-01-24",
+      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
+    }
+  ],
+  "MARS多模态学习实验室": [
+    {
+      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
+      "url": "https://arxiv.org/abs/2601.18222",
+      "date": "2026-01-26",
+      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+    },
+    {
+      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
+      "url": "https://arxiv.org/abs/2601.17507",
+      "date": "2026-01-24",
+      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
+    }
+  ],
+  "具身智能实验室 (TEA Lab)": [
+    {
+      "title": "HomoFM: Deep Homography Estimation with Flow Matching",
+      "url": "https://arxiv.org/abs/2601.18222",
+      "date": "2026-01-26",
+      "authors_text": "Mengfan He, Liangzheng Sun, Chunyu Li, Ziyang Meng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network&#39;s robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at this https URL."
+    },
+    {
+      "title": "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions",
+      "url": "https://arxiv.org/abs/2601.17507",
+      "date": "2026-01-24",
+      "authors_text": "Yutong Shen, Hangxu Liu, Kailin Pei, Ruizhe Xia, Tongtong Feng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Humanoid robot loco-manipulation remains constrained by the semantic-physical gap. Current methods face three limitations: Low sample efficiency in reinforcement learning, poor generalization in imitation learning, and physical inconsistency in VLMs. We propose MetaWorld, a hierarchical world model that integrates semantic planning and physical control via expert policy transfer. The framework decouples tasks into a VLM-driven semantic layer and a latent dynamics model operating in a compact state space. Our dynamic expert selection and motion prior fusion mechanism leverages a pre-trained multi-expert policy library as transferable knowledge, enabling efficient online adaptation via a two-stage framework. VLMs serve as semantic interfaces, mapping instructions to executable skills and bypassing symbol grounding. Experiments on Humanoid-Bench show MetaWorld outperforms world model-based RL in task completion and motion coherence. Our code will be found at this https URL"
+    }
+  ],
+  "NUS AI LAB": [
+    {
+      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
+      "url": "https://arxiv.org/abs/2601.18548",
+      "date": "2026-01-26",
+      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
+    },
+    {
+      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+      "url": "https://arxiv.org/abs/2601.01155",
+      "date": "2026-01-26",
+      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
+    }
+  ],
   "Microsystem Engineering and Robotics": [
     {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
@@ -816,30 +840,6 @@
       "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
     }
   ],
-  "NUS AI LAB": [
-    {
-      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
-      "url": "https://arxiv.org/abs/2601.18548",
-      "date": "2026-01-26",
-      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
-    },
-    {
-      "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
-      "url": "https://arxiv.org/abs/2601.01155",
-      "date": "2026-01-26",
-      "authors_text": "Shizhe Zhang, Jingsong Liang, Zhitao Zhou, Shuhan Ye, Yizhuo Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    }
-  ],
   "Synteraction Lab": [
     {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
@@ -862,93 +862,6 @@
       "summary": "NO",
       "teaser_image": null,
       "debug_abstract": "Existing methods for multi-agent navigation typically assume fully known environments, offering limited support for partially known scenarios such as warehouses or factory floors. There, agents may need to plan trajectories that balance their own path optimality with their ability to collect and share information about the environment that can help their teammates reach their own goals. To these ends, we propose ORION, a novel deep reinforcement learning framework for cooperative multi-agent online navigation in partially known environments. Starting from an imperfect prior map, ORION trains agents to make decentralized decisions, coordinate to reach their individual targets, and actively reduce map uncertainty by sharing online observations in a closed perception-action loop. We first design a shared graph encoder that fuses prior map with online perception into a unified representation, providing robust state embeddings under dynamic map discrepancies. At the core of ORION is an option-critic framework that learns to reason about a set of high-level cooperative modes that translate into sequences of low-level actions, allowing agents to switch between individual navigation and team-level exploration adaptively. We further introduce a dual-stage cooperation strategy that enables agents to assist teammates under map uncertainty, thereby reducing the overall makespan. Across extensive maze-like maps and large-scale warehouse environments, our simulation results show that ORION achieves high-quality, real-time decentralized cooperation over varying team sizes, outperforming state-of-the-art classical and learning-based baselines. Finally, we validate ORION on physical robot teams, demonstrating its robustness and practicality for real-world cooperative navigation."
-    }
-  ],
-  "范明明老师实验室": [
-    {
-      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
-      "url": "https://arxiv.org/abs/2601.18548",
-      "date": "2026-01-26",
-      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
-    },
-    {
-      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
-      "url": "https://arxiv.org/abs/2601.18323",
-      "date": "2026-01-26",
-      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
-    }
-  ],
-  "Cheng Kar-Shun Robotics Institute (CKSRI)": [
-    {
-      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
-      "url": "https://arxiv.org/abs/2601.18548",
-      "date": "2026-01-26",
-      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
-    },
-    {
-      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
-      "url": "https://arxiv.org/abs/2601.18323",
-      "date": "2026-01-26",
-      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
-    }
-  ],
-  "HMI Lab": [
-    {
-      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
-      "url": "https://arxiv.org/abs/2601.18323",
-      "date": "2026-01-26",
-      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
-    }
-  ],
-  "具身感知与交互实验室 (EPIC Lab)": [
-    {
-      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
-      "url": "https://arxiv.org/abs/2601.18323",
-      "date": "2026-01-26",
-      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
-    }
-  ],
-  "情感与认知智能机器人实验室 (ACIR)": [
-    {
-      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
-      "url": "https://arxiv.org/abs/2601.18323",
-      "date": "2026-01-26",
-      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
     }
   ],
   "机器人研究所": [
@@ -999,7 +912,7 @@
       "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
     }
   ],
-  "Precognition Lab": [
+  "范明明老师实验室": [
     {
       "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
       "url": "https://arxiv.org/abs/2601.18548",
@@ -1023,7 +936,18 @@
       "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
     }
   ],
-  "智元机器人联合实验室 (PKU-Agibot)": [
+  "Precognition Lab": [
+    {
+      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
+      "url": "https://arxiv.org/abs/2601.18548",
+      "date": "2026-01-26",
+      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
+    },
     {
       "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
       "url": "https://arxiv.org/abs/2601.18323",
@@ -1060,7 +984,83 @@
       "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
     }
   ],
-  "OpenDriveLab": [
+  "智元机器人联合实验室 (PKU-Agibot)": [
+    {
+      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
+      "url": "https://arxiv.org/abs/2601.18323",
+      "date": "2026-01-26",
+      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
+    }
+  ],
+  "Cheng Kar-Shun Robotics Institute (CKSRI)": [
+    {
+      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
+      "url": "https://arxiv.org/abs/2601.18548",
+      "date": "2026-01-26",
+      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
+    },
+    {
+      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
+      "url": "https://arxiv.org/abs/2601.18323",
+      "date": "2026-01-26",
+      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
+    }
+  ],
+  "HMI Lab": [
+    {
+      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
+      "url": "https://arxiv.org/abs/2601.18323",
+      "date": "2026-01-26",
+      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
+    }
+  ],
+  "情感与认知智能机器人实验室 (ACIR)": [
+    {
+      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
+      "url": "https://arxiv.org/abs/2601.18323",
+      "date": "2026-01-26",
+      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
+    }
+  ],
+  "具身感知与交互实验室 (EPIC Lab)": [
+    {
+      "title": "TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion",
+      "url": "https://arxiv.org/abs/2601.18323",
+      "date": "2026-01-26",
+      "authors_text": "Weishi Mi, Yong Bao, Xiaowei Chi, Xiaozhu Ju, Zhiyuan Qin",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "The vision-language-action (VLA) paradigm has enabled powerful robotic control by leveraging vision-language models, but its reliance on large-scale, high-quality robot data limits its generalization. Generative world models offer a promising alternative for general-purpose embodied AI, yet a critical gap remains between their pixel-level plans and physically executable actions. To this end, we propose the Tool-Centric Inverse Dynamics Model (TC-IDM). By focusing on the tool&#39;s imagined trajectory as synthesized by the world model, TC-IDM establishes a robust intermediate representation that bridges the gap between visual planning and physical control. TC-IDM extracts the tool&#39;s point cloud trajectories via segmentation and 3D motion estimation from generated videos. Considering diverse tool attributes, our architecture employs decoupled action heads to project these planned trajectories into 6-DoF end-effector motions and corresponding control signals. This plan-and-translate paradigm not only supports a wide range of end-effectors but also significantly improves viewpoint invariance. Furthermore, it exhibits strong generalization capabilities across long-horizon and out-of-distribution tasks, including interacting with deformable objects. In real-world evaluations, the world model with TC-IDM achieves an average success rate of 61.11 percent, with 77.7 percent on simple tasks and 38.46 percent on zero-shot deformable object tasks. It substantially outperforms end-to-end VLA-style baselines and other inverse dynamics models."
+    }
+  ],
+  "香港大学机械工程系机器人实验室": [
     {
       "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
       "url": "https://arxiv.org/abs/2601.08641",
@@ -1108,7 +1108,31 @@
       "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
     }
   ],
-  "香港大学机械工程系机器人实验室": [
+  "Language and Vision (LaVi) Lab": [
+    {
+      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2601.08641",
+      "date": "2026-01-26",
+      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
+    },
+    {
+      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
+      "url": "https://arxiv.org/abs/2601.18548",
+      "date": "2026-01-26",
+      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": null,
+      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
+    }
+  ],
+  "OpenDriveLab": [
     {
       "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
       "url": "https://arxiv.org/abs/2601.08641",
@@ -1133,30 +1157,6 @@
     }
   ],
   "潘佳老师实验室": [
-    {
-      "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
-      "url": "https://arxiv.org/abs/2601.08641",
-      "date": "2026-01-26",
-      "authors_text": "Yichen Luo, Yebo Feng, Jiahua Xu, Yang Liu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Copy trading has become the dominant entry strategy in meme coin markets. However, due to the market&#39;s extremely illiquid and volatile nature, the strategy exposes an exploitable attack surface: adversaries deploy manipulative bots to front-run trades, conceal positions, and fabricate sentiment, systematically extracting value from naïve copiers at scale. Despite its prevalence, bot-driven manipulation remains largely unexplored, and no robust defensive framework exists. We propose a manipulation-resistant copy-trading system based on a multi-agent architecture powered by a multi-modal large language model (LLM) and chain-of-thought (CoT) reasoning. Our approach outperforms zero-shot and most statistic-driven baselines in prediction accuracy as well as all baselines in economic performance, achieving an average copier return of 3% per meme coin investment under realistic market frictions. Overall, our results demonstrate the effectiveness of agent-based defenses and predictability of trader profitability in adversarial meme coin markets, providing a practical foundation for robust copy trading."
-    },
-    {
-      "title": "Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field",
-      "url": "https://arxiv.org/abs/2601.18548",
-      "date": "2026-01-26",
-      "authors_text": "Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": null,
-      "debug_abstract": "Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes."
-    }
-  ],
-  "Language and Vision (LaVi) Lab": [
     {
       "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
       "url": "https://arxiv.org/abs/2601.08641",
