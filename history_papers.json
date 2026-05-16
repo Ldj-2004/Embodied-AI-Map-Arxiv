@@ -2792,17 +2792,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "机器人研究所 (CKSRI)": [
@@ -3366,17 +3355,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "Precognition Lab": [
@@ -3940,17 +3918,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "机器人研究所": [
@@ -4514,17 +4481,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "Jun MA老师实验室": [
@@ -5088,17 +5044,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "Cheng Kar-Shun Robotics Institute (CKSRI)": [
@@ -5662,17 +5607,6 @@
       "summary": "DINOv3 with LoRA adaptation establishes a robust baseline for image forensics, outperforming specialized detectors while using fewer parameters and maintaining stability across various conditions.",
       "teaser_image": "https://arxiv.org/html/2604.16083/2604.16083v1/x1.png",
       "debug_abstract": "With the rapid advancement of deep generative models, realistic fake images have become increasingly accessible, yet existing localization methods rely on complex designs and still struggle to generalize across manipulation types and imaging conditions. We present a simple but strong baseline based on DINOv3 with LoRA adaptation and a lightweight convolutional decoder. Under the CAT-Net protocol, our best model improves average pixel-level F1 by 17.0 points over the previous state of the art on four standard benchmarks using only 9.1\\,M trainable parameters on top of a frozen ViT-L backbone, and even our smallest variant surpasses all prior specialized methods. LoRA consistently outperforms full fine-tuning across all backbone scales. Under the data-scarce MVSS-Net protocol, LoRA reaches an average F1 of 0.774 versus 0.530 for the strongest prior method, while full fine-tuning becomes highly unstable, suggesting that pre-trained representations encode forensic information that is better preserved than overwritten. The baseline also exhibits strong robustness to Gaussian noise, JPEG re-compression, and Gaussian blur. We hope this work can serve as a reliable baseline for the research community and a practical starting point for future image-forensic applications. Code is available at this https URL."
-    },
-    {
-      "title": "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization",
-      "url": "https://arxiv.org/abs/2604.15022",
-      "date": "2026-04-16",
-      "authors_text": "Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, Enyan Dai",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15022/2604.15022v1/x2.png",
-      "debug_abstract": "Cost-aware routing dynamically dispatches user queries to models of varying capability to balance performance and inference cost. However, the routing strategy introduces a new security concern that adversaries may manipulate the router to consistently select expensive high-capability models. Existing routing attacks depend on either white-box access or heuristic prompts, rendering them ineffective in real-world black-box scenarios. In this work, we propose R$^2$A, which aims to mislead black-box LLM routers to expensive models via adversarial suffix optimization. Specifically, R$^2$A deploys a hybrid ensemble surrogate router to mimic the black-box router. A suffix optimization algorithm is further adapted for the ensemble-based surrogate. Extensive experiments on multiple open-source and commercial routing systems demonstrate that {R$^2$A} significantly increases the routing rate to expensive models on queries of different distributions. Code and examples: this https URL."
     }
   ],
   "武汉大学": [
@@ -6458,28 +6392,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "ROSE Lab": [
@@ -6999,28 +6911,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "PINE Lab": [
@@ -7540,28 +7430,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "MARS Lab": [
@@ -8081,28 +7949,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "MReaLLab": [
@@ -8622,28 +8468,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "MMLab@NTU": [
@@ -9163,28 +8987,6 @@
       "summary": "This study reveals that vision-language models primarily rely on textual reasoning, showing significant performance gaps in visual reasoning, and introduces CrossMath for improved multimodal training.",
       "teaser_image": "https://arxiv.org/html/2604.16256/2604.16256v1/res/math_puzzle_0217_blank_hr.png",
       "debug_abstract": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior performance of VLMs stems from genuine vision-grounded reasoning or relies predominantly on the reasoning capabilities of their textual backbones. To systematically measure this, we introduce CrossMath, a novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Specifically, we construct each problem in text-only, image-only, and image+text formats guaranteeing identical task-relevant information, verified by human annotators. This rigorous alignment effectively isolates modality-specific reasoning differences while eliminating confounding factors such as information mismatch. Extensive evaluation of state-of-the-art VLMs reveals a consistent phenomenon: a substantial performance gap between textual and visual reasoning. Notably, VLMs excel with text-only inputs, whereas incorporating visual data (image+text) frequently degrades performance compared to the text-only baseline. These findings indicate that current VLMs conduct reasoning primarily in the textual space, with limited genuine reliance on visual evidence. To mitigate this limitation, we curate a CrossMath training set for VLM fine-tuning. Empirical evaluations demonstrate that fine-tuning on this training set significantly boosts reasoning performance across all individual and joint modalities, while yielding robust gains on two general visual reasoning tasks. Source code is available at this https URL."
-    },
-    {
-      "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
-      "url": "https://arxiv.org/abs/2604.15023",
-      "date": "2026-04-16",
-      "authors_text": "Ziyu Shan, Yuheng Zhou, Gaoyuan Wu, Ziheng Ji, Zhenyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15023/2604.15023v1/x2.png",
-      "debug_abstract": "Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "浙江大学": [
@@ -9957,17 +9759,6 @@
       "summary": "StreamCacheVGGT introduces a novel cache management framework for 3D geometry reconstruction from video streams, enhancing accuracy and stability through improved scoring and compression techniques.",
       "teaser_image": "https://arxiv.org/html/2604.15237/2604.15237v2/x1.png",
       "debug_abstract": "Reconstructing dense 3D geometry from continuous video streams requires stable inference under a constant memory budget. Existing $O(1)$ frameworks primarily rely on a ``pure eviction&#39;&#39; paradigm, which suffers from significant information destruction due to binary token deletion and evaluation noise from localized, single-layer scoring. To address these bottlenecks, we propose StreamCacheVGGT, a training-free framework that reimagines cache management through two synergistic modules: Cross-Layer Consistency-Enhanced Scoring (CLCES) and Hybrid Cache Compression (HCC). CLCES mitigates activation noise by tracking token importance trajectories across the Transformer hierarchy, employing order-statistical analysis to identify sustained geometric salience. Leveraging these robust scores, HCC transcends simple eviction by introducing a three-tier triage strategy that merges moderately important tokens into retained anchors via nearest-neighbor assignment on the key-vector manifold. This approach preserves essential geometric context that would otherwise be lost. Extensive evaluations on five benchmarks (7-Scenes, NRGBD, ETH3D, Bonn, and KITTI) demonstrate that StreamCacheVGGT sets a new state-of-the-art, delivering superior reconstruction accuracy and long-term stability while strictly adhering to constant-cost constraints."
-    },
-    {
-      "title": "R3D: Revisiting 3D Policy Learning",
-      "url": "https://arxiv.org/abs/2604.15281",
-      "date": "2026-04-16",
-      "authors_text": "Zhengdong Hong, Shenrui Wu, Haozhe Cui, Boyi Zhao, Ran Ji",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15281/2604.15281v1/x3.png",
-      "debug_abstract": "3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models. In this work, we systematically diagnose these failures, identifying the omission of 3D data augmentation and the adverse effects of Batch Normalization as primary causes. We propose a new architecture coupling a scalable transformer-based 3D encoder with a diffusion decoder, engineered specifically for stability at scale and designed to leverage large-scale pre-training. Our approach significantly outperforms state-of-the-art 3D baselines on challenging manipulation benchmarks, establishing a new and robust foundation for scalable 3D imitation learning. Project Page: this https URL"
     }
   ],
   "MARS多模态学习实验室": [
@@ -11246,17 +11037,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "机器人控制实验室": [
@@ -12535,17 +12315,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "具身智能实验室 (TEA Lab)": [
@@ -13824,17 +13593,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "机器人与人工智能实验室 (RAIL)": [
@@ -15819,17 +15577,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "智能系统与机器人实验室 (ISR Lab)": [
@@ -17108,17 +16855,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "具身视觉与机器人实验室 (EVAR Lab)": [
@@ -18397,17 +18133,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "智能产业研究院 (AIR)": [
@@ -19686,17 +19411,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "SU Lab": [
@@ -20163,17 +19877,6 @@
       "summary": "CityRAG is a video generative model that creates 3D-consistent, navigable environments grounded in real locations, enabling robust simulations for autonomous driving and robotics.",
       "teaser_image": "https://arxiv.org/html/2604.19741/2604.19741v1/x2.png",
       "debug_abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation. To this end, we present CityRAG, a video generative model that leverages large corpora of geo-registered data as context to ground generation to the physical scene, while maintaining learned priors for complex motion and appearance changes. CityRAG relies on temporally unaligned training data, which teaches the model to semantically disentangle the underlying scene from its transient attributes. Our experiments demonstrate that CityRAG can generate coherent minutes-long, physically grounded video sequences, maintain weather and lighting conditions over thousands of frames, achieve loop closure, and navigate complex trajectories to reconstruct real-world geography."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
@@ -20473,17 +20176,6 @@
       "summary": "CityRAG is a video generative model that creates 3D-consistent, navigable environments grounded in real locations, enabling robust simulations for autonomous driving and robotics.",
       "teaser_image": "https://arxiv.org/html/2604.19741/2604.19741v1/x2.png",
       "debug_abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation. To this end, we present CityRAG, a video generative model that leverages large corpora of geo-registered data as context to ground generation to the physical scene, while maintaining learned priors for complex motion and appearance changes. CityRAG relies on temporally unaligned training data, which teaches the model to semantically disentangle the underlying scene from its transient attributes. Our experiments demonstrate that CityRAG can generate coherent minutes-long, physically grounded video sequences, maintain weather and lighting conditions over thousands of frames, achieve loop closure, and navigate complex trajectories to reconstruct real-world geography."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "斯坦福-人工智能实验室 (SAIL)": [
@@ -20783,17 +20475,6 @@
       "summary": "CityRAG is a video generative model that creates 3D-consistent, navigable environments grounded in real locations, enabling robust simulations for autonomous driving and robotics.",
       "teaser_image": "https://arxiv.org/html/2604.19741/2604.19741v1/x2.png",
       "debug_abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation. To this end, we present CityRAG, a video generative model that leverages large corpora of geo-registered data as context to ground generation to the physical scene, while maintaining learned priors for complex motion and appearance changes. CityRAG relies on temporally unaligned training data, which teaches the model to semantically disentangle the underlying scene from its transient attributes. Our experiments demonstrate that CityRAG can generate coherent minutes-long, physically grounded video sequences, maintain weather and lighting conditions over thousands of frames, achieve loop closure, and navigate complex trajectories to reconstruct real-world geography."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "斯坦福-机器人与具身智能实验室 (REAL)": [
@@ -21093,17 +20774,6 @@
       "summary": "CityRAG is a video generative model that creates 3D-consistent, navigable environments grounded in real locations, enabling robust simulations for autonomous driving and robotics.",
       "teaser_image": "https://arxiv.org/html/2604.19741/2604.19741v1/x2.png",
       "debug_abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation. To this end, we present CityRAG, a video generative model that leverages large corpora of geo-registered data as context to ground generation to the physical scene, while maintaining learned priors for complex motion and appearance changes. CityRAG relies on temporally unaligned training data, which teaches the model to semantically disentangle the underlying scene from its transient attributes. Our experiments demonstrate that CityRAG can generate coherent minutes-long, physically grounded video sequences, maintain weather and lighting conditions over thousands of frames, achieve loop closure, and navigate complex trajectories to reconstruct real-world geography."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "斯坦福-视觉与学习实验室 (SVL)": [
@@ -21403,17 +21073,6 @@
       "summary": "CityRAG is a video generative model that creates 3D-consistent, navigable environments grounded in real locations, enabling robust simulations for autonomous driving and robotics.",
       "teaser_image": "https://arxiv.org/html/2604.19741/2604.19741v1/x2.png",
       "debug_abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation. To this end, we present CityRAG, a video generative model that leverages large corpora of geo-registered data as context to ground generation to the physical scene, while maintaining learned priors for complex motion and appearance changes. CityRAG relies on temporally unaligned training data, which teaches the model to semantically disentangle the underlying scene from its transient attributes. Our experiments demonstrate that CityRAG can generate coherent minutes-long, physically grounded video sequences, maintain weather and lighting conditions over thousands of frames, achieve loop closure, and navigate complex trajectories to reconstruct real-world geography."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "HMI Lab": [
@@ -26965,17 +26624,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "香港大学机械工程系机器人实验室": [
@@ -27880,17 +27528,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "深圳市人工智能与机器人研究院 (AIRS)": [
@@ -29745,17 +29382,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "Language and Vision (LaVi) Lab": [
@@ -30660,17 +30286,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "潘佳老师实验室": [
@@ -31575,17 +31190,6 @@
       "summary": "LaviGen is a novel framework for 3D layout generation that utilizes autoregressive processes and an adapted diffusion model to enhance spatial accuracy and efficiency.",
       "teaser_image": "https://arxiv.org/html/2604.16299/2604.16299v1/x2.png",
       "debug_abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "集群机器人系统实验室 (MagicLab)": [
@@ -33367,17 +32971,6 @@
       "summary": "StreamCacheVGGT introduces a novel cache management framework for 3D geometry reconstruction from video streams, enhancing accuracy and stability through improved scoring and compression techniques.",
       "teaser_image": "https://arxiv.org/html/2604.15237/2604.15237v2/x1.png",
       "debug_abstract": "Reconstructing dense 3D geometry from continuous video streams requires stable inference under a constant memory budget. Existing $O(1)$ frameworks primarily rely on a ``pure eviction&#39;&#39; paradigm, which suffers from significant information destruction due to binary token deletion and evaluation noise from localized, single-layer scoring. To address these bottlenecks, we propose StreamCacheVGGT, a training-free framework that reimagines cache management through two synergistic modules: Cross-Layer Consistency-Enhanced Scoring (CLCES) and Hybrid Cache Compression (HCC). CLCES mitigates activation noise by tracking token importance trajectories across the Transformer hierarchy, employing order-statistical analysis to identify sustained geometric salience. Leveraging these robust scores, HCC transcends simple eviction by introducing a three-tier triage strategy that merges moderately important tokens into retained anchors via nearest-neighbor assignment on the key-vector manifold. This approach preserves essential geometric context that would otherwise be lost. Extensive evaluations on five benchmarks (7-Scenes, NRGBD, ETH3D, Bonn, and KITTI) demonstrate that StreamCacheVGGT sets a new state-of-the-art, delivering superior reconstruction accuracy and long-term stability while strictly adhering to constant-cost constraints."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
     }
   ],
   "Robot Perception and Learning Lab": [
@@ -34758,17 +34351,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "多智能体与具身智能研究所": [
@@ -34971,17 +34553,6 @@
       "summary": "GlobalSplat introduces a novel framework for efficient 3D Gaussian Splatting that achieves compact, globally consistent reconstructions and faster inference by leveraging global scene tokens.",
       "teaser_image": "https://arxiv.org/html/2604.15284/2604.15284v2/x1.png",
       "debug_abstract": "The efficient spatial allocation of primitives serves as the foundation of 3D Gaussian Splatting, as it directly dictates the synergy between representation compactness, reconstruction speed, and rendering fidelity. Previous solutions, whether based on iterative optimization or feed-forward inference, suffer from significant trade-offs between these goals, mainly due to the reliance on local, heuristic-driven allocation strategies that lack global scene awareness. Specifically, current feed-forward methods are largely pixel-aligned or voxel-aligned. By unprojecting pixels into dense, view-aligned primitives, they bake redundancy into the 3D asset. As more input views are added, the representation size increases and global consistency becomes fragile. To this end, we introduce GlobalSplat, a framework built on the principle of align first, decode later. Our approach learns a compact, global, latent scene representation that encodes multi-view input and resolves cross-view correspondences before decoding any explicit 3D geometry. Crucially, this formulation enables compact, globally consistent reconstructions without relying on pretrained pixel-prediction backbones or reusing latent features from dense baselines. Utilizing a coarse-to-fine training curriculum that gradually increases decoded capacity, GlobalSplat natively prevents representation bloat. On RealEstate10K and ACID, our model achieves competitive novel-view synthesis performance while utilizing as few as 16K Gaussians, significantly less than required by dense pipelines, obtaining a light 4MB footprint. Further, GlobalSplat enables significantly faster inference than the baselines, operating under 78 milliseconds in a single forward pass. Project page is available at this https URL"
-    },
-    {
-      "title": "World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems",
-      "url": "https://arxiv.org/abs/2604.14732",
-      "date": "2026-04-16",
-      "authors_text": "Runze Li, Hongyin Zhang, Junxi Jin, Qixin Zeng, Zifeng Zhuang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14732/2604.14732v1/figures/vla_mpc_overview_1.png",
-      "debug_abstract": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for building embodied agents that ground perception and language into action. However, most existing approaches rely on direct action prediction, lacking the ability to reason over long-horizon trajectories and evaluate their consequences, which limits performance in complex decision-making tasks. In this work, we introduce World-Value-Action (WAV) model, a unified framework that enables implicit planning in VLA systems. Rather than performing explicit trajectory optimization, WAV model learn a structured latent representation of future trajectories conditioned on visual observations and language instructions. A learned world model predicts future states, while a trajectory value function evaluates their long-horizon utility. Action generation is then formulated as inference in this latent space, where the model progressively concentrates probability mass on high-value and dynamically feasible trajectories. We provide a theoretical perspective showing that planning directly in action space suffers from an exponential decay in the probability of feasible trajectories as the horizon increases. In contrast, latent-space inference reshapes the search distribution toward feasible regions, enabling efficient long-horizon decision making. Extensive simulations and real-world experiments demonstrate that the WAV model consistently outperforms state-of-the-art methods, achieving significant improvements in task success rate, generalization ability, and robustness, especially in long-horizon and compositional scenarios."
     }
   ],
   "西安电子科技大学": [
@@ -36070,39 +35641,6 @@
       "summary": "FineCog-Nav introduces a modular framework for zero-shot UAV navigation, enhancing performance through specialized cognitive modules and a curated benchmark for evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.16298/2604.16298v1/x1.png",
       "debug_abstract": "UAV vision-language navigation (VLN) requires an agent to navigate complex 3D environments from an egocentric perspective while following ambiguous multi-step instructions over long horizons. Existing zero-shot methods remain limited, as they often rely on large base models, generic prompts, and loosely coordinated modules. In this work, we propose FineCog-Nav, a top-down framework inspired by human cognition that organizes navigation into fine-grained modules for language processing, perception, attention, memory, imagination, reasoning, and decision-making. Each module is driven by a moderate-sized foundation model with role-specific prompts and structured input-output protocols, enabling effective collaboration and improved interpretability. To support fine-grained evaluation, we construct AerialVLN-Fine, a curated benchmark of 300 trajectories derived from AerialVLN, with sentence-level instruction-trajectory alignment and refined instructions containing explicit visual endpoints and landmark references. Experiments show that FineCog-Nav consistently outperforms zero-shot baselines in instruction adherence, long-horizon planning, and generalization to unseen environments. These results suggest the effectiveness of fine-grained cognitive modularization for zero-shot aerial navigation. Project page: this https URL."
-    },
-    {
-      "title": "Giving Faces Their Feelings Back: Explicit Emotion Control for Feedforward Single-Image 3D Head Avatars",
-      "url": "https://arxiv.org/abs/2604.14541",
-      "date": "2026-04-16",
-      "authors_text": "Yicheng Gong, Jiawei Zhang, Liqiang Liu, Yanwen Wang, Lei Chu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14541/2604.14541v1/figs/Teaser_half.jpg",
-      "debug_abstract": "We present a framework for explicit emotion control in feed-forward, single-image 3D head avatar reconstruction. Unlike existing pipelines where emotion is implicitly entangled with geometry or appearance, we treat emotion as a first-class control signal that can be manipulated independently and consistently across identities. Our method injects emotion into existing feed-forward architectures via a dual-path modulation mechanism without modifying their core design. Geometry modulation performs emotion-conditioned normalization in the original parametric space, disentangling emotional state from speech-driven articulation, while appearance modulation captures identity-aware, emotion-dependent visual cues beyond geometry. To enable learning under this setting, we construct a time-synchronized, emotion-consistent multi-identity dataset by transferring aligned emotional dynamics across identities. Integrated into multiple state-of-the-art backbones, our framework preserves reconstruction and reenactment fidelity while enabling controllable emotion transfer, disentangled manipulation, and smooth emotion interpolation, advancing expressive and scalable 3D head avatars."
-    },
-    {
-      "title": "World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems",
-      "url": "https://arxiv.org/abs/2604.14732",
-      "date": "2026-04-16",
-      "authors_text": "Runze Li, Hongyin Zhang, Junxi Jin, Qixin Zeng, Zifeng Zhuang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14732/2604.14732v1/figures/vla_mpc_overview_1.png",
-      "debug_abstract": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for building embodied agents that ground perception and language into action. However, most existing approaches rely on direct action prediction, lacking the ability to reason over long-horizon trajectories and evaluate their consequences, which limits performance in complex decision-making tasks. In this work, we introduce World-Value-Action (WAV) model, a unified framework that enables implicit planning in VLA systems. Rather than performing explicit trajectory optimization, WAV model learn a structured latent representation of future trajectories conditioned on visual observations and language instructions. A learned world model predicts future states, while a trajectory value function evaluates their long-horizon utility. Action generation is then formulated as inference in this latent space, where the model progressively concentrates probability mass on high-value and dynamically feasible trajectories. We provide a theoretical perspective showing that planning directly in action space suffers from an exponential decay in the probability of feasible trajectories as the horizon increases. In contrast, latent-space inference reshapes the search distribution toward feasible regions, enabling efficient long-horizon decision making. Extensive simulations and real-world experiments demonstrate that the WAV model consistently outperforms state-of-the-art methods, achieving significant improvements in task success rate, generalization ability, and robustness, especially in long-horizon and compositional scenarios."
-    },
-    {
-      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2604.15093",
-      "date": "2026-04-16",
-      "authors_text": "Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15093/2604.15093v1/x2.png",
-      "debug_abstract": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% success on AndroidWorld. However, these systems keep their training data closed and remain opaque about their task and trajectory synthesis recipes. We present OpenMobile, an open-source framework that synthesizes high-quality task instructions and agent trajectories, with two key components: (1) The first is a scalable task synthesis pipeline that constructs a global environment memory from exploration, then leverages it to generate diverse and grounded instructions. and (2) a policy-switching strategy for trajectory rollout. By alternating between learner and expert models, it captures essential error-recovery data often missing in standard imitation learning. Agents trained on our data achieve competitive results across three dynamic mobile agent benchmarks: notably, our fine-tuned Qwen2.5-VL and Qwen3-VL reach 51.7% and 64.7% on AndroidWorld, far surpassing existing open-data approaches. Furthermore, we conduct transparent analyses on the overlap between our synthetic instructions and benchmark test sets, and verify that performance gains stem from broad functionality coverage rather than benchmark overfitting. We release data and code at this https URL to bridge the data gap and facilitate broader mobile agent research."
     }
   ],
   "机器人系统实验室 (RSL)": [
@@ -37187,39 +36725,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "赵波老师实验室": [
@@ -37970,39 +37475,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
@@ -38753,39 +38225,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
@@ -39536,39 +38975,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "IWIN-FINS实验室": [
@@ -40319,39 +39725,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "数字媒体与计算机视觉实验室": [
@@ -41102,39 +40475,6 @@
       "summary": "GTA-2 introduces a hierarchical benchmark for General Tool Agents, assessing both atomic tool use and complex workflows to enhance real-world productivity and agent evaluation.",
       "teaser_image": "https://arxiv.org/html/2604.15715/2604.15715v1/x1.png",
       "debug_abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available at this https URL."
-    },
-    {
-      "title": "Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation",
-      "url": "https://arxiv.org/abs/2604.10548",
-      "date": "2026-04-16",
-      "authors_text": "Fanxing Li, Shengyang Wang, Yuxiang Huang, Fangyu Sun, Shuyu Wu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.10548/2604.10548v2/figures/overview.png",
-      "debug_abstract": "Obstacle avoidance is a fundamental vision-based task essential for enabling quadrotors to perform advanced applications. When planning the trajectory, existing approaches both on optimization and learning typically regard quadrotor as a point-mass model, giving path or velocity commands then tracking the commands by outer-loop controller. However, at high speeds, planned trajectories sometimes become dynamically infeasible in actual flight, which beyond the capacity of controller. In this paper, we propose a novel end-to-end policy that directly maps depth images to low-level bodyrate commands by reinforcement learning via differentiable simulation. The high-fidelity simulation in training after parameter identification significantly reduces all the gaps between training, simulation and real world. Analytical process by differentiable simulation provides accurate gradient to ensure efficiently training the low-level policy without expert guidance. The policy employs a lightweight and the most simple inference pipeline that runs without explicit mapping, backbone networks, primitives, recurrent structures, or backend controllers, nor curriculum or privileged guidance. By inferring low-level command directly to the hardware controller, the method enables full flight envelope control and avoids the dynamic-infeasible this http URL results demonstrate that the proposed approach achieves the highest success rate and the lowest jerk among state-of-the-art baselines across multiple benchmarks. The policy also exhibits strong generalization, successfully deploying zero-shot in unseen, outdoor environments while reaching speeds of up to 7.5m/s as well as stably flying in the super-dense forest. This work is released at this https URL."
-    },
-    {
-      "title": "POMDP-based Object Search with Growing State Space and Hybrid Action Domain",
-      "url": "https://arxiv.org/abs/2604.14965",
-      "date": "2026-04-16",
-      "authors_text": "Yongbo Chen, Hesheng Wang, Shoudong Huang, Hanna Kurniawati",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.14965/2604.14965v1/Network.jpg",
-      "debug_abstract": "Efficiently locating target objects in complex indoor environments with diverse furniture, such as shelves, tables, and beds, is a significant challenge for mobile robots. This difficulty arises from factors like localization errors, limited fields of view, and visual occlusion. We address this by framing the object-search task as a highdimensional Partially Observable Markov Decision Process (POMDP) with a growing state space and hybrid (continuous and discrete) action spaces in 3D environments. Based on a meticulously designed perception module, a novel online POMDP solver named the growing neural process filtered k-center clustering tree (GNPF-kCT) is proposed to tackle this problem. Optimal actions are selected using Monte Carlo Tree Search (MCTS) with belief tree reuse for growing state space, a neural process network to filter useless primitive actions, and k-center clustering hypersphere discretization for efficient refinement of high-dimensional action spaces. A modified upper-confidence bound (UCB), informed by belief differences and action value functions within cells of estimated diameters, guides MCTS expansion. Theoretical analysis validates the convergence and performance potential of our method. To address scenarios with limited information or rewards, we also introduce a guessed target object with a grid-world model as a key strategy to enhance search efficiency. Extensive Gazebo simulations with Fetch and Stretch robots demonstrate faster and more reliable target localization than POMDP-based baselines and state-of-the-art (SOTA) non-POMDP-based solvers, especially large language model (LLM) based methods, in object search under the same computational constraints and perception systems. Real-world tests in office environments confirm the practical applicability of our approach. Project page: this https URL."
-    },
-    {
-      "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
-      "url": "https://arxiv.org/abs/2604.15221",
-      "date": "2026-04-16",
-      "authors_text": "Jakob Thumm, Marian Frei, Tianle Ni, Matthias Althoff, Marco Pavone",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15221/2604.15221v1/x1.png",
-      "debug_abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate our pipeline in certifiable safety frameworks, we propose conformal prediction sets for human motion predictions with high, valid confidence. We evaluate our pipeline on recorded human motion data and a real-world human-robot collaboration setting."
     }
   ],
   "具身智能实验室": [
@@ -42367,17 +41707,6 @@
       "summary": "The paper presents a zero-shot event matching model for wide-baseline correspondence using a motion-robust attention backbone and synthetic dataset generation, outperforming prior methods by 37.7%.",
       "teaser_image": "https://arxiv.org/html/2604.18744/2604.18744v1/x2.png",
       "debug_abstract": "Event cameras have recently shown promising capabilities in instantaneous motion estimation due to their robustness to low light and fast motions. However, computing wide-baseline correspondence between two arbitrary views remains a significant challenge, since event appearance changes substantially with motion, and learning-based approaches are constrained by both scalability and limited wide-baseline supervision. We therefore introduce the first event matching model that achieves cross-dataset wide-baseline correspondence in a zero-shot manner: a single model trained once is deployed on unseen datasets without any target-domain fine-tuning or adaptation. To enable this capability, we introduce a motion-robust and computationally efficient attention backbone that learns multi-timescale features from event streams, augmented with sparsity-aware event token selection, making large-scale training on diverse wide-baseline supervision computationally feasible. To provide the supervision needed for wide-baseline generalization, we develop a robust event motion synthesis framework to generate large-scale event-matching datasets with augmented viewpoints, modalities, and motions. Extensive experiments across multiple benchmarks show that our framework achieves a 37.7% improvement over the previous best event feature matching methods. Code and data are available at: this https URL."
-    },
-    {
-      "title": "R3D: Revisiting 3D Policy Learning",
-      "url": "https://arxiv.org/abs/2604.15281",
-      "date": "2026-04-16",
-      "authors_text": "Zhengdong Hong, Shenrui Wu, Haozhe Cui, Boyi Zhao, Ran Ji",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2604.15281/2604.15281v1/x3.png",
-      "debug_abstract": "3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models. In this work, we systematically diagnose these failures, identifying the omission of 3D data augmentation and the adverse effects of Batch Normalization as primary causes. We propose a new architecture coupling a scalable transformer-based 3D encoder with a diffusion decoder, engineered specifically for stability at scale and designed to leverage large-scale pre-training. Our approach significantly outperforms state-of-the-art 3D baselines on challenging manipulation benchmarks, establishing a new and robust foundation for scalable 3D imitation learning. Project Page: this https URL"
     }
   ],
   "Rajpurkar Lab": [
