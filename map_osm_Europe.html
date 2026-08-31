@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        
+    
+        <style>
+            /* --- 地图底图滤镜：赛博霓虹风格 --- */
+            /* invert(1): 反转颜色 (白变黑) */
+            /* hue-rotate(180deg): 旋转色相 (让反转后的颜色回归冷暖逻辑) */
+            /* saturate(300%): 极大增加饱和度 (拒绝灰色，要五彩斑斓) */
+            /* brightness(0.8): 压暗背景，突出光路 */
+            .leaflet-tile-pane {
+                filter: invert(100%) hue-rotate(180deg) saturate(300%) brightness(85%) contrast(110%) !important;
+            }
+
+            /* --- 弹窗样式 --- */
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+                background: rgba(15, 23, 42, 0.95) !important;
+                backdrop-filter: blur(12px);
+                color: #f8fafc !important;
+                border: 1px solid #00e5ff; 
+                box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+                border-radius: 8px;
+            }
+            .leaflet-popup-close-button {
+                color: #fff !important; 
+                font-size: 20px !important;
+            }
+        </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e15e92ad908e53c4c63c81f54571079 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8e15e92ad908e53c4c63c81f54571079" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8e15e92ad908e53c4c63c81f54571079 = L.map(
+                "map_8e15e92ad908e53c4c63c81f54571079",
+                {
+                    center: [50.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": false,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d3696915b5664f647399a476364663bb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; OpenStreetMap contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d3696915b5664f647399a476364663bb.addTo(map_8e15e92ad908e53c4c63c81f54571079);
+        
+    
+            var heat_map_c029a6c08ce9f7b29d329d8e7524e6c9 = L.heatLayer(
+                [[39.99304633444942, 116.31028039396755, 1.0], [39.99301862023355, 116.30674715593419, 1.0], [39.993926913206, 116.30808134576834, 1.0], [39.99559293370613, 116.30795300383821, 1.0], [40.004098416908725, 116.32834124821143, 1.0], [40.0000950087882, 116.32999530925058, 1.0], [40.001106451873206, 116.32926355149311, 1.0], [39.952813302766046, -75.18713562920685, 1.0], [51.50198666280186, -0.1760697657803715, 1.0], [31.300323501956566, 121.30518435236912, 1.0], [31.296208438903005, 121.30647175095804, 1.0], [31.296582110006256, 121.30948081815879, 1.0], [45.73937559757502, 126.64148946856884, 1.0], [42.37719477139654, -71.11701886578113, 1.0], [42.37409532829913, -71.1157096652358, 1.0], [37.871487367759215, -122.2611642966831, 1.0], [32.878451743736775, -117.23718471824048, 1.0], [34.13859371520173, -118.12282728925332, 1.0], [52.20757073907822, 0.12367503182227366, 1.0], [52.202485196680385, 0.12337566535545791, 1.0], [49.015513963131276, 8.415503228901978, 1.0], [40.44150577412184, -79.94298638545693, 1.0], [51.52340782816109, -0.13163384661997174, 1.0], [42.36186235236098, -71.09221670876975, 1.0], [42.35925707989282, -71.09325880775448, 1.0], [1.3504139435527565, 103.68025058100292, 1.0], [1.3467510271856091, 103.67737006453703, 1.0], [1.3467187748673795, 103.67840937182692, 1.0], [1.3490162479849628, 103.67842423494704, 1.0], [1.3509336700000396, 103.68337630286555, 1.0], [1.3506302037674645, 103.68268358932062, 1.0], [51.75811852638278, -1.2609542580343174, 1.0], [22.6034117964256, 114.05544161102422, 1.0], [40.00529858134405, 116.32373884479834, 1.0], [40.0002153425934, 116.32519151285169, 1.0], [40.0036031021674, 116.32613901810787, 1.0], [40.00296297514071, 116.32623166003907, 1.0], [40.004951864056665, 116.3298539490425, 1.0], [40.002005151890636, 116.3239146202621, 1.0], [40.00173376870663, 116.32570388392155, 1.0], [31.022922364984332, 121.42774733615947, 1.0], [31.02253258741951, 121.43216949313283, 1.0], [31.020691074386882, 121.42786974375477, 1.0], [31.021480976915015, 121.43148853830394, 1.0], [31.02378576986409, 121.42699274159703, 1.0], [31.018367217053896, 121.4282332283438, 1.0], [37.42663300445115, -122.17096245366461, 1.0], [37.425105348733005, -122.16636226534791, 1.0], [37.42767419683293, -122.16741281259094, 1.0], [37.430564796117004, -122.17185732605394, 1.0], [37.428219235952504, -122.17160739339062, 1.0], [47.374959761120294, 8.551219587634026, 1.0], [47.37460735858145, 8.550636278509636, 1.0], [31.282657583564966, 121.50612065502555, 1.0], [30.18171825696703, 120.08883331382879, 1.0], [22.41970611629371, 114.20169799853457, 1.0], [22.269056126820303, 114.14163517226012, 1.0], [22.265585752068343, 114.14315925500708, 1.0], [22.269677666388603, 114.14424085287854, 1.0], [22.26969962580189, 114.14434137274247, 1.0], [22.270281891111498, 114.1415904532845, 1.0], [22.334729911540425, 113.97697425765386, 1.0], [22.33708675797827, 113.98075261870845, 1.0], [22.333895599433593, 113.97789889279042, 1.0], [22.33553281989747, 113.97828904294151, 1.0], [22.638135503502863, 113.39191985426909, 1.0], [22.63839752566517, 113.39467425714531, 1.0], [22.694895010456634, 114.18069786624429, 1.0], [22.42144552013463, 114.20658562931762, 1.0], [22.424353658332784, 114.20333122998109, 1.0], [22.424769596794704, 114.20721205208761, 1.0], [22.69716654723028, 114.17612220476403, 1.0], [22.69383557046664, 114.17934648334642, 1.0], [1.3000796465159, 103.7789931759069, 1.0], [1.29944062026932, 103.7798238131005, 1.0], [1.2988525181548638, 103.78301760184578, 1.0], [1.2950051045557847, 103.77699527162018, 1.0], [23.095120045837067, 113.30855338179403, 1.0], [34.24164005955247, 108.91212962795295, 1.0], [34.24282413597326, 108.97888350909423, 0.4], [39.98978923865237, 116.23307216129692, 0.4], [30.27671108529728, 120.132685920089, 1.0], [32.051744582646165, 118.78211047637008, 1.0], [30.66781015174193, 103.9391424133366, 1.0], [39.948778476506796, 116.31285433833439, 1.0], [31.84327363158845, 117.25895626706165, 1.0], [39.916781964065606, 116.39731085540714, 1.0], [30.542665830793442, 114.37156969100221, 1.0], [24.4377416765973, 118.08323550973383, 1.0], [39.12328107758479, 117.2772490856742, 1.0], [22.54259456425216, 114.0503056764982, 1.0], [31.301673064640525, 120.62098211481425, 1.0], [39.077550101738055, 117.15927116274585, 1.0], [34.11732848919603, 108.90274779723585, 1.0], [31.22777056450542, 121.89944717274258, 1.0], [22.598468240583255, 113.93791034000057, 1.0], [30.66759741741231, 104.07161190996733, 1.0], [31.20073568247245, 121.46957259898366, 1.0], [59.44, 10.66, 0.5], [44.89, -122.96, 0.5], [30.4, -97.71, 0.5], [42.42, -71.25, 0.5], [29.91, -95.62, 0.5], [33.65, -117.71, 0.5], [37.41, -121.95, 0.5], [25.77, -80.14, 0.5], [37.42, -122.09, 0.5], [37.37, -121.97, 0.5], [37.76, -122.41, 0.5], [29.88, 121.64, 0.5], [49.27, -123.1, 0.5], [34.15, -118.15, 0.5], [30.23, -97.62, 0.5], [37.43, -122.17, 0.5], [22.74, 113.96, 0.5], [31.0, 121.37, 0.5], [31.03, 121.47, 0.5], [31.13, 121.61, 0.5], [40.04, 116.36, 0.5], [31.19, 121.62, 0.5], [22.56, 113.96, 0.5], [22.72, 113.86, 0.5], [22.58, 113.95, 0.5], [30.25, 120.25, 0.5], [31.03, 121.47, 0.5], [40.13, 116.43, 0.5], [40.05, 116.32, 0.5], [22.53, 113.95, 0.5], [40.0, 116.34, 0.5], [31.3, 120.78, 0.5], [40.04, 116.38, 0.5], [39.99, 116.32, 0.5], [39.8, 116.56, 0.5], [30.25, 119.91, 0.5], [30.19, 120.22, 0.5], [30.33, 120.07, 0.5], [31.14, 121.61, 0.5], [39.79, 116.56, 0.5], [22.58, 113.96, 0.5], [31.21, 120.57, 0.5], [22.58, 113.93, 0.5]],
+                {
+  "minOpacity": 0.3,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 18,
+  "gradient": {
+  0.3: "#0000ff",
+  0.6: "#00ffff",
+  1: "#ffffff",
+},
+}
+            );
+        
+    
+            heat_map_c029a6c08ce9f7b29d329d8e7524e6c9.addTo(map_8e15e92ad908e53c4c63c81f54571079);
+        
+    
+            var marker_cluster_2338540fc18b310aeadc180a31b6573d = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 6,
+  "maxClusterRadius": 15,
+}
+            );
+        
+    
+            var marker_e38766d7418c769417e5e9c0cc450aa8 = L.marker(
+                [42.37719477139654, -71.11701886578113],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_9688756855b6671e118fd8a1243bb4ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c798f4d6f3668af58ca37bd85c3991a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4f6786f9e2e719fe5f1fd476ad9149ef = $(`<div id="html_4f6786f9e2e719fe5f1fd476ad9149ef" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 哈佛大学             </h3>              <div class="css-tabs-21309">                 <input type="radio" name="grp-21309" id="t1-21309" checked style="display:none">                 <input type="radio" name="grp-21309" id="t2-21309" style="display:none">                 <input type="radio" name="grp-21309" id="t3-21309" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-21309" class="tab-btn">详细信息</label>                     <label for="t2-21309" class="tab-btn">相关论文</label>                     <label for="t3-21309" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Harvard Microrobotics Laboratory                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 微型机器人、软体机器人、驱动与控制                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Robert Wood                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     采用高度实验性的方法来开发微型机器人<br>，并将其用作工具探索微力学、驱动、流体<br>力学等基本问题。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Rajpurkar Lab                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 医学人工智能、基础模型、多模态学习、生成式AI                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Pranav Rajpurkar                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     致力于推动医学人工智能的发展，开发自<br>适应医疗基础模型及多模态学习方法。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Harvard Microrobotics Laboratory]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28218" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Focus Where It Counts: A Salience-Driven Vision-Language Model for Low Vision Assistance                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25690" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.21554" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18077" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Hydra-0: Action Flow for Generalist World Modeling and Control                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07558" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.05579" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ARGUS: Aligning Robot Scene Geometry Under Shifting Views with Large 3D Vision Models                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Rajpurkar Lab]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28218" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Focus Where It Counts: A Salience-Driven Vision-Language Model for Low Vision Assistance                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25690" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Trust-Aware Sequential Decision Making and Rollout Planning for Resilient Multi-Robot Systems                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.21554" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18077" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Hydra-0: Action Flow for Generalist World Modeling and Control                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07558" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.05579" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ARGUS: Aligning Robot Scene Geometry Under Shifting Views with Large 3D Vision Models                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://www.micro.seas.harvard.edu/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Harvard Microrobotics Laboratory 官网             </a>                          <a href='https://github.com/rajpurkarlab' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Rajpurkar Lab 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-21309 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-21309:checked ~ div label[for="t1-21309"],                 #t2-21309:checked ~ div label[for="t2-21309"],                 #t3-21309:checked ~ div label[for="t3-21309"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-21309 .tab-pane { display: none; color: #fff; }                 #t1-21309:checked ~ .pane-1 { display: block; }                 #t2-21309:checked ~ .pane-2 { display: block; }                 #t3-21309:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_6c798f4d6f3668af58ca37bd85c3991a.setContent(html_4f6786f9e2e719fe5f1fd476ad9149ef);
+            
+        
+
+        marker_e38766d7418c769417e5e9c0cc450aa8.bindPopup(popup_6c798f4d6f3668af58ca37bd85c3991a)
+        ;
+
+        
+    
+    
+            marker_e38766d7418c769417e5e9c0cc450aa8.bindTooltip(
+                `<div>
+                     🎓 哈佛大学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e38766d7418c769417e5e9c0cc450aa8.setIcon(icon_9688756855b6671e118fd8a1243bb4ff);
+            
+    
+            var marker_fdaf485fdd29042fec13f8e8113123ec = L.marker(
+                [52.20757073907822, 0.12367503182227366],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_d28981960ffdc1ee04d6ce87f5953f2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b94f42c33902411265659473c4d2b28 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_63844c0c69f0a747a08f117e4531c8ac = $(`<div id="html_63844c0c69f0a747a08f117e4531c8ac" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 剑桥大学             </h3>              <div class="css-tabs-12036">                 <input type="radio" name="grp-12036" id="t1-12036" checked style="display:none">                 <input type="radio" name="grp-12036" id="t2-12036" style="display:none">                 <input type="radio" name="grp-12036" id="t3-12036" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-12036" class="tab-btn">详细信息</label>                     <label for="t2-12036" class="tab-btn">相关论文</label>                     <label for="t3-12036" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Bio-Inspired Robotics Laboratory (BIRL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 生物启发机器人、机器人运动学、自修复材料、可穿戴设备                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Iida Fumiya                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究如何从自然中汲取灵感来改进机器人<br>技术，由多个欧洲顶尖院校和公司合作组<br>成。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Affective Intelligence and Robotics Laboratory (AFAR)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 情感计算、社会信号处理、社交机器人、人机交互                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Hatice Gunes, Sinan Kalkan, Siyang Song                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究兴趣处于计算机视觉、机器学习、多模<br>态交互和人机交互等多个学科的交叉点。<br>                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Bio-Inspired Robotics Laboratory (BIRL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.26182" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Why did My Robot Just Change Personality? Prompting Guidelines for a Grounded Robot Persona in LLM-Based HRI                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25924" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Visual General Intelligence: A White Paper                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18171" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Looped Language Models Improve Compositional Tool Calling                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.19177" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Image-Guided Pavement Defect Recognition in GPR Data with novel 3D Deep Learning Architecture                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.13448" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Mind the Context: Continual Learning of Socially Appropriate Robot Actions via Environmental-Social Disentanglement                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.10915" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ComBodied Agents: a New Paradigm of Human-Centric Agentic AI                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06898" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 How Should I Pick a Foundation Model for My Robot? In Favor of a Community Evaluation Framework for Social Robots                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06164" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 BendTwin: Robust Dense-to-Sparse Physical Reconstruction with Bending-Aware Differentiable Spring-Mass Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03644" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Is Inter-Seed Cross-Play Enough? Evaluating the Robustness of Zero-Shot Coordination Algorithms to Implementation Details                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03820" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Designing Social Robots for Inclusive Child Wellbeing Assessment: Insights from Communities Supporting Developmental Language Disorder and Forced Migration                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.02140" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 HiResNets: Native Full-HD Video Recognition with Foveal Residual Streams                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Affective Intelligence and Robotics Laboratory (AFAR)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.26182" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Why did My Robot Just Change Personality? Prompting Guidelines for a Grounded Robot Persona in LLM-Based HRI                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25924" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Visual General Intelligence: A White Paper                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18171" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Looped Language Models Improve Compositional Tool Calling                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.19177" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Image-Guided Pavement Defect Recognition in GPR Data with novel 3D Deep Learning Architecture                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.13448" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Mind the Context: Continual Learning of Socially Appropriate Robot Actions via Environmental-Social Disentanglement                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.10915" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ComBodied Agents: a New Paradigm of Human-Centric Agentic AI                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06898" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 How Should I Pick a Foundation Model for My Robot? In Favor of a Community Evaluation Framework for Social Robots                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06164" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 BendTwin: Robust Dense-to-Sparse Physical Reconstruction with Bending-Aware Differentiable Spring-Mass Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03644" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Is Inter-Seed Cross-Play Enough? Evaluating the Robustness of Zero-Shot Coordination Algorithms to Implementation Details                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03820" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Designing Social Robots for Inclusive Child Wellbeing Assessment: Insights from Communities Supporting Developmental Language Disorder and Forced Migration                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.02140" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 HiResNets: Native Full-HD Video Recognition with Foveal Residual Streams                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://birlab.org/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Bio-Inspired Robotics Laboratory (BIRL) 官网             </a>                          <a href='https://cambridge-afar.github.io/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Affective Intelligence and Robotics Laboratory (AFAR) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-12036 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-12036:checked ~ div label[for="t1-12036"],                 #t2-12036:checked ~ div label[for="t2-12036"],                 #t3-12036:checked ~ div label[for="t3-12036"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-12036 .tab-pane { display: none; color: #fff; }                 #t1-12036:checked ~ .pane-1 { display: block; }                 #t2-12036:checked ~ .pane-2 { display: block; }                 #t3-12036:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_0b94f42c33902411265659473c4d2b28.setContent(html_63844c0c69f0a747a08f117e4531c8ac);
+            
+        
+
+        marker_fdaf485fdd29042fec13f8e8113123ec.bindPopup(popup_0b94f42c33902411265659473c4d2b28)
+        ;
+
+        
+    
+    
+            marker_fdaf485fdd29042fec13f8e8113123ec.bindTooltip(
+                `<div>
+                     🎓 剑桥大学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdaf485fdd29042fec13f8e8113123ec.setIcon(icon_d28981960ffdc1ee04d6ce87f5953f2f);
+            
+    
+            var marker_3c5899a5c21c5f15d6d97b4b81db88c3 = L.marker(
+                [49.015513963131276, 8.415503228901978],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_beb29cb0a45a2a4d554c9a97b69744dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1a3d18870e239004416cd8886b16bcf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_70a1118dca4db111fd1e1e070510ca25 = $(`<div id="html_70a1118dca4db111fd1e1e070510ca25" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 卡尔斯鲁厄理工学院             </h3>              <div class="css-tabs-77032">                 <input type="radio" name="grp-77032" id="t1-77032" checked style="display:none">                 <input type="radio" name="grp-77032" id="t2-77032" style="display:none">                 <input type="radio" name="grp-77032" id="t3-77032" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-77032" class="tab-btn">详细信息</label>                     <label for="t2-77032" class="tab-btn">相关论文</label>                     <label for="t3-77032" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     高性能人形技术实验室 (H²T)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 仿人机器人技术、抓取和移动操纵、从人类观察中学习                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Tamim Asfour                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究和开发仿人机器人技术和系统，使其<br>能在现实世界中与人类互动执行任务。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;">                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2602.22056" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 FlowCorrect: Efficient Interactive Correction of Generative Flow Policies for Robotic Manipulation                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2603.23607" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Reasoning models do not yet follow their reasoning in autonomous driving: The KITScenes LongTail Dataset                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28175" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Picking Bins Empty: A Hierarchical Hybrid Approach with Online Self-Learning of Grasp Points for Reliable Industrial Bin-Picking                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.22507" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 What is the effect of running-specific prostheses on long jumps? Optimization-based prediction and analysis using biomechanical models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18292" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 GuideFetch: A Task Coordination Framework for Concurrent Navigation and Object Retrieval in Assistive Robot Dogs                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.14772" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 MISTac: A Vision-Based Tactile Sensor for Minimally Invasive Surgery                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.16658" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 X$^2$Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.13416" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 StreamTTT: Reconciling Real-Time Perception and Long-Term Memory in Streaming VLMs                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.11417" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Locomotion Variability and User Experience in Smart Wheelchair Human-Robot Interaction                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07140" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Identifying the Key Biomechanical Features of Movement Adaptation during Exoskeleton-Assisted Locomotion                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07361" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Depth-Wise Probing and Pruning of the Planning Token in a Driving Vision-Language-Action Model                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.01963" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 OSSDD - a New Open Dataset for Sentinel-1 Ship Detection                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://h2t.iar.kit.edu/index.php' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 高性能人形技术实验室 (H²T) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-77032 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-77032:checked ~ div label[for="t1-77032"],                 #t2-77032:checked ~ div label[for="t2-77032"],                 #t3-77032:checked ~ div label[for="t3-77032"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-77032 .tab-pane { display: none; color: #fff; }                 #t1-77032:checked ~ .pane-1 { display: block; }                 #t2-77032:checked ~ .pane-2 { display: block; }                 #t3-77032:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_e1a3d18870e239004416cd8886b16bcf.setContent(html_70a1118dca4db111fd1e1e070510ca25);
+            
+        
+
+        marker_3c5899a5c21c5f15d6d97b4b81db88c3.bindPopup(popup_e1a3d18870e239004416cd8886b16bcf)
+        ;
+
+        
+    
+    
+            marker_3c5899a5c21c5f15d6d97b4b81db88c3.bindTooltip(
+                `<div>
+                     🎓 卡尔斯鲁厄理工学院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c5899a5c21c5f15d6d97b4b81db88c3.setIcon(icon_beb29cb0a45a2a4d554c9a97b69744dd);
+            
+    
+            var marker_ad991f362ce7d57c23ec59e1e32baab1 = L.marker(
+                [51.52340782816109, -0.13163384661997174],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_bc39315c42caa5c725fc5a694e75e198 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29a96a3903676d9832182f3853ecb1f0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cc4529c174ab5cd15e7a101de2413b85 = $(`<div id="html_cc4529c174ab5cd15e7a101de2413b85" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 伦敦大学学院 (UCL)             </h3>              <div class="css-tabs-79627">                 <input type="radio" name="grp-79627" id="t1-79627" checked style="display:none">                 <input type="radio" name="grp-79627" id="t2-79627" style="display:none">                 <input type="radio" name="grp-79627" id="t3-79627" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-79627" class="tab-btn">详细信息</label>                     <label for="t2-79627" class="tab-btn">相关论文</label>                     <label for="t3-79627" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Robot Perception and Learning Lab                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 关节式机器人（四足、人形等）、导航与操作、感知与运动控制                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Dimitrios Kanoulas                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     重点是为关节式机器人开发前沿算法，使<br>它们能在不可预测的自然环境中高效导航<br>和操作。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;">                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28213" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 PAMoR: Parameterized Affective Motion Generation in Real Time for Humanoid Robots                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23670" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Automata from Agent Traces: Failure and Next-Step Prediction                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23928" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 RefineRank: Joint Box Refinement and Ranking for Surgical Spatio-Temporal Grounding                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.22364" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 WAM-OPD: On-Policy Distillation for World Action Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.16658" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 X$^2$Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.09476" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.09512" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Renormalising Generative Models for Active Inference: Foundations, Derivations, and Verification                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.02893" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Robust Counterfactual Policy Optimisation via Nondeterministic Causal Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03296" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 PLS-Calib: A Partial Least Squares Framework for Event Camera and Odometry Calibration under Ground Motion Constraints                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://rpl-as-ucl.github.io/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Robot Perception and Learning Lab 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-79627 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-79627:checked ~ div label[for="t1-79627"],                 #t2-79627:checked ~ div label[for="t2-79627"],                 #t3-79627:checked ~ div label[for="t3-79627"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-79627 .tab-pane { display: none; color: #fff; }                 #t1-79627:checked ~ .pane-1 { display: block; }                 #t2-79627:checked ~ .pane-2 { display: block; }                 #t3-79627:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_29a96a3903676d9832182f3853ecb1f0.setContent(html_cc4529c174ab5cd15e7a101de2413b85);
+            
+        
+
+        marker_ad991f362ce7d57c23ec59e1e32baab1.bindPopup(popup_29a96a3903676d9832182f3853ecb1f0)
+        ;
+
+        
+    
+    
+            marker_ad991f362ce7d57c23ec59e1e32baab1.bindTooltip(
+                `<div>
+                     🎓 伦敦大学学院 (UCL)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad991f362ce7d57c23ec59e1e32baab1.setIcon(icon_bc39315c42caa5c725fc5a694e75e198);
+            
+    
+            var marker_d8878afdf2a1a2c19c27eed0946395e6 = L.marker(
+                [51.75811852638278, -1.2609542580343174],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_a60727cc43adec9f2f1e14959568db24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_817a5667c05248aa0a0c983382b68814 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0bdea83e0f0b3dc8e29dab5590309f77 = $(`<div id="html_0bdea83e0f0b3dc8e29dab5590309f77" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 牛津大学             </h3>              <div class="css-tabs-86140">                 <input type="radio" name="grp-86140" id="t1-86140" checked style="display:none">                 <input type="radio" name="grp-86140" id="t2-86140" style="display:none">                 <input type="radio" name="grp-86140" id="t3-86140" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-86140" class="tab-btn">详细信息</label>                     <label for="t2-86140" class="tab-btn">相关论文</label>                     <label for="t3-86140" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Oxford Robotics Institute (ORI)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 机器学习与AI、计算机视觉、制造、感知、系统工程                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Eakins Daniel, Gillespie, David                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究兴趣广泛，涵盖飞行、抓取、奔跑、触觉<br>、驾驶、探索和规划等众多机器人领域。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;">                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2603.23607" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Reasoning models do not yet follow their reasoning in autonomous driving: The KITScenes LongTail Dataset                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.26947" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.27456" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25864" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.25924" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Visual General Intelligence: A White Paper                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.26105" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.24876" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.24585" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Pivot-and-Station Multi-Agent Path Finding: Solvability, Complexity, and Algorithms                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23136" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Bridge Damage Detection from Low-Light UAV Imagery via Degradation-Aware Mixture-of-Experts Enhancement                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.18028" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.15710" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Beyond Single Object: Learning 3D Relations with Large Language Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.13558" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 OmniScientist: An Omni-Modal Omni-Discipline AI Scientist                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.10915" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 ComBodied Agents: a New Paradigm of Human-Centric Agentic AI                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.09928" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Multimodal Model Diffing for Feature Discovery and Control                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03644" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Is Inter-Seed Cross-Play Enough? Evaluating the Robustness of Zero-Shot Coordination Algorithms to Implementation Details                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://ori.ox.ac.uk/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Oxford Robotics Institute (ORI) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-86140 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-86140:checked ~ div label[for="t1-86140"],                 #t2-86140:checked ~ div label[for="t2-86140"],                 #t3-86140:checked ~ div label[for="t3-86140"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-86140 .tab-pane { display: none; color: #fff; }                 #t1-86140:checked ~ .pane-1 { display: block; }                 #t2-86140:checked ~ .pane-2 { display: block; }                 #t3-86140:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_817a5667c05248aa0a0c983382b68814.setContent(html_0bdea83e0f0b3dc8e29dab5590309f77);
+            
+        
+
+        marker_d8878afdf2a1a2c19c27eed0946395e6.bindPopup(popup_817a5667c05248aa0a0c983382b68814)
+        ;
+
+        
+    
+    
+            marker_d8878afdf2a1a2c19c27eed0946395e6.bindTooltip(
+                `<div>
+                     🎓 牛津大学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8878afdf2a1a2c19c27eed0946395e6.setIcon(icon_a60727cc43adec9f2f1e14959568db24);
+            
+    
+            var marker_0751489f25aff070e91263be9b0d125e = L.marker(
+                [47.374959761120294, 8.551219587634026],
+                {
+}
+            ).addTo(marker_cluster_2338540fc18b310aeadc180a31b6573d);
+        
+    
+            var icon_225c8fb20a70423eec8902a499337f77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9adc4b1471e33cb042286147be32e1e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ec4545846b962e1f9523508f220b358b = $(`<div id="html_ec4545846b962e1f9523508f220b358b" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #00e5ff; padding-bottom: 8px;">                 苏黎世联邦理工学院(ETH Zürich)             </h3>              <div class="css-tabs-46773">                 <input type="radio" name="grp-46773" id="t1-46773" checked style="display:none">                 <input type="radio" name="grp-46773" id="t2-46773" style="display:none">                 <input type="radio" name="grp-46773" id="t3-46773" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-46773" class="tab-btn">详细信息</label>                     <label for="t2-46773" class="tab-btn">相关论文</label>                     <label for="t3-46773" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     机器人系统实验室 (RSL)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 机械臂、足式机器人、新型驱动方法、运动与操作的控制算法                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Marco Hutter                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     研究重点包括机械臂和足式机器人，涵盖<br>设计、驱动、控制和优化算法。                 </div>             </div>                          <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#00e5ff; margin-bottom:4px;">                     Sensing, Interaction & Perception Lab (SIPLAB)                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">方向:</span> 计算交互、具身感知、移动健康、混合现实、人机交互                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:4px;">                     <span style="opacity:0.7">人物:</span> Christian Holz                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     一个跨学科研究小组，专注于计算交互、具<br>身感知和移动健康领域的研究。                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[机器人系统实验室 (RSL)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28567" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 GeBDA: Building Damage Assessment as Text-Based Sequence Prediction                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23831" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23140" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 MIVIFI: Bridging Perspective and Fisheye Domains for Training Multi-View Fisheye Image Generation Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23518" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Investigating Relational Reasoning in VLMs                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.19894" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Unified and Efficient Point-Line Local Features                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.12063" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.10987" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Aerial Layouting: Design and Control of a Compliant and Actuated End-Effector for Precise In-flight Marking on Ceilings                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07558" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06919" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Vernata: Self-Supervised Learning of LiDAR Point Representations                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06170" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Prior-SG: Task and Prior Driven Region Segmentation for Scene Graphs in Arbitrarily-Structured Environments                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03323" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 PolyLayout: Multi-room Manhattan Layout Estimation                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.02379" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Chess on Ice: Curling Tactical Decision-Making via Backward Induction and Deep Reinforcement Learning                         </a>                     </div>                     <div style='font-size:12px; color:#00e5ff; margin:10px 0 5px 0; font-weight:bold;'>[Sensing, Interaction & Perception Lab (SIPLAB)]</div>                     <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.28567" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 GeBDA: Building Damage Assessment as Text-Based Sequence Prediction                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23831" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23140" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 MIVIFI: Bridging Perspective and Fisheye Domains for Training Multi-View Fisheye Image Generation Models                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.23518" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Investigating Relational Reasoning in VLMs                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.19894" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Unified and Efficient Point-Line Local Features                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.12063" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.10987" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Aerial Layouting: Design and Control of a Compliant and Actuated End-Effector for Precise In-flight Marking on Ceilings                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.07558" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06919" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Vernata: Self-Supervised Learning of LiDAR Point Representations                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.06170" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Prior-SG: Task and Prior Driven Region Segmentation for Scene Graphs in Arbitrarily-Structured Environments                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.03323" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 PolyLayout: Multi-room Manhattan Layout Estimation                         </a>                     </div>                                          <div style="margin-bottom:8px; border-bottom:1px dashed rgba(255,255,255,0.1); padding-bottom:4px;">                         <a href="https://arxiv.org/abs/2608.02379" target="_blank" style="color:#f8fafc; text-decoration:none; font-size:12px; display:block;">                             📄 Chess on Ice: Curling Tactical Decision-Making via Backward Induction and Deep Reinforcement Learning                         </a>                     </div>                     </div>                 <div class="tab-pane pane-3">             <a href='https://rsl.ethz.ch/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 机器人系统实验室 (RSL) 官网             </a>                          <a href='https://siplab.ethz.ch/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #0891b2, #06b6d4);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 Sensing, Interaction & Perception Lab (SIPLAB) 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-46773 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-46773:checked ~ div label[for="t1-46773"],                 #t2-46773:checked ~ div label[for="t2-46773"],                 #t3-46773:checked ~ div label[for="t3-46773"] {                     background: #00e5ff; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-46773 .tab-pane { display: none; color: #fff; }                 #t1-46773:checked ~ .pane-1 { display: block; }                 #t2-46773:checked ~ .pane-2 { display: block; }                 #t3-46773:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_a9adc4b1471e33cb042286147be32e1e.setContent(html_ec4545846b962e1f9523508f220b358b);
+            
+        
+
+        marker_0751489f25aff070e91263be9b0d125e.bindPopup(popup_a9adc4b1471e33cb042286147be32e1e)
+        ;
+
+        
+    
+    
+            marker_0751489f25aff070e91263be9b0d125e.bindTooltip(
+                `<div>
+                     🎓 苏黎世联邦理工学院(ETH Zürich)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0751489f25aff070e91263be9b0d125e.setIcon(icon_225c8fb20a70423eec8902a499337f77);
+            
+    
+            marker_cluster_2338540fc18b310aeadc180a31b6573d.addTo(map_8e15e92ad908e53c4c63c81f54571079);
+        
+    
+            var marker_cluster_378f15a5f1346419024b405bc703d086 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 10,
+}
+            );
+        
+    
+            var marker_a3f4da70ddf910f83ae056cdda6f5ed8 = L.marker(
+                [59.44, 10.66],
+                {
+}
+            ).addTo(marker_cluster_378f15a5f1346419024b405bc703d086);
+        
+    
+            var icon_36774f2dd29988f7ae33befd9d6777ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "robot",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36945dd07b639e5eeec2b8d2916fe95c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6d3a31c4501932a1c76aa652084e98a3 = $(`<div id="html_6d3a31c4501932a1c76aa652084e98a3" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family:'Microsoft YaHei', 'Segoe UI', sans-serif;">             <h3 style="margin:0 0 15px 0; color:#fff; font-size:18px; text-align:center; letter-spacing:1px; border-bottom: 2px solid #ff9100; padding-bottom: 8px;">                 1X Technologies             </h3>              <div class="css-tabs-86644">                 <input type="radio" name="grp-86644" id="t1-86644" checked style="display:none">                 <input type="radio" name="grp-86644" id="t2-86644" style="display:none">                 <input type="radio" name="grp-86644" id="t3-86644" style="display:none">                  <div style="display:flex; background:rgba(0,0,0,0.3); border-radius:6px; padding:3px; margin-bottom:15px;">                     <label for="t1-86644" class="tab-btn">详细信息</label>                     <label for="t2-86644" class="tab-btn">相关论文</label>                     <label for="t3-86644" class="tab-btn">主页链接</label>                 </div>                  <div class="tab-pane pane-1" style="max-height:300px; overflow-y:auto; padding-right:5px;">             <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:10px;">                                  <div style="font-size:14px; font-weight:bold; color:#ff9100; margin-bottom:4px;">                     1X Technologies                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">分类:</span> 通用机器人 | <span style="opacity:0.7">成立:</span> 2014年                 </div>                 <div style="font-size:12px; color:#f8fafc; margin-bottom:2px;">                     <span style="opacity:0.7">团队:</span> Bernt Øivind Børnich（领导公司从Halodi Robotics转型为1X，推动与OpenAI合作，实现机器人AI集成）；Eric Jang（前google机器人研究 ）作为AI leader                 </div>                 <div style="font-size:12px; color:#ffd740; margin-bottom:4px;">                     <span style="opacity:0.7">产品:</span> EVE（轮式企业机器人）；NEO（双足家用人形机器人，高1.65米、负载10kg、成本目标2万美元）；Redwood （1.6亿参数VLA+RL运动控制、5Hz端侧运行）、1X World Model世界模型（模拟器）                 </div>                                  <div style="font-size:12px; color:#cbd5e1; line-height:1.4; font-style:italic;">                     取代Figure成为Open AI协作最紧密机器<br>人公司。通过 VR 训练与真实场景数据闭<br>环实现能力进化，自研的视觉操控模型（V<br>isual Manipulation Model）可直接从原<br>始传感器数据预动作轨迹；腱绳驱动，NEO<br> Gamma 采用日本 Shemiseki 技术编织的<br>尼龙外壳，结合接触式力反馈机制，将意外<br>碰撞力控制在 2N 以下                 </div>             </div>             </div>                 <div class="tab-pane pane-2" style="max-height:300px; overflow-y:auto; padding-right:5px;"><div style='padding:20px; text-align:center; color:#64748b; font-size:13px;'>暂无公开论文记录</div></div>                 <div class="tab-pane pane-3">             <a href='https://www.1x.tech/' target='_blank' style="                 display:block;                  background:linear-gradient(135deg, #ea580c, #f97316);                  color:white;                  padding:12px;                  margin-bottom:10px;                  border-radius:6px;                  text-decoration:none;                  text-align:center;                  font-size:14px;                  font-weight:bold;                 cursor:pointer;                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);                 transition: transform 0.1s;">                 🔗 访问 1X Technologies 官网             </a>             </div>             </div>              <style>                 .tab-pane::-webkit-scrollbar { width: 6px; }                 .tab-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }                 .tab-pane::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }                  .css-tabs-86644 .tab-btn {                     flex:1; text-align:center; padding:8px 0; cursor:pointer;                      font-size:12px; color:#9ca3af; border-radius:4px; transition:0.2s;                 }                 /* 动态高亮颜色 */                 #t1-86644:checked ~ div label[for="t1-86644"],                 #t2-86644:checked ~ div label[for="t2-86644"],                 #t3-86644:checked ~ div label[for="t3-86644"] {                     background: #ff9100; color: #fff; font-weight:bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);                 }                  .css-tabs-86644 .tab-pane { display: none; color: #fff; }                 #t1-86644:checked ~ .pane-1 { display: block; }                 #t2-86644:checked ~ .pane-2 { display: block; }                 #t3-86644:checked ~ .pane-3 { display: block; }             </style>         </div>         </div>`)[0];
+                popup_36945dd07b639e5eeec2b8d2916fe95c.setContent(html_6d3a31c4501932a1c76aa652084e98a3);
+            
+        
+
+        marker_a3f4da70ddf910f83ae056cdda6f5ed8.bindPopup(popup_36945dd07b639e5eeec2b8d2916fe95c)
+        ;
+
+        
+    
+    
+                marker_a3f4da70ddf910f83ae056cdda6f5ed8.setIcon(icon_36774f2dd29988f7ae33befd9d6777ba);
+            
+    
+            marker_cluster_378f15a5f1346419024b405bc703d086.addTo(map_8e15e92ad908e53c4c63c81f54571079);
+        
+</script>
+</html>

@@ -33701,6 +33701,18 @@
   ],
   "中国人民大学": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving, leveraging dynamic risk concepts to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey",
       "url": "https://arxiv.org/abs/2304.10891",
       "date": "2026-08-28",
@@ -35601,6 +35613,18 @@
     }
   ],
   "南京大学": [
+    {
+      "title": "WilLaGS: Latent-Conditional 3D Appearance Fields for Robust Gaussian Splatting In-the-Wild",
+      "url": "https://arxiv.org/abs/2608.28240",
+      "date": "2026-08-28",
+      "authors_text": "Yuhao Bai, Qianqiu Tan, Lilong Chen, Huanhuan Lv, Lijun Chen",
+      "is_highlight": false,
+      "score": 59.0,
+      "summary": "WilLaGS introduces a unified framework for robust 3D scene reconstruction and generative appearance synthesis, addressing challenges in unconstrained environments with a continuous latent model and perceptual masking.",
+      "teaser_image": "https://arxiv.org/html/2608.28240/2608.28240v1/flowchart.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "3D Gaussian Splatting (3DGS) delivers real-time and high-fidelity rendering but remains challenged by unconstrained in-the-wild scenes, where drastic appearance variations and transient objects violate multi-view consistency. Existing methods are fundamentally limited by independent and discrete embeddings that struggle to capture continuous environmental changes or model spatially-varying local illumination. To address these limitations, we propose \\textbf{WilLaGS}, a unified framework for robust 3D scene reconstruction and generative appearance synthesis under unconstrained settings. Specifically, we introduce a generative appearance model where a $β$-VAE learns a structured and continuous manifold of global appearance. Conditioned on the latent code, we construct a 3D neural appearance field that generates dynamic Tri-Plane features to encode spatially-varying local illumination effects. Furthermore, to suppress transient artifacts, we present a self-supervised perceptual masking mechanism that leverages a Teacher-Student (EMA) architecture to derive a stable scene consensus, robustly identifying inconsistent regions via perceptual discrepancies. Extensive experiments on multiple datasets demonstrate that \\textbf{WilLaGS} achieves state-of-the-art performance in reconstruction quality and novel view appearance synthesis, while maintaining real-time rendering efficiency."
+    },
     {
       "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
       "url": "https://arxiv.org/abs/2608.28266",
