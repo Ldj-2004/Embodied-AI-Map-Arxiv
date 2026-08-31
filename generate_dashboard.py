@@ -41,6 +41,21 @@ REGION_CONFIG = {
     "Europe": {"loc": [50.0, 10.0], "zoom": 4},
 }
 
+# 右侧榜单的 history fallback 使用最近 3 个日历日的数据窗口。
+HISTORY_HOT_WINDOW_DAYS = 3
+
+
+def parse_paper_date(value):
+    try:
+        return datetime.datetime.strptime(str(value)[:10], "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return None
+
+
+def paper_freshness_date(paper):
+    """优先使用新版 pipeline 的 OAI batch 日期；旧历史数据则退回论文 created 日期。"""
+    return parse_paper_date(paper.get("source_oai_date")) or parse_paper_date(paper.get("date"))
+
 
 def smart_wrap(text, limit=40):
     """智能换行，保持HTML标签安全"""
@@ -65,6 +80,8 @@ class DataEngine:
         self.companies = []
         self.heat_data = []
         self.hot_papers = []
+        self.hot_papers_date = None
+        self.hot_papers_mode = "daily"
         self.history_data = {}
         self.daily_data = {}
         self.lab_to_parent = {}  # [新增] 实验室到学校/公司的映射字典
@@ -160,26 +177,90 @@ class DataEngine:
         # --- 处理右下角榜单 ---
         self._process_daily_hot_papers()
 
-    def _process_daily_hot_papers(self):
-        """处理今日高分论文，用于侧边栏展示"""
+    def _flatten_paper_db(self, db):
+        """把 {机构: [论文]} 拍平成按 URL 去重的论文列表，并保留展示来源。"""
         flat_list = []
         seen_urls = set()
 
-        for source_lab, papers in self.daily_data.items():
-            # [新增] 尝试将实验室名转换为学校名，如果找不到则用原名
+        if not isinstance(db, dict):
+            return flat_list
+
+        for source_lab, papers in db.items():
+            if not isinstance(papers, list):
+                continue
+
             display_source = self.lab_to_parent.get(source_lab, source_lab)
+            for paper in papers:
+                if not isinstance(paper, dict):
+                    continue
+                url = paper.get('url')
+                if not url or url in seen_urls:
+                    continue
+                seen_urls.add(url)
 
-            for p in papers:
-                if p['url'] in seen_urls: continue
-                seen_urls.add(p['url'])
-
-                p_copy = p.copy()
-                p_copy['source'] = display_source  # 使用学校名
-                p_copy['score'] = p.get('score', 0)
+                p_copy = paper.copy()
+                p_copy['source'] = display_source
+                p_copy['score'] = paper.get('score', 0) or 0
                 flat_list.append(p_copy)
 
-        flat_list.sort(key=lambda x: x['score'], reverse=True)
-        self.hot_papers = flat_list[:10]
+        return flat_list
+
+    def _process_daily_hot_papers(self):
+        """
+        处理右侧 Top Papers，并加入第三道安全保护：
+
+        1. daily 正常且不落后于 history -> 使用 daily；
+        2. daily 为空，或明显比 history 陈旧 -> 自动从最新 history 恢复；
+        3. 因此即使 daily_papers.json 意外停在 1 月，也不会再次发布 1 月榜单。
+        """
+        daily_flat = self._flatten_paper_db(self.daily_data)
+        history_flat = self._flatten_paper_db(self.history_data)
+
+        daily_dates = [paper_freshness_date(p) for p in daily_flat]
+        daily_dates = [d for d in daily_dates if d]
+        history_dates = [paper_freshness_date(p) for p in history_flat]
+        history_dates = [d for d in history_dates if d]
+
+        daily_latest = max(daily_dates) if daily_dates else None
+        history_latest = max(history_dates) if history_dates else None
+
+        use_history_fallback = False
+        fallback_reason = None
+
+        if not daily_flat:
+            use_history_fallback = True
+            fallback_reason = "daily_papers.json 为空"
+        elif history_latest and (daily_latest is None or daily_latest < history_latest):
+            use_history_fallback = True
+            fallback_reason = (
+                f"daily 最新日期 {daily_latest or 'Unknown'} 落后于 history {history_latest}"
+            )
+
+        if use_history_fallback and history_flat and history_latest:
+            cutoff = history_latest - datetime.timedelta(days=HISTORY_HOT_WINDOW_DAYS - 1)
+            candidates = [
+                p for p in history_flat
+                if paper_freshness_date(p) and paper_freshness_date(p) >= cutoff
+            ]
+
+            # fallback 时先按 AI score，再按日期；仍然保留你原来的“高分论文”语义。
+            candidates.sort(
+                key=lambda p: (float(p.get('score', 0) or 0), paper_freshness_date(p) or datetime.date.min),
+                reverse=True,
+            )
+            self.hot_papers = candidates[:10]
+            self.hot_papers_date = history_latest.strftime('%Y-%m-%d')
+            self.hot_papers_mode = "history_fallback"
+            print(f"⚠️ [榜单保护] {fallback_reason}；改用最新 history 数据，日期={self.hot_papers_date}。")
+            return
+
+        # daily 正常：按 score 排序。这里不按论文 created date 过滤，
+        # 因为同一个 OAI batch 中可能包含近几天创建但当天才进入 OAI 的论文。
+        daily_flat.sort(key=lambda p: float(p.get('score', 0) or 0), reverse=True)
+        self.hot_papers = daily_flat[:10]
+        self.hot_papers_date = daily_latest.strftime('%Y-%m-%d') if daily_latest else None
+        self.hot_papers_mode = "daily"
+        print(f"✅ [榜单数据] 使用 daily_papers.json，最新批次日期={self.hot_papers_date or 'Unknown'}。")
 
 
 # ================= 3. 地图生成器 (3-Tabs 结构) =================
@@ -341,14 +422,22 @@ class MapGenerator:
         """
 
     def generate_map(self, region, config):
+        # CARTO 目前匿名 raster basemap 会显示 API KEY REQUIRED 水印。
+        # 改用无需 API key 的 OpenStreetMap 标准瓦片，并继续通过下方 CSS 做深色霓虹滤镜。
         m = folium.Map(
             location=config["loc"],
             zoom_start=config["zoom"],
-            # 1. 使用色彩最丰富的 Voyager 底图
-            tiles="CartoDB Voyager",
-            attr='&copy; CARTO',
+            tiles=None,
             zoom_control=False
         )
+
+        folium.TileLayer(
+            tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            attr='&copy; OpenStreetMap contributors',
+            name="OpenStreetMap",
+            max_zoom=19,
+            control=False,
+        ).add_to(m)
 
         # 2. CSS 注入：
         #    a. .leaflet-tile-pane: 只对底图应用滤镜 -> 变成深色霓虹风格，且色彩丰富 (非单调灰色)
@@ -437,8 +526,14 @@ class MapGenerator:
 beijing_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
 
 
-def create_dashboard(map_files, hot_papers):
+def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mode="daily"):
     recs_html = ""
+
+    feed_title = "LATEST TOP PAPERS"
+    if hot_papers_mode == "history_fallback":
+        feed_status = f"● HISTORY FALLBACK · {hot_papers_date or 'LATEST'}"
+    else:
+        feed_status = f"● AI RANKING · {hot_papers_date or 'LATEST'}"
 
     if not hot_papers:
         recs_html = "<div style='padding:20px; color:#64748b; text-align:center;'>Waiting for daily updates...</div>"
@@ -695,8 +790,8 @@ def create_dashboard(map_files, hot_papers):
         <div class="grid-item area-feed">
             <div class="rec-container">
                 <div class="rec-header">
-                    <div class="rec-title"> DAILY TOP PAPERS</div>
-                    <div class="live-indicator">● AI RANKING</div>
+                    <div class="rec-title"> {feed_title}</div>
+                    <div class="live-indicator">{feed_status}</div>
                 </div>
                 <div class="rec-list" id="auto-scroller">{recs_html}</div>
             </div>
@@ -751,7 +846,7 @@ def main():
         map_files[name] = filename
         print(f"  > Map generated: {filename}")
 
-    create_dashboard(map_files, data.hot_papers)
+    create_dashboard(map_files, data.hot_papers, data.hot_papers_date, data.hot_papers_mode)
     print("\n✅ V4 完成！地图色调已调亮为深蓝，Icon弹窗逻辑已重构。")
 
 
