@@ -4,13 +4,15 @@ import pandas as pd
 import time
 from openai import OpenAI
 import concurrent.futures
+import datetime as dt
+from datetime import timezone
 from tqdm import tqdm
 
 # --- 修改后 ---
 if os.environ.get('GITHUB_ACTIONS') == 'true':
     print(">>> [环境检测] GitHub Actions 环境：清除代理配置。")
-    os.environ.pop("http_proxy", None)
-    os.environ.pop("https_proxy", None)
+    for key in ("http_proxy", "https_proxy", "all_proxy", "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY"):
+        os.environ.pop(key, None)
 else:
     # 仅在本地开发且没在脚本外设置代理时才手动指定
     os.environ['http_proxy'] = 'http://127.0.0.1:7897'
@@ -43,6 +45,10 @@ COMPANY_CSV = "公司.csv"
 # 设置一个全局调试开关
 DEBUG_SAVE_ABSTRACT = True
 DEBUG_MODE = True
+
+# raw_papers.json 是中间产物。新 fetcher 会给每篇论文写入 source_oai_date。
+# 如果误读到仓库中旧的 legacy raw（例如 1 月缓存），这里会直接拒绝处理。
+RAW_MAX_BATCH_AGE_DAYS = 14
 
 # ================= 1. 数据加载与规则构建 (复用逻辑) =================
 
@@ -107,7 +113,7 @@ def fetch_full_abstract(arxiv_url):
     """从 ArXiv abs 页面抓取完整的摘要"""
     try:
         # 将 /abs/ 替换为 /abs/ (以防万一)
-        resp = requests.get(arxiv_url, timeout=15, verify=False)
+        resp = requests.get(arxiv_url, timeout=15)
         if resp.status_code == 200:
             # 使用正则匹配 <blockquote class="abstract mathjax"> ... </blockquote>
             match = re.search(r'<blockquote class="abstract mathjax">.*?<span class="descriptor">Abstract:</span>(.*?)</blockquote>', resp.text, re.DOTALL)
@@ -371,8 +377,9 @@ def analyze_paper_quality(verified_data):
 
     def process_summary(item):
         paper = item['paper']
-        full_abs = fetch_full_abstract(paper['link'])
-        final_abstract = full_abs if full_abs else paper['abstract']
+        # fetch_arxiv_raw.py 从 OAI metadata 已经拿到了完整 abstract。
+        # 不再对每篇论文额外请求 arxiv.org/abs，减少网络波动和证书 warning。
+        final_abstract = paper.get('abstract', '')
         if DEBUG_SAVE_ABSTRACT: item['abstract_full'] = final_abstract
 
         # 只生成总结，max_tokens 设小
@@ -418,18 +425,88 @@ Output format: [Index] Score"""
 
 
 
-# ================= 4. 主程序 =================
+# ================= 4. 输入批次安全检查 =================
+def write_empty_daily(reason):
+    """明确覆盖 daily_papers.json，禁止网页继续把历史 daily 冒充为今日数据。"""
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        json.dump({}, f, ensure_ascii=False, indent=2)
+    print(f"ℹ️ {reason}")
+    print(f"✅ 已将 {OUTPUT_FILE} 明确写为空对象。")
+
+
+def validate_raw_batch(raw_papers):
+    """
+    第二道防线：验证 raw 是否由新版 fetch_arxiv_raw.py 在近期生成。
+
+    - 空列表是合法输入；表示最近有效 OAI 批次中没有目标领域论文。
+    - 非空列表必须全部含 source_oai_date。
+    - 批次必须唯一、不能来自未来、不能陈旧超过 RAW_MAX_BATCH_AGE_DAYS。
+    """
+    if not isinstance(raw_papers, list):
+        raise RuntimeError(
+            f"{INPUT_FILE} 格式错误：期望 list，实际为 {type(raw_papers).__name__}。"
+        )
+
+    if not raw_papers:
+        return None
+
+    batch_dates = {p.get('source_oai_date') for p in raw_papers}
+    if None in batch_dates or '' in batch_dates:
+        raise RuntimeError(
+            f"检测到 legacy/stale {INPUT_FILE}：论文缺少 source_oai_date。"
+            "这通常意味着 fetch 阶段没有成功覆盖 checkout 下来的旧 raw。为防止再次发布 1 月旧数据，本次任务终止。"
+        )
+
+    if len(batch_dates) != 1:
+        raise RuntimeError(
+            f"{INPUT_FILE} 混入多个 OAI 批次: {sorted(batch_dates)}。拒绝继续处理。"
+        )
+
+    batch_str = next(iter(batch_dates))
+    try:
+        batch_date = dt.datetime.strptime(batch_str, '%Y-%m-%d').date()
+    except ValueError as e:
+        raise RuntimeError(f"非法 source_oai_date={batch_str}: {e}") from e
+
+    today_utc = dt.datetime.now(timezone.utc).date()
+    age_days = (today_utc - batch_date).days
+    if age_days < 0:
+        raise RuntimeError(f"raw 批次日期来自未来: {batch_str}")
+    if age_days > RAW_MAX_BATCH_AGE_DAYS:
+        raise RuntimeError(
+            f"raw 批次过旧: {batch_str}，距当前 UTC 日期 {age_days} 天。"
+            f"阈值为 {RAW_MAX_BATCH_AGE_DAYS} 天，拒绝处理。"
+        )
+
+    # 再做一次结构校验，避免旧 JSON 字段不完整时在并发阶段才报难追踪的错。
+    required = {'id', 'title', 'abstract', 'date', 'link'}
+    for idx, paper in enumerate(raw_papers):
+        missing = required - set(paper.keys())
+        if missing:
+            raise RuntimeError(f"raw 第 {idx} 条缺少字段: {sorted(missing)}")
+
+    print(f"✅ [批次校验] raw 来自 OAI batch={batch_str}，age={age_days} 天，共 {len(raw_papers)} 篇。")
+    return batch_str
+
+
+# ================= 5. 主程序 =================
 
 def main():
-    # 检查输入
+    # INPUT_FILE 不存在说明 fetch 阶段没有正确执行；必须让 Action 失败，而不是静默沿用旧 daily。
     if not os.path.exists(INPUT_FILE):
-        print(f"❌ 找不到 {INPUT_FILE}，请先运行抓取脚本 fetch_arxiv_raw.py")
-        return
+        raise FileNotFoundError(f"找不到 {INPUT_FILE}，请先运行 fetch_arxiv_raw.py")
 
     with open(INPUT_FILE, 'r', encoding='utf-8') as f:
         raw_papers = json.load(f)
 
-    print(f"📂 读取到 {len(raw_papers)} 篇待处理论文")
+    print(f"📂 读取到 {len(raw_papers) if isinstance(raw_papers, list) else '非列表'} 篇待处理论文")
+    batch_date = validate_raw_batch(raw_papers)
+
+    if not raw_papers:
+        write_empty_daily("本次有效 OAI 批次中没有目标领域论文，不调用 LLM。")
+        return
+
+    print(f"📅 本次 AI Inference 使用 OAI batch: {batch_date}")
 
     # 1. 加载规则
     dm = DataManager()
@@ -469,7 +546,8 @@ def main():
             "is_highlight": is_highlight,
             "score": item.get('ai_score', 0),
             "summary": item.get('ai_summary', ""),  # 存入 AI 生成的精简摘要
-            "teaser_image": paper.get('teaser_image', None),  # [新增] 透传图片 URL
+            "teaser_image": paper.get('teaser_image', None),  # 透传图片 URL
+            "source_oai_date": paper.get('source_oai_date'),   # 用于追踪本次数据批次
         }
 
         # 方便调试：如果开关打开，把完整摘要也存进 daily_papers.json
@@ -485,11 +563,12 @@ def main():
                 final_db[lab].insert(0, paper_info)
                 count += 1
 
-    # [核心改动] 如果今天没分析出任何符合条件的论文，直接退出，不覆盖旧文件
+    # 本批次没有任何论文通过机构验证时，也必须明确清空 daily，
+    # 绝不能保留上一轮（甚至数月前）的 daily_papers.json。
     if not final_db:
-        print("⚠️ [提示] 今日未发现目标论文。保持旧的 daily_papers.json 不变。")
+        write_empty_daily(f"OAI batch {batch_date} 没有论文通过最终筛选。")
         return
-    
+
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_db, f, ensure_ascii=False, indent=2)
 
