@@ -44,6 +44,10 @@ REGION_CONFIG = {
 # 右侧榜单的 history fallback 使用最近 3 个日历日的数据窗口。
 HISTORY_HOT_WINDOW_DAYS = 3
 
+# 每次 Action 都生成唯一版本号。
+# 用于 iframe cache busting，避免 GitHub Pages / 浏览器继续复用旧的 CARTO 地图 HTML。
+BUILD_VERSION = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S")
+
 
 def parse_paper_date(value):
     try:
@@ -439,6 +443,15 @@ class MapGenerator:
             control=False,
         ).add_to(m)
 
+        # 明确禁止浏览器复用旧地图 HTML。
+        # GitHub Pages/CDN 仍可能缓存静态文件，所以后面 iframe 还会额外追加 ?v=BUILD_VERSION。
+        no_cache_meta = '''
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        '''
+        m.get_root().header.add_child(folium.Element(no_cache_meta))
+
         # 2. CSS 注入：
         #    a. .leaflet-tile-pane: 只对底图应用滤镜 -> 变成深色霓虹风格，且色彩丰富 (非单调灰色)
         #    b. .leaflet-marker-icon: 强制保护图标颜色不被滤镜影响 (虽然pane不同通常不影响，但以防万一)
@@ -770,21 +783,21 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
             <div class="map-label" style="border-left-color: var(--accent-comp);">
                 <div class="map-title">CHINA / APAC</div>
             </div>
-            <iframe src="{map_files['China']}"></iframe>
+            <iframe src="{map_files['China']}?v={BUILD_VERSION}"></iframe>
         </div>
 
         <div class="grid-item area-map2">
             <div class="map-label" style="border-left-color: #3b82f6;">
                 <div class="map-title">NORTH AMERICA</div>
             </div>
-            <iframe src="{map_files['USA']}"></iframe>
+            <iframe src="{map_files['USA']}?v={BUILD_VERSION}"></iframe>
         </div>
 
         <div class="grid-item area-map3">
             <div class="map-label" style="border-left-color: var(--accent-uni);">
                 <div class="map-title">EUROPE</div>
             </div>
-            <iframe src="{map_files['Europe']}"></iframe>
+            <iframe src="{map_files['Europe']}?v={BUILD_VERSION}"></iframe>
         </div>
 
         <div class="grid-item area-feed">
@@ -841,10 +854,44 @@ def main():
 
     for name, conf in REGION_CONFIG.items():
         m = mapper.generate_map(name, conf)
-        filename = f"map_{name}.html"
+
+        # 故意换一个全新的文件名。
+        # 这样即使 GitHub Pages/CDN 仍缓存旧 map_China.html，也绝不可能再被 dashboard 引用。
+        filename = f"map_osm_{name}.html"
         m.save(filename)
+
+        # 生成后做强制自检：线上再出现 CARTO 时，Action 应直接失败，而不是发布错误地图。
+        with open(filename, "r", encoding="utf-8") as f:
+            generated_html = f.read()
+
+        generated_lower = generated_html.lower()
+        forbidden_tokens = [
+            "basemaps.cartocdn.com",
+            "cartocdn.com",
+            "carto.com/basemaps/apikey",
+            "&copy; carto",
+        ]
+
+        found_forbidden = [
+            token for token in forbidden_tokens
+            if token in generated_lower
+        ]
+        if found_forbidden:
+            raise RuntimeError(
+                f"❌ {filename} 仍包含 CARTO 内容: {found_forbidden}。"
+                "为防止带水印地图被发布，本次 Action 终止。"
+            )
+
+        if "tile.openstreetmap.org" not in generated_lower:
+            raise RuntimeError(
+                f"❌ {filename} 未检测到 OpenStreetMap tile URL，拒绝发布。"
+            )
+
         map_files[name] = filename
-        print(f"  > Map generated: {filename}")
+        print(
+            f"  > Map generated: {filename} "
+            f"[OSM verified, cache version={BUILD_VERSION}]"
+        )
 
     create_dashboard(map_files, data.hot_papers, data.hot_papers_date, data.hot_papers_mode)
     print("\n✅ V4 完成！地图色调已调亮为深蓝，Icon弹窗逻辑已重构。")
