@@ -5,33 +5,30 @@ import re
 import requests
 import xml.etree.ElementTree as ET
 import datetime as dt
-import socket  # <--- 请确保导入了这个库
+import socket
 from datetime import timedelta, timezone
 
 
-# ... (保留原有的 imports: os, time, json, re, requests, xml, datetime) ...
-
 # ================= 0. 网络环境自适应配置 =================
 def setup_proxy():
-    """
-    自动判断运行环境：GitHub Actions 环境强制直连
-    """
-    if os.environ.get('GITHUB_ACTIONS') == 'true':
+    """GitHub Actions 强制直连；本地如果检测到 Clash 7897 则自动使用代理。"""
+    if os.environ.get("GITHUB_ACTIONS") == "true":
         print(">>> [环境检测] GitHub Actions 环境：强制清除代理配置，保持直连。")
-        # 显式清除可能干扰的环境变量
-        os.environ.pop("http_proxy", None)
-        os.environ.pop("https_proxy", None)
-        os.environ.pop("all_proxy", None)
+        for key in (
+            "http_proxy", "https_proxy", "all_proxy",
+            "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY",
+        ):
+            os.environ.pop(key, None)
         return
 
-    # 2. 本地环境：探测 Clash 端口
     proxy_ip = "127.0.0.1"
     proxy_port = 7897
-
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(0.2)  # 快速检测
-    result = sock.connect_ex((proxy_ip, proxy_port))
-    sock.close()
+    sock.settimeout(0.2)
+    try:
+        result = sock.connect_ex((proxy_ip, proxy_port))
+    finally:
+        sock.close()
 
     if result == 0:
         print(f">>> [环境检测] 本地 Clash 已开启 ({proxy_port})：正在切换至代理模式...")
@@ -41,77 +38,74 @@ def setup_proxy():
         print(">>> [环境检测] 本地代理未开启或不可达：尝试直连...")
 
 
-# 在脚本最开始执行配置
 setup_proxy()
 
 # ================= 配置区域 =================
-# 目标日期 (YYYY-MM-DD)
-# TARGET_DATE = "2026-01-23"
-# --- 修改后 ---
-# 自动获取当前 UTC 日期 (ArXiv OAI 接口使用 UTC 时间戳)
-# 如果你发现抓取时间太早导致数据还没出来，可以改为：
-# (dt.datetime.now(timezone.utc)).strftime("%Y-%m-%d")
-# TARGET_DATE = "2026-01-23"
-TARGET_DATE = dt.datetime.now(timezone.utc).strftime("%Y-%m-%d")
+# GitHub Actions 在北京时间 12:25（UTC 04:25）运行。
+# 工作日优先抓当天；周末/无记录日自动向前回溯最近一次 arXiv OAI 有记录的日期。
+TODAY_UTC = dt.datetime.now(timezone.utc).date()
+LOOKBACK_DAYS = 14
+MAX_CREATED_AGE_DAYS = 10
 
-print(f">>> [配置] 当前抓取目标日期设定为: {TARGET_DATE} (UTC)")
-
-# 输出文件名
 OUTPUT_FILE = "raw_papers.json"
-
-# arXiv OAI 接口
 OAI_BASE = "https://export.arxiv.org/oai2"
 NS = {
     "oai": "http://www.openarchives.org/OAI/2.0/",
     "arxiv": "http://arxiv.org/OAI/arXiv/",
 }
 
-# 请求头 (防止被 arXiv 封禁，请保持礼貌)
-# HEADERS = {
-#     "User-Agent": "Arxiv-Daily-Fetcher/1.0 (mailto:your-email@example.com)",
-#     "Accept-Encoding": "gzip, deflate",
-# }
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    # 建议替换成你自己的项目名/联系邮箱；比伪装浏览器 UA 更符合 arXiv 的礼貌抓取习惯。
+    "User-Agent": "Embodied-AI-Map-Arxiv/1.0",
     "Accept": "text/xml,application/xml,application/xhtml+xml,*/*",
     "Accept-Language": "en-US,en;q=0.9",
-    # "Accept-Encoding": "gzip, deflate",
 }
 
-# 目标分类
-TARGET_CATEGORIES = {'cs.CV', 'cs.RO', 'cs.AI'}
+TARGET_CATEGORIES = {"cs.CV", "cs.RO", "cs.AI"}
+
+# OAI 网络请求失败时：绝不当作“今天 0 篇”继续执行，而是让 GitHub Action 失败。
+OAI_REQUEST_RETRIES = 4
+OAI_RETRY_BASE_SECONDS = 10
+
+# HTML 页面失败只影响单位/主图提取，不应该让整批论文丢失。
+HTML_REQUEST_RETRIES = 2
+HTML_REQUEST_TIMEOUT = 30
+HTML_SLEEP_SECONDS = 2
 
 
 # ================= 1. 辅助函数 =================
-
 def normalize_ws(s):
-    """标准化空白字符"""
     return re.sub(r"\s+", " ", s.strip()) if s else ""
 
 
 def strip_version(arxiv_id):
-    """去除版本号 (e.g., 2301.12345v1 -> 2301.12345)"""
     return re.sub(r"v\d+$", "", arxiv_id or "")
 
 
+def save_raw(data):
+    """始终覆盖 raw 文件，禁止沿用 checkout 中的旧缓存。"""
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def reset_raw_file():
+    # 这是第一道保险：脚本一启动就清掉仓库 checkout 下来的历史 raw。
+    save_raw([])
+    print(f">>> [缓存保护] 已重置 {OUTPUT_FILE}，不会沿用仓库中的旧 raw 数据。")
+
+
 def extract_best_image_url(html_content, arxiv_id):
-    """
-    从 arXiv HTML 中嗅探主图 URL。
-    优先级：包含关键词的 Figure > 页面第2张图 > 第1张图
-    """
-    if not html_content: return None
+    """从 arXiv HTML 中提取较合适的主图。"""
+    if not html_content:
+        return None
 
     clean_id = strip_version(arxiv_id)
-    # arXiv HTML 图片的基础路径通常是：https://arxiv.org/html/{id}/
     base_url = f"https://arxiv.org/html/{clean_id}/"
 
-    # 1. 寻找所有 Figure 块
-    figures = re.findall(r'<figure[^>]*>(.*?)</figure>', html_content, re.DOTALL | re.IGNORECASE)
+    figures = re.findall(r"<figure[^>]*>(.*?)</figure>", html_content, re.DOTALL | re.IGNORECASE)
     keywords = ["overview", "pipeline", "framework", "architecture", "methodology", "teaser"]
 
     best_img_src = None
-
-    # 策略 A: 关键词匹配
     for fig in figures:
         if any(kw in fig.lower() for kw in keywords):
             img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', fig, re.IGNORECASE)
@@ -119,155 +113,126 @@ def extract_best_image_url(html_content, arxiv_id):
                 best_img_src = img_match.group(1)
                 break
 
-                # 策略 B: 兜底方案 - 寻找页面中非图标类图片
     if not best_img_src:
-        # 寻找所有图片 src
         all_imgs = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html_content, re.IGNORECASE)
-        # 排除掉常见的 UI 图标和无意义的小图
-        filtered_imgs = [img for img in all_imgs if
-                         not any(x in img.lower() for x in ["icon", "logo", "github", "button", "external"])]
-
+        filtered_imgs = [
+            img for img in all_imgs
+            if not any(x in img.lower() for x in ["icon", "logo", "github", "button", "external"])
+        ]
         if len(filtered_imgs) >= 2:
-            best_img_src = filtered_imgs[1]  # 用户要求的第二张图
+            best_img_src = filtered_imgs[1]
         elif len(filtered_imgs) == 1:
             best_img_src = filtered_imgs[0]
 
-    if best_img_src:
-        # 如果已经是绝对路径则直接返回
-        if best_img_src.startswith(('http://', 'https://')):
-            return best_img_src
-        # 拼接为绝对路径
-        return base_url + best_img_src
-    return None
-
-
-
+    if not best_img_src:
+        return None
+    if best_img_src.startswith(("http://", "https://")):
+        return best_img_src
+    return base_url + best_img_src
 
 
 def clean_html_content(html):
-    """
-    [核心逻辑] HTML 强力清洗
-    去除导航、脚本、目录、参考文献，只保留正文前部用于提取单位。
-    """
-    if not html: return ""
+    """去除导航、脚本、目录、参考文献等，只保留正文前部用于作者单位匹配。"""
+    if not html:
+        return ""
 
-    # 1. 提取 Body 内容
-    body_match = re.search(r'<body[^>]*>(.*?)</body>', html, re.DOTALL | re.IGNORECASE)
+    body_match = re.search(r"<body[^>]*>(.*?)</body>", html, re.DOTALL | re.IGNORECASE)
     if body_match:
         html = body_match.group(1)
 
-    # 2. 移除干扰标签 (Script, Style, Nav)
-    # 移除 <script>, <style>
-    html = re.sub(r'<(script|style|noscript)[^>]*>.*?</\1>', '', html, flags=re.DOTALL | re.IGNORECASE)
-
-    # 移除 <nav> (左侧目录栏，含大量无关文字)
-    html = re.sub(r'<nav[^>]*>.*?</nav>', '', html, flags=re.DOTALL | re.IGNORECASE)
-
-    # 移除页脚、引用区域 (带有特定 class 的 div)
-    # ltx_TOC: 目录
-    # ltx_bibliography: 参考文献 (防止误判引用论文的单位)
-    # ltx_page_footer: 页脚
-    html = re.sub(r'<div[^>]*class="[^"]*(ltx_TOC|ltx_bibliography|ltx_page_footer)[^"]*"[^>]*>.*?</div>', '', html,
-                  flags=re.DOTALL | re.IGNORECASE)
-
-    # 3. 移除注释
-    html = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
-
-    # 4. 提取纯文本 (移除所有剩余 HTML 标签)
-    text = re.sub(r'<[^>]+>', ' ', html)
-
-    # 5. 压缩空白
-    text = re.sub(r'\s+', ' ', text).strip()
-
-    # 6. 截取前 50,000 字符 (足够覆盖 标题+作者+单位+脚注单位)
+    html = re.sub(
+        r"<(script|style|noscript)[^>]*>.*?</\1>",
+        "",
+        html,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    html = re.sub(r"<nav[^>]*>.*?</nav>", "", html, flags=re.DOTALL | re.IGNORECASE)
+    html = re.sub(
+        r'<div[^>]*class="[^"]*(ltx_TOC|ltx_bibliography|ltx_page_footer)[^"]*"[^>]*>.*?</div>',
+        "",
+        html,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.DOTALL)
+    text = re.sub(r"<[^>]+>", " ", html)
+    text = re.sub(r"\s+", " ", text).strip()
     return text[:50000]
 
 
 def fetch_arxiv_html(arxiv_id):
-    """爬取 arXiv HTML5 页面并清洗，同时提取主图"""
+    """抓取 arXiv HTML5 页面。失败时返回 None，但不终止整批任务。"""
     clean_id = strip_version(arxiv_id)
     url = f"https://arxiv.org/html/{clean_id}"
-
     print(f"    -> 正在抓取 HTML: {url} ...", end="", flush=True)
 
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=30)
-        if resp.status_code == 200:
-            raw_html = resp.text
-            # --- 新增图片提取 ---
-            image_url = extract_best_image_url(raw_html, arxiv_id)
-            # --- 原有清洗逻辑 ---
-            cleaned_text = clean_html_content(raw_html)
+    for attempt in range(1, HTML_REQUEST_RETRIES + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=HTML_REQUEST_TIMEOUT)
+            if resp.status_code == 200:
+                raw_html = resp.text
+                image_url = extract_best_image_url(raw_html, arxiv_id)
+                cleaned_text = clean_html_content(raw_html)
+                print(f" [成功] 长度: {len(cleaned_text)}, 图片: {'有' if image_url else '无'}")
+                return cleaned_text, image_url
+            if resp.status_code == 404:
+                print(" [404 Not Found]")
+                return None, None
 
-            print(f" [成功] 长度: {len(cleaned_text)}, 图片: {'有' if image_url else '无'}")
-            return cleaned_text, image_url  # 修改返回值为元组
-        elif resp.status_code == 404:
-            print(" [404 Not Found]")
-            return None, None
-        else:
-            print(f" [失败: {resp.status_code}]")
-            return None, None
-    except Exception as e:
-        print(f" [错误: {e}]")
-        return None, None
+            print(f" [HTTP {resp.status_code}, 尝试 {attempt}/{HTML_REQUEST_RETRIES}]", end="", flush=True)
+        except requests.RequestException as e:
+            print(f" [网络异常: {e}, 尝试 {attempt}/{HTML_REQUEST_RETRIES}]", end="", flush=True)
+
+        if attempt < HTML_REQUEST_RETRIES:
+            time.sleep(3)
+
+    print(" [放弃 HTML，保留 OAI Metadata]")
+    return None, None
 
 
-# ================= 2. XML 解析与列表获取 =================
-
-def parse_record(record):
-    """解析单条 XML 记录"""
+# ================= 2. XML 解析与 OAI 获取 =================
+def parse_record(record, source_oai_date):
+    """解析一条 OAI record，并过滤明显不是近期新提交的旧论文更新。"""
     header = record.find("oai:header", NS)
     if header is None or header.get("status") == "deleted":
         return None
 
     metadata = record.find("oai:metadata", NS)
-    if metadata is None: return None
+    if metadata is None:
+        return None
     arx = metadata.find("arxiv:arXiv", NS)
-    if arx is None: return None
+    if arx is None:
+        return None
 
-    # 1. 提取基础信息
     arxiv_id = normalize_ws(arx.findtext("arxiv:id", default="", namespaces=NS))
     categories = arx.findtext("arxiv:categories", default="", namespaces=NS).split()
-
-    # 2. 筛选类别
     if not any(cat in TARGET_CATEGORIES for cat in categories):
         return None
 
-    # 3. 获取日期信息
     title = normalize_ws(arx.findtext("arxiv:title", default="", namespaces=NS))
     abstract = normalize_ws(arx.findtext("arxiv:abstract", default="", namespaces=NS))
     date_created_str = normalize_ws(arx.findtext("arxiv:created", default="", namespaces=NS))
 
-    # ================= [核心修改：深度过滤旧论文] =================
+    # 原代码用 arXiv ID 的 YYMM 前缀比较，会在每月 1 号错误过滤上月末论文。
+    # 这里只比较真实 created 日期与当前 OAI 批次日期。
     try:
-        # A. 基于 ID 前缀的硬过滤 (ArXiv ID 格式为 YYMM.NNNNN)
-        # 例如 2312.09822 对应的是 2023年12月
-        target_yymm = TARGET_DATE[2:4] + TARGET_DATE[5:7]  # 从 "2026-01-22" 提取 "2601"
-        id_prefix = arxiv_id[:4]  # 从 "2312.09822" 提取 "2312"
-
-        # B. 基于日期对象的软过滤
-        target_dt = dt.datetime.strptime(TARGET_DATE, "%Y-%m-%d")
-        created_dt = dt.datetime.strptime(date_created_str, "%Y-%m-%d")
-        diff_days = (target_dt - created_dt).days
-
-        # 如果 ID 前缀明显属于往年，或者创建时间距离现在超过 10 天
-        # (考虑到 ArXiv 可能会有 2-3 天的发布延迟，10天是一个非常安全的阈值)
-        if id_prefix < target_yymm or diff_days > 10:
-            print(f"  >>> [发现旧论文，不予收录] ID: {arxiv_id}, 原始发布于: {date_created_str}")
+        batch_dt = dt.datetime.strptime(source_oai_date, "%Y-%m-%d").date()
+        created_dt = dt.datetime.strptime(date_created_str, "%Y-%m-%d").date()
+        diff_days = (batch_dt - created_dt).days
+        if diff_days < 0 or diff_days > MAX_CREATED_AGE_DAYS:
+            print(
+                f"  >>> [过滤旧/异常论文] ID: {arxiv_id}, created={date_created_str}, "
+                f"OAI batch={source_oai_date}, diff={diff_days}d"
+            )
             return None
+    except ValueError as e:
+        print(f"  [日期解析警告] {arxiv_id}: {e}，为安全起见跳过该记录。")
+        return None
 
-    except Exception as e:
-        print(f"  [日期过滤警告] {arxiv_id} 解析失败: {e}")
-    # ============================================================
-
-    # 4. 解析作者列表
     authors_list = []
     for a in arx.findall("arxiv:authors/arxiv:author", NS):
         keyname = normalize_ws(a.findtext("arxiv:keyname", default="", namespaces=NS))
         forenames = normalize_ws(a.findtext("arxiv:forenames", default="", namespaces=NS))
-        authors_list.append(f"{forenames} {keyname}")
-
-    authors_str = ", ".join(authors_list[:5])
+        authors_list.append(f"{forenames} {keyname}".strip())
 
     return {
         "id": arxiv_id,
@@ -275,118 +240,155 @@ def parse_record(record):
         "abstract": abstract,
         "date": date_created_str,
         "categories": categories,
-        "authors_display": authors_str,
+        "authors_display": ", ".join(authors_list[:5]),
         "link": f"https://arxiv.org/abs/{strip_version(arxiv_id)}",
-        "html_content": None
+        "html_content": None,
+        # 第二道保险：Inference 会检查这个批次字段，旧 legacy raw 没有它就拒绝处理。
+        "source_oai_date": source_oai_date,
     }
 
 
-def fetch_list_from_oai(target_date):
-    """从 OAI 接口获取指定日期的所有论文列表"""
-    print(f"=== 开始从 OAI 获取 {target_date} 的论文列表 ===")
+def _request_oai(params):
+    """OAI 请求：网络/协议错误最终抛异常，不得伪装成 noRecordsMatch。"""
+    last_error = None
+    for attempt in range(1, OAI_REQUEST_RETRIES + 1):
+        try:
+            resp = requests.get(OAI_BASE, params=params, headers=HEADERS, timeout=60)
+            if resp.status_code == 503:
+                retry_after = resp.headers.get("Retry-After")
+                wait_s = int(retry_after) if retry_after and retry_after.isdigit() else OAI_RETRY_BASE_SECONDS * attempt
+                print(f"  [503] arXiv OAI 繁忙，{wait_s}s 后重试 ({attempt}/{OAI_REQUEST_RETRIES})...")
+                time.sleep(wait_s)
+                continue
 
-    # OAI 的时间范围是闭区间，所以 from 和 until 都设为当天
+            resp.raise_for_status()
+            return ET.fromstring(resp.content)
+        except (requests.RequestException, ET.ParseError) as e:
+            last_error = e
+            if attempt < OAI_REQUEST_RETRIES:
+                wait_s = OAI_RETRY_BASE_SECONDS * attempt
+                print(f"  [OAI 请求失败] {e}；{wait_s}s 后重试 ({attempt}/{OAI_REQUEST_RETRIES})...")
+                time.sleep(wait_s)
+
+    raise RuntimeError(f"arXiv OAI 连续请求失败，终止本次 Action，避免发布错误数据。最后错误: {last_error}")
+
+
+def fetch_list_from_oai(target_date):
+    """
+    获取某个 OAI datestamp 的记录。
+
+    返回: (status, papers, raw_record_count)
+      status='ok'         : OAI 有记录（即使目标分类最终筛成 0 篇）
+      status='no_records' : OAI 明确返回 noRecordsMatch，可安全回溯前一天
+    其他 OAI 错误直接抛异常。
+    """
+    print(f"\n=== 开始从 OAI 获取 {target_date} 的论文列表 ===")
+
     params = {
         "verb": "ListRecords",
         "metadataPrefix": "arXiv",
         "from": target_date,
-        "until": target_date
+        "until": target_date,
     }
 
     all_records = []
+    raw_record_count = 0
 
     while True:
-        try:
-            resp = requests.get(OAI_BASE, params=params, headers=HEADERS, timeout=60)
-            if resp.status_code == 503:
-                print("  [503] 服务器繁忙，等待 20秒...")
-                time.sleep(20)
-                continue
+        root = _request_oai(params)
 
-            resp.raise_for_status()
-            root = ET.fromstring(resp.content)
+        err = root.find("oai:error", NS)
+        if err is not None:
+            code = err.get("code")
+            if code == "noRecordsMatch":
+                print(f"  [提示] {target_date} 没有 OAI 记录。")
+                return "no_records", [], 0
+            raise RuntimeError(f"arXiv OAI 返回错误 {code}: {err.text}")
 
-            # 检查错误
-            err = root.find("oai:error", NS)
-            if err is not None:
-                if err.get("code") == "noRecordsMatch":
-                    print("  [提示] 当天没有论文记录。")
-                else:
-                    print(f"  [OAI Error] {err.text}")
-                break
+        records = root.findall(".//oai:record", NS)
+        raw_record_count += len(records)
+        print(f"  > 下载批次: 包含 {len(records)} 条原始记录")
 
-            # 解析记录
-            records = root.findall(".//oai:record", NS)
-            print(f"  > 下载批次: 包含 {len(records)} 条原始记录")
+        for rec in records:
+            paper_obj = parse_record(rec, target_date)
+            if paper_obj:
+                all_records.append(paper_obj)
 
-            for rec in records:
-                paper_obj = parse_record(rec)
-                if paper_obj:
-                    all_records.append(paper_obj)
-
-            # 翻页 Token
-            token_node = root.find(".//oai:resumptionToken", NS)
-            token = token_node.text if token_node is not None else None
-
-            if token:
-                print(f"  > 发现翻页 Token，继续获取下一页...")
-                params = {"verb": "ListRecords", "resumptionToken": token}
-                time.sleep(3)  # 礼貌等待
-            else:
-                break
-
-        except Exception as e:
-            print(f"  [网络错误] {e}")
-            time.sleep(5)
-            # 简单重试机制，或者直接跳出
+        token_node = root.find(".//oai:resumptionToken", NS)
+        token = token_node.text.strip() if token_node is not None and token_node.text else None
+        if token:
+            print("  > 发现翻页 Token，继续获取下一页...")
+            params = {"verb": "ListRecords", "resumptionToken": token}
+            time.sleep(3)
+        else:
             break
 
-    print(f"=== 列表获取完成，共筛选出 {len(all_records)} 篇目标领域论文 ===")
-    return all_records
+    print(
+        f"=== {target_date} 获取完成：原始 {raw_record_count} 条，"
+        f"筛选后 {len(all_records)} 篇目标领域论文 ==="
+    )
+    return "ok", all_records, raw_record_count
+
+
+def find_latest_available_batch():
+    """从今天开始向前寻找最近一个 OAI 明确存在记录的日期。"""
+    print(
+        f">>> [配置] 当前 UTC 日期: {TODAY_UTC}；"
+        f"最多向前回溯 {LOOKBACK_DAYS} 天寻找最近有效 arXiv OAI 批次。"
+    )
+
+    for offset in range(LOOKBACK_DAYS + 1):
+        candidate = TODAY_UTC - timedelta(days=offset)
+        candidate_str = candidate.strftime("%Y-%m-%d")
+        status, papers, raw_count = fetch_list_from_oai(candidate_str)
+        if status == "ok":
+            if offset > 0:
+                print(f">>> [日期回溯] 今天无记录，改用最近有效批次: {candidate_str} (回溯 {offset} 天)")
+            return candidate_str, papers, raw_count
+
+    # 连续 LOOKBACK_DAYS 天都明确 noRecordsMatch，属于异常但不是网络错误。
+    # 写空文件，避免任何旧缓存被使用，然后正常结束。
+    print(f"⚠️ 最近 {LOOKBACK_DAYS + 1} 天均无 OAI 记录，将输出空 raw。")
+    return None, [], 0
 
 
 # ================= 3. 主程序 =================
-
 def main():
-    # 1. 获取列表
-    papers = fetch_list_from_oai(TARGET_DATE)
+    # 最重要的一步：任何网络请求之前先抹掉 checkout 下来的旧 raw。
+    reset_raw_file()
 
-    if not papers:
-        print("未获取到论文，程序结束。")
+    batch_date, papers, raw_count = find_latest_available_batch()
+
+    if batch_date is None:
+        print("ℹ️ 没有可用 OAI 批次，raw_papers.json 保持为空列表。")
         return
 
-    print("\n=== 开始爬取 HTML 全文 (用于提取作者单位) ===")
+    if not papers:
+        # 这里和“网络失败”不同：OAI 批次存在，只是 cs.CV/cs.RO/cs.AI + 新论文过滤后为 0。
+        save_raw([])
+        print(
+            f"ℹ️ OAI 批次 {batch_date} 存在 {raw_count} 条记录，但目标领域筛选后为 0；"
+            f"已明确写入空 {OUTPUT_FILE}。"
+        )
+        return
 
-    # 2. 遍历列表，补充 HTML 内容
+    print(f"\n=== 使用 OAI 批次 {batch_date}，开始爬取 {len(papers)} 篇 HTML 全文 ===")
     processed_papers = []
 
     for i, paper in enumerate(papers):
-        print(f"[{i + 1}/{len(papers)}] {paper['id']} : {paper['title'][:40]}...")
-
-        # 爬取清洗后的全文
-        # html_text = fetch_arxiv_html(paper['id'])
-        html_text, teaser_image = fetch_arxiv_html(paper['id'])
-
-        # 无论是否成功爬取 HTML，保留 Metadata
-        # (如果 HTML 是 None，后续 LLM 只能基于 Title/Abstract 判断，精度下降但不会 Crash)
-        paper['html_content'] = html_text
-        paper['teaser_image'] = teaser_image  # 存入新字段
+        print(f"[{i + 1}/{len(papers)}] {paper['id']} : {paper['title'][:60]}...")
+        html_text, teaser_image = fetch_arxiv_html(paper["id"])
+        paper["html_content"] = html_text
+        paper["teaser_image"] = teaser_image
         processed_papers.append(paper)
+        time.sleep(HTML_SLEEP_SECONDS)
 
-        # 礼貌延时，防止 IP 被封
-        time.sleep(2)
+    save_raw(processed_papers)
 
-    # 3. 保存到本地 JSON
-    print(f"\n=== 全部完成，正在保存到 {OUTPUT_FILE} ===")
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(processed_papers, f, ensure_ascii=False, indent=2)
-
-    print(f"文件大小: {os.path.getsize(OUTPUT_FILE) / 1024:.2f} KB")
-    print("您可以将此文件上传到 GitHub 或发送到服务器进行下一步分析。")
+    file_size = os.path.getsize(OUTPUT_FILE) / 1024
+    print(f"\n✅ 抓取完成：batch={batch_date}, papers={len(processed_papers)}")
+    print(f"✅ 已覆盖保存 {OUTPUT_FILE} | {file_size:.2f} KB")
 
 
 if __name__ == "__main__":
-
     main()
-
-
