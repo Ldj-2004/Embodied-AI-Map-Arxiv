@@ -1,6 +1,18 @@
 {
   "卡内基-机器人研究所": [
     {
+      "title": "Cognitive Chain-of-Thought (CoCoT): Structured Multimodal Reasoning about Social Situations",
+      "url": "https://arxiv.org/abs/2507.20409",
+      "date": "2026-08-28",
+      "authors_text": "Eunkyu Park, Wesley Hanwen Deng, Gunhee Kim, Motahhare Eslami, Maarten Sap",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The Cognitive Chain-of-Thought (CoCoT) framework enhances multimodal social reasoning by structuring tasks into perception, situation, and norm stages, improving model performance and interpretability.",
+      "teaser_image": "https://arxiv.org/html/2507.20409/2507.20409v3/01_moments_qual.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Chain-of-Thought (CoT) prompting helps models think step by step. But naive CoT breaks down in visually grounded social tasks, where models must perceive, understand, and judge all at once; bridging perception with norm-grounded reasoning. Recent work has introduced structured reasoning for multi-turn agent planning and visual QA, decomposing tasks into sequential sub-goals. To extend this to single-shot multimodal social reasoning, we introduce Cognitive Chain-of-Thought (CoCoT), a reasoning framework that structures vision-language-model (VLM) reasoning through three cognitively inspired stages: Perception (extract grounded facts), Situation (infer situations), and Norm (applying social norms). Evaluation across multiple distinct tasks such as multimodal intent disambiguation, multimodal theory of mind, social commonsense reasoning, and safety instruction following, shows consistent improvements (5.9% to 4.6% on average). We further explore the utility of CoCoT for improving models' reasoning through training and show that supervised fine-tuning on CoCoT-structured traces yields 5-6% improvements without explicit CoCoT prompting at inference, demonstrating that models internalize the structured reasoning pattern rather than merely following instructions. We show that structuring model reasoning through cognitively grounded stages enhances interpretability and social alignment, laying the groundwork for more reliable multimodal systems."
+    },
+    {
       "title": "Generative Semantic Scene Completion",
       "url": "https://arxiv.org/abs/2608.26737",
       "date": "2026-08-27",
@@ -310,6 +322,30 @@
     }
   ],
   "NUS AI LAB": [
+    {
+      "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+      "url": "https://arxiv.org/abs/2509.26536",
+      "date": "2026-08-28",
+      "authors_text": "Yida Xue, Mingjun Mao, Xiangyuan Ru, Yuqi Zhu, Baochang Ren",
+      "is_highlight": true,
+      "score": 92.0,
+      "summary": "OceanGym is a pioneering benchmark for underwater embodied agents, addressing unique challenges in perception and decision-making through a framework integrating Multi-modal Large Language Models across eight task domains.",
+      "teaser_image": "https://arxiv.org/html/2509.26536/2509.26536v3/pic1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym."
+    },
+    {
+      "title": "FleetScape: A Mixed Reality Sandtable for Spatial Supervision and Control of Scalable Drone Fleets",
+      "url": "https://arxiv.org/abs/2607.26423",
+      "date": "2026-08-28",
+      "authors_text": "Peisen Xu, Jérémie Garcia, Peter Cleveland, Wei Tsang Ooi, Christophe Jouffrais",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FleetScape is a Mixed Reality system enhancing drone fleet supervision by providing spatial interaction and layered data visualization, improving situational awareness and control transitions.",
+      "teaser_image": "https://arxiv.org/html/2607.26423/2607.26423v2/figures/teaser-figure.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "As autonomous drone deployments scale from individual units to coordinated swarms, the human operator's role shifts from direct piloting to high-level supervision. Current interfaces often treat multi-drone control as a scaled-up version of single-drone operation. We instead investigate how reframing fleet supervision as spatial interaction can better support the spatial, temporal, and safety demands of complex missions. We present FleetScape, a Mixed Reality (MR) sandtable system that externalizes layered real-time mission, safety, and environmental data while enabling fluid transitions between manual intervention and autonomous supervision. We developed a high-fidelity building inspection simulation that generates and streams synchronized multi-drone and environmental data for MR visualizations. We used this prototype to conduct a user study with six experienced drone pilots managing fleets of up to 15 drones. Our findings show that FleetScape supports situational awareness through layered spatial representations and clarifies control mode transitions. However, a limit to situational awareness was observed as fleet size increases, leading to different supervisory strategies. Finally, we derive design implications for supporting scalable drone fleet supervision."
+    },
     {
       "title": "Can Tainted Pixels Expose Deepfake Videos?",
       "url": "https://arxiv.org/abs/2608.27492",
@@ -819,6 +855,30 @@
   ],
   "Advanced Robotics Centre": [
     {
+      "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+      "url": "https://arxiv.org/abs/2509.26536",
+      "date": "2026-08-28",
+      "authors_text": "Yida Xue, Mingjun Mao, Xiangyuan Ru, Yuqi Zhu, Baochang Ren",
+      "is_highlight": true,
+      "score": 92.0,
+      "summary": "OceanGym is a pioneering benchmark for underwater embodied agents, addressing unique challenges in perception and decision-making through a framework integrating Multi-modal Large Language Models across eight task domains.",
+      "teaser_image": "https://arxiv.org/html/2509.26536/2509.26536v3/pic1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym."
+    },
+    {
+      "title": "FleetScape: A Mixed Reality Sandtable for Spatial Supervision and Control of Scalable Drone Fleets",
+      "url": "https://arxiv.org/abs/2607.26423",
+      "date": "2026-08-28",
+      "authors_text": "Peisen Xu, Jérémie Garcia, Peter Cleveland, Wei Tsang Ooi, Christophe Jouffrais",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FleetScape is a Mixed Reality system enhancing drone fleet supervision by providing spatial interaction and layered data visualization, improving situational awareness and control transitions.",
+      "teaser_image": "https://arxiv.org/html/2607.26423/2607.26423v2/figures/teaser-figure.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "As autonomous drone deployments scale from individual units to coordinated swarms, the human operator's role shifts from direct piloting to high-level supervision. Current interfaces often treat multi-drone control as a scaled-up version of single-drone operation. We instead investigate how reframing fleet supervision as spatial interaction can better support the spatial, temporal, and safety demands of complex missions. We present FleetScape, a Mixed Reality (MR) sandtable system that externalizes layered real-time mission, safety, and environmental data while enabling fluid transitions between manual intervention and autonomous supervision. We developed a high-fidelity building inspection simulation that generates and streams synchronized multi-drone and environmental data for MR visualizations. We used this prototype to conduct a user study with six experienced drone pilots managing fleets of up to 15 drones. Our findings show that FleetScape supports situational awareness through layered spatial representations and clarifies control mode transitions. However, a limit to situational awareness was observed as fleet size increases, leading to different supervisory strategies. Finally, we derive design implications for supporting scalable drone fleet supervision."
+    },
+    {
       "title": "Can Tainted Pixels Expose Deepfake Videos?",
       "url": "https://arxiv.org/abs/2608.27492",
       "date": "2026-08-26",
@@ -1326,6 +1386,30 @@
     }
   ],
   "Synteraction Lab": [
+    {
+      "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+      "url": "https://arxiv.org/abs/2509.26536",
+      "date": "2026-08-28",
+      "authors_text": "Yida Xue, Mingjun Mao, Xiangyuan Ru, Yuqi Zhu, Baochang Ren",
+      "is_highlight": true,
+      "score": 92.0,
+      "summary": "OceanGym is a pioneering benchmark for underwater embodied agents, addressing unique challenges in perception and decision-making through a framework integrating Multi-modal Large Language Models across eight task domains.",
+      "teaser_image": "https://arxiv.org/html/2509.26536/2509.26536v3/pic1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym."
+    },
+    {
+      "title": "FleetScape: A Mixed Reality Sandtable for Spatial Supervision and Control of Scalable Drone Fleets",
+      "url": "https://arxiv.org/abs/2607.26423",
+      "date": "2026-08-28",
+      "authors_text": "Peisen Xu, Jérémie Garcia, Peter Cleveland, Wei Tsang Ooi, Christophe Jouffrais",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FleetScape is a Mixed Reality system enhancing drone fleet supervision by providing spatial interaction and layered data visualization, improving situational awareness and control transitions.",
+      "teaser_image": "https://arxiv.org/html/2607.26423/2607.26423v2/figures/teaser-figure.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "As autonomous drone deployments scale from individual units to coordinated swarms, the human operator's role shifts from direct piloting to high-level supervision. Current interfaces often treat multi-drone control as a scaled-up version of single-drone operation. We instead investigate how reframing fleet supervision as spatial interaction can better support the spatial, temporal, and safety demands of complex missions. We present FleetScape, a Mixed Reality (MR) sandtable system that externalizes layered real-time mission, safety, and environmental data while enabling fluid transitions between manual intervention and autonomous supervision. We developed a high-fidelity building inspection simulation that generates and streams synchronized multi-drone and environmental data for MR visualizations. We used this prototype to conduct a user study with six experienced drone pilots managing fleets of up to 15 drones. Our findings show that FleetScape supports situational awareness through layered spatial representations and clarifies control mode transitions. However, a limit to situational awareness was observed as fleet size increases, leading to different supervisory strategies. Finally, we derive design implications for supporting scalable drone fleet supervision."
+    },
     {
       "title": "Can Tainted Pixels Expose Deepfake Videos?",
       "url": "https://arxiv.org/abs/2608.27492",
@@ -1835,6 +1919,30 @@
   ],
   "Microsystem Engineering and Robotics": [
     {
+      "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+      "url": "https://arxiv.org/abs/2509.26536",
+      "date": "2026-08-28",
+      "authors_text": "Yida Xue, Mingjun Mao, Xiangyuan Ru, Yuqi Zhu, Baochang Ren",
+      "is_highlight": true,
+      "score": 92.0,
+      "summary": "OceanGym is a pioneering benchmark for underwater embodied agents, addressing unique challenges in perception and decision-making through a framework integrating Multi-modal Large Language Models across eight task domains.",
+      "teaser_image": "https://arxiv.org/html/2509.26536/2509.26536v3/pic1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym."
+    },
+    {
+      "title": "FleetScape: A Mixed Reality Sandtable for Spatial Supervision and Control of Scalable Drone Fleets",
+      "url": "https://arxiv.org/abs/2607.26423",
+      "date": "2026-08-28",
+      "authors_text": "Peisen Xu, Jérémie Garcia, Peter Cleveland, Wei Tsang Ooi, Christophe Jouffrais",
+      "is_highlight": false,
+      "score": 85.0,
+      "summary": "FleetScape is a Mixed Reality system enhancing drone fleet supervision by providing spatial interaction and layered data visualization, improving situational awareness and control transitions.",
+      "teaser_image": "https://arxiv.org/html/2607.26423/2607.26423v2/figures/teaser-figure.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "As autonomous drone deployments scale from individual units to coordinated swarms, the human operator's role shifts from direct piloting to high-level supervision. Current interfaces often treat multi-drone control as a scaled-up version of single-drone operation. We instead investigate how reframing fleet supervision as spatial interaction can better support the spatial, temporal, and safety demands of complex missions. We present FleetScape, a Mixed Reality (MR) sandtable system that externalizes layered real-time mission, safety, and environmental data while enabling fluid transitions between manual intervention and autonomous supervision. We developed a high-fidelity building inspection simulation that generates and streams synchronized multi-drone and environmental data for MR visualizations. We used this prototype to conduct a user study with six experienced drone pilots managing fleets of up to 15 drones. Our findings show that FleetScape supports situational awareness through layered spatial representations and clarifies control mode transitions. However, a limit to situational awareness was observed as fleet size increases, leading to different supervisory strategies. Finally, we derive design implications for supporting scalable drone fleet supervision."
+    },
+    {
       "title": "Can Tainted Pixels Expose Deepfake Videos?",
       "url": "https://arxiv.org/abs/2608.27492",
       "date": "2026-08-26",
@@ -2342,6 +2450,18 @@
     }
   ],
   "范明明老师实验室": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
@@ -3071,6 +3191,18 @@
   ],
   "机器人研究所 (CKSRI)": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
       "date": "2026-08-27",
@@ -3798,6 +3930,18 @@
     }
   ],
   "Precognition Lab": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
@@ -4527,6 +4671,18 @@
   ],
   "机器人研究所": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
       "date": "2026-08-27",
@@ -5255,6 +5411,18 @@
   ],
   "Jun MA老师实验室": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
       "date": "2026-08-27",
@@ -5982,6 +6150,18 @@
     }
   ],
   "Cheng Kar-Shun Robotics Institute (CKSRI)": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
       "url": "https://arxiv.org/abs/2608.26821",
@@ -7010,6 +7190,18 @@
   ],
   "S-Lab for Advanced Intelligence": [
     {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
+    {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
       "date": "2026-08-27",
@@ -7671,6 +7863,18 @@
     }
   ],
   "ROSE Lab": [
+    {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
     {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
@@ -8334,6 +8538,18 @@
   ],
   "PINE Lab": [
     {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
+    {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
       "date": "2026-08-27",
@@ -8995,6 +9211,18 @@
     }
   ],
   "MARS Lab": [
+    {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
     {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
@@ -9658,6 +9886,18 @@
   ],
   "MReaLLab": [
     {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
+    {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
       "date": "2026-08-27",
@@ -10320,6 +10560,18 @@
   ],
   "MMLab@NTU": [
     {
+      "title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+      "url": "https://arxiv.org/abs/2605.21919",
+      "date": "2026-08-28",
+      "authors_text": "Zihang Lin, Huaiyuan Qin, Muli Yang, Hongyuan Zhu",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The paper introduces SDGBiasBench, a benchmark for assessing and mitigating biases in vision-language models related to Sustainable Development Goals, revealing intrinsic biases and proposing the CADE method for improvement.",
+      "teaser_image": "https://arxiv.org/html/2605.21919/2605.21919v2/sdgbiasbench_162.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Assessing progress toward the Sustainable Development Goals (SDGs) requires multi-step reasoning over visual cues, contextual knowledge, and development indicators, where incomplete evidence use and imperfect evidence integration can introduce hidden prediction biases. Real-world SDG monitoring further spans both qualitative judgments and quantitative estimation. However, existing benchmarks typically evaluate these aspects in isolation, obscuring systematic biases that emerge when models substitute priors for evidence. To address this gap, we propose SDGBiasBench, a large-scale benchmark suite for SDG-oriented vision-language reasoning. Spanning 500k expert-involved multiple-choice questions and 50k regression tasks, the benchmark enables comprehensive assessment of both decision-level and estimation-level bias in Vision--Language Models (VLMs). Evaluations on SDGBiasBench reveal an intrinsic SDG bias in current VLMs, where predictions are frequently driven by SDG specific priors rather than reliable multi-modal cues. To mitigate such bias, we propose CADE (Contrastive Adaptive Debias Ensemble), a training-free, plug-and-play method that leverages modality-specific answer priors. CADE yields significant gains on the proposed benchmark, improving multiple-choice accuracy by up to 25% and reducing regression MAE by up to 12 points across multiple VLMs. We hope our work can foster the development of more fair and reliable AI systems for sustainable development."
+    },
+    {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
       "date": "2026-08-27",
@@ -10981,6 +11233,42 @@
     }
   ],
   "浙江大学": [
+    {
+      "title": "Aligning Agentic World Models via Knowledgeable Experience Learning",
+      "url": "https://arxiv.org/abs/2601.13247",
+      "date": "2026-08-28",
+      "authors_text": "Baochang Ren, Yunzhi Yao, Rui Sun, Shuofei Qiao, Ningyu Zhang",
+      "is_highlight": false,
+      "score": 75.0,
+      "summary": "The paper presents WorldMind, a framework that enhances Large Language Models by autonomously building a symbolic knowledge repository to align agentic world models with physical realities.",
+      "teaser_image": "https://arxiv.org/html/2601.13247/2601.13247v2/framework.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Current Large Language Models (LLMs) exhibit a critical modal disconnect: they possess vast semantic knowledge but lack the procedural grounding to respect the immutable laws of the physical world. Consequently, while these agents implicitly function as world models, their simulations often suffer from physical hallucinations-generating plans that are logically sound but physically unexecutable. Existing alignment strategies predominantly rely on resource-intensive training or fine-tuning, which attempt to compress dynamic environmental rules into static model parameters. However, such parametric encapsulation is inherently rigid, struggling to adapt to the open-ended variability of physical dynamics without continuous, costly retraining. To bridge this gap, we introduce WorldMind, a framework that autonomously constructs a symbolic World Knowledge Repository by synthesizing environmental feedback. Specifically, it unifies Process Experience to enforce physical feasibility via prediction errors and Goal Experience to guide task optimality through successful trajectories. Experiments on EB-ALFRED and EB-Habitat demonstrate that WorldMind achieves superior performance compared to baselines with remarkable cross-model and cross-environment transferability."
+    },
+    {
+      "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+      "url": "https://arxiv.org/abs/2509.26536",
+      "date": "2026-08-28",
+      "authors_text": "Yida Xue, Mingjun Mao, Xiangyuan Ru, Yuqi Zhu, Baochang Ren",
+      "is_highlight": true,
+      "score": 92.0,
+      "summary": "OceanGym is a pioneering benchmark for underwater embodied agents, addressing unique challenges in perception and decision-making through a framework integrating Multi-modal Large Language Models across eight task domains.",
+      "teaser_image": "https://arxiv.org/html/2509.26536/2509.26536v3/pic1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym."
+    },
+    {
+      "title": "Doc-CoB: Enhancing Document Understanding with Visual Chain-of-Boxes Reasoning",
+      "url": "https://arxiv.org/abs/2505.18603",
+      "date": "2026-08-28",
+      "authors_text": "Ye Mo, Kai Ye, Xianwei Mao, Zirui Shao, Gang Huang",
+      "is_highlight": false,
+      "score": 52.0,
+      "summary": "Doc-CoB enhances document understanding by integrating coarse-to-fine visual reasoning in multimodal models, improving performance on key layout regions while preserving global context.",
+      "teaser_image": "https://arxiv.org/html/2505.18603/2505.18603v3/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Document understanding aims to perform question answering and information extraction over document images, where the visual content is highly information-dense and most queries rely on only a few relevant layout regions. However, existing methods either adopt a one-pass strategy that implicitly assumes all layouts are equally important, or focus excessively on small regions at the cost of losing critical layout information. To address these limitations, we introduce Doc-CoB (Chain-of-Boxes), a simple-yet-effective framework that integrates coarse-to-fine layout-aware visual reasoning into multimodal large language models. Instead of directly zooming into small regions, Doc-CoB progressively focuses on query-relevant layouts while preserving global document information. Specifically, it first selects key layout boxes and then focuses on them for further understanding with visual prompting. To support this paradigm, we introduce two reasoning tasks for box recognition and box reasoning, with an automatic pipeline that constructs 249k training samples with intermediate visual supervision. Experiments on seven benchmarks with four popular models show that Doc-CoB significantly improves performance, demonstrating its effectiveness and wide applicability. The code and the data are available at https://github.com/Doc-CoB/Doc-CoB."
+    },
     {
       "title": "Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents",
       "url": "https://arxiv.org/abs/2608.27866",
@@ -19692,6 +19980,18 @@
   ],
   "Stanford AI Lab (SAIL)": [
     {
+      "title": "When the City Teaches the Car: Label-Free 3D Perception from Infrastructure",
+      "url": "https://arxiv.org/abs/2603.16742",
+      "date": "2026-08-27",
+      "authors_text": "Zhen Xu, Jinsu Yoo, Cristian Bautista, Zanming Huang, Tai-Yu Pan",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The paper proposes a label-free 3D perception method for self-driving cars using roadside units as unsupervised teachers, achieving significant detection performance without manual annotation.",
+      "teaser_image": "https://arxiv.org/html/2603.16742/2603.16742v2/eccv-teaser.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Building robust 3D perception for self-driving still relies heavily on large-scale data collection and manual annotation, yet this paradigm becomes impractical as deployment expands across diverse cities and regions. Meanwhile, modern cities are increasingly instrumented with roadside units (RSUs), static sensors deployed along roads and at intersections to monitor traffic. This raises a natural question: can the city itself help train the vehicle? We propose infrastructure-taught, label-free 3D perception, a paradigm in which RSUs act as stationary, unsupervised teachers for ego vehicles. Leveraging their fixed viewpoints and repeated observations, RSUs learn local 3D detectors from unlabeled data and broadcast predictions to passing vehicles, which are aggregated as pseudo-label supervision for training a standalone ego detector. The resulting model requires no infrastructure or communication at test time. We instantiate this idea as a fully label-free three-stage pipeline and conduct a concept-and-feasibility study in a CARLA-based multi-agent environment. With CenterPoint, our pipeline achieves 82.3% AP for detecting vehicles, compared to a fully supervised ego upper bound of 94.4%. We further systematically analyze each stage, evaluate its scalability, and demonstrate complementarity with existing ego-centric label-free methods. Together, these results suggest that city infrastructure itself can potentially provide a scalable supervisory signal for autonomous vehicles, positioning infrastructure-taught learning as a promising orthogonal paradigm for reducing annotation cost in 3D perception."
+    },
+    {
       "title": "Memory Anchors for Continual Robot Learning",
       "url": "https://arxiv.org/abs/2608.26545",
       "date": "2026-08-27",
@@ -19979,6 +20279,18 @@
     }
   ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
+    {
+      "title": "When the City Teaches the Car: Label-Free 3D Perception from Infrastructure",
+      "url": "https://arxiv.org/abs/2603.16742",
+      "date": "2026-08-27",
+      "authors_text": "Zhen Xu, Jinsu Yoo, Cristian Bautista, Zanming Huang, Tai-Yu Pan",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The paper proposes a label-free 3D perception method for self-driving cars using roadside units as unsupervised teachers, achieving significant detection performance without manual annotation.",
+      "teaser_image": "https://arxiv.org/html/2603.16742/2603.16742v2/eccv-teaser.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Building robust 3D perception for self-driving still relies heavily on large-scale data collection and manual annotation, yet this paradigm becomes impractical as deployment expands across diverse cities and regions. Meanwhile, modern cities are increasingly instrumented with roadside units (RSUs), static sensors deployed along roads and at intersections to monitor traffic. This raises a natural question: can the city itself help train the vehicle? We propose infrastructure-taught, label-free 3D perception, a paradigm in which RSUs act as stationary, unsupervised teachers for ego vehicles. Leveraging their fixed viewpoints and repeated observations, RSUs learn local 3D detectors from unlabeled data and broadcast predictions to passing vehicles, which are aggregated as pseudo-label supervision for training a standalone ego detector. The resulting model requires no infrastructure or communication at test time. We instantiate this idea as a fully label-free three-stage pipeline and conduct a concept-and-feasibility study in a CARLA-based multi-agent environment. With CenterPoint, our pipeline achieves 82.3% AP for detecting vehicles, compared to a fully supervised ego upper bound of 94.4%. We further systematically analyze each stage, evaluate its scalability, and demonstrate complementarity with existing ego-centric label-free methods. Together, these results suggest that city infrastructure itself can potentially provide a scalable supervisory signal for autonomous vehicles, positioning infrastructure-taught learning as a promising orthogonal paradigm for reducing annotation cost in 3D perception."
+    },
     {
       "title": "Memory Anchors for Continual Robot Learning",
       "url": "https://arxiv.org/abs/2608.26545",
@@ -20268,6 +20580,18 @@
   ],
   "斯坦福-人工智能实验室 (SAIL)": [
     {
+      "title": "When the City Teaches the Car: Label-Free 3D Perception from Infrastructure",
+      "url": "https://arxiv.org/abs/2603.16742",
+      "date": "2026-08-27",
+      "authors_text": "Zhen Xu, Jinsu Yoo, Cristian Bautista, Zanming Huang, Tai-Yu Pan",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The paper proposes a label-free 3D perception method for self-driving cars using roadside units as unsupervised teachers, achieving significant detection performance without manual annotation.",
+      "teaser_image": "https://arxiv.org/html/2603.16742/2603.16742v2/eccv-teaser.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Building robust 3D perception for self-driving still relies heavily on large-scale data collection and manual annotation, yet this paradigm becomes impractical as deployment expands across diverse cities and regions. Meanwhile, modern cities are increasingly instrumented with roadside units (RSUs), static sensors deployed along roads and at intersections to monitor traffic. This raises a natural question: can the city itself help train the vehicle? We propose infrastructure-taught, label-free 3D perception, a paradigm in which RSUs act as stationary, unsupervised teachers for ego vehicles. Leveraging their fixed viewpoints and repeated observations, RSUs learn local 3D detectors from unlabeled data and broadcast predictions to passing vehicles, which are aggregated as pseudo-label supervision for training a standalone ego detector. The resulting model requires no infrastructure or communication at test time. We instantiate this idea as a fully label-free three-stage pipeline and conduct a concept-and-feasibility study in a CARLA-based multi-agent environment. With CenterPoint, our pipeline achieves 82.3% AP for detecting vehicles, compared to a fully supervised ego upper bound of 94.4%. We further systematically analyze each stage, evaluate its scalability, and demonstrate complementarity with existing ego-centric label-free methods. Together, these results suggest that city infrastructure itself can potentially provide a scalable supervisory signal for autonomous vehicles, positioning infrastructure-taught learning as a promising orthogonal paradigm for reducing annotation cost in 3D perception."
+    },
+    {
       "title": "Memory Anchors for Continual Robot Learning",
       "url": "https://arxiv.org/abs/2608.26545",
       "date": "2026-08-27",
@@ -20555,6 +20879,18 @@
     }
   ],
   "斯坦福-机器人与具身智能实验室 (REAL)": [
+    {
+      "title": "When the City Teaches the Car: Label-Free 3D Perception from Infrastructure",
+      "url": "https://arxiv.org/abs/2603.16742",
+      "date": "2026-08-27",
+      "authors_text": "Zhen Xu, Jinsu Yoo, Cristian Bautista, Zanming Huang, Tai-Yu Pan",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The paper proposes a label-free 3D perception method for self-driving cars using roadside units as unsupervised teachers, achieving significant detection performance without manual annotation.",
+      "teaser_image": "https://arxiv.org/html/2603.16742/2603.16742v2/eccv-teaser.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Building robust 3D perception for self-driving still relies heavily on large-scale data collection and manual annotation, yet this paradigm becomes impractical as deployment expands across diverse cities and regions. Meanwhile, modern cities are increasingly instrumented with roadside units (RSUs), static sensors deployed along roads and at intersections to monitor traffic. This raises a natural question: can the city itself help train the vehicle? We propose infrastructure-taught, label-free 3D perception, a paradigm in which RSUs act as stationary, unsupervised teachers for ego vehicles. Leveraging their fixed viewpoints and repeated observations, RSUs learn local 3D detectors from unlabeled data and broadcast predictions to passing vehicles, which are aggregated as pseudo-label supervision for training a standalone ego detector. The resulting model requires no infrastructure or communication at test time. We instantiate this idea as a fully label-free three-stage pipeline and conduct a concept-and-feasibility study in a CARLA-based multi-agent environment. With CenterPoint, our pipeline achieves 82.3% AP for detecting vehicles, compared to a fully supervised ego upper bound of 94.4%. We further systematically analyze each stage, evaluate its scalability, and demonstrate complementarity with existing ego-centric label-free methods. Together, these results suggest that city infrastructure itself can potentially provide a scalable supervisory signal for autonomous vehicles, positioning infrastructure-taught learning as a promising orthogonal paradigm for reducing annotation cost in 3D perception."
+    },
     {
       "title": "Memory Anchors for Continual Robot Learning",
       "url": "https://arxiv.org/abs/2608.26545",
@@ -20844,6 +21180,18 @@
   ],
   "斯坦福-视觉与学习实验室 (SVL)": [
     {
+      "title": "When the City Teaches the Car: Label-Free 3D Perception from Infrastructure",
+      "url": "https://arxiv.org/abs/2603.16742",
+      "date": "2026-08-27",
+      "authors_text": "Zhen Xu, Jinsu Yoo, Cristian Bautista, Zanming Huang, Tai-Yu Pan",
+      "is_highlight": false,
+      "score": 82.0,
+      "summary": "The paper proposes a label-free 3D perception method for self-driving cars using roadside units as unsupervised teachers, achieving significant detection performance without manual annotation.",
+      "teaser_image": "https://arxiv.org/html/2603.16742/2603.16742v2/eccv-teaser.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Building robust 3D perception for self-driving still relies heavily on large-scale data collection and manual annotation, yet this paradigm becomes impractical as deployment expands across diverse cities and regions. Meanwhile, modern cities are increasingly instrumented with roadside units (RSUs), static sensors deployed along roads and at intersections to monitor traffic. This raises a natural question: can the city itself help train the vehicle? We propose infrastructure-taught, label-free 3D perception, a paradigm in which RSUs act as stationary, unsupervised teachers for ego vehicles. Leveraging their fixed viewpoints and repeated observations, RSUs learn local 3D detectors from unlabeled data and broadcast predictions to passing vehicles, which are aggregated as pseudo-label supervision for training a standalone ego detector. The resulting model requires no infrastructure or communication at test time. We instantiate this idea as a fully label-free three-stage pipeline and conduct a concept-and-feasibility study in a CARLA-based multi-agent environment. With CenterPoint, our pipeline achieves 82.3% AP for detecting vehicles, compared to a fully supervised ego upper bound of 94.4%. We further systematically analyze each stage, evaluate its scalability, and demonstrate complementarity with existing ego-centric label-free methods. Together, these results suggest that city infrastructure itself can potentially provide a scalable supervisory signal for autonomous vehicles, positioning infrastructure-taught learning as a promising orthogonal paradigm for reducing annotation cost in 3D perception."
+    },
+    {
       "title": "Memory Anchors for Continual Robot Learning",
       "url": "https://arxiv.org/abs/2608.26545",
       "date": "2026-08-27",
@@ -21131,6 +21479,42 @@
     }
   ],
   "HMI Lab": [
+    {
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "url": "https://arxiv.org/abs/2605.12015",
+      "date": "2026-08-28",
+      "authors_text": "Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "SkillSafetyBench introduces a benchmark to evaluate safety failures in agents using reusable skills, revealing vulnerabilities in skill guidance and execution environments across diverse tasks and risk domains.",
+      "teaser_image": "https://arxiv.org/html/2605.12015/2605.12015v3/introduction.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-facing safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments. The complete benchmark is available at https://github.com/AI45Lab/skill-safety-bench."
+    },
+    {
+      "title": "RegCL: Compact Continual SAM Adaptation for Visual Grounding in Multi-Sensorial Media",
+      "url": "https://arxiv.org/abs/2507.12297",
+      "date": "2026-08-28",
+      "authors_text": "Yuan-Chen Shu, Zhiwei Lin, Xiaoyu Zhou, Yongtao Wang",
+      "is_highlight": true,
+      "score": 76.0,
+      "summary": "RegCL is a non-replay continual adaptation framework that enhances the Segment Anything Model for effective visual grounding across evolving multi-sensorial media environments.",
+      "teaser_image": "https://arxiv.org/html/2507.12297/2507.12297v2/pipeline.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Multi-sensorial media systems, including AR/VR, remote operation, and embodied AI, require visual grounding modules that remain reliable as sensing environments and application domains evolve. The Segment Anything Model (SAM) provides a strong foundation for dense visual segmentation, but its performance degrades on specialized and dynamically arriving domains such as medical imagery, camouflaged scenes, and shadow-dominant environments. Existing continual learning methods often rely on replay data or growing domain-specific modules, limiting compact deployment in evolving media pipelines. To address this issue, we propose RegCL, a non-replay continual adaptation framework that consolidates multi-domain segmentation knowledge into a single SAM adapter through incremental model merging. RegCL merges lightweight adaptation modules, e.g., LoRA-style AugModules, by optimizing prediction consistency between the merged model and domain-specific adapters while carrying forward compact historical feature statistics. Experiments across five heterogeneous segmentation datasets show that RegCL achieves strong retention and adaptation under domain-incremental learning, outperforming competitive non-replay continual learning and merging baselines. These results suggest that RegCL can serve as a compact visual adaptation component for evolving multi-sensorial media pipelines. The code is available at \\href{https://github.com/Anderw-S/RegCL}{https://github.com/Anderw-S/RegCL}"
+    },
+    {
+      "title": "ASA: Backbone-Training-Free Representation Engineering for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2602.04935",
+      "date": "2026-08-28",
+      "authors_text": "Youjin Wang, Run Zhou, Yingjie Ma, Rong Fu, Jiani Liang",
+      "is_highlight": false,
+      "score": 81.0,
+      "summary": "The Activation Steering Adapter (ASA) enhances tool-calling in LLM agents by improving accuracy and reducing false positives through a training-free, inference-time intervention method.",
+      "teaser_image": "https://arxiv.org/html/2602.04935/2602.04935v3/Framework2.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conservative in entering tool mode, revealing a representation-behavior gap. We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B, ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates."
+    },
     {
       "title": "CrabOS: An Operating System for Human-AI Co-inhabitation",
       "url": "https://arxiv.org/abs/2608.28165",
@@ -21662,6 +22046,42 @@
   ],
   "具身感知与交互实验室 (EPIC Lab)": [
     {
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "url": "https://arxiv.org/abs/2605.12015",
+      "date": "2026-08-28",
+      "authors_text": "Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "SkillSafetyBench introduces a benchmark to evaluate safety failures in agents using reusable skills, revealing vulnerabilities in skill guidance and execution environments across diverse tasks and risk domains.",
+      "teaser_image": "https://arxiv.org/html/2605.12015/2605.12015v3/introduction.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-facing safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments. The complete benchmark is available at https://github.com/AI45Lab/skill-safety-bench."
+    },
+    {
+      "title": "RegCL: Compact Continual SAM Adaptation for Visual Grounding in Multi-Sensorial Media",
+      "url": "https://arxiv.org/abs/2507.12297",
+      "date": "2026-08-28",
+      "authors_text": "Yuan-Chen Shu, Zhiwei Lin, Xiaoyu Zhou, Yongtao Wang",
+      "is_highlight": true,
+      "score": 76.0,
+      "summary": "RegCL is a non-replay continual adaptation framework that enhances the Segment Anything Model for effective visual grounding across evolving multi-sensorial media environments.",
+      "teaser_image": "https://arxiv.org/html/2507.12297/2507.12297v2/pipeline.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Multi-sensorial media systems, including AR/VR, remote operation, and embodied AI, require visual grounding modules that remain reliable as sensing environments and application domains evolve. The Segment Anything Model (SAM) provides a strong foundation for dense visual segmentation, but its performance degrades on specialized and dynamically arriving domains such as medical imagery, camouflaged scenes, and shadow-dominant environments. Existing continual learning methods often rely on replay data or growing domain-specific modules, limiting compact deployment in evolving media pipelines. To address this issue, we propose RegCL, a non-replay continual adaptation framework that consolidates multi-domain segmentation knowledge into a single SAM adapter through incremental model merging. RegCL merges lightweight adaptation modules, e.g., LoRA-style AugModules, by optimizing prediction consistency between the merged model and domain-specific adapters while carrying forward compact historical feature statistics. Experiments across five heterogeneous segmentation datasets show that RegCL achieves strong retention and adaptation under domain-incremental learning, outperforming competitive non-replay continual learning and merging baselines. These results suggest that RegCL can serve as a compact visual adaptation component for evolving multi-sensorial media pipelines. The code is available at \\href{https://github.com/Anderw-S/RegCL}{https://github.com/Anderw-S/RegCL}"
+    },
+    {
+      "title": "ASA: Backbone-Training-Free Representation Engineering for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2602.04935",
+      "date": "2026-08-28",
+      "authors_text": "Youjin Wang, Run Zhou, Yingjie Ma, Rong Fu, Jiani Liang",
+      "is_highlight": false,
+      "score": 81.0,
+      "summary": "The Activation Steering Adapter (ASA) enhances tool-calling in LLM agents by improving accuracy and reducing false positives through a training-free, inference-time intervention method.",
+      "teaser_image": "https://arxiv.org/html/2602.04935/2602.04935v3/Framework2.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conservative in entering tool mode, revealing a representation-behavior gap. We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B, ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates."
+    },
+    {
       "title": "CrabOS: An Operating System for Human-AI Co-inhabitation",
       "url": "https://arxiv.org/abs/2608.28165",
       "date": "2026-08-28",
@@ -22192,6 +22612,42 @@
   ],
   "智元机器人联合实验室 (PKU-Agibot)": [
     {
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "url": "https://arxiv.org/abs/2605.12015",
+      "date": "2026-08-28",
+      "authors_text": "Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "SkillSafetyBench introduces a benchmark to evaluate safety failures in agents using reusable skills, revealing vulnerabilities in skill guidance and execution environments across diverse tasks and risk domains.",
+      "teaser_image": "https://arxiv.org/html/2605.12015/2605.12015v3/introduction.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-facing safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments. The complete benchmark is available at https://github.com/AI45Lab/skill-safety-bench."
+    },
+    {
+      "title": "RegCL: Compact Continual SAM Adaptation for Visual Grounding in Multi-Sensorial Media",
+      "url": "https://arxiv.org/abs/2507.12297",
+      "date": "2026-08-28",
+      "authors_text": "Yuan-Chen Shu, Zhiwei Lin, Xiaoyu Zhou, Yongtao Wang",
+      "is_highlight": true,
+      "score": 76.0,
+      "summary": "RegCL is a non-replay continual adaptation framework that enhances the Segment Anything Model for effective visual grounding across evolving multi-sensorial media environments.",
+      "teaser_image": "https://arxiv.org/html/2507.12297/2507.12297v2/pipeline.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Multi-sensorial media systems, including AR/VR, remote operation, and embodied AI, require visual grounding modules that remain reliable as sensing environments and application domains evolve. The Segment Anything Model (SAM) provides a strong foundation for dense visual segmentation, but its performance degrades on specialized and dynamically arriving domains such as medical imagery, camouflaged scenes, and shadow-dominant environments. Existing continual learning methods often rely on replay data or growing domain-specific modules, limiting compact deployment in evolving media pipelines. To address this issue, we propose RegCL, a non-replay continual adaptation framework that consolidates multi-domain segmentation knowledge into a single SAM adapter through incremental model merging. RegCL merges lightweight adaptation modules, e.g., LoRA-style AugModules, by optimizing prediction consistency between the merged model and domain-specific adapters while carrying forward compact historical feature statistics. Experiments across five heterogeneous segmentation datasets show that RegCL achieves strong retention and adaptation under domain-incremental learning, outperforming competitive non-replay continual learning and merging baselines. These results suggest that RegCL can serve as a compact visual adaptation component for evolving multi-sensorial media pipelines. The code is available at \\href{https://github.com/Anderw-S/RegCL}{https://github.com/Anderw-S/RegCL}"
+    },
+    {
+      "title": "ASA: Backbone-Training-Free Representation Engineering for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2602.04935",
+      "date": "2026-08-28",
+      "authors_text": "Youjin Wang, Run Zhou, Yingjie Ma, Rong Fu, Jiani Liang",
+      "is_highlight": false,
+      "score": 81.0,
+      "summary": "The Activation Steering Adapter (ASA) enhances tool-calling in LLM agents by improving accuracy and reducing false positives through a training-free, inference-time intervention method.",
+      "teaser_image": "https://arxiv.org/html/2602.04935/2602.04935v3/Framework2.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conservative in entering tool mode, revealing a representation-behavior gap. We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B, ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates."
+    },
+    {
       "title": "CrabOS: An Operating System for Human-AI Co-inhabitation",
       "url": "https://arxiv.org/abs/2608.28165",
       "date": "2026-08-28",
@@ -22721,6 +23177,42 @@
     }
   ],
   "情感与认知智能机器人实验室 (ACIR)": [
+    {
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "url": "https://arxiv.org/abs/2605.12015",
+      "date": "2026-08-28",
+      "authors_text": "Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "SkillSafetyBench introduces a benchmark to evaluate safety failures in agents using reusable skills, revealing vulnerabilities in skill guidance and execution environments across diverse tasks and risk domains.",
+      "teaser_image": "https://arxiv.org/html/2605.12015/2605.12015v3/introduction.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-facing safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments. The complete benchmark is available at https://github.com/AI45Lab/skill-safety-bench."
+    },
+    {
+      "title": "RegCL: Compact Continual SAM Adaptation for Visual Grounding in Multi-Sensorial Media",
+      "url": "https://arxiv.org/abs/2507.12297",
+      "date": "2026-08-28",
+      "authors_text": "Yuan-Chen Shu, Zhiwei Lin, Xiaoyu Zhou, Yongtao Wang",
+      "is_highlight": true,
+      "score": 76.0,
+      "summary": "RegCL is a non-replay continual adaptation framework that enhances the Segment Anything Model for effective visual grounding across evolving multi-sensorial media environments.",
+      "teaser_image": "https://arxiv.org/html/2507.12297/2507.12297v2/pipeline.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Multi-sensorial media systems, including AR/VR, remote operation, and embodied AI, require visual grounding modules that remain reliable as sensing environments and application domains evolve. The Segment Anything Model (SAM) provides a strong foundation for dense visual segmentation, but its performance degrades on specialized and dynamically arriving domains such as medical imagery, camouflaged scenes, and shadow-dominant environments. Existing continual learning methods often rely on replay data or growing domain-specific modules, limiting compact deployment in evolving media pipelines. To address this issue, we propose RegCL, a non-replay continual adaptation framework that consolidates multi-domain segmentation knowledge into a single SAM adapter through incremental model merging. RegCL merges lightweight adaptation modules, e.g., LoRA-style AugModules, by optimizing prediction consistency between the merged model and domain-specific adapters while carrying forward compact historical feature statistics. Experiments across five heterogeneous segmentation datasets show that RegCL achieves strong retention and adaptation under domain-incremental learning, outperforming competitive non-replay continual learning and merging baselines. These results suggest that RegCL can serve as a compact visual adaptation component for evolving multi-sensorial media pipelines. The code is available at \\href{https://github.com/Anderw-S/RegCL}{https://github.com/Anderw-S/RegCL}"
+    },
+    {
+      "title": "ASA: Backbone-Training-Free Representation Engineering for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2602.04935",
+      "date": "2026-08-28",
+      "authors_text": "Youjin Wang, Run Zhou, Yingjie Ma, Rong Fu, Jiani Liang",
+      "is_highlight": false,
+      "score": 81.0,
+      "summary": "The Activation Steering Adapter (ASA) enhances tool-calling in LLM agents by improving accuracy and reducing false positives through a training-free, inference-time intervention method.",
+      "teaser_image": "https://arxiv.org/html/2602.04935/2602.04935v3/Framework2.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conservative in entering tool mode, revealing a representation-behavior gap. We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B, ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates."
+    },
     {
       "title": "CrabOS: An Operating System for Human-AI Co-inhabitation",
       "url": "https://arxiv.org/abs/2608.28165",
@@ -23627,6 +24119,18 @@
     }
   ],
   "Oxford Robotics Institute (ORI)": [
+    {
+      "title": "Reasoning models do not yet follow their reasoning in autonomous driving: The KITScenes LongTail Dataset",
+      "url": "https://arxiv.org/abs/2603.23607",
+      "date": "2026-08-28",
+      "authors_text": "Royden Wagner, Omer Sahin Tas, Jaime Villa, Felix Hauser, Yinzhe Shen",
+      "is_highlight": false,
+      "score": 53.0,
+      "summary": "The KITScenes LongTail dataset reveals that reasoning models in autonomous driving often fail to execute actions aligned with their own reasoning, highlighting a critical gap in reliability.",
+      "teaser_image": "https://arxiv.org/html/2603.23607/2603.23607v3/figures/car_views/front_left.jpg",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Handling rare events is the central open challenge in autonomous driving. Reasoning models, which generate explicit chains of reasoning before acting, promise to generalize to such events. Here we show that these models frequently do not follow their own reasoning: the actions they state in their reasoning often diverge from the actions they ultimately execute. We introduce KITScenes LongTail, a curated dataset of rare driving scenarios to quantify this divergence through a measure of semantic reasoning-action coherence. We find that incoherence is widespread across current general-purpose and domain-specific models. Strikingly, when reasoned actions and executed actions disagree, the reasoning is usually right: extracting actions from the reasoning trace and executing them through a kinematic model enforces coherence and typically improves motion planning. These results suggest that the reasoning capabilities of current models exceed what their actions reveal, and that coherently acting on stated reasoning is a prerequisite for trustworthy autonomous driving. Our dataset and evaluation space are available at: https://hf.co/datasets/kit-mrt/kitscenes-longtail"
+    },
     {
       "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
       "url": "https://arxiv.org/abs/2608.26947",
@@ -25020,6 +25524,18 @@
   ],
   "Hengshuang Zhao老师实验室": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Low-Altitude Fluid Antenna Network with Multi-Agent Reinforcement Learning",
       "url": "https://arxiv.org/abs/2608.27909",
       "date": "2026-08-28",
@@ -26044,6 +26560,18 @@
     }
   ],
   "香港大学机械工程系机器人实验室": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Low-Altitude Fluid Antenna Network with Multi-Agent Reinforcement Learning",
       "url": "https://arxiv.org/abs/2608.27909",
@@ -28064,6 +28592,18 @@
   ],
   "OpenDriveLab": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Low-Altitude Fluid Antenna Network with Multi-Agent Reinforcement Learning",
       "url": "https://arxiv.org/abs/2608.27909",
       "date": "2026-08-28",
@@ -29088,6 +29628,18 @@
     }
   ],
   "Language and Vision (LaVi) Lab": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Low-Altitude Fluid Antenna Network with Multi-Agent Reinforcement Learning",
       "url": "https://arxiv.org/abs/2608.27909",
@@ -30114,6 +30666,18 @@
   ],
   "潘佳老师实验室": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Low-Altitude Fluid Antenna Network with Multi-Agent Reinforcement Learning",
       "url": "https://arxiv.org/abs/2608.27909",
       "date": "2026-08-28",
@@ -31139,6 +31703,30 @@
   ],
   "集群机器人系统实验室 (MagicLab)": [
     {
+      "title": "Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey",
+      "url": "https://arxiv.org/abs/2304.10891",
+      "date": "2026-08-28",
+      "authors_text": "Juan Zhong, Yuhang Shi, Zukang Xu, Xi Chen",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This survey reviews Transformer-based models for autonomous driving, focusing on their deployment challenges and efficiency strategies like compression and acceleration to enhance performance and safety.",
+      "teaser_image": "https://arxiv.org/html/2304.10891/2304.10891v4/figs/Overview.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Transformer-based models are becoming a central paradigm in autonomous driving because they can capture long-range spatial dependencies, multi-agent interactions, and multimodal context across perception, prediction, and planning. At the same time, their deployment in real vehicles remains difficult because high-capacity attention-based architectures impose substantial latency, memory, and energy overhead. This survey reviews representative Transformer-based autonomous driving models and organizes them by task role, sensing configuration, and architectural design. More importantly, it examines these models from a deployment-oriented perspective and analyzes how efficiency constraints reshape model design choices in practice. We further review compression and acceleration strategies relevant to Transformer-based driving systems, including quantization, pruning, knowledge distillation, low-rank approximation, and efficient attention, and discuss their benefits, limitations, and task-dependent applicability. Rather than treating compression as an isolated post-processing step, we highlight it as a system-level design consideration that directly affects deployability, robustness, and safety. Finally, we identify open challenges and future research directions toward standardized, safety-aware, and hardware-conscious evaluation of efficient autonomous driving systems."
+    },
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents",
       "url": "https://arxiv.org/abs/2608.27866",
       "date": "2026-08-28",
@@ -31548,6 +32136,30 @@
   ],
   "智能感知与无人系统实验室": [
     {
+      "title": "Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey",
+      "url": "https://arxiv.org/abs/2304.10891",
+      "date": "2026-08-28",
+      "authors_text": "Juan Zhong, Yuhang Shi, Zukang Xu, Xi Chen",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This survey reviews Transformer-based models for autonomous driving, focusing on their deployment challenges and efficiency strategies like compression and acceleration to enhance performance and safety.",
+      "teaser_image": "https://arxiv.org/html/2304.10891/2304.10891v4/figs/Overview.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Transformer-based models are becoming a central paradigm in autonomous driving because they can capture long-range spatial dependencies, multi-agent interactions, and multimodal context across perception, prediction, and planning. At the same time, their deployment in real vehicles remains difficult because high-capacity attention-based architectures impose substantial latency, memory, and energy overhead. This survey reviews representative Transformer-based autonomous driving models and organizes them by task role, sensing configuration, and architectural design. More importantly, it examines these models from a deployment-oriented perspective and analyzes how efficiency constraints reshape model design choices in practice. We further review compression and acceleration strategies relevant to Transformer-based driving systems, including quantization, pruning, knowledge distillation, low-rank approximation, and efficient attention, and discuss their benefits, limitations, and task-dependent applicability. Rather than treating compression as an isolated post-processing step, we highlight it as a system-level design consideration that directly affects deployability, robustness, and safety. Finally, we identify open challenges and future research directions toward standardized, safety-aware, and hardware-conscious evaluation of efficient autonomous driving systems."
+    },
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents",
       "url": "https://arxiv.org/abs/2608.27866",
       "date": "2026-08-28",
@@ -31956,6 +32568,30 @@
     }
   ],
   "智能人机交互实验室 (MemX)": [
+    {
+      "title": "Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey",
+      "url": "https://arxiv.org/abs/2304.10891",
+      "date": "2026-08-28",
+      "authors_text": "Juan Zhong, Yuhang Shi, Zukang Xu, Xi Chen",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This survey reviews Transformer-based models for autonomous driving, focusing on their deployment challenges and efficiency strategies like compression and acceleration to enhance performance and safety.",
+      "teaser_image": "https://arxiv.org/html/2304.10891/2304.10891v4/figs/Overview.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Transformer-based models are becoming a central paradigm in autonomous driving because they can capture long-range spatial dependencies, multi-agent interactions, and multimodal context across perception, prediction, and planning. At the same time, their deployment in real vehicles remains difficult because high-capacity attention-based architectures impose substantial latency, memory, and energy overhead. This survey reviews representative Transformer-based autonomous driving models and organizes them by task role, sensing configuration, and architectural design. More importantly, it examines these models from a deployment-oriented perspective and analyzes how efficiency constraints reshape model design choices in practice. We further review compression and acceleration strategies relevant to Transformer-based driving systems, including quantization, pruning, knowledge distillation, low-rank approximation, and efficient attention, and discuss their benefits, limitations, and task-dependent applicability. Rather than treating compression as an isolated post-processing step, we highlight it as a system-level design consideration that directly affects deployability, robustness, and safety. Finally, we identify open challenges and future research directions toward standardized, safety-aware, and hardware-conscious evaluation of efficient autonomous driving systems."
+    },
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents",
       "url": "https://arxiv.org/abs/2608.27866",
@@ -33065,6 +33701,30 @@
   ],
   "中国人民大学": [
     {
+      "title": "Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey",
+      "url": "https://arxiv.org/abs/2304.10891",
+      "date": "2026-08-28",
+      "authors_text": "Juan Zhong, Yuhang Shi, Zukang Xu, Xi Chen",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This survey reviews Transformer-based models for autonomous driving, focusing on their deployment challenges and efficiency strategies like compression and acceleration to enhance performance and safety.",
+      "teaser_image": "https://arxiv.org/html/2304.10891/2304.10891v4/figs/Overview.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Transformer-based models are becoming a central paradigm in autonomous driving because they can capture long-range spatial dependencies, multi-agent interactions, and multimodal context across perception, prediction, and planning. At the same time, their deployment in real vehicles remains difficult because high-capacity attention-based architectures impose substantial latency, memory, and energy overhead. This survey reviews representative Transformer-based autonomous driving models and organizes them by task role, sensing configuration, and architectural design. More importantly, it examines these models from a deployment-oriented perspective and analyzes how efficiency constraints reshape model design choices in practice. We further review compression and acceleration strategies relevant to Transformer-based driving systems, including quantization, pruning, knowledge distillation, low-rank approximation, and efficient attention, and discuss their benefits, limitations, and task-dependent applicability. Rather than treating compression as an isolated post-processing step, we highlight it as a system-level design consideration that directly affects deployability, robustness, and safety. Finally, we identify open challenges and future research directions toward standardized, safety-aware, and hardware-conscious evaluation of efficient autonomous driving systems."
+    },
+    {
+      "title": "ASA: Backbone-Training-Free Representation Engineering for Tool-Calling Agents",
+      "url": "https://arxiv.org/abs/2602.04935",
+      "date": "2026-08-28",
+      "authors_text": "Youjin Wang, Run Zhou, Yingjie Ma, Rong Fu, Jiani Liang",
+      "is_highlight": false,
+      "score": 81.0,
+      "summary": "The Activation Steering Adapter (ASA) enhances tool-calling in LLM agents by improving accuracy and reducing false positives through a training-free, inference-time intervention method.",
+      "teaser_image": "https://arxiv.org/html/2602.04935/2602.04935v3/Framework2.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conservative in entering tool mode, revealing a representation-behavior gap. We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B, ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates."
+    },
+    {
       "title": "Finding Where the Buck Stops: An Automated Failure Attribution-Based Reflection Framework for Multi-Agent Collaboration",
       "url": "https://arxiv.org/abs/2608.28264",
       "date": "2026-08-28",
@@ -33691,6 +34351,18 @@
   ],
   "人机物智能融合实验室 (HCP)": [
     {
+      "title": "Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation",
+      "url": "https://arxiv.org/abs/2502.15438",
+      "date": "2026-08-28",
+      "authors_text": "Fengcheng Yu, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan",
+      "is_highlight": false,
+      "score": 61.0,
+      "summary": "The paper presents OccLinker, a lightweight framework that enhances vision-based occupancy networks by reducing flickering effects through efficient spatio-temporal correlation and dual cross-attention mechanisms.",
+      "teaser_image": "https://arxiv.org/html/2502.15438/2502.15438v5/Figure_3.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Vision-based occupancy networks (VONs) provide an end-to-end solution for reconstructing 3D environments in autonomous driving. However, existing methods often suffer from temporal inconsistencies, manifesting as flickering effects that degrade temporal coherence and adversely affect downstream decision-making. While recent approaches incorporate historical information to alleviate this issue, they often incur high computational costs and may introduce misaligned or redundant features that interfere with object detection. We propose OccLinker, a novel plugin framework that can be easily integrated into existing VONs to improve performance. Our method efficiently consolidates historical static and motion cues, learns sparse latent correlations with current features through a dual cross-attention mechanism, and generates correction occupancy components to refine the base network predictions. In addition, we introduce a new temporal consistency metric to quantitatively measure flickering effects. Extensive experiments on two benchmark datasets demonstrate that our method achieves superior performance with minimal computational overhead while effectively reducing flickering artifacts."
+    },
+    {
       "title": "WeAgent-MMSearch: Native Text-Vision Interaction for Multimodal Search Agents",
       "url": "https://arxiv.org/abs/2608.28062",
       "date": "2026-08-28",
@@ -34034,6 +34706,18 @@
   ],
   "上海人工智能实验室": [
     {
+      "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+      "url": "https://arxiv.org/abs/2605.12015",
+      "date": "2026-08-28",
+      "authors_text": "Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng",
+      "is_highlight": false,
+      "score": 77.0,
+      "summary": "SkillSafetyBench introduces a benchmark to evaluate safety failures in agents using reusable skills, revealing vulnerabilities in skill guidance and execution environments across diverse tasks and risk domains.",
+      "teaser_image": "https://arxiv.org/html/2605.12015/2605.12015v3/introduction.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-facing safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments. The complete benchmark is available at https://github.com/AI45Lab/skill-safety-bench."
+    },
+    {
       "title": "StreamEMS: Streaming Video Understanding with Self-Evolving Memory Scheme for Vision-Language Models",
       "url": "https://arxiv.org/abs/2608.27881",
       "date": "2026-08-28",
@@ -34112,6 +34796,18 @@
     }
   ],
   "多智能体与具身智能研究所": [
+    {
+      "title": "Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation",
+      "url": "https://arxiv.org/abs/2502.15438",
+      "date": "2026-08-28",
+      "authors_text": "Fengcheng Yu, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan",
+      "is_highlight": false,
+      "score": 61.0,
+      "summary": "The paper presents OccLinker, a lightweight framework that enhances vision-based occupancy networks by reducing flickering effects through efficient spatio-temporal correlation and dual cross-attention mechanisms.",
+      "teaser_image": "https://arxiv.org/html/2502.15438/2502.15438v5/Figure_3.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Vision-based occupancy networks (VONs) provide an end-to-end solution for reconstructing 3D environments in autonomous driving. However, existing methods often suffer from temporal inconsistencies, manifesting as flickering effects that degrade temporal coherence and adversely affect downstream decision-making. While recent approaches incorporate historical information to alleviate this issue, they often incur high computational costs and may introduce misaligned or redundant features that interfere with object detection. We propose OccLinker, a novel plugin framework that can be easily integrated into existing VONs to improve performance. Our method efficiently consolidates historical static and motion cues, learns sparse latent correlations with current features through a dual cross-attention mechanism, and generates correction occupancy components to refine the base network predictions. In addition, we introduce a new temporal consistency metric to quantitatively measure flickering effects. Extensive experiments on two benchmark datasets demonstrate that our method achieves superior performance with minimal computational overhead while effectively reducing flickering artifacts."
+    },
     {
       "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
       "url": "https://arxiv.org/abs/2608.27142",
@@ -35550,6 +36246,18 @@
   ],
   "ReThinkLab": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
       "date": "2026-08-28",
@@ -36288,6 +36996,18 @@
     }
   ],
   "赵波老师实验室": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
@@ -37028,6 +37748,18 @@
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
       "date": "2026-08-28",
@@ -37766,6 +38498,18 @@
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
@@ -38506,6 +39250,18 @@
   ],
   "IWIN-FINS实验室": [
     {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
+    {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
       "date": "2026-08-28",
@@ -39244,6 +40000,18 @@
     }
   ],
   "数字媒体与计算机视觉实验室": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "Task-State Adaptation with Prototype Memory for Multi-Task Dense Prediction",
       "url": "https://arxiv.org/abs/2608.28078",
@@ -40139,6 +40907,18 @@
     }
   ],
   "通用机器人、自动化、传感和感知实验室 (GRASP)": [
+    {
+      "title": "CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation",
+      "url": "https://arxiv.org/abs/2607.22494",
+      "date": "2026-08-28",
+      "authors_text": "Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan",
+      "is_highlight": false,
+      "score": 69.0,
+      "summary": "CARA introduces a spatio-temporal framework for interpretable collision anticipation in autonomous driving by leveraging dynamic risk concepts aligned with video frames to enhance prediction accuracy and explainability.",
+      "teaser_image": "https://arxiv.org/html/2607.22494/2607.22494v2/f1.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence."
+    },
     {
       "title": "From Solver Feedback to Faithful Plans: Multi-Role Reinforcement Learning for Symbolic Planning",
       "url": "https://arxiv.org/abs/2608.21897",
@@ -41222,6 +42002,30 @@
   ],
   "高性能人形技术实验室 (H²T)": [
     {
+      "title": "FlowCorrect: Efficient Interactive Correction of Generative Flow Policies for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2602.22056",
+      "date": "2026-08-28",
+      "authors_text": "Edgar Welte, Yitian Shi, Rosa Wolf, Maximillian Gilles, Rania Rayyes",
+      "is_highlight": false,
+      "score": 88.0,
+      "summary": "FlowCorrect is an interactive imitation learning method that allows real-time adaptation of generative manipulation policies using minimal human corrections, enhancing success rates without retraining.",
+      "teaser_image": "https://arxiv.org/html/2602.22056/2602.22056v3/teaser_v3.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Generative manipulation policies can fail catastrophically under deployment-time distribution shift, yet many failures are near-misses: the robot reaches almost-correct poses and would succeed with a small corrective motion. We propose FlowCorrect, a modular interactive imitation learning approach that enables deployment-time adaptation of flow-matching manipulation policies from sparse, relative human corrections without retraining. During execution, a human provides brief corrective pose nudges via a lightweight VR interface. FlowCorrect uses these sparse corrections to locally adapt the policy, improving actions without retraining the backbone while preserving the model performance on previously learned scenarios. We evaluate on a real-world robot across four tabletop tasks: pick-and-place, pouring, cup uprighting, and insertion. With a low correction budget, FlowCorrect achieves an 80% success rate on previously failed cases while preserving performance on previously solved scenarios. The results clearly demonstrate that FlowCorrect learns from very few demonstrations and enables fast, sample-efficient, incremental, human-in-the-loop corrections of generative visuomotor policies at deployment time in real-world robotics."
+    },
+    {
+      "title": "Reasoning models do not yet follow their reasoning in autonomous driving: The KITScenes LongTail Dataset",
+      "url": "https://arxiv.org/abs/2603.23607",
+      "date": "2026-08-28",
+      "authors_text": "Royden Wagner, Omer Sahin Tas, Jaime Villa, Felix Hauser, Yinzhe Shen",
+      "is_highlight": false,
+      "score": 53.0,
+      "summary": "The KITScenes LongTail dataset reveals that reasoning models in autonomous driving often fail to execute actions aligned with their own reasoning, highlighting a critical gap in reliability.",
+      "teaser_image": "https://arxiv.org/html/2603.23607/2603.23607v3/figures/car_views/front_left.jpg",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Handling rare events is the central open challenge in autonomous driving. Reasoning models, which generate explicit chains of reasoning before acting, promise to generalize to such events. Here we show that these models frequently do not follow their own reasoning: the actions they state in their reasoning often diverge from the actions they ultimately execute. We introduce KITScenes LongTail, a curated dataset of rare driving scenarios to quantify this divergence through a measure of semantic reasoning-action coherence. We find that incoherence is widespread across current general-purpose and domain-specific models. Strikingly, when reasoned actions and executed actions disagree, the reasoning is usually right: extracting actions from the reasoning trace and executing them through a kinematic model enforces coherence and typically improves motion planning. These results suggest that the reasoning capabilities of current models exceed what their actions reveal, and that coherently acting on stated reasoning is a prerequisite for trustworthy autonomous driving. Our dataset and evaluation space are available at: https://hf.co/datasets/kit-mrt/kitscenes-longtail"
+    },
+    {
       "title": "Picking Bins Empty: A Hierarchical Hybrid Approach with Online Self-Learning of Grasp Points for Reliable Industrial Bin-Picking",
       "url": "https://arxiv.org/abs/2608.28175",
       "date": "2026-08-28",
@@ -41522,6 +42326,18 @@
     }
   ],
   "南开大学": [
+    {
+      "title": "Receding Fixed-Horizon Optimization for Near-Time-Optimal Trajectory Planning and Control",
+      "url": "https://arxiv.org/abs/2503.11072",
+      "date": "2026-08-28",
+      "authors_text": "Haotian Tan, Yuan-Hua Ni",
+      "is_highlight": false,
+      "score": 84.0,
+      "summary": "This paper presents a hierarchical convex optimization framework for real-time near-time-optimal trajectory planning, overcoming non-convexity and computation time challenges through fixed-horizon cycles.",
+      "teaser_image": "https://arxiv.org/html/2503.11072/2503.11072v4/subprocess.png",
+      "source_oai_date": "2026-08-31",
+      "debug_abstract": "Time-optimal trajectory planning and control is central for autonomous vehicles, yet its application and real-time deployment confronts two fundamental challenges: the non-convexity of optimal control problems and the unpredictable computation time inherent to nonlinear programming. To address these challenges, we propose a hierarchical convex optimization framework that addresses both issues by decomposing the original problem into short, fixed-horizon planning cycles. Each cycle solves a convex subproblem within a collision-free region identified by a customized search algorithm; the complete trajectory and control is assembled by concatenating state-input sequences across cycles. Under mild assumptions, we establish finite-time convergence of the decomposition procedure and show that the concatenated solution satisfies the necessary conditions for local optimality. Numerical experiments on randomly generated maps with static and dynamic obstacles demonstrate that the proposed algorithm achieves a higher success rate and substantially lower computation time than sequential convex programming, while maintaining comparable control time. These results show that decomposition-based convex optimization provides a practical pathway to reliable, real-time near-time-optimal trajectory planning."
+    },
     {
       "title": "3D-USE: From Image-Level to Scene-Level Underwater Enhancement",
       "url": "https://arxiv.org/abs/2608.28020",
