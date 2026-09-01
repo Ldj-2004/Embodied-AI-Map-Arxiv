@@ -538,16 +538,34 @@ def main():
 
         is_highlight = dm.check_highlight(paper.get('authors_display', ''))
 
+        # 时间字段语义：
+        # - submitted_date: 作者最初提交日期（arxiv:created）
+        # - release_date:   arXiv 实际进入本次发布/OAI 批次的日期
+        # - date:           继续保留旧字段，避免破坏已有 history 数据结构
+        submitted_date = paper.get('submitted_date') or paper.get('date')
+        release_date = (
+            paper.get('release_date')
+            or paper.get('source_oai_date')
+            or submitted_date
+        )
+
         paper_info = {
             "title": paper['title'],
             "url": paper['link'],
-            "date": paper['date'],
+
+            # 兼容旧数据库
+            "date": paper.get('date') or submitted_date,
+
+            # 新的明确时间字段
+            "submitted_date": submitted_date,
+            "release_date": release_date,
+
             "authors_text": paper.get('authors_display', ''),
             "is_highlight": is_highlight,
             "score": item.get('ai_score', 0),
             "summary": item.get('ai_summary', ""),  # 存入 AI 生成的精简摘要
             "teaser_image": paper.get('teaser_image', None),  # 透传图片 URL
-            "source_oai_date": paper.get('source_oai_date'),   # 用于追踪本次数据批次
+            "source_oai_date": paper.get('source_oai_date'),   # 保留原始批次字段
         }
 
         # 方便调试：如果开关打开，把完整摘要也存进 daily_papers.json
