@@ -41,31 +41,40 @@ def setup_proxy():
 setup_proxy()
 
 # ================= 配置区域 =================
-# GitHub Actions 在北京时间 12:25（UTC 04:25）运行。
-# 工作日优先抓当天；周末/无记录日自动向前回溯最近一次 arXiv OAI 有记录的日期。
-TODAY_UTC = dt.datetime.now(timezone.utc).date()
-LOOKBACK_DAYS = 14
-MAX_CREATED_AGE_DAYS = 10
+# 目标语义：抓“论文的 submission date”，而不是 OAI metadata datestamp。
+#
+# 例如北京时间 2026-09-01 运行：
+#   优先抓取 2026-08-31 00:00--23:59 GMT 提交并已进入 arXiv API 索引的论文。
+#
+# 这里故意使用“北京时间昨天”，符合你的网站“每天展示上一自然日新论文”的使用方式。
+BEIJING_TZ = timezone(timedelta(hours=8))
+NOW_BEIJING = dt.datetime.now(BEIJING_TZ)
+PREFERRED_DATE = NOW_BEIJING.date() - timedelta(days=1)
 
+LOOKBACK_DAYS = 14
 OUTPUT_FILE = "raw_papers.json"
-OAI_BASE = "https://export.arxiv.org/oai2"
-NS = {
-    "oai": "http://www.openarchives.org/OAI/2.0/",
-    "arxiv": "http://arxiv.org/OAI/arXiv/",
+
+# arXiv Atom API：submittedDate 才是按提交日期筛选论文的正确字段。
+ARXIV_API_BASE = "https://export.arxiv.org/api/query"
+
+ATOM_NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "opensearch": "http://a9.com/-/spec/opensearch/1.1/",
+    "arxiv": "http://arxiv.org/schemas/atom",
 }
 
 HEADERS = {
-    # 建议替换成你自己的项目名/联系邮箱；比伪装浏览器 UA 更符合 arXiv 的礼貌抓取习惯。
     "User-Agent": "Embodied-AI-Map-Arxiv/1.0",
-    "Accept": "text/xml,application/xml,application/xhtml+xml,*/*",
-    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "application/atom+xml,application/xml,text/xml,*/*",
 }
 
 TARGET_CATEGORIES = {"cs.CV", "cs.RO", "cs.AI"}
 
-# OAI 网络请求失败时：绝不当作“今天 0 篇”继续执行，而是让 GitHub Action 失败。
-OAI_REQUEST_RETRIES = 4
-OAI_RETRY_BASE_SECONDS = 10
+# API 每次最多取 500 条；正常一天三个分类远低于上限，但仍支持分页。
+API_PAGE_SIZE = 500
+API_REQUEST_RETRIES = 4
+API_RETRY_BASE_SECONDS = 10
+API_PAGE_SLEEP_SECONDS = 3
 
 # HTML 页面失败只影响单位/主图提取，不应该让整批论文丢失。
 HTML_REQUEST_RETRIES = 2
@@ -189,50 +198,36 @@ def fetch_arxiv_html(arxiv_id):
     return None, None
 
 
-# ================= 2. XML 解析与 OAI 获取 =================
-def parse_record(record, source_oai_date):
-    """解析一条 OAI record，并过滤明显不是近期新提交的旧论文更新。"""
-    header = record.find("oai:header", NS)
-    if header is None or header.get("status") == "deleted":
-        return None
+# ================= 2. arXiv Atom API：按 submittedDate 获取 =================
+def _parse_atom_entry(entry, source_submission_date):
+    """把 arXiv Atom <entry> 转成现有 pipeline 使用的数据结构。"""
+    id_url = normalize_ws(entry.findtext("atom:id", default="", namespaces=ATOM_NS))
+    arxiv_id = id_url.rstrip("/").split("/")[-1]
+    arxiv_id = strip_version(arxiv_id)
 
-    metadata = record.find("oai:metadata", NS)
-    if metadata is None:
-        return None
-    arx = metadata.find("arxiv:arXiv", NS)
-    if arx is None:
-        return None
+    title = normalize_ws(entry.findtext("atom:title", default="", namespaces=ATOM_NS))
+    abstract = normalize_ws(entry.findtext("atom:summary", default="", namespaces=ATOM_NS))
+    published = normalize_ws(entry.findtext("atom:published", default="", namespaces=ATOM_NS))
 
-    arxiv_id = normalize_ws(arx.findtext("arxiv:id", default="", namespaces=NS))
-    categories = arx.findtext("arxiv:categories", default="", namespaces=NS).split()
+    # Atom published 格式通常为 2026-08-31T12:34:56Z。
+    # 页面仍沿用 YYYY-MM-DD，保证 update_database / dashboard 兼容。
+    date_created_str = published[:10] if published else source_submission_date
+
+    categories = []
+    for node in entry.findall("atom:category", ATOM_NS):
+        term = normalize_ws(node.attrib.get("term", ""))
+        if term:
+            categories.append(term)
+
+    # 再做一次本地分类保护，避免 API 布尔查询/索引异常带入无关类别。
     if not any(cat in TARGET_CATEGORIES for cat in categories):
         return None
 
-    title = normalize_ws(arx.findtext("arxiv:title", default="", namespaces=NS))
-    abstract = normalize_ws(arx.findtext("arxiv:abstract", default="", namespaces=NS))
-    date_created_str = normalize_ws(arx.findtext("arxiv:created", default="", namespaces=NS))
-
-    # 原代码用 arXiv ID 的 YYMM 前缀比较，会在每月 1 号错误过滤上月末论文。
-    # 这里只比较真实 created 日期与当前 OAI 批次日期。
-    try:
-        batch_dt = dt.datetime.strptime(source_oai_date, "%Y-%m-%d").date()
-        created_dt = dt.datetime.strptime(date_created_str, "%Y-%m-%d").date()
-        diff_days = (batch_dt - created_dt).days
-        if diff_days < 0 or diff_days > MAX_CREATED_AGE_DAYS:
-            print(
-                f"  >>> [过滤旧/异常论文] ID: {arxiv_id}, created={date_created_str}, "
-                f"OAI batch={source_oai_date}, diff={diff_days}d"
-            )
-            return None
-    except ValueError as e:
-        print(f"  [日期解析警告] {arxiv_id}: {e}，为安全起见跳过该记录。")
-        return None
-
-    authors_list = []
-    for a in arx.findall("arxiv:authors/arxiv:author", NS):
-        keyname = normalize_ws(a.findtext("arxiv:keyname", default="", namespaces=NS))
-        forenames = normalize_ws(a.findtext("arxiv:forenames", default="", namespaces=NS))
-        authors_list.append(f"{forenames} {keyname}".strip())
+    authors = []
+    for author in entry.findall("atom:author", ATOM_NS):
+        name = normalize_ws(author.findtext("atom:name", default="", namespaces=ATOM_NS))
+        if name:
+            authors.append(name)
 
     return {
         "id": arxiv_id,
@@ -240,139 +235,240 @@ def parse_record(record, source_oai_date):
         "abstract": abstract,
         "date": date_created_str,
         "categories": categories,
-        "authors_display": ", ".join(authors_list[:5]),
-        "link": f"https://arxiv.org/abs/{strip_version(arxiv_id)}",
+        "authors_display": ", ".join(authors[:5]),
+        "link": f"https://arxiv.org/abs/{arxiv_id}",
         "html_content": None,
-        # 第二道保险：Inference 会检查这个批次字段，旧 legacy raw 没有它就拒绝处理。
-        "source_oai_date": source_oai_date,
+
+        # 新字段：真实语义是“本次按 submission date 查询的日期”。
+        "source_submission_date": source_submission_date,
+
+        # 兼容上一版 api_inference.py / generate_dashboard.py。
+        # 虽然字段名还叫 source_oai_date，但现在值来自 submittedDate，
+        # 不再代表 OAI metadata datestamp。
+        "source_oai_date": source_submission_date,
     }
 
 
-def _request_oai(params):
-    """OAI 请求：网络/协议错误最终抛异常，不得伪装成 noRecordsMatch。"""
+def _request_arxiv_api(params):
+    """请求 arXiv Atom API。网络失败必须让 Action 失败，不能回退到旧数据。"""
     last_error = None
-    for attempt in range(1, OAI_REQUEST_RETRIES + 1):
+
+    for attempt in range(1, API_REQUEST_RETRIES + 1):
         try:
-            resp = requests.get(OAI_BASE, params=params, headers=HEADERS, timeout=60)
+            resp = requests.get(
+                ARXIV_API_BASE,
+                params=params,
+                headers=HEADERS,
+                timeout=60,
+            )
+
             if resp.status_code == 503:
                 retry_after = resp.headers.get("Retry-After")
-                wait_s = int(retry_after) if retry_after and retry_after.isdigit() else OAI_RETRY_BASE_SECONDS * attempt
-                print(f"  [503] arXiv OAI 繁忙，{wait_s}s 后重试 ({attempt}/{OAI_REQUEST_RETRIES})...")
+                wait_s = (
+                    int(retry_after)
+                    if retry_after and retry_after.isdigit()
+                    else API_RETRY_BASE_SECONDS * attempt
+                )
+                print(
+                    f"  [503] arXiv API 繁忙，{wait_s}s 后重试 "
+                    f"({attempt}/{API_REQUEST_RETRIES})..."
+                )
                 time.sleep(wait_s)
                 continue
 
             resp.raise_for_status()
             return ET.fromstring(resp.content)
+
         except (requests.RequestException, ET.ParseError) as e:
             last_error = e
-            if attempt < OAI_REQUEST_RETRIES:
-                wait_s = OAI_RETRY_BASE_SECONDS * attempt
-                print(f"  [OAI 请求失败] {e}；{wait_s}s 后重试 ({attempt}/{OAI_REQUEST_RETRIES})...")
+            if attempt < API_REQUEST_RETRIES:
+                wait_s = API_RETRY_BASE_SECONDS * attempt
+                print(
+                    f"  [API 请求失败] {e}；{wait_s}s 后重试 "
+                    f"({attempt}/{API_REQUEST_RETRIES})..."
+                )
                 time.sleep(wait_s)
 
-    raise RuntimeError(f"arXiv OAI 连续请求失败，终止本次 Action，避免发布错误数据。最后错误: {last_error}")
+    raise RuntimeError(
+        "arXiv API 连续请求失败，终止本次 Action，避免发布错误数据。"
+        f"最后错误: {last_error}"
+    )
 
 
-def fetch_list_from_oai(target_date):
+def build_submitted_date_query(target_date):
     """
-    获取某个 OAI datestamp 的记录。
+    arXiv API 的 submittedDate 使用 GMT，格式：
+      submittedDate:[YYYYMMDD0000 TO YYYYMMDD2359]
 
-    返回: (status, papers, raw_record_count)
-      status='ok'         : OAI 有记录（即使目标分类最终筛成 0 篇）
-      status='no_records' : OAI 明确返回 noRecordsMatch，可安全回溯前一天
-    其他 OAI 错误直接抛异常。
+    同时只抓 cs.CV / cs.RO / cs.AI。
     """
-    print(f"\n=== 开始从 OAI 获取 {target_date} 的论文列表 ===")
+    ymd = target_date.strftime("%Y%m%d")
+    date_expr = f"submittedDate:[{ymd}0000 TO {ymd}2359]"
+    category_expr = "(cat:cs.CV OR cat:cs.RO OR cat:cs.AI)"
+    return f"{category_expr} AND {date_expr}"
 
-    params = {
-        "verb": "ListRecords",
-        "metadataPrefix": "arXiv",
-        "from": target_date,
-        "until": target_date,
-    }
 
-    all_records = []
-    raw_record_count = 0
+def fetch_list_by_submission_date(target_date):
+    """
+    精确获取某个 submission date 的目标分类论文。
+
+    返回:
+      (papers, total_results)
+
+    注意：这里不再使用 OAI-PMH from/until。
+    OAI datestamp 表示 metadata 创建/修改时间，不等同于 submission date。
+    """
+    target_str = target_date.strftime("%Y-%m-%d")
+    search_query = build_submitted_date_query(target_date)
+
+    print(f"\n=== 按 submittedDate 获取 {target_str} 的论文 ===")
+    print(f"  > query: {search_query}")
+
+    papers = []
+    seen_ids = set()
+    start = 0
+    total_results = None
 
     while True:
-        root = _request_oai(params)
+        params = {
+            "search_query": search_query,
+            "start": start,
+            "max_results": API_PAGE_SIZE,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }
 
-        err = root.find("oai:error", NS)
-        if err is not None:
-            code = err.get("code")
-            if code == "noRecordsMatch":
-                print(f"  [提示] {target_date} 没有 OAI 记录。")
-                return "no_records", [], 0
-            raise RuntimeError(f"arXiv OAI 返回错误 {code}: {err.text}")
+        root = _request_arxiv_api(params)
 
-        records = root.findall(".//oai:record", NS)
-        raw_record_count += len(records)
-        print(f"  > 下载批次: 包含 {len(records)} 条原始记录")
+        if total_results is None:
+            total_text = root.findtext(
+                "opensearch:totalResults",
+                default="0",
+                namespaces=ATOM_NS,
+            )
+            try:
+                total_results = int(total_text)
+            except (TypeError, ValueError):
+                total_results = 0
 
-        for rec in records:
-            paper_obj = parse_record(rec, target_date)
-            if paper_obj:
-                all_records.append(paper_obj)
+            print(f"  > API totalResults = {total_results}")
 
-        token_node = root.find(".//oai:resumptionToken", NS)
-        token = token_node.text.strip() if token_node is not None and token_node.text else None
-        if token:
-            print("  > 发现翻页 Token，继续获取下一页...")
-            params = {"verb": "ListRecords", "resumptionToken": token}
-            time.sleep(3)
-        else:
+        entries = root.findall("atom:entry", ATOM_NS)
+        print(f"  > 本页返回 {len(entries)} 条，start={start}")
+
+        if not entries:
             break
 
+        for entry in entries:
+            paper = _parse_atom_entry(entry, target_str)
+            if not paper:
+                continue
+
+            if paper["id"] in seen_ids:
+                continue
+            seen_ids.add(paper["id"])
+            papers.append(paper)
+
+        start += len(entries)
+
+        if total_results is not None and start >= total_results:
+            break
+        if len(entries) < API_PAGE_SIZE:
+            break
+
+        time.sleep(API_PAGE_SLEEP_SECONDS)
+
     print(
-        f"=== {target_date} 获取完成：原始 {raw_record_count} 条，"
-        f"筛选后 {len(all_records)} 篇目标领域论文 ==="
+        f"=== {target_str} submittedDate 查询完成："
+        f"API={total_results or 0}，去重后={len(papers)} 篇 ==="
     )
-    return "ok", all_records, raw_record_count
+    return papers, (total_results or 0)
 
 
-def find_latest_available_batch():
-    """从今天开始向前寻找最近一个 OAI 明确存在记录的日期。"""
+def find_latest_submission_batch():
+    """
+    日期策略：
+
+    1. 永远先查询“北京时间昨天”。
+       例如北京时间 2026-09-01 -> 必须先查询 2026-08-31。
+
+    2. 如果首选日期是工作日（周一~周五）：
+       cs.CV/cs.RO/cs.AI 三个大类正常情况下不可能一篇都没有。
+       如果 API 返回 0，更可能是 arXiv 搜索索引尚未完成更新。
+       此时直接让 Action 失败，绝不回退到 2~3 天前的旧论文。
+
+    3. 只有首选日期本身是周末时，才允许向前回溯寻找最近有论文的日期。
+    """
     print(
-        f">>> [配置] 当前 UTC 日期: {TODAY_UTC}；"
-        f"最多向前回溯 {LOOKBACK_DAYS} 天寻找最近有效 arXiv OAI 批次。"
+        f">>> [日期策略] 当前北京时间: {NOW_BEIJING.strftime('%Y-%m-%d %H:%M:%S')}；"
+        f"首选 submission date: {PREFERRED_DATE}"
     )
 
-    for offset in range(LOOKBACK_DAYS + 1):
-        candidate = TODAY_UTC - timedelta(days=offset)
-        candidate_str = candidate.strftime("%Y-%m-%d")
-        status, papers, raw_count = fetch_list_from_oai(candidate_str)
-        if status == "ok":
-            if offset > 0:
-                print(f">>> [日期回溯] 今天无记录，改用最近有效批次: {candidate_str} (回溯 {offset} 天)")
-            return candidate_str, papers, raw_count
+    # ---------- 首选日期必须单独检查 ----------
+    papers, total_results = fetch_list_by_submission_date(PREFERRED_DATE)
 
-    # 连续 LOOKBACK_DAYS 天都明确 noRecordsMatch，属于异常但不是网络错误。
-    # 写空文件，避免任何旧缓存被使用，然后正常结束。
-    print(f"⚠️ 最近 {LOOKBACK_DAYS + 1} 天均无 OAI 记录，将输出空 raw。")
+    if total_results > 0 and papers:
+        print(f">>> [日期命中] 使用首选 submission date: {PREFERRED_DATE}")
+        return PREFERRED_DATE.strftime("%Y-%m-%d"), papers, total_results
+
+    # weekday(): Monday=0 ... Sunday=6
+    if PREFERRED_DATE.weekday() < 5:
+        raise RuntimeError(
+            f"首选工作日 {PREFERRED_DATE} 的 arXiv API submittedDate 查询返回 0 篇。"
+            "这通常表示当天的新论文索引尚未完成，而不是应该回退到更早日期。"
+            "为避免把旧论文冒充为最新论文，本次 Action 主动终止。"
+        )
+
+    # ---------- 只有周末才允许回溯 ----------
+    print(
+        f">>> [周末回溯] {PREFERRED_DATE} 是周末且没有目标论文，"
+        "开始向前寻找最近有论文的 submission date。"
+    )
+
+    for offset in range(1, LOOKBACK_DAYS + 1):
+        candidate = PREFERRED_DATE - timedelta(days=offset)
+        papers, total_results = fetch_list_by_submission_date(candidate)
+
+        if total_results > 0 and papers:
+            print(
+                f">>> [日期回溯] 使用最近有论文的 submission date: {candidate} "
+                f"(从 {PREFERRED_DATE} 回溯 {offset} 天)"
+            )
+            return candidate.strftime("%Y-%m-%d"), papers, total_results
+
+        print(f"  [无目标论文] {candidate}，继续向前检查...")
+
+    print(
+        f"⚠️ 从 {PREFERRED_DATE} 起向前 {LOOKBACK_DAYS} 天"
+        "均没有目标分类论文，将输出空 raw。"
+    )
     return None, [], 0
 
 
 # ================= 3. 主程序 =================
 def main():
-    # 最重要的一步：任何网络请求之前先抹掉 checkout 下来的旧 raw。
+    # 第一件事仍然是清空 raw，彻底杜绝 checkout 旧缓存。
     reset_raw_file()
 
-    batch_date, papers, raw_count = find_latest_available_batch()
+    batch_date, papers, total_results = find_latest_submission_batch()
 
     if batch_date is None:
-        print("ℹ️ 没有可用 OAI 批次，raw_papers.json 保持为空列表。")
+        print("ℹ️ 没有可用 submission batch，raw_papers.json 保持为空列表。")
         return
 
     if not papers:
-        # 这里和“网络失败”不同：OAI 批次存在，只是 cs.CV/cs.RO/cs.AI + 新论文过滤后为 0。
         save_raw([])
         print(
-            f"ℹ️ OAI 批次 {batch_date} 存在 {raw_count} 条记录，但目标领域筛选后为 0；"
+            f"ℹ️ submission date {batch_date} 没有目标分类论文；"
             f"已明确写入空 {OUTPUT_FILE}。"
         )
         return
 
-    print(f"\n=== 使用 OAI 批次 {batch_date}，开始爬取 {len(papers)} 篇 HTML 全文 ===")
+    print(
+        f"\n=== 使用 submission date {batch_date}，"
+        f"开始爬取 {len(papers)} 篇 HTML 全文 ==="
+    )
+
     processed_papers = []
 
     for i, paper in enumerate(papers):
@@ -386,7 +482,10 @@ def main():
     save_raw(processed_papers)
 
     file_size = os.path.getsize(OUTPUT_FILE) / 1024
-    print(f"\n✅ 抓取完成：batch={batch_date}, papers={len(processed_papers)}")
+    print(
+        f"\n✅ 抓取完成：submission_date={batch_date}, "
+        f"papers={len(processed_papers)}"
+    )
     print(f"✅ 已覆盖保存 {OUTPUT_FILE} | {file_size:.2f} KB")
 
 
