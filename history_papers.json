@@ -13328,6 +13328,20 @@
   ],
   "MARS多模态学习实验室": [
     {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
+    {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
       "date": "2026-08-30",
@@ -14610,6 +14624,20 @@
     }
   ],
   "机器人控制实验室": [
+    {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
     {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
@@ -15894,6 +15922,20 @@
   ],
   "具身智能实验室 (TEA Lab)": [
     {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
+    {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
       "date": "2026-08-30",
@@ -17177,6 +17219,20 @@
   ],
   "机器人与人工智能实验室 (RAIL)": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -18123,6 +18179,20 @@
     }
   ],
   "智能技术与系统实验室": [
+    {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
     {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
@@ -19407,6 +19477,20 @@
   ],
   "智能系统与机器人实验室 (ISR Lab)": [
     {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
+    {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
       "date": "2026-08-30",
@@ -20690,6 +20774,20 @@
   ],
   "具身视觉与机器人实验室 (EVAR Lab)": [
     {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
+    {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
       "date": "2026-08-30",
@@ -21972,6 +22070,20 @@
     }
   ],
   "智能产业研究院 (AIR)": [
+    {
+      "title": "Learning to Search: A Decision-Based Agent for Knowledge-Based Visual Question Answering",
+      "url": "https://arxiv.org/abs/2604.07146",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Zhuohong Chen, Zhenxian Wu, Yunyao Yu, Hangrui Xu, Zirui Liao",
+      "is_highlight": false,
+      "score": 65.0,
+      "summary": "This paper presents a decision-based agent for knowledge-based visual question answering that dynamically selects actions to improve retrieval and reasoning, achieving state-of-the-art performance.",
+      "teaser_image": "https://arxiv.org/html/2604.07146/2604.07146v3/case-last1.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Knowledge-based visual question answering (KB-VQA) requires vision-language models to understand images and use external knowledge, especially for rare entities and long-tail facts. Most existing retrieval-augmented generation (RAG) methods adopt a fixed pipeline that sequentially retrieves information, filters it, and then produces an answer. Such a design makes it difficult to adapt to diverse question types. Moreover, it separates retrieval from reasoning, making it hard for the model to decide when to search, how to refine queries, or when to stop. As a result, the retrieved evidence is often poorly aligned with the question. To address these limitations, we reformulate KB-VQA as a search-agent problem and model the solving process as a multi-step decision-making procedure. At each step, the agent selects one of four actions-Answer, Image Retrieval, Text Retrieval, and Caption-based on its current information state. We further design an automated pipeline to collect multi-step trajectories that record the agent's reasoning process, tool usage, and intermediate decisions. These trajectories are then used as supervision for fine-tuning. Experiments on InfoSeek and E-VQA demonstrate that our method achieves state-of-the-art performance, consistently outperforming prior baselines and confirming the effectiveness of our framework."
+    },
     {
       "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
       "url": "https://arxiv.org/abs/2605.28791",
@@ -28142,6 +28254,20 @@
   ],
   "机器人与自动化研究中心": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -29080,6 +29206,20 @@
   ],
   "机器人与人工智能实验室": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -29758,6 +29898,20 @@
     }
   ],
   "Hengshuang Zhao老师实验室": [
+    {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
     {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
@@ -31118,6 +31272,20 @@
   ],
   "香港大学机械工程系机器人实验室": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -32477,6 +32645,20 @@
   ],
   "深圳市人工智能与机器人研究院 (AIRS)": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -33156,6 +33338,20 @@
   ],
   "Multimedia Lab (MMLab)": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -33834,6 +34030,20 @@
     }
   ],
   "OpenDriveLab": [
+    {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
     {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
@@ -35194,6 +35404,20 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
+    {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
       "date": "2026-08-30",
@@ -36552,6 +36776,20 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Dynamic-Robust Photometric-Semantic Reconstruction for Open-Vocabulary 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2608.29177",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Boyu Cai, Li Yang, Yan Xu, Wei Liu, Nian Liu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "The paper presents SPAR, a novel architecture for dynamic 3D scene understanding that improves view synthesis and semantic segmentation by addressing transient noise and motion conflicts.",
+      "teaser_image": "https://arxiv.org/html/2608.29177/2608.29177v1/teaser_cropped.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "The integration of novel view synthesis (NVS) and open-vocabulary segmentation (OVS) has recently yielded powerful feed-forward 3D foundation models. However, their inherent reliance on static-scene assumptions leads to severe misalignment of spatial features in unconstrained dynamic environments. To bridge this critical gap, we propose SPAR, a novel joint semantic-geometric encoding architecture that explicitly isolates transient dynamic noise prior to latent space aggregation. Furthermore, we introduce a dynamic-region-aware end-to-end training paradigm that structurally couples motion estimation with multi-view visual and semantic learning. This unified approach enables the network to inherently resolve motion conflicts and distill multi-view consistent, temporally stable scene representations from dynamic inputs. Extensive experiments on the challenging D-RE10K benchmark demonstrate that SPAR achieves state-of-the-art performance. Our end-to-end approach achieves exceptional novel view synthesis quality, yielding a PSNR of 22.15 dB and 23.33 dB given only 3 and 4 input views respectively. Despite being trained in a self-supervised manner, our model achieves an mIoU of 88.5% for motion mask prediction. Furthermore, our analysis reveals a strong inter-task synergy between photometric scene reconstruction and semantic understanding, where semantic synthesis learning consistently enhances photometric fidelity in novel view rendering. Code will be available at https://github.com/dmucby/SPAR."
+    },
     {
       "title": "FrameTwin: Curve-Anchored Gaussian Alignment from Sparse Views for Adaptive Wireframe 3D Printing",
       "url": "https://arxiv.org/abs/2605.09362",
@@ -37912,6 +38150,20 @@
   ],
   "集群机器人系统实验室 (MagicLab)": [
     {
+      "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
+      "url": "https://arxiv.org/abs/2605.30117",
+      "date": "2026-08-30",
+      "submitted_date": "2026-08-30",
+      "release_date": "2026-09-01",
+      "authors_text": "Haoyuan Shi, Xiancong Ren, Yingji Zhang, Qinfan Zhang, Jiayu Hu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "VLA-Trace is a diagnostic framework that analyzes Vision-Language-Action models' representation dynamics and control pathways, revealing distinct adaptation strategies and limitations in semantic following.",
+      "teaser_image": "https://arxiv.org/html/2605.30117/2605.30117v2/overview0527.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Understanding how Vision-Language-Action (VLA) models transform multimodal knowledge into embodied control remains an open challenge. We present VLA-Trace, a progressive diagnostic framework that analyzes VLA models through a unified evidence chain from representation dynamics to causal control attribution and behavioral manifestation. It specifically combines cross-modal and checkpoint-drift centered kernel alignment (CKA) to trace representation evolution, attention knockout interventions to identify modality-specific control pathways, and rollout-level behavioral probes to examine grounding, shortcut dependence, and semantic following. Experiments on $π_{0.5}$ and OpenVLA reveal three key findings. First, the two models exhibit distinct modality-specific adaptation dynamics during VLA finetuning. Second, they rely on different multimodal routing strategies and layer-wise dependencies during action decoding. Third, although VLA policies excel at visually grounded trajectory generation, they remain limited in fine-grained semantic following. These findings highlight future directions for representation-preserving adaptation, causal VLA circuits, and compositional semantic control."
+    },
+    {
       "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
       "url": "https://arxiv.org/abs/2601.16690",
       "date": "2026-08-31",
@@ -38457,6 +38709,20 @@
   ],
   "智能感知与无人系统实验室": [
     {
+      "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
+      "url": "https://arxiv.org/abs/2605.30117",
+      "date": "2026-08-30",
+      "submitted_date": "2026-08-30",
+      "release_date": "2026-09-01",
+      "authors_text": "Haoyuan Shi, Xiancong Ren, Yingji Zhang, Qinfan Zhang, Jiayu Hu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "VLA-Trace is a diagnostic framework that analyzes Vision-Language-Action models' representation dynamics and control pathways, revealing distinct adaptation strategies and limitations in semantic following.",
+      "teaser_image": "https://arxiv.org/html/2605.30117/2605.30117v2/overview0527.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Understanding how Vision-Language-Action (VLA) models transform multimodal knowledge into embodied control remains an open challenge. We present VLA-Trace, a progressive diagnostic framework that analyzes VLA models through a unified evidence chain from representation dynamics to causal control attribution and behavioral manifestation. It specifically combines cross-modal and checkpoint-drift centered kernel alignment (CKA) to trace representation evolution, attention knockout interventions to identify modality-specific control pathways, and rollout-level behavioral probes to examine grounding, shortcut dependence, and semantic following. Experiments on $π_{0.5}$ and OpenVLA reveal three key findings. First, the two models exhibit distinct modality-specific adaptation dynamics during VLA finetuning. Second, they rely on different multimodal routing strategies and layer-wise dependencies during action decoding. Third, although VLA policies excel at visually grounded trajectory generation, they remain limited in fine-grained semantic following. These findings highlight future directions for representation-preserving adaptation, causal VLA circuits, and compositional semantic control."
+    },
+    {
       "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
       "url": "https://arxiv.org/abs/2601.16690",
       "date": "2026-08-31",
@@ -39001,6 +39267,20 @@
     }
   ],
   "智能人机交互实验室 (MemX)": [
+    {
+      "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing",
+      "url": "https://arxiv.org/abs/2605.30117",
+      "date": "2026-08-30",
+      "submitted_date": "2026-08-30",
+      "release_date": "2026-09-01",
+      "authors_text": "Haoyuan Shi, Xiancong Ren, Yingji Zhang, Qinfan Zhang, Jiayu Hu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "VLA-Trace is a diagnostic framework that analyzes Vision-Language-Action models' representation dynamics and control pathways, revealing distinct adaptation strategies and limitations in semantic following.",
+      "teaser_image": "https://arxiv.org/html/2605.30117/2605.30117v2/overview0527.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Understanding how Vision-Language-Action (VLA) models transform multimodal knowledge into embodied control remains an open challenge. We present VLA-Trace, a progressive diagnostic framework that analyzes VLA models through a unified evidence chain from representation dynamics to causal control attribution and behavioral manifestation. It specifically combines cross-modal and checkpoint-drift centered kernel alignment (CKA) to trace representation evolution, attention knockout interventions to identify modality-specific control pathways, and rollout-level behavioral probes to examine grounding, shortcut dependence, and semantic following. Experiments on $π_{0.5}$ and OpenVLA reveal three key findings. First, the two models exhibit distinct modality-specific adaptation dynamics during VLA finetuning. Second, they rely on different multimodal routing strategies and layer-wise dependencies during action decoding. Third, although VLA policies excel at visually grounded trajectory generation, they remain limited in fine-grained semantic following. These findings highlight future directions for representation-preserving adaptation, causal VLA circuits, and compositional semantic control."
+    },
     {
       "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
       "url": "https://arxiv.org/abs/2601.16690",
@@ -43509,6 +43789,20 @@
   ],
   "ReThinkLab": [
     {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
+    {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
       "date": "2026-08-31",
@@ -44399,6 +44693,20 @@
     }
   ],
   "赵波老师实验室": [
+    {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
     {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
@@ -45291,6 +45599,20 @@
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
     {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
+    {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
       "date": "2026-08-31",
@@ -46181,6 +46503,20 @@
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
+    {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
     {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
@@ -47073,6 +47409,20 @@
   ],
   "IWIN-FINS实验室": [
     {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
+    {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
       "date": "2026-08-31",
@@ -47963,6 +48313,20 @@
     }
   ],
   "数字媒体与计算机视觉实验室": [
+    {
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "url": "https://arxiv.org/abs/2608.30451",
+      "date": "2026-08-31",
+      "submitted_date": "2026-08-31",
+      "release_date": "2026-09-01",
+      "authors_text": "Yi Zhang, Yi Wang, Yueting Wu, Kaiyue Yang, Yuejiao Su",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "SeqAlign3DVG introduces a benchmark for temporally ordered, strictly aligned 3D visual grounding, utilizing a voxel-based pipeline for improved target localization and reasoning.",
+      "teaser_image": "https://arxiv.org/html/2608.30451/2608.30451v1/benchmark_construction.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues."
+    },
     {
       "title": "Efficient and High-Quality Depth Estimation via Pixel-Space Diffusion with Linear Attention",
       "url": "https://arxiv.org/abs/2608.30129",
@@ -49140,6 +49504,20 @@
     }
   ],
   "四川大学": [
+    {
+      "title": "LightFuse: Relightable Interactive Gaussian Scene Reconstruction via Multi-Scan Fusion and 2D Gaussian Ray Tracing",
+      "url": "https://arxiv.org/abs/2608.29269",
+      "date": "2026-08-29",
+      "submitted_date": "2026-08-29",
+      "release_date": "2026-09-01",
+      "authors_text": "Haonan Zhou, Gaoxiang Linghu, Youlin Jia, Hongyu Cui, Kewei Wei",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "LightFuse introduces a 2D Gaussian framework for interactive scene reconstruction, enabling editable 3D models with consistent relighting and material-illumination decomposition across varied object arrangements.",
+      "teaser_image": "https://arxiv.org/html/2608.29269/2608.29269v1/teaser.png",
+      "source_oai_date": "2026-09-01",
+      "debug_abstract": "Relightable interactive scene reconstruction aims to build an editable 3D model from scans of different object arrangements and render new layouts under novel illumination. Existing methods either bake lighting into appearance or recover material and illumination only for fixed scenes, leaving edited layouts with inconsistent shadows and indirect lighting. We present LightFuse, a 2D Gaussian framework that extends interactive scene reconstruction with explicit material-illumination decomposition and physically based relighting. LightFuse first fuses observations across states to reconstruct a shared background and movable objects. It then conducts ray-tracing-oriented geometry refinement to produce more complete and consistent surfaces. On the refined geometry, staged training with differentiable one-bounce ray tracing separates shared metallic--roughness material from state-specific environment lighting. The resulting scene supports object rearrangement, material editing, and relighting, while ray tracing recomputes appearance after each interaction. Experiments across synthetic scenes demonstrate state-of-the-art relighting quality, outperforming the strongest baseline by +9.74\\,dB PSNR and +0.121 SSIM on average. Project page: https://zhn202.github.io/LightFuse/"
+    },
     {
       "title": "What Matters for Latent Actions in Robot Learning",
       "url": "https://arxiv.org/abs/2608.19613",
