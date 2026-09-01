@@ -56,9 +56,26 @@ def parse_paper_date(value):
         return None
 
 
+def paper_display_date(paper):
+    """
+    页面统一展示 arXiv 发布日期，而不是作者最初提交日期。
+
+    优先级：
+    1. release_date      新版 pipeline 的明确 arXiv 发布日期
+    2. source_oai_date   兼容已经入库但尚无 release_date 的近期数据
+    3. date              兼容更早的 legacy history 数据
+    """
+    return (
+        paper.get("release_date")
+        or paper.get("source_oai_date")
+        or paper.get("date")
+        or "Unknown"
+    )
+
+
 def paper_freshness_date(paper):
-    """优先使用新版 pipeline 的 OAI batch 日期；旧历史数据则退回论文 created 日期。"""
-    return parse_paper_date(paper.get("source_oai_date")) or parse_paper_date(paper.get("date"))
+    """“最新论文”判断同样以 arXiv 发布日期为准。"""
+    return parse_paper_date(paper_display_date(paper))
 
 
 def smart_wrap(text, limit=40):
@@ -584,7 +601,7 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
             <div class="card-content">
                 <div class="card-header">
                     <span class="source-badge">🏛 {p['source']}</span>
-                    <span class="date-badge">{p.get('date', 'Today')}</span>
+                    <span class="date-badge">{paper_display_date(p)}</span>
                 </div>
                 <a href="{p['url']}" target="_blank" class="p-title">{p['title']}</a>
 
