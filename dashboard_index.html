@@ -19,14 +19,11 @@
                 font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                 height: 100vh; overflow: hidden;
                 display: grid;
-                /* 修改布局：左侧三个地图等高，右侧列表铺满全高 */
-                grid-template-rows: 60px 1fr 1fr 1fr; 
+                grid-template-rows: 60px 1fr;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas: 
+                grid-template-areas:
                     "header header"
-                    "map1 feed"
-                    "map2 feed"
-                    "map3 feed";
+                    "left feed";
                 gap: 4px;
                 background: #000;
             }
@@ -65,10 +62,109 @@
                 right: 30px;
             }
 
-            .area-map1 { grid-area: map1; }
-            .area-map2 { grid-area: map2; }
-            .area-map3 { grid-area: map3; }
+            .area-left { grid-area: left; }
             .area-feed { grid-area: feed; }
+
+            .left-panel {
+                height: 100%;
+                min-height: 0;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                gap: 4px;
+            }
+
+            .overview-panel {
+                min-height: 0;
+                background:
+                    radial-gradient(circle at top left, rgba(0, 229, 255, 0.08), transparent 34%),
+                    linear-gradient(135deg, #0b1121 0%, #0f172a 100%);
+                border: 1px solid #1e293b;
+                padding: 18px 20px 16px 20px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .overview-panel::before {
+                content: "";
+                position: absolute;
+                left: 0; top: 0; bottom: 0;
+                width: 3px;
+                background: linear-gradient(180deg, var(--accent-uni), #a78bfa);
+                box-shadow: 0 0 14px rgba(0,229,255,0.55);
+            }
+
+            .overview-title {
+                color: #f8fafc;
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: 1.5px;
+                margin: 0 0 16px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .overview-title::after {
+                content: "";
+                height: 1px;
+                flex: 1;
+                background: linear-gradient(90deg, rgba(0,229,255,0.55), transparent);
+            }
+
+            .overview-list {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 10px;
+                height: calc(100% - 48px);
+            }
+
+            .overview-item {
+                display: grid;
+                grid-template-columns: 36px 1fr;
+                gap: 14px;
+                align-items: center;
+                padding: 12px 16px;
+                background: rgba(30, 41, 59, 0.42);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 8px;
+                min-height: 0;
+            }
+
+            .overview-num {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--accent-uni);
+                border: 1px solid rgba(0,229,255,0.45);
+                background: rgba(0,229,255,0.08);
+                font-size: 14px;
+                font-weight: 800;
+                box-shadow: inset 0 0 10px rgba(0,229,255,0.08);
+            }
+
+            .overview-text {
+                color: #cbd5e1;
+                font-size: 16px;
+                line-height: 1.6;
+                letter-spacing: 0.05px;
+            }
+
+            .overview-text strong {
+                color: #f8fafc;
+                font-weight: 700;
+            }
+
+            .maps-row {
+                min-height: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4px;
+            }
 
             .grid-item {
                 position: relative;
@@ -175,58 +271,108 @@
             <div class="header-title">EMBODIED AI GLOBAL MONITOR</div>
             <div class="header-meta">
                 <span>SYSTEM: ONLINE</span>
-                <span>DATA: 2026-09-01 09:29:24 (CST)</span>
+                <span>DATA: 2026-09-01 12:55:16 (CST)</span>
             </div>
         </div>
 
-        <div class="grid-item area-map1">
-            <div class="map-label" style="border-left-color: var(--accent-comp);">
-                <div class="map-title">CHINA / APAC</div>
-            </div>
-            <iframe src="map_China.html"></iframe>
-        </div>
+        <div class="area-left">
+            <div class="left-panel">
 
-        <div class="grid-item area-map2">
-            <div class="map-label" style="border-left-color: #3b82f6;">
-                <div class="map-title">NORTH AMERICA</div>
-            </div>
-            <iframe src="map_USA.html"></iframe>
-        </div>
+                <div class="overview-panel">
+                    <div class="overview-title">今日概览</div>
 
-        <div class="grid-item area-map3">
-            <div class="map-label" style="border-left-color: var(--accent-uni);">
-                <div class="map-title">EUROPE</div>
+                    <div class="overview-list">
+                        <div class="overview-item">
+                            <div class="overview-num">1</div>
+                            <div class="overview-text">
+                                <strong>北航与 XiaoyuBot 发布 MAGP</strong>，将前馈三维重建从「相对几何」推进到「度量几何」，操控基准绝对误差降低一个数量级。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">2</div>
+                            <div class="overview-text">
+                                <strong>香港科技大学 StarVLA 团队开源 VLAct</strong>，以表征中心预训练在 16 GPU 上追平甚至超越工业级大规模 VLA，并以 20% 数据反超 GR00T-N1.6 全量基线。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">3</div>
+                            <div class="overview-text">
+                                <strong>南京大学、中科院自动化所等提出 Mind-VLA</strong>，以指令感知 3D 表征对齐让 345M 紧凑模型在目标遮挡任务上较场景级 VGGT 对照组提升 26 个百分点。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">4</div>
+                            <div class="overview-text">
+                                <strong>VLA 三条攻坚战线</strong>（度量感知、表征中心训练、指令感知对齐）首次在同一日报窗口内集体亮相，标志具身基础模型从参数竞争走向几何-数据-语义联合精修。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="maps-row">
+                    <div class="grid-item">
+                        <div class="map-label" style="border-left-color: var(--accent-comp);">
+                            <div class="map-title">CHINA / APAC</div>
+                        </div>
+                        <iframe src="map_China.html"></iframe>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="map-label" style="border-left-color: #3b82f6;">
+                            <div class="map-title">NORTH AMERICA</div>
+                        </div>
+                        <iframe src="map_USA.html"></iframe>
+                    </div>
+                </div>
+
             </div>
-            <iframe src="map_Europe.html"></iframe>
         </div>
 
         <div class="grid-item area-feed">
             <div class="rec-container">
                 <div class="rec-header">
-                    <div class="rec-title"> LATEST TOP PAPERS</div>
-                    <div class="live-indicator">● AI RANKING · 2026-09-01</div>
+                    <div class="rec-title"> DAILY TOP PAPERS</div>
+                    <div class="live-indicator">● AI RANKING</div>
                 </div>
                 <div class="rec-list" id="auto-scroller">
         <div class="paper-card">
             <div class="card-left">
-                <div class="score-circle" style="border-color:#00e676; color:#00e676">98.0</div>
+                <div class="score-circle" style="border-color:#00e676; color:#00e676">100.0</div>
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 麻省理工学院 (MIT)</span>
+                    <span class="source-badge">🏛 中国科学技术大学</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2608.29080" target="_blank" class="p-title">GHOST in the Robots: Real-Time Exocentric Dual-Robot VR Teleoperation from Onboard Cameras</a>
+                <a href="https://arxiv.org/abs/2608.29749" target="_blank" class="p-title">DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2608.29080/2608.29080v1/teaser_remade.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    GHOST is an open-source VR teleoperation system allowing single-operator control of dual mobile manipulators using onboard cameras, enhancing spatial awareness and task efficiency.
+                    DriftingVLA introduces a one-step vision-language-action generation model using Per-Dimension Temporal Drifting, achieving high success rates and significantly faster action generation without iterative refinement.
+                </div>
+            </div>
+            <div class="glow-bar" style="background:#00e676;"></div>
+        </div>
+        
+        <div class="paper-card">
+            <div class="card-left">
+                <div class="score-circle" style="border-color:#00e676; color:#00e676">99.0</div>
+            </div>
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="source-badge">🏛 斯坦福大学</span>
+                    <span class="date-badge">2026-09-01</span>
+                </div>
+                <a href="https://arxiv.org/abs/2608.24101" target="_blank" class="p-title">TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks</a>
+
+                
+
+                <div class="p-abstract">
+                    TrAct enhances robot decision-making by using visual tracks as a bridge between control and visual prediction, improving task success rates and video prediction quality.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -238,20 +384,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 北京大学</span>
+                    <span class="source-badge">🏛 电子科技大学</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2607.01651" target="_blank" class="p-title">One Demonstration Is Enough for Real-World Robotic Reinforcement Learning</a>
+                <a href="https://arxiv.org/abs/2607.08283" target="_blank" class="p-title">TFP: Temporally Conditioned Memory-Fusion Policies for Visuomotor Learning</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2607.01651/2607.01651v2/figs/teaser_bigger.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    AutoSERL enables effective robotic reinforcement learning using just one demonstration, automating intervention and enhancing performance across various manipulation tasks without extensive human input.
+                    The paper introduces Temporally Conditioned Memory-Fusion Policies (TFP), enhancing visuomotor learning by integrating dynamic memory updates into action prediction, significantly improving task success rates.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -263,20 +404,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 南洋理工大学 (NTU)</span>
+                    <span class="source-badge">🏛 清华大学</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2512.23649" target="_blank" class="p-title">RoboMirror: Understand Before You Imitate for Video to Humanoid Locomotion</a>
+                <a href="https://arxiv.org/abs/2602.07837" target="_blank" class="p-title">RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2512.23649/2512.23649v5/RoboMirror_teaser.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    RoboMirror introduces a novel video-to-locomotion framework that prioritizes visual understanding before imitation, enhancing humanoid locomotion with improved task success and reduced control latency.
+                    USER is a unified system for real-world online policy learning in embodied AI, integrating hardware management and asynchronous training for effective multi-robot coordination and cloud-edge training.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -288,20 +424,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 中国科学技术大学</span>
+                    <span class="source-badge">🏛 帝国理工学院</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2511.22187" target="_blank" class="p-title">HybridWorldSim: A Scalable and Controllable High-fidelity Simulator for Autonomous Driving</a>
+                <a href="https://arxiv.org/abs/2608.29379" target="_blank" class="p-title">Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2511.22187/2511.22187v4/figs_acmm/0_teaser_v2_zip.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    HybridWorldSim is a novel hybrid simulation framework that enhances autonomous driving by integrating neural reconstruction and generative modeling for high-fidelity, scalable, and controllable driving scenarios.
+                    The paper presents a method that integrates large language models with collision-aware scene modeling to enhance safe robotic manipulation in cluttered environments, achieving significant task success rates.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -313,45 +444,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 中国科学技术大学</span>
+                    <span class="source-badge">🏛 哈尔滨工业大学</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2603.19305" target="_blank" class="p-title">PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking</a>
+                <a href="https://arxiv.org/abs/2608.28693" target="_blank" class="p-title">RoboGesture: Real-Time Semantic-aligned Co-Speech Gestures Generation for Humanoid Interaction</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2603.19305/2603.19305v3/method.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    PhyGile introduces a physics-prefix guided framework for generating agile humanoid motions, enhancing real-world execution stability and overcoming limitations of existing motion retargeting methods.
-                </div>
-            </div>
-            <div class="glow-bar" style="background:#00e676;"></div>
-        </div>
-        
-        <div class="paper-card">
-            <div class="card-left">
-                <div class="score-circle" style="border-color:#00e676; color:#00e676">94.0</div>
-            </div>
-            <div class="card-content">
-                <div class="card-header">
-                    <span class="source-badge">🏛 斯坦福大学</span>
-                    <span class="date-badge">2026-09-01</span>
-                </div>
-                <a href="https://arxiv.org/abs/2608.24101" target="_blank" class="p-title">TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks</a>
-
-                
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2608.24101/2608.24101v2/img/splash.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
-
-                <div class="p-abstract">
-                    TrAct enhances robot decision-making by using visual tracks as an embodiment-agnostic interface for improved action prediction and world modeling, significantly boosting task success rates.
+                    RoboGesture is a framework enabling humanoid robots to generate synchronized, semantically rich gestures in real-time by integrating audio cues and ensuring safety during interactions.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -363,20 +464,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 香港中文大学(CUHK)</span>
+                    <span class="source-badge">🏛 苏黎世联邦理工学院(ETH Zürich)</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2608.29242" target="_blank" class="p-title">AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization</a>
+                <a href="https://arxiv.org/abs/2608.29769" target="_blank" class="p-title">Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2608.29242/2608.29242v1/method_figure_v2.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    AnyWorld is a framework that generates diverse robot-native experiences from human egocentric videos, enhancing manipulation performance through independent recomposition of actions, viewpoints, and embodiments.
+                    The paper presents a reinforcement-learning-based control system enabling humanoid robots to agilely traverse sparse 3D structures using lidar for perception and task-specific training.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -394,14 +490,9 @@
                 <a href="https://arxiv.org/abs/2604.03540" target="_blank" class="p-title">Drift-Based Policy Optimization: Native One-Step Policy Learning for Online Robot Control</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2604.03540/2604.03540v4/framework_final.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    The paper introduces Drift-Based Policy Optimization, enhancing robotic control by enabling one-step policy learning with improved success rates and reduced inference times.
+                    The paper introduces Drift-Based Policy Optimization, enhancing online robot control by enabling one-step generative policies that significantly reduce inference time while improving task success rates.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -413,20 +504,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 香港中文大学(CUHK)</span>
+                    <span class="source-badge">🏛 浙江大学</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2608.29516" target="_blank" class="p-title">Task-Relevant Feature-Dynamics Fidelity Enables Zero-Shot Sim-to-Real Transfer for Robotic Ultrasound Scanning</a>
+                <a href="https://arxiv.org/abs/2602.09888" target="_blank" class="p-title">TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2608.29516/2608.29516v1/figs/1.1.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    The paper introduces a TR-FDF-oriented ultrasound simulator that enhances zero-shot sim-to-real transfer for robotic ultrasound scanning by ensuring task-relevant feature dynamics fidelity.
+                    TriPilot-FF is an open-source teleoperation system for mobile manipulators that enhances coordination through foot-operated pedals with haptic feedback and bimanual control.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -438,20 +524,15 @@
             </div>
             <div class="card-content">
                 <div class="card-header">
-                    <span class="source-badge">🏛 哈尔滨工业大学</span>
+                    <span class="source-badge">🏛 新加坡国立大学 (NUS)</span>
                     <span class="date-badge">2026-09-01</span>
                 </div>
-                <a href="https://arxiv.org/abs/2608.28693" target="_blank" class="p-title">RoboGesture: Real-Time Semantic-aligned Co-Speech Gestures Generation for Humanoid Interaction</a>
+                <a href="https://arxiv.org/abs/2608.29114" target="_blank" class="p-title">CGFM-Nav: Cognitive Graph-Field Memory for Semantic-Guided Lifelong Multimodal Embodied Navigation</a>
 
                 
-            <div class="p-image-container">
-                <img src="https://arxiv.org/html/2608.28693/2608.28693v1/pipeline_v3.png" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            
 
                 <div class="p-abstract">
-                    RoboGesture is a framework enabling humanoid robots to generate real-time, semantically aligned gestures in response to human speech, overcoming dataset scarcity and safety challenges.
+                    CGFM-Nav enhances Vision-and-Language Navigation by integrating Cognitive Graph-Field Memory for improved semantic memory and exploration, achieving notable performance gains in navigation tasks.
                 </div>
             </div>
             <div class="glow-bar" style="background:#00e676;"></div>
@@ -470,7 +551,7 @@
                 if (isAutoScrolling) {
                     // 增加滚动位置
                     scrollContainer.scrollTop += scrollSpeed;
-                    
+
                     // 边界检测：使用 Math.ceil 并预留 2px 误差范围确保触发回弹
                     if (Math.ceil(scrollContainer.scrollTop + scrollContainer.clientHeight) >= scrollContainer.scrollHeight - 2) {
                         scrollContainer.scrollTop = 0; 
