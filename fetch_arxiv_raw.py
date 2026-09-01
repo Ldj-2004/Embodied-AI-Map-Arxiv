@@ -238,12 +238,22 @@ def parse_record(record, source_oai_date):
         "id": arxiv_id,
         "title": title,
         "abstract": abstract,
+
+        # 兼容旧数据库：date 仍保留 arXiv metadata 中的 created 日期（作者最初提交日期）。
         "date": date_created_str,
+
+        # 明确区分两个时间语义：
+        # submitted_date: 作者最初提交到 arXiv 的日期；
+        # release_date:   本论文进入当前 arXiv 发布/OAI 批次的日期。
+        "submitted_date": date_created_str,
+        "release_date": source_oai_date,
+
         "categories": categories,
         "authors_display": ", ".join(authors_list[:5]),
         "link": f"https://arxiv.org/abs/{strip_version(arxiv_id)}",
         "html_content": None,
-        # 第二道保险：Inference 会检查这个批次字段，旧 legacy raw 没有它就拒绝处理。
+
+        # 保留原字段供旧版 Inference / Dashboard 兼容。
         "source_oai_date": source_oai_date,
     }
 
