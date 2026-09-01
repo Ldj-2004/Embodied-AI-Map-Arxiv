@@ -7,7 +7,6 @@ import datetime
 import json
 import os
 
-
 # ================= 1. 视觉与配置系统 =================
 
 # 修复后的深色主题 (包含所有必要的键)
@@ -38,23 +37,7 @@ THEME = {
 REGION_CONFIG = {
     "China": {"loc": [35.0, 105.0], "zoom": 4},
     "USA": {"loc": [38.0, -97.0], "zoom": 4},
-    "Europe": {"loc": [50.0, 10.0], "zoom": 4},
 }
-
-# 右侧榜单的 history fallback 使用最近 3 个日历日的数据窗口。
-HISTORY_HOT_WINDOW_DAYS = 3
-
-
-def parse_paper_date(value):
-    try:
-        return datetime.datetime.strptime(str(value)[:10], "%Y-%m-%d").date()
-    except (TypeError, ValueError):
-        return None
-
-
-def paper_freshness_date(paper):
-    """优先使用新版 pipeline 的 OAI batch 日期；旧历史数据则退回论文 created 日期。"""
-    return parse_paper_date(paper.get("source_oai_date")) or parse_paper_date(paper.get("date"))
 
 
 def smart_wrap(text, limit=40):
@@ -80,8 +63,6 @@ class DataEngine:
         self.companies = []
         self.heat_data = []
         self.hot_papers = []
-        self.hot_papers_date = None
-        self.hot_papers_mode = "daily"
         self.history_data = {}
         self.daily_data = {}
         self.lab_to_parent = {}  # [新增] 实验室到学校/公司的映射字典
@@ -177,93 +158,27 @@ class DataEngine:
         # --- 处理右下角榜单 ---
         self._process_daily_hot_papers()
 
-    def _flatten_paper_db(self, db):
-        """把 {机构: [论文]} 拍平成按 URL 去重的论文列表，并保留展示来源。"""
+    def _process_daily_hot_papers(self):
+        """处理今日高分论文，用于侧边栏展示"""
         flat_list = []
         seen_urls = set()
 
-        if not isinstance(db, dict):
-            return flat_list
-
-        for source_lab, papers in db.items():
-            if not isinstance(papers, list):
-                continue
-
+        for source_lab, papers in self.daily_data.items():
+            # [新增] 尝试将实验室名转换为学校名，如果找不到则用原名
             display_source = self.lab_to_parent.get(source_lab, source_lab)
-            for paper in papers:
-                if not isinstance(paper, dict):
-                    continue
-                url = paper.get('url')
-                if not url or url in seen_urls:
-                    continue
-                seen_urls.add(url)
 
-                p_copy = paper.copy()
-                p_copy['source'] = display_source
-                p_copy['score'] = paper.get('score', 0) or 0
+            for p in papers:
+                if p['url'] in seen_urls: continue
+                seen_urls.add(p['url'])
+
+                p_copy = p.copy()
+                p_copy['source'] = display_source  # 使用学校名
+                p_copy['score'] = p.get('score', 0)
                 flat_list.append(p_copy)
 
-        return flat_list
+        flat_list.sort(key=lambda x: x['score'], reverse=True)
+        self.hot_papers = flat_list[:10]
 
-    def _process_daily_hot_papers(self):
-        """
-        处理右侧 Top Papers，并加入第三道安全保护：
-
-        1. daily 正常且不落后于 history -> 使用 daily；
-        2. daily 为空，或明显比 history 陈旧 -> 自动从最新 history 恢复；
-        3. 因此即使 daily_papers.json 意外停在 1 月，也不会再次发布 1 月榜单。
-        """
-        daily_flat = self._flatten_paper_db(self.daily_data)
-        history_flat = self._flatten_paper_db(self.history_data)
-
-        daily_dates = [paper_freshness_date(p) for p in daily_flat]
-        daily_dates = [d for d in daily_dates if d]
-        history_dates = [paper_freshness_date(p) for p in history_flat]
-        history_dates = [d for d in history_dates if d]
-
-        daily_latest = max(daily_dates) if daily_dates else None
-        history_latest = max(history_dates) if history_dates else None
-
-        use_history_fallback = False
-        fallback_reason = None
-
-        if not daily_flat:
-            use_history_fallback = True
-            fallback_reason = "daily_papers.json 为空"
-        elif history_latest and (daily_latest is None or daily_latest < history_latest):
-            use_history_fallback = True
-            fallback_reason = (
-                f"daily 最新日期 {daily_latest or 'Unknown'} 落后于 history {history_latest}"
-            )
-
-        if use_history_fallback and history_flat and history_latest:
-            cutoff = history_latest - datetime.timedelta(days=HISTORY_HOT_WINDOW_DAYS - 1)
-            candidates = [
-                p for p in history_flat
-                if paper_freshness_date(p) and paper_freshness_date(p) >= cutoff
-            ]
-
-            # fallback 时先按 AI score，再按日期；仍然保留你原来的“高分论文”语义。
-            candidates.sort(
-                key=lambda p: (float(p.get('score', 0) or 0), paper_freshness_date(p) or datetime.date.min),
-                reverse=True,
-            )
-            self.hot_papers = candidates[:10]
-            self.hot_papers_date = history_latest.strftime('%Y-%m-%d')
-            self.hot_papers_mode = "history_fallback"
-            print(f"⚠️ [榜单保护] {fallback_reason}；改用最新 history 数据，日期={self.hot_papers_date}。")
-            return
-
-        # daily 正常：按 score 排序。这里不按论文 created date 过滤，
-        # 因为同一个 OAI batch 中可能包含近几天创建但当天才进入 OAI 的论文。
-        daily_flat.sort(key=lambda p: float(p.get('score', 0) or 0), reverse=True)
-        self.hot_papers = daily_flat[:10]
-        self.hot_papers_date = daily_latest.strftime('%Y-%m-%d') if daily_latest else None
-        self.hot_papers_mode = "daily"
-        print(f"✅ [榜单数据] 使用 daily_papers.json，最新批次日期={self.hot_papers_date or 'Unknown'}。")
-
-
-# ================= 3. 地图生成器 (3-Tabs 结构) =================
 
 # ================= 3. 地图生成器 (3-Tabs 结构) =================
 
@@ -422,8 +337,6 @@ class MapGenerator:
         """
 
     def generate_map(self, region, config):
-        # CARTO 目前匿名 raster basemap 会显示 API KEY REQUIRED 水印。
-        # 改用无需 API key 的 OpenStreetMap 标准瓦片，并继续通过下方 CSS 做深色霓虹滤镜。
         m = folium.Map(
             location=config["loc"],
             zoom_start=config["zoom"],
@@ -431,6 +344,8 @@ class MapGenerator:
             zoom_control=False
         )
 
+        # 使用无需 CARTO API Key 的 OpenStreetMap 底图。
+        # 下方 CSS 滤镜继续负责深色霓虹风格。
         folium.TileLayer(
             tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
             attr='&copy; OpenStreetMap contributors',
@@ -515,25 +430,15 @@ class MapGenerator:
     def _filter_region(self, target_region, item_region):
         if target_region == "China":
             return 'China' in item_region or 'Singapore' in item_region
-        elif target_region == "Europe":
-            return item_region in ['Europe', 'UK', 'Germany', 'Switzerland', 'Norway']
-        else:
-            return target_region.lower() in item_region.lower()
+        return target_region.lower() in item_region.lower()
 
 
 # ================= 4. 仪表盘生成 (视觉升级: 巨型卡片 + 丰富信息) =================
-
 beijing_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
 
 
-def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mode="daily"):
+def create_dashboard(map_files, hot_papers):
     recs_html = ""
-
-    feed_title = "LATEST TOP PAPERS"
-    if hot_papers_mode == "history_fallback":
-        feed_status = f"● HISTORY FALLBACK · {hot_papers_date or 'LATEST'}"
-    else:
-        feed_status = f"● AI RANKING · {hot_papers_date or 'LATEST'}"
 
     if not hot_papers:
         recs_html = "<div style='padding:20px; color:#64748b; text-align:center;'>Waiting for daily updates...</div>"
@@ -552,16 +457,8 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
         if not summary_text or summary_text == "No summary available.":
             summary_text = p.get('abstract', 'No details provided.')[:120] + "..."
 
-        # 主图 HTML 处理逻辑
-        teaser_url = p.get('teaser_image')
+        # 不展示论文图片，仅保留文字内容
         teaser_html = ""
-        if teaser_url:
-            teaser_html = f"""
-            <div class="p-image-container">
-                <img src="{teaser_url}" class="p-teaser" alt="Teaser Image" loading="lazy" 
-                     onerror="this.parentElement.style.display='none';">
-            </div>
-            """
 
         recs_html += f"""
         <div class="paper-card">
@@ -606,14 +503,11 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
                 font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                 height: 100vh; overflow: hidden;
                 display: grid;
-                /* 修改布局：左侧三个地图等高，右侧列表铺满全高 */
-                grid-template-rows: 60px 1fr 1fr 1fr; 
+                grid-template-rows: 60px 1fr;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas: 
+                grid-template-areas:
                     "header header"
-                    "map1 feed"
-                    "map2 feed"
-                    "map3 feed";
+                    "left feed";
                 gap: 4px;
                 background: #000;
             }}
@@ -652,10 +546,109 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
                 right: 30px;
             }}
 
-            .area-map1 {{ grid-area: map1; }}
-            .area-map2 {{ grid-area: map2; }}
-            .area-map3 {{ grid-area: map3; }}
+            .area-left {{ grid-area: left; }}
             .area-feed {{ grid-area: feed; }}
+
+            .left-panel {{
+                height: 100%;
+                min-height: 0;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                gap: 4px;
+            }}
+
+            .overview-panel {{
+                min-height: 0;
+                background:
+                    radial-gradient(circle at top left, rgba(0, 229, 255, 0.08), transparent 34%),
+                    linear-gradient(135deg, #0b1121 0%, #0f172a 100%);
+                border: 1px solid #1e293b;
+                padding: 18px 20px 16px 20px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+            }}
+
+            .overview-panel::before {{
+                content: "";
+                position: absolute;
+                left: 0; top: 0; bottom: 0;
+                width: 3px;
+                background: linear-gradient(180deg, var(--accent-uni), #a78bfa);
+                box-shadow: 0 0 14px rgba(0,229,255,0.55);
+            }}
+
+            .overview-title {{
+                color: #f8fafc;
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: 1.5px;
+                margin: 0 0 16px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }}
+
+            .overview-title::after {{
+                content: "";
+                height: 1px;
+                flex: 1;
+                background: linear-gradient(90deg, rgba(0,229,255,0.55), transparent);
+            }}
+
+            .overview-list {{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 10px;
+                height: calc(100% - 48px);
+            }}
+
+            .overview-item {{
+                display: grid;
+                grid-template-columns: 36px 1fr;
+                gap: 14px;
+                align-items: center;
+                padding: 12px 16px;
+                background: rgba(30, 41, 59, 0.42);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 8px;
+                min-height: 0;
+            }}
+
+            .overview-num {{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--accent-uni);
+                border: 1px solid rgba(0,229,255,0.45);
+                background: rgba(0,229,255,0.08);
+                font-size: 14px;
+                font-weight: 800;
+                box-shadow: inset 0 0 10px rgba(0,229,255,0.08);
+            }}
+
+            .overview-text {{
+                color: #cbd5e1;
+                font-size: 16px;
+                line-height: 1.6;
+                letter-spacing: 0.05px;
+            }}
+
+            .overview-text strong {{
+                color: #f8fafc;
+                font-weight: 700;
+            }}
+
+            .maps-row {{
+                min-height: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4px;
+            }}
 
             .grid-item {{
                 position: relative;
@@ -766,32 +759,67 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
             </div>
         </div>
 
-        <div class="grid-item area-map1">
-            <div class="map-label" style="border-left-color: var(--accent-comp);">
-                <div class="map-title">CHINA / APAC</div>
-            </div>
-            <iframe src="{map_files['China']}"></iframe>
-        </div>
+        <div class="area-left">
+            <div class="left-panel">
 
-        <div class="grid-item area-map2">
-            <div class="map-label" style="border-left-color: #3b82f6;">
-                <div class="map-title">NORTH AMERICA</div>
-            </div>
-            <iframe src="{map_files['USA']}"></iframe>
-        </div>
+                <div class="overview-panel">
+                    <div class="overview-title">今日概览</div>
 
-        <div class="grid-item area-map3">
-            <div class="map-label" style="border-left-color: var(--accent-uni);">
-                <div class="map-title">EUROPE</div>
+                    <div class="overview-list">
+                        <div class="overview-item">
+                            <div class="overview-num">1</div>
+                            <div class="overview-text">
+                                <strong>北航与 XiaoyuBot 发布 MAGP</strong>，将前馈三维重建从「相对几何」推进到「度量几何」，操控基准绝对误差降低一个数量级。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">2</div>
+                            <div class="overview-text">
+                                <strong>香港科技大学 StarVLA 团队开源 VLAct</strong>，以表征中心预训练在 16 GPU 上追平甚至超越工业级大规模 VLA，并以 20% 数据反超 GR00T-N1.6 全量基线。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">3</div>
+                            <div class="overview-text">
+                                <strong>南京大学、中科院自动化所等提出 Mind-VLA</strong>，以指令感知 3D 表征对齐让 345M 紧凑模型在目标遮挡任务上较场景级 VGGT 对照组提升 26 个百分点。
+                            </div>
+                        </div>
+
+                        <div class="overview-item">
+                            <div class="overview-num">4</div>
+                            <div class="overview-text">
+                                <strong>VLA 三条攻坚战线</strong>（度量感知、表征中心训练、指令感知对齐）首次在同一日报窗口内集体亮相，标志具身基础模型从参数竞争走向几何-数据-语义联合精修。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="maps-row">
+                    <div class="grid-item">
+                        <div class="map-label" style="border-left-color: var(--accent-comp);">
+                            <div class="map-title">CHINA / APAC</div>
+                        </div>
+                        <iframe src="{map_files['China']}"></iframe>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="map-label" style="border-left-color: #3b82f6;">
+                            <div class="map-title">NORTH AMERICA</div>
+                        </div>
+                        <iframe src="{map_files['USA']}"></iframe>
+                    </div>
+                </div>
+
             </div>
-            <iframe src="{map_files['Europe']}"></iframe>
         </div>
 
         <div class="grid-item area-feed">
             <div class="rec-container">
                 <div class="rec-header">
-                    <div class="rec-title"> {feed_title}</div>
-                    <div class="live-indicator">{feed_status}</div>
+                    <div class="rec-title"> DAILY TOP PAPERS</div>
+                    <div class="live-indicator">● AI RANKING</div>
                 </div>
                 <div class="rec-list" id="auto-scroller">{recs_html}</div>
             </div>
@@ -807,7 +835,7 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
                 if (isAutoScrolling) {{
                     // 增加滚动位置
                     scrollContainer.scrollTop += scrollSpeed;
-                    
+
                     // 边界检测：使用 Math.ceil 并预留 2px 误差范围确保触发回弹
                     if (Math.ceil(scrollContainer.scrollTop + scrollContainer.clientHeight) >= scrollContainer.scrollHeight - 2) {{
                         scrollContainer.scrollTop = 0; 
@@ -830,6 +858,7 @@ def create_dashboard(map_files, hot_papers, hot_papers_date=None, hot_papers_mod
         f.write(html_content)
     print(">>> Dashboard index generated with Auto-Scroll!")
 
+
 # ================= 5. 主程序 =================
 
 def main():
@@ -846,8 +875,8 @@ def main():
         map_files[name] = filename
         print(f"  > Map generated: {filename}")
 
-    create_dashboard(map_files, data.hot_papers, data.hot_papers_date, data.hot_papers_mode)
-    print("\n✅ V4 完成！地图色调已调亮为深蓝，Icon弹窗逻辑已重构。")
+    create_dashboard(map_files, data.hot_papers)
+    print("\n✅ Dashboard 完成：左侧今日概览 + China/USA 双地图，右侧论文榜单。")
 
 
 if __name__ == "__main__":
