@@ -29,36 +29,6 @@
       "debug_abstract": "Real-time embodied social interaction places two equally demanding requirements on an agent: continuously generating fluent multimodal interaction behavior, and proactively reasoning over accumulated dialogue and visual context to decide when to take initiative. These requirements must both be satisfied under a strict latency budget, making them difficult to meet simultaneously. We present ProAct, a dual-system framework that manages these time-critical requirements by integrating a low-latency Behavioral System for streaming multimodal interaction with a slower Cognitive System that performs long-horizon social reasoning and produces high-level proactive intentions. The Cognitive System incorporates an efficient memory mechanism and a user-motivation prediction module to reason over accumulated dialogue and visual context and determine when proactive intervention is appropriate. The Behavioral System further includes an intention-conditioned streaming flow-matching motion generator with a disentangled ControlNet branch, which translates deliberative intentions into continuous non-verbal behavior without disrupting interaction fluency. We deploy ProAct on a physical humanoid robot and validate the framework through comprehensive experiments, including real-world user studies, motion-generation benchmarks, and evaluation on ProActBench, a new, targeted benchmark for evaluating proactive trigger detection and restraint in embodied interaction."
     }
   ],
-  "HMI Lab": [
-    {
-      "title": "Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections",
-      "url": "https://arxiv.org/abs/2609.03591",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Jiafeng Xu, Qi Li, Yan Shen, Yiyu Ren, Travis Davies",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03591/2609.03591v1/images/dataset_overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Learning generalist policies for robust bimanual manipulation is bottlenecked by the scarcity of high quality large scale human demonstration data. In this work, we release 1,500 hours of diverse bimanual manipulation demonstrations covering everyday household tasks, and use this comprehensive corpus to train XR-2, a powerful vision-language-action (VLA) model. Enabled by a purpose built high throughput data pipeline and a carefully designed multi stage training paradigm, XR-2 attains strong manipulation performance in our systematic experiments while retaining favorable training efficiency and high data utilization. We further study two critical scaling axes: varying the amount of expert demonstration data, and post training on DAgger correction data from real time human interventions. In both settings, task success rate improves steadily over the data ranges we probe, exhibiting a clear consistent scaling trend at our current data scale. These results validate both the learning capacity of XR-2 and the promising scaling properties of the released dataset, which we open source to support reproducible research on bimanual robot manipulation learning."
-    },
-    {
-      "title": "ProAct: Harnessing Streaming Motion Generation and Agentic Reasoning for Real-Time Embodied Social Interaction",
-      "url": "https://arxiv.org/abs/2602.14048",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Zeyi Zhang, Zixi Kang, Ruijie Zhao, Yusen Feng, Biao Jiang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2602.14048/2602.14048v2/teaser.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Real-time embodied social interaction places two equally demanding requirements on an agent: continuously generating fluent multimodal interaction behavior, and proactively reasoning over accumulated dialogue and visual context to decide when to take initiative. These requirements must both be satisfied under a strict latency budget, making them difficult to meet simultaneously. We present ProAct, a dual-system framework that manages these time-critical requirements by integrating a low-latency Behavioral System for streaming multimodal interaction with a slower Cognitive System that performs long-horizon social reasoning and produces high-level proactive intentions. The Cognitive System incorporates an efficient memory mechanism and a user-motivation prediction module to reason over accumulated dialogue and visual context and determine when proactive intervention is appropriate. The Behavioral System further includes an intention-conditioned streaming flow-matching motion generator with a disentangled ControlNet branch, which translates deliberative intentions into continuous non-verbal behavior without disrupting interaction fluency. We deploy ProAct on a physical humanoid robot and validate the framework through comprehensive experiments, including real-world user studies, motion-generation benchmarks, and evaluation on ProActBench, a new, targeted benchmark for evaluating proactive trigger detection and restraint in embodied interaction."
-    }
-  ],
   "具身感知与交互实验室 (EPIC Lab)": [
     {
       "title": "Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections",
@@ -119,6 +89,36 @@
       "debug_abstract": "Real-time embodied social interaction places two equally demanding requirements on an agent: continuously generating fluent multimodal interaction behavior, and proactively reasoning over accumulated dialogue and visual context to decide when to take initiative. These requirements must both be satisfied under a strict latency budget, making them difficult to meet simultaneously. We present ProAct, a dual-system framework that manages these time-critical requirements by integrating a low-latency Behavioral System for streaming multimodal interaction with a slower Cognitive System that performs long-horizon social reasoning and produces high-level proactive intentions. The Cognitive System incorporates an efficient memory mechanism and a user-motivation prediction module to reason over accumulated dialogue and visual context and determine when proactive intervention is appropriate. The Behavioral System further includes an intention-conditioned streaming flow-matching motion generator with a disentangled ControlNet branch, which translates deliberative intentions into continuous non-verbal behavior without disrupting interaction fluency. We deploy ProAct on a physical humanoid robot and validate the framework through comprehensive experiments, including real-world user studies, motion-generation benchmarks, and evaluation on ProActBench, a new, targeted benchmark for evaluating proactive trigger detection and restraint in embodied interaction."
     }
   ],
+  "HMI Lab": [
+    {
+      "title": "Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections",
+      "url": "https://arxiv.org/abs/2609.03591",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Jiafeng Xu, Qi Li, Yan Shen, Yiyu Ren, Travis Davies",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03591/2609.03591v1/images/dataset_overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Learning generalist policies for robust bimanual manipulation is bottlenecked by the scarcity of high quality large scale human demonstration data. In this work, we release 1,500 hours of diverse bimanual manipulation demonstrations covering everyday household tasks, and use this comprehensive corpus to train XR-2, a powerful vision-language-action (VLA) model. Enabled by a purpose built high throughput data pipeline and a carefully designed multi stage training paradigm, XR-2 attains strong manipulation performance in our systematic experiments while retaining favorable training efficiency and high data utilization. We further study two critical scaling axes: varying the amount of expert demonstration data, and post training on DAgger correction data from real time human interventions. In both settings, task success rate improves steadily over the data ranges we probe, exhibiting a clear consistent scaling trend at our current data scale. These results validate both the learning capacity of XR-2 and the promising scaling properties of the released dataset, which we open source to support reproducible research on bimanual robot manipulation learning."
+    },
+    {
+      "title": "ProAct: Harnessing Streaming Motion Generation and Agentic Reasoning for Real-Time Embodied Social Interaction",
+      "url": "https://arxiv.org/abs/2602.14048",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Zeyi Zhang, Zixi Kang, Ruijie Zhao, Yusen Feng, Biao Jiang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2602.14048/2602.14048v2/teaser.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Real-time embodied social interaction places two equally demanding requirements on an agent: continuously generating fluent multimodal interaction behavior, and proactively reasoning over accumulated dialogue and visual context to decide when to take initiative. These requirements must both be satisfied under a strict latency budget, making them difficult to meet simultaneously. We present ProAct, a dual-system framework that manages these time-critical requirements by integrating a low-latency Behavioral System for streaming multimodal interaction with a slower Cognitive System that performs long-horizon social reasoning and produces high-level proactive intentions. The Cognitive System incorporates an efficient memory mechanism and a user-motivation prediction module to reason over accumulated dialogue and visual context and determine when proactive intervention is appropriate. The Behavioral System further includes an intention-conditioned streaming flow-matching motion generator with a disentangled ControlNet branch, which translates deliberative intentions into continuous non-verbal behavior without disrupting interaction fluency. We deploy ProAct on a physical humanoid robot and validate the framework through comprehensive experiments, including real-world user studies, motion-generation benchmarks, and evaluation on ProActBench, a new, targeted benchmark for evaluating proactive trigger detection and restraint in embodied interaction."
+    }
+  ],
   "南京大学": [
     {
       "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
@@ -147,6 +147,78 @@
       "teaser_image": "https://arxiv.org/html/2603.08383/2603.08383v2/teaser_v5.png",
       "source_oai_date": "2026-09-04",
       "debug_abstract": "Long-horizon indoor mobile manipulation (MoMa) requires robots to execute extended navigation-manipulation sequences whose feasibility depends on state changes induced by preceding skills. Vision-language models (VLMs) can decompose instructions into plausible skill sequences, but they do not reliably track such cumulative embodiment constraints or revise a plan when execution deviates from expectation. We present MoMaStage, a map-light framework for state-consistent planning and closed-loop execution in long-horizon indoor MoMa. MoMaStage couples a frozen VLM with robot execution through three mechanisms: (i) a hierarchical library of grounded, executable skills and a topology-only projection of a Skill-State Graph (SSG) that constrains the VLM's planning space; (ii) an SSG verifier that propagates scene-region and gripper-occupancy state to reject infeasible plans before execution; and (iii) an event-driven monitor that triggers graph-grounded repair only when an observed outcome invalidates the remaining plan. The SSG captures the compact embodiment state needed for skill sequencing without requiring a dense scene map, while geometric and contact-level conditions remain within the underlying controllers. Experiments in physics-rich simulation and on a real mobile manipulator show that MoMaStage improves planning validity and long-horizon execution survival over the evaluated baselines, while reducing latency and model token consumption."
+    }
+  ],
+  "Cheng Kar-Shun Robotics Institute (CKSRI)": [
+    {
+      "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2609.03729",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yijun Yang, Shenghe Zheng, Wenbo Li, Jianhui Liu, Haoze Sun",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03729/2609.03729v1/method_main.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Despite the remarkable prowess of Vision-Language Models (VLMs) in general multimodal tasks, they remain fundamentally ``flat'' when reasoning about the physical world. We argue that this spatial bottleneck stems from a profound dimensional mismatch: while VLMs are trained to interpret 2D projections, true spatial reasoning demands the recovery of latent 3D geometry and temporal continuity. To conquer this high-dimensional complexity, we advocate a shift from monolithic learning to a ``divide and conquer'' paradigm. We present FactoSR, a factorized reinforcement learning framework that explicitly interpret the dimensions collapsed by visual projection. At its core, FactoSR decomposes the monolithic problem of world-consistent reasoning into three orthogonal, geometric sub-objectives: planar correspondence ($XY$), depth consistency ($Z$), and temporal reversibility ($T$). By optimizing these verifiable constraints within a unified policy learning mechanism, we effectively transform an ill-posed projection recovery problem into a series of tangible reasoning steps. Extensive evaluations on multi-view and video benchmarks demonstrate that this elegant decomposition yields substantial gains in 3D and 4D reasoning, achieving a 5.9% boost on VSI-Bench and 4.5% on All-Angles-Bench. Our findings suggest that reinforcing explicit, factorized 4D consistency is a critical step toward evolving VLMs into robust, world-aware reasoners."
+    },
+    {
+      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+      "url": "https://arxiv.org/abs/2609.03483",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Shuning Zhang, Liang Li, Yunheng Wang, Tao Wang, Yihang Kang",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03483/2609.03483v1/figures/f2_overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN."
+    },
+    {
+      "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
+      "url": "https://arxiv.org/abs/2609.04070",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Ruoyu Yao, Yusen Xie, Qingzhao Liu, Pei Liu, Zewei Yang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.04070/2609.04070v1/framework_overview_v2-5.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency."
+    },
+    {
+      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
+      "url": "https://arxiv.org/abs/2609.03557",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
+    },
+    {
+      "title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2605.31343",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Sikai Guo, Yudong Zhong, Guoyang Zhao, Botao Dang, Zhihai Bi",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2605.31343/2605.31343v2/overview-final_cropped.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a \\rev{hierarchical exteroceptive encoder} to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, \\rev{decoupling the manipulation target from base height, roll, and pitch variations}. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
     }
   ],
   "Jun MA老师实验室": [
@@ -222,6 +294,78 @@
     }
   ],
   "机器人研究所 (CKSRI)": [
+    {
+      "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2609.03729",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yijun Yang, Shenghe Zheng, Wenbo Li, Jianhui Liu, Haoze Sun",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03729/2609.03729v1/method_main.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Despite the remarkable prowess of Vision-Language Models (VLMs) in general multimodal tasks, they remain fundamentally ``flat'' when reasoning about the physical world. We argue that this spatial bottleneck stems from a profound dimensional mismatch: while VLMs are trained to interpret 2D projections, true spatial reasoning demands the recovery of latent 3D geometry and temporal continuity. To conquer this high-dimensional complexity, we advocate a shift from monolithic learning to a ``divide and conquer'' paradigm. We present FactoSR, a factorized reinforcement learning framework that explicitly interpret the dimensions collapsed by visual projection. At its core, FactoSR decomposes the monolithic problem of world-consistent reasoning into three orthogonal, geometric sub-objectives: planar correspondence ($XY$), depth consistency ($Z$), and temporal reversibility ($T$). By optimizing these verifiable constraints within a unified policy learning mechanism, we effectively transform an ill-posed projection recovery problem into a series of tangible reasoning steps. Extensive evaluations on multi-view and video benchmarks demonstrate that this elegant decomposition yields substantial gains in 3D and 4D reasoning, achieving a 5.9% boost on VSI-Bench and 4.5% on All-Angles-Bench. Our findings suggest that reinforcing explicit, factorized 4D consistency is a critical step toward evolving VLMs into robust, world-aware reasoners."
+    },
+    {
+      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+      "url": "https://arxiv.org/abs/2609.03483",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Shuning Zhang, Liang Li, Yunheng Wang, Tao Wang, Yihang Kang",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03483/2609.03483v1/figures/f2_overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN."
+    },
+    {
+      "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
+      "url": "https://arxiv.org/abs/2609.04070",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Ruoyu Yao, Yusen Xie, Qingzhao Liu, Pei Liu, Zewei Yang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.04070/2609.04070v1/framework_overview_v2-5.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency."
+    },
+    {
+      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
+      "url": "https://arxiv.org/abs/2609.03557",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
+    },
+    {
+      "title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2605.31343",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Sikai Guo, Yudong Zhong, Guoyang Zhao, Botao Dang, Zhihai Bi",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2605.31343/2605.31343v2/overview-final_cropped.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a \\rev{hierarchical exteroceptive encoder} to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, \\rev{decoupling the manipulation target from base height, roll, and pitch variations}. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
+    }
+  ],
+  "Precognition Lab": [
     {
       "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
       "url": "https://arxiv.org/abs/2609.03729",
@@ -437,283 +581,7 @@
       "debug_abstract": "Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a \\rev{hierarchical exteroceptive encoder} to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, \\rev{decoupling the manipulation target from base height, roll, and pitch variations}. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
     }
   ],
-  "Precognition Lab": [
-    {
-      "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
-      "url": "https://arxiv.org/abs/2609.03729",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yijun Yang, Shenghe Zheng, Wenbo Li, Jianhui Liu, Haoze Sun",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03729/2609.03729v1/method_main.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Despite the remarkable prowess of Vision-Language Models (VLMs) in general multimodal tasks, they remain fundamentally ``flat'' when reasoning about the physical world. We argue that this spatial bottleneck stems from a profound dimensional mismatch: while VLMs are trained to interpret 2D projections, true spatial reasoning demands the recovery of latent 3D geometry and temporal continuity. To conquer this high-dimensional complexity, we advocate a shift from monolithic learning to a ``divide and conquer'' paradigm. We present FactoSR, a factorized reinforcement learning framework that explicitly interpret the dimensions collapsed by visual projection. At its core, FactoSR decomposes the monolithic problem of world-consistent reasoning into three orthogonal, geometric sub-objectives: planar correspondence ($XY$), depth consistency ($Z$), and temporal reversibility ($T$). By optimizing these verifiable constraints within a unified policy learning mechanism, we effectively transform an ill-posed projection recovery problem into a series of tangible reasoning steps. Extensive evaluations on multi-view and video benchmarks demonstrate that this elegant decomposition yields substantial gains in 3D and 4D reasoning, achieving a 5.9% boost on VSI-Bench and 4.5% on All-Angles-Bench. Our findings suggest that reinforcing explicit, factorized 4D consistency is a critical step toward evolving VLMs into robust, world-aware reasoners."
-    },
-    {
-      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
-      "url": "https://arxiv.org/abs/2609.03483",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Shuning Zhang, Liang Li, Yunheng Wang, Tao Wang, Yihang Kang",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03483/2609.03483v1/figures/f2_overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN."
-    },
-    {
-      "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
-      "url": "https://arxiv.org/abs/2609.04070",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Ruoyu Yao, Yusen Xie, Qingzhao Liu, Pei Liu, Zewei Yang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.04070/2609.04070v1/framework_overview_v2-5.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency."
-    },
-    {
-      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
-      "url": "https://arxiv.org/abs/2609.03557",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
-    },
-    {
-      "title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
-      "url": "https://arxiv.org/abs/2605.31343",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Sikai Guo, Yudong Zhong, Guoyang Zhao, Botao Dang, Zhihai Bi",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2605.31343/2605.31343v2/overview-final_cropped.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a \\rev{hierarchical exteroceptive encoder} to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, \\rev{decoupling the manipulation target from base height, roll, and pitch variations}. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
-    }
-  ],
-  "Cheng Kar-Shun Robotics Institute (CKSRI)": [
-    {
-      "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
-      "url": "https://arxiv.org/abs/2609.03729",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yijun Yang, Shenghe Zheng, Wenbo Li, Jianhui Liu, Haoze Sun",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03729/2609.03729v1/method_main.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Despite the remarkable prowess of Vision-Language Models (VLMs) in general multimodal tasks, they remain fundamentally ``flat'' when reasoning about the physical world. We argue that this spatial bottleneck stems from a profound dimensional mismatch: while VLMs are trained to interpret 2D projections, true spatial reasoning demands the recovery of latent 3D geometry and temporal continuity. To conquer this high-dimensional complexity, we advocate a shift from monolithic learning to a ``divide and conquer'' paradigm. We present FactoSR, a factorized reinforcement learning framework that explicitly interpret the dimensions collapsed by visual projection. At its core, FactoSR decomposes the monolithic problem of world-consistent reasoning into three orthogonal, geometric sub-objectives: planar correspondence ($XY$), depth consistency ($Z$), and temporal reversibility ($T$). By optimizing these verifiable constraints within a unified policy learning mechanism, we effectively transform an ill-posed projection recovery problem into a series of tangible reasoning steps. Extensive evaluations on multi-view and video benchmarks demonstrate that this elegant decomposition yields substantial gains in 3D and 4D reasoning, achieving a 5.9% boost on VSI-Bench and 4.5% on All-Angles-Bench. Our findings suggest that reinforcing explicit, factorized 4D consistency is a critical step toward evolving VLMs into robust, world-aware reasoners."
-    },
-    {
-      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
-      "url": "https://arxiv.org/abs/2609.03483",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Shuning Zhang, Liang Li, Yunheng Wang, Tao Wang, Yihang Kang",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03483/2609.03483v1/figures/f2_overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN."
-    },
-    {
-      "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
-      "url": "https://arxiv.org/abs/2609.04070",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Ruoyu Yao, Yusen Xie, Qingzhao Liu, Pei Liu, Zewei Yang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.04070/2609.04070v1/framework_overview_v2-5.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency."
-    },
-    {
-      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
-      "url": "https://arxiv.org/abs/2609.03557",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
-    },
-    {
-      "title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
-      "url": "https://arxiv.org/abs/2605.31343",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Sikai Guo, Yudong Zhong, Guoyang Zhao, Botao Dang, Zhihai Bi",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2605.31343/2605.31343v2/overview-final_cropped.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a \\rev{hierarchical exteroceptive encoder} to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, \\rev{decoupling the manipulation target from base height, roll, and pitch variations}. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
-    }
-  ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
-    {
-      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
-      "url": "https://arxiv.org/abs/2609.01938",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
-    },
-    {
-      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
-      "url": "https://arxiv.org/abs/2609.03067",
-      "date": "2026-09-02",
-      "submitted_date": "2026-09-02",
-      "release_date": "2026-09-04",
-      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
-    },
-    {
-      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
-      "url": "https://arxiv.org/abs/2608.24101",
-      "date": "2026-09-01",
-      "submitted_date": "2026-09-01",
-      "release_date": "2026-09-04",
-      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
-    }
-  ],
-  "Stanford AI Lab (SAIL)": [
-    {
-      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
-      "url": "https://arxiv.org/abs/2609.01938",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
-    },
-    {
-      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
-      "url": "https://arxiv.org/abs/2609.03067",
-      "date": "2026-09-02",
-      "submitted_date": "2026-09-02",
-      "release_date": "2026-09-04",
-      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
-    },
-    {
-      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
-      "url": "https://arxiv.org/abs/2608.24101",
-      "date": "2026-09-01",
-      "submitted_date": "2026-09-01",
-      "release_date": "2026-09-04",
-      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
-    }
-  ],
-  "斯坦福-视觉与学习实验室 (SVL)": [
-    {
-      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
-      "url": "https://arxiv.org/abs/2609.01938",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
-    },
-    {
-      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
-      "url": "https://arxiv.org/abs/2609.03067",
-      "date": "2026-09-02",
-      "submitted_date": "2026-09-02",
-      "release_date": "2026-09-04",
-      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
-    },
-    {
-      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
-      "url": "https://arxiv.org/abs/2608.24101",
-      "date": "2026-09-01",
-      "submitted_date": "2026-09-01",
-      "release_date": "2026-09-04",
-      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
-      "is_highlight": true,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
-    }
-  ],
-  "斯坦福-机器人与具身智能实验室 (REAL)": [
     {
       "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
       "url": "https://arxiv.org/abs/2609.01938",
@@ -801,6 +669,138 @@
       "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
     }
   ],
+  "斯坦福-视觉与学习实验室 (SVL)": [
+    {
+      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
+      "url": "https://arxiv.org/abs/2609.01938",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
+    },
+    {
+      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
+      "url": "https://arxiv.org/abs/2609.03067",
+      "date": "2026-09-02",
+      "submitted_date": "2026-09-02",
+      "release_date": "2026-09-04",
+      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
+    },
+    {
+      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+      "url": "https://arxiv.org/abs/2608.24101",
+      "date": "2026-09-01",
+      "submitted_date": "2026-09-01",
+      "release_date": "2026-09-04",
+      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
+    }
+  ],
+  "Stanford AI Lab (SAIL)": [
+    {
+      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
+      "url": "https://arxiv.org/abs/2609.01938",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
+    },
+    {
+      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
+      "url": "https://arxiv.org/abs/2609.03067",
+      "date": "2026-09-02",
+      "submitted_date": "2026-09-02",
+      "release_date": "2026-09-04",
+      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
+    },
+    {
+      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+      "url": "https://arxiv.org/abs/2608.24101",
+      "date": "2026-09-01",
+      "submitted_date": "2026-09-01",
+      "release_date": "2026-09-04",
+      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
+    }
+  ],
+  "斯坦福-机器人与具身智能实验室 (REAL)": [
+    {
+      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
+      "url": "https://arxiv.org/abs/2609.01938",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Satvik Sharma, Samrat Sahoo, Huang Huang, Fei-Fei Li, Jiajun Wu",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.01938/2609.01938v2/figures/method2.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines."
+    },
+    {
+      "title": "GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations",
+      "url": "https://arxiv.org/abs/2609.03067",
+      "date": "2026-09-02",
+      "submitted_date": "2026-09-02",
+      "release_date": "2026-09-04",
+      "authors_text": "Duncan Eddy, Isaac R. Ward, Grace Ra Kim, Mykel J. Kochenderfer",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03067/2609.03067v1/owm.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "World models are an emerging paradigm in representation learning in which an agent jointly learns state-action dynamics and observation models from offline trajectory data, enabling multi-step planning and trajectory prediction with uncertainty estimates. They have shown strong results in robotics and game environments, but, to the best of our knowledge, have not previously been applied to the space domain. This paper introduces a world model-based approach to cooperative and non-cooperative spacecraft rendezvous and proximity operations. First, we introduce an open-source, JAX-based International Space Station (ISS) docking environment supporting parallel GPU simulation of spacecraft orbit and attitude dynamics, generating the thousands of state-action transitions that world model training requires. Second, we introduce Out-of-this-World-Model, a transformer-based world model that encodes relative kinematic states and body-fixed camera imagery into a latent state and predicts its evolution under commanded thrusts and torques using one-step flow matching. It produces a distribution over future observations, capturing stochastic dynamics and per-timestep uncertainty, and outperforms DreamerV3-style posterior-correction baselines with fewer trainable parameters and hyperparameters. Third, we apply the approach to a capsule autonomously docking with the ISS under keep-out-zone constraints, demonstrating improved sample efficiency and task performance over reinforcement learning baselines (53% versus 29% docking success across ports), better out-of-distribution generalization (on held-out ports the world model more than doubles baseline success, 40% versus 17%), and detection of anomalous objects encountered during approach with 98% classification accuracy. We open-source the simulation environment and model architecture to enable further study of this paradigm."
+    },
+    {
+      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+      "url": "https://arxiv.org/abs/2608.24101",
+      "date": "2026-09-01",
+      "submitted_date": "2026-09-01",
+      "release_date": "2026-09-04",
+      "authors_text": "Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei",
+      "is_highlight": true,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2608.24101/2608.24101v3/img/splash.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
+    }
+  ],
   "机器人技术与系统国家重点实验室": [
     {
       "title": "Long-Horizon Consistent and Interaction-Aware World Models for Multi-Style End-to-End Driving",
@@ -815,122 +815,6 @@
       "teaser_image": "https://arxiv.org/html/2609.03225/2609.03225v1/overall_styledrive.png",
       "source_oai_date": "2026-09-04",
       "debug_abstract": "End-to-end autonomous driving has increasingly adopted world model-based reinforcement learning frameworks to improve learning efficiency through \\textit{imagined rollouts}. However, existing world models suffer from three key limitations: temporal inconsistency in long-horizon imagined rollouts, inadequate modeling of ego-environment interactions, and limited adaptability to diverse driving styles. To address these challenges, we propose \\textit{StyleDrive}, a world-model-based learning framework that jointly enforces long-horizon consistency, explicitly disentangles interactive traffic states, and supports multi-style policy optimization within a unified learning paradigm. First, we introduce a temporal consistency regularization that integrates historical latent states through gated cross-attention, stabilizing long-horizon imagined rollouts and mitigating error accumulation. Second, we design an explicit state disentanglement module that separates ego-relevant from ego-irrelevant interactive states, enabling more interpretable and efficient decision-making in complex traffic scenarios. Third, we enable multi-style driving behaviors through Group Relative Policy Optimization, which replaces per-step reward optimization with trajectory-wise relative advantages, reducing reward variance and supporting diverse driving styles without retraining. We evaluate StyleDrive on the Bench2Drive closed-loop driving benchmark, achieving a driving score of 88.44 (+17.08 over the previous best world model-based method) and a success rate of 66.82 (+16.58). Furthermore, we deploy StyleDrive on a real automated guided vehicle platform and demonstrate promising sim-to-real transfer capability in dynamic driving scenarios."
-    }
-  ],
-  "机器人控制实验室": [
-    {
-      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2609.03681",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Chenhao Zhang, Hanyu Zhao, Hang Cheng, Tengfei Pan, Long Zeng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03681/2609.03681v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts."
-    },
-    {
-      "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2608.03227",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yukang Gao, Yi Gu, Yangchen Zhou, Xingyu Chen, Zhaorui Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2608.03227/2608.03227v3/teaser.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experiments demonstrate that PFM-HR improves both single motion and general motion tracking, especially for highly dynamic motions."
-    },
-    {
-      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
-      "url": "https://arxiv.org/abs/2609.03557",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
-    },
-    {
-      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
-      "url": "https://arxiv.org/abs/2609.03276",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
-    }
-  ],
-  "智能系统与机器人实验室 (ISR Lab)": [
-    {
-      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2609.03681",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Chenhao Zhang, Hanyu Zhao, Hang Cheng, Tengfei Pan, Long Zeng",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03681/2609.03681v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts."
-    },
-    {
-      "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2608.03227",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yukang Gao, Yi Gu, Yangchen Zhou, Xingyu Chen, Zhaorui Wang",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2608.03227/2608.03227v3/teaser.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experiments demonstrate that PFM-HR improves both single motion and general motion tracking, especially for highly dynamic motions."
-    },
-    {
-      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
-      "url": "https://arxiv.org/abs/2609.03557",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
-    },
-    {
-      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
-      "url": "https://arxiv.org/abs/2609.03276",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
     }
   ],
   "智能技术与系统实验室": [
@@ -1049,7 +933,7 @@
       "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
     }
   ],
-  "MARS多模态学习实验室": [
+  "具身智能实验室 (TEA Lab)": [
     {
       "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
       "url": "https://arxiv.org/abs/2609.03681",
@@ -1092,22 +976,6 @@
       "source_oai_date": "2026-09-04",
       "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
     },
-    {
-      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
-      "url": "https://arxiv.org/abs/2609.03276",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
-    }
-  ],
-  "机器人与人工智能实验室 (RAIL)": [
     {
       "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
       "url": "https://arxiv.org/abs/2609.03276",
@@ -1181,7 +1049,7 @@
       "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
     }
   ],
-  "具身智能实验室 (TEA Lab)": [
+  "智能系统与机器人实验室 (ISR Lab)": [
     {
       "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
       "url": "https://arxiv.org/abs/2609.03681",
@@ -1224,6 +1092,138 @@
       "source_oai_date": "2026-09-04",
       "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
     },
+    {
+      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
+      "url": "https://arxiv.org/abs/2609.03276",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
+    }
+  ],
+  "机器人控制实验室": [
+    {
+      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2609.03681",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Chenhao Zhang, Hanyu Zhao, Hang Cheng, Tengfei Pan, Long Zeng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03681/2609.03681v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts."
+    },
+    {
+      "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
+      "url": "https://arxiv.org/abs/2608.03227",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yukang Gao, Yi Gu, Yangchen Zhou, Xingyu Chen, Zhaorui Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2608.03227/2608.03227v3/teaser.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experiments demonstrate that PFM-HR improves both single motion and general motion tracking, especially for highly dynamic motions."
+    },
+    {
+      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
+      "url": "https://arxiv.org/abs/2609.03557",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
+    },
+    {
+      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
+      "url": "https://arxiv.org/abs/2609.03276",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
+    }
+  ],
+  "MARS多模态学习实验室": [
+    {
+      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2609.03681",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Chenhao Zhang, Hanyu Zhao, Hang Cheng, Tengfei Pan, Long Zeng",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03681/2609.03681v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts."
+    },
+    {
+      "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
+      "url": "https://arxiv.org/abs/2608.03227",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yukang Gao, Yi Gu, Yangchen Zhou, Xingyu Chen, Zhaorui Wang",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2608.03227/2608.03227v3/teaser.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experiments demonstrate that PFM-HR improves both single motion and general motion tracking, especially for highly dynamic motions."
+    },
+    {
+      "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
+      "url": "https://arxiv.org/abs/2609.03557",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Haoyu Wang, Songchun Zhang, Haoran Li, Haoyang Huang, Zeyue Xue",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03557/2609.03557v1/overview.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Action-conditioned video models require large-scale visual data paired with control signals that are temporally aligned with the resulting scene transitions. Such supervision is difficult to obtain from ordinary real-world video because the actions that caused each visual change are typically unknown. We present a large-scale synthetic data production pipeline built on Unreal Engine for generating action-conditioned, multi-view video. To accommodate the different execution requirements of real-time physics and high-quality offline rendering, the pipeline executes trajectory generation and final rendering in two stages: Stage I runs real physics in PIE and records per-frame character states, control inputs, and camera states into an intermediate trajectory representation; Stage II replays those trajectories in a new engine process and renders them offline with Movie Render Queue (MRQ). Around this core, we develop a distributed production system with cache-aware task partitioning, node-local slot scheduling, automated scene screening, aesthetic and luminance filtering, partial-output recovery, asynchronous upload, and continuous cluster health monitoring. The production cluster contains 25 servers with eight NVIDIA RTX 5090 GPUs per server. From 2,384 asset packs, 429 levels were retained for production together with a pool of 40 humanoid characters. The pipeline has produced 2,691 hours of 1080p video and 6,076 hours of 720p video. We describe the system architecture, the implementation decisions that emerged from production failures, and the limitations of using perceptual quality proxies for world-model data curation. The pipeline described in this report constitutes the Unreal Engine synthetic-data production component used in EchoWM."
+    },
+    {
+      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
+      "url": "https://arxiv.org/abs/2609.03276",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Yidi Wang, Feixiang Ruan, Ruoqu Chen, Jie Yin, Yang Yu",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2609.03276/2609.03276v1/figure1.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes. To this end, we propose R2S-Eval, an evaluation pipeline that combines real-to-sim calibration with vision-language model (VLM) preference evaluation. The real-to-sim component efficiently generates rollout videos in a simulator calibrated to the real-world evaluation setting, thereby reducing the need for repeated hardware trials. The VLM evaluator assesses the execution quality of rollout videos and produces pairwise preferences, which are subsequently aggregated into policy rankings. We further introduce a protocol to assess whether the proposed evaluation pipeline yields validated policy conclusions while mitigating the key challenges of conventional real-world evaluation. Experiments in both simulation and real-world settings demonstrate that R2S-Eval produces reliable and stable policy conclusions, achieves agreement with human preferences, substantially reduces repeated hardware-operation effort, and reveals behavior-quality differences that are not captured by binary success labels. In general, R2S-Eval advances robot evaluation from manual success counting toward automated, statistically stable, and quality-aware evaluation of robot behavior. Project page: https://r2s-eval.github.io."
+    }
+  ],
+  "机器人与人工智能实验室 (RAIL)": [
     {
       "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
       "url": "https://arxiv.org/abs/2609.03276",
@@ -1375,36 +1375,6 @@
       "debug_abstract": "This paper presents a quantitative comparison between centralised and distributed multi-agent reinforcement learning (MARL) architectures for controlling a soft robotic arm modelled as a Cosserat rod in simulation. Using PyElastica and the OpenAI Gym interface, we train both a global Proximal Policy Optimisation (PPO) controller and a Multi-Agent PPO (MAPPO) under identical budgets. Both approaches are based on the arm having $n$ number of controlled sections. The study systematically varies $n$ and evaluates the performance of the arm to reach a fixed target in three scenarios: default baseline condition, recovery from external disturbance, and adaptation to actuator failure. Quantitative metrics used for the evaluation are mean action magnitude, mean final distance, mean episode length, and success rate. The results show that there are no significant benefits of the distributed policy when the number of controlled sections $n\\le4$. In very simple systems, when $n\\le2$, the centralised policy outperforms the distributed one. When $n$ increases to $4< n\\le 12$, the distributed policy shows a high sample efficiency. In these systems, distributed policy promotes a stronger success rate, resilience, and robustness under local observability and yields faster convergence given the same sample size. However, centralised policies achieve much higher time efficiency during training as it takes much less time to train the same size of samples. These findings highlight the trade-offs between centralised and distributed policy in reinforcement learning-based control for soft robotic systems and provide actionable design guidance for future sim-to-real transfer in soft rod-like manipulators."
     }
   ],
-  "NUS AI LAB": [
-    {
-      "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2609.04193",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Yupeng Zheng, Xiang Li, Songen Gu, Yuhang Zheng, Shuai Tian",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2609.04193/2609.04193v1/teaser.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy. We call this mismatch between visual richness and control utility the action-sufficiency gap. We investigate whether this gap can be bridged by guiding intermediate features to preserve three control-relevant structure in robotic manipulation: geometry governing motion feasibility, affordance encoding instruction-relevant entities, and goals grounding instructions in task-relevant regions. To this end, we present GIFT (Guided Intermediate Feature Training), an architecture-flexible framework for learning intermediate features that translates these structures into training-time constraints through geometry alignment, affordance prediction, and goal-region reconstruction. We instantiate GIFT in a Vision-Language-Action (VLA) policy, a direct-action World-Action Model (WAM), and an inverse-dynamics WAM while retaining each model's action formulation. Under zero-shot transfer to LIBERO-Plus, GIFT-VLA, GIFT-WAM-Fast, and GIFT-WAM-IDM outperform StarVLA-OFT, Fast-WAM, and Fast-WAM-IDM by 4.6, 12.6, and 5.2 points, reaching 79.6%, 72.6%, and 87.8%, respectively. On RoboCasa, the three GIFT variants reach 61.4%, 83.6%, and 82.3%, outperforming their counterparts by 12.6, 9.0, and 8.4 points, respectively. Together, these results establish learning functionally structured intermediate features as a reusable principle across model-specific action formulations, with especially large gains on articulated-object tasks and high-precision real-world manipulation under unseen visual and spatial perturbations. Project page: https://openphoenix-team.github.io/GIFT-pages."
-    },
-    {
-      "title": "A Quantitative Comparison of Centralised and Distributed Reinforcement Learning-Based Control for Soft Robotic Arms",
-      "url": "https://arxiv.org/abs/2511.02192",
-      "date": "2026-09-03",
-      "submitted_date": "2026-09-03",
-      "release_date": "2026-09-04",
-      "authors_text": "Linxin Hou, Qirui Wu, Zhihang Qin, Neil Banerjee, Yongxin Guo",
-      "is_highlight": false,
-      "score": 0,
-      "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2511.02192/2511.02192v3/r1.png",
-      "source_oai_date": "2026-09-04",
-      "debug_abstract": "This paper presents a quantitative comparison between centralised and distributed multi-agent reinforcement learning (MARL) architectures for controlling a soft robotic arm modelled as a Cosserat rod in simulation. Using PyElastica and the OpenAI Gym interface, we train both a global Proximal Policy Optimisation (PPO) controller and a Multi-Agent PPO (MAPPO) under identical budgets. Both approaches are based on the arm having $n$ number of controlled sections. The study systematically varies $n$ and evaluates the performance of the arm to reach a fixed target in three scenarios: default baseline condition, recovery from external disturbance, and adaptation to actuator failure. Quantitative metrics used for the evaluation are mean action magnitude, mean final distance, mean episode length, and success rate. The results show that there are no significant benefits of the distributed policy when the number of controlled sections $n\\le4$. In very simple systems, when $n\\le2$, the centralised policy outperforms the distributed one. When $n$ increases to $4< n\\le 12$, the distributed policy shows a high sample efficiency. In these systems, distributed policy promotes a stronger success rate, resilience, and robustness under local observability and yields faster convergence given the same sample size. However, centralised policies achieve much higher time efficiency during training as it takes much less time to train the same size of samples. These findings highlight the trade-offs between centralised and distributed policy in reinforcement learning-based control for soft robotic systems and provide actionable design guidance for future sim-to-real transfer in soft rod-like manipulators."
-    }
-  ],
   "Microsystem Engineering and Robotics": [
     {
       "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
@@ -1435,23 +1405,37 @@
       "debug_abstract": "This paper presents a quantitative comparison between centralised and distributed multi-agent reinforcement learning (MARL) architectures for controlling a soft robotic arm modelled as a Cosserat rod in simulation. Using PyElastica and the OpenAI Gym interface, we train both a global Proximal Policy Optimisation (PPO) controller and a Multi-Agent PPO (MAPPO) under identical budgets. Both approaches are based on the arm having $n$ number of controlled sections. The study systematically varies $n$ and evaluates the performance of the arm to reach a fixed target in three scenarios: default baseline condition, recovery from external disturbance, and adaptation to actuator failure. Quantitative metrics used for the evaluation are mean action magnitude, mean final distance, mean episode length, and success rate. The results show that there are no significant benefits of the distributed policy when the number of controlled sections $n\\le4$. In very simple systems, when $n\\le2$, the centralised policy outperforms the distributed one. When $n$ increases to $4< n\\le 12$, the distributed policy shows a high sample efficiency. In these systems, distributed policy promotes a stronger success rate, resilience, and robustness under local observability and yields faster convergence given the same sample size. However, centralised policies achieve much higher time efficiency during training as it takes much less time to train the same size of samples. These findings highlight the trade-offs between centralised and distributed policy in reinforcement learning-based control for soft robotic systems and provide actionable design guidance for future sim-to-real transfer in soft rod-like manipulators."
     }
   ],
-  "机器视觉与智能学习实验室 (MVIG)": [
+  "NUS AI LAB": [
     {
-      "title": "Causal Probing for Internal Visual Representations in Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2605.05593",
+      "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2609.04193",
       "date": "2026-09-03",
       "submitted_date": "2026-09-03",
       "release_date": "2026-09-04",
-      "authors_text": "Zehao Deng, Tianjie Ju, Zheng Wu, Liangbo He, Jun Lan",
+      "authors_text": "Yupeng Zheng, Xiang Li, Songen Gu, Yuhang Zheng, Shuai Tian",
       "is_highlight": false,
       "score": 0,
       "summary": "NO",
-      "teaser_image": "https://arxiv.org/html/2605.05593/2605.05593v3/x1.png",
+      "teaser_image": "https://arxiv.org/html/2609.04193/2609.04193v1/teaser.png",
       "source_oai_date": "2026-09-04",
-      "debug_abstract": "Despite the remarkable success of Multimodal Large Language Models (MLLMs) across diverse tasks, the internal mechanisms governing how they encode and ground distinct visual concepts remain poorly understood. To unravel these mechanisms, we propose a causal framework based on activation steering to actively probe and manipulate internal visual representations. Through systematic intervention across four visual concept categories, our results reveal a divergence in concept encoding: entity knowledge is distinctively localized, whereas abstract concepts are globally distributed across the network. Critically, this divergence uncovers a mechanistic driver of scaling laws: increasing model depth is indispensable for encoding distributed and complex abstract concepts, whereas entities maintain a consistently high degree of localization. Furthermore, reverse steering uncovers that blocking explicit output triggers a surge in latent activations, exposing a compensatory mechanism between perception and generation. Finally, by extending our analysis to visual reasoning, we expose a disconnect between perception and reasoning: although MLLMs successfully recognize geometric relations, they treat them merely as static visual features, failing to trigger the procedural execution necessary for solving problems."
+      "debug_abstract": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy. We call this mismatch between visual richness and control utility the action-sufficiency gap. We investigate whether this gap can be bridged by guiding intermediate features to preserve three control-relevant structure in robotic manipulation: geometry governing motion feasibility, affordance encoding instruction-relevant entities, and goals grounding instructions in task-relevant regions. To this end, we present GIFT (Guided Intermediate Feature Training), an architecture-flexible framework for learning intermediate features that translates these structures into training-time constraints through geometry alignment, affordance prediction, and goal-region reconstruction. We instantiate GIFT in a Vision-Language-Action (VLA) policy, a direct-action World-Action Model (WAM), and an inverse-dynamics WAM while retaining each model's action formulation. Under zero-shot transfer to LIBERO-Plus, GIFT-VLA, GIFT-WAM-Fast, and GIFT-WAM-IDM outperform StarVLA-OFT, Fast-WAM, and Fast-WAM-IDM by 4.6, 12.6, and 5.2 points, reaching 79.6%, 72.6%, and 87.8%, respectively. On RoboCasa, the three GIFT variants reach 61.4%, 83.6%, and 82.3%, outperforming their counterparts by 12.6, 9.0, and 8.4 points, respectively. Together, these results establish learning functionally structured intermediate features as a reusable principle across model-specific action formulations, with especially large gains on articulated-object tasks and high-precision real-world manipulation under unseen visual and spatial perturbations. Project page: https://openphoenix-team.github.io/GIFT-pages."
+    },
+    {
+      "title": "A Quantitative Comparison of Centralised and Distributed Reinforcement Learning-Based Control for Soft Robotic Arms",
+      "url": "https://arxiv.org/abs/2511.02192",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Linxin Hou, Qirui Wu, Zhihang Qin, Neil Banerjee, Yongxin Guo",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2511.02192/2511.02192v3/r1.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "This paper presents a quantitative comparison between centralised and distributed multi-agent reinforcement learning (MARL) architectures for controlling a soft robotic arm modelled as a Cosserat rod in simulation. Using PyElastica and the OpenAI Gym interface, we train both a global Proximal Policy Optimisation (PPO) controller and a Multi-Agent PPO (MAPPO) under identical budgets. Both approaches are based on the arm having $n$ number of controlled sections. The study systematically varies $n$ and evaluates the performance of the arm to reach a fixed target in three scenarios: default baseline condition, recovery from external disturbance, and adaptation to actuator failure. Quantitative metrics used for the evaluation are mean action magnitude, mean final distance, mean episode length, and success rate. The results show that there are no significant benefits of the distributed policy when the number of controlled sections $n\\le4$. In very simple systems, when $n\\le2$, the centralised policy outperforms the distributed one. When $n$ increases to $4< n\\le 12$, the distributed policy shows a high sample efficiency. In these systems, distributed policy promotes a stronger success rate, resilience, and robustness under local observability and yields faster convergence given the same sample size. However, centralised policies achieve much higher time efficiency during training as it takes much less time to train the same size of samples. These findings highlight the trade-offs between centralised and distributed policy in reinforcement learning-based control for soft robotic systems and provide actionable design guidance for future sim-to-real transfer in soft rod-like manipulators."
     }
   ],
-  "数字媒体与计算机视觉实验室": [
+  "IWIN-FINS实验室": [
     {
       "title": "Causal Probing for Internal Visual Representations in Multimodal Large Language Models",
       "url": "https://arxiv.org/abs/2605.05593",
@@ -1515,7 +1499,23 @@
       "debug_abstract": "Despite the remarkable success of Multimodal Large Language Models (MLLMs) across diverse tasks, the internal mechanisms governing how they encode and ground distinct visual concepts remain poorly understood. To unravel these mechanisms, we propose a causal framework based on activation steering to actively probe and manipulate internal visual representations. Through systematic intervention across four visual concept categories, our results reveal a divergence in concept encoding: entity knowledge is distinctively localized, whereas abstract concepts are globally distributed across the network. Critically, this divergence uncovers a mechanistic driver of scaling laws: increasing model depth is indispensable for encoding distributed and complex abstract concepts, whereas entities maintain a consistently high degree of localization. Furthermore, reverse steering uncovers that blocking explicit output triggers a surge in latent activations, exposing a compensatory mechanism between perception and generation. Finally, by extending our analysis to visual reasoning, we expose a disconnect between perception and reasoning: although MLLMs successfully recognize geometric relations, they treat them merely as static visual features, failing to trigger the procedural execution necessary for solving problems."
     }
   ],
-  "IWIN-FINS实验室": [
+  "数字媒体与计算机视觉实验室": [
+    {
+      "title": "Causal Probing for Internal Visual Representations in Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2605.05593",
+      "date": "2026-09-03",
+      "submitted_date": "2026-09-03",
+      "release_date": "2026-09-04",
+      "authors_text": "Zehao Deng, Tianjie Ju, Zheng Wu, Liangbo He, Jun Lan",
+      "is_highlight": false,
+      "score": 0,
+      "summary": "NO",
+      "teaser_image": "https://arxiv.org/html/2605.05593/2605.05593v3/x1.png",
+      "source_oai_date": "2026-09-04",
+      "debug_abstract": "Despite the remarkable success of Multimodal Large Language Models (MLLMs) across diverse tasks, the internal mechanisms governing how they encode and ground distinct visual concepts remain poorly understood. To unravel these mechanisms, we propose a causal framework based on activation steering to actively probe and manipulate internal visual representations. Through systematic intervention across four visual concept categories, our results reveal a divergence in concept encoding: entity knowledge is distinctively localized, whereas abstract concepts are globally distributed across the network. Critically, this divergence uncovers a mechanistic driver of scaling laws: increasing model depth is indispensable for encoding distributed and complex abstract concepts, whereas entities maintain a consistently high degree of localization. Furthermore, reverse steering uncovers that blocking explicit output triggers a surge in latent activations, exposing a compensatory mechanism between perception and generation. Finally, by extending our analysis to visual reasoning, we expose a disconnect between perception and reasoning: although MLLMs successfully recognize geometric relations, they treat them merely as static visual features, failing to trigger the procedural execution necessary for solving problems."
+    }
+  ],
+  "机器视觉与智能学习实验室 (MVIG)": [
     {
       "title": "Causal Probing for Internal Visual Representations in Multimodal Large Language Models",
       "url": "https://arxiv.org/abs/2605.05593",
@@ -1607,7 +1607,7 @@
       "debug_abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts."
     }
   ],
-  "集群机器人系统实验室 (MagicLab)": [
+  "智能人机交互实验室 (MemX)": [
     {
       "title": "MulDP: Multimodal Diffusion Policy for Autonomous Quadruped Parkour Navigation across Complex Terrains",
       "url": "https://arxiv.org/abs/2609.03984",
@@ -1639,7 +1639,7 @@
       "debug_abstract": "Quadruped robots have demonstrated impressive agility in parkour locomotion across complex terrains. However, most systems still rely on human intervention for high-level planning, and autonomous parkour navigation remains underexplored. The key challenges include fine-grained velocity regulation, long-horizon anticipatory behaviors, and tight coupling between perception and embodied execution. To address these challenges, we propose a Multimodal Diffusion Policy (MulDP) that integrates visual perception with robot proprioception and goal information to generate temporally coherent and anticipatory navigation velocity commands, tightly coupling perception with embodied control to enable robust autonomous navigation. To support the training of MulDP, we construct the first Quadruped Parkour Navigation Dataset (QPND), a multimodal dataset that encompasses diverse navigation behaviors and complex terrains. Extensive simulation and real-world experiments demonstrate that MulDP enables robust long-horizon autonomous navigation and effective traversal across complex terrains."
     }
   ],
-  "智能人机交互实验室 (MemX)": [
+  "集群机器人系统实验室 (MagicLab)": [
     {
       "title": "MulDP: Multimodal Diffusion Policy for Autonomous Quadruped Parkour Navigation across Complex Terrains",
       "url": "https://arxiv.org/abs/2609.03984",
