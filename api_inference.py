@@ -33,8 +33,8 @@ if not API_KEY:
 # 模型选择：性价比之选
 MODEL_NAME = "gpt-4o-mini"
 
-# 并发数 (API通常支持高并发，建议 20-50)
-MAX_WORKERS = 50
+# 并发数：中转 API 稳定性优先，避免 50 并发触发限流/拥塞
+MAX_WORKERS = 10
 
 # 输入输出
 INPUT_FILE = "raw_papers.json"
@@ -134,9 +134,11 @@ if not API_KEY:
 client = OpenAI(base_url=API_BASE, api_key=API_KEY)
 
 
-def call_llm(system_prompt, user_prompt, max_tokens=5): # 修改默认参数
-    """通用 API 调用函数"""
-    retries = 3
+def call_llm(system_prompt, user_prompt, max_tokens=5, strict=False, label="LLM"):
+    """通用 API 调用函数。strict=True 时失败直接抛错，禁止静默写入 NO/0。"""
+    retries = 5
+    last_error = None
+
     for i in range(retries):
         try:
             response = client.chat.completions.create(
@@ -145,14 +147,37 @@ def call_llm(system_prompt, user_prompt, max_tokens=5): # 修改默认参数
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=0.3, # 稍微提高随机性利于评分区分
-                max_tokens=max_tokens, # 使用传入的参数
-                timeout=20
+                temperature=0.3,
+                max_tokens=max_tokens,
+                timeout=60
             )
-            return response.choices[0].message.content.strip()
+
+            content = response.choices[0].message.content
+            if content is None or not str(content).strip():
+                raise RuntimeError("API 返回了空 content")
+
+            return str(content).strip()
+
         except Exception as e:
-            if i == retries - 1: return "NO"
-            time.sleep(1)
+            last_error = e
+            print(
+                f"⚠️ [{label}] API 调用失败 "
+                f"({i + 1}/{retries}): {type(e).__name__}: {e}"
+            )
+            if i < retries - 1:
+                wait_seconds = 2 ** i  # 1, 2, 4, 8 秒指数退避
+                print(f"   ↳ {wait_seconds}s 后重试...")
+                time.sleep(wait_seconds)
+
+    if strict:
+        raise RuntimeError(
+            f"❌ [{label}] 连续 {retries} 次 LLM 调用失败。"
+            f"为防止生成 score=0 / summary=NO 的假数据，本次任务终止。"
+            f"最后错误: {type(last_error).__name__}: {last_error}"
+        )
+
+    # Stage 1/2 保留原来的宽松行为：失败按 NO 处理。
+    return "NO"
 
 
 # ================= 3. 两阶段推理逻辑 =================
@@ -384,7 +409,13 @@ def analyze_paper_quality(verified_data):
 
         # 只生成总结，max_tokens 设小
         user_prompt = f"Title: {paper['title']}\nAbstract: {final_abstract}"
-        item['ai_summary'] = call_llm(summary_prompt, user_prompt, max_tokens=60)
+        item['ai_summary'] = call_llm(
+            summary_prompt,
+            user_prompt,
+            max_tokens=60,
+            strict=True,
+            label=f"Summary {paper.get('id', paper['title'][:30])}"
+        )
         return item
 
     # 并发处理总结
@@ -410,17 +441,38 @@ Use the full range when appropriate; avoid clustering scores. Assign a UNIQUE sc
 Output format: [Index] Score"""
 
     # 整个列表只发一次 API 请求！
-    rank_res = call_llm(ranking_system_prompt, paper_list_str, max_tokens=500)
+    rank_res = call_llm(
+        ranking_system_prompt,
+        paper_list_str,
+        max_tokens=500,
+        strict=True,
+        label="Ranking"
+    )
 
     # 解析排序结果 [Index] Score
+    parsed_indices = set()
     for line in rank_res.split('\n'):
-        match = re.search(r"\[(\d+)\]\s*([\d\.]+)", line)
+        match = re.search(r"\[(\d+)\]\s*[:=-]?\s*([\d]+(?:\.[\d]+)?)", line)
         if match:
             idx = int(match.group(1))
             score = float(match.group(2))
-            if idx < len(urls):
+            if idx < len(urls) and 0 <= score <= 100:
                 verified_data[urls[idx]]['ai_score'] = score
+                parsed_indices.add(idx)
 
+    # 评分响应格式异常时也不能静默把缺失项写成 0。
+    if len(parsed_indices) != len(urls):
+        missing = sorted(set(range(len(urls))) - parsed_indices)
+        print(f"❌ [Ranking] 原始返回内容:\n{rank_res}")
+        raise RuntimeError(
+            f"Ranking 解析不完整：期望 {len(urls)} 个分数，"
+            f"实际解析 {len(parsed_indices)} 个，缺失 index={missing}"
+        )
+
+    print(
+        f"✅ [Stage 3] 摘要生成完成；评分解析完成 "
+        f"({len(parsed_indices)}/{len(urls)})"
+    )
     return verified_data
 
 
@@ -598,4 +650,3 @@ def main():
 if __name__ == "__main__":
 
     main()
-
