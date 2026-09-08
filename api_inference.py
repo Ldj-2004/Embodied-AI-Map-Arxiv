@@ -431,47 +431,92 @@ def analyze_paper_quality(verified_data):
     for i, url in enumerate(urls):
         paper_list_str += f"[{i}] {verified_data[url]['paper']['title']}\n"
 
-    ranking_system_prompt = """You are a judge for the "Embodied AI & Robotics" top conference.
-Rank the following papers based on their RELEVANCE and CONTRIBUTION to Embodied AI (Physical World Agents).
+    ranking_system_prompt = f"""You are a judge for the "Embodied AI & Robotics" top conference.
+Score the following {len(urls)} papers based on their RELEVANCE and CONTRIBUTION to Embodied AI (Physical World Agents).
+
 Scoring Criteria (0-100):
 High Score (90+): Real-robot results, sim-to-real transfer, VLA (Vision-Language-Action) for control, world models/planning tied to actions.
 Mid Score (80-89): Vision/NLP/ML methods clearly enabling embodied tasks (perception->action, navigation, manipulation) with strong evidence of transferability.
 Low Score (<80): General AI methods with unclear or indirect link to physical agents, no action/control loop, or no credible robotics pathway.
-Use the full range when appropriate; avoid clustering scores. Assign a UNIQUE score to each paper. NO TIES.
-Output format: [Index] Score"""
 
-    # 整个列表只发一次 API 请求！
+IMPORTANT OUTPUT RULES:
+1. Score EVERY input paper exactly once.
+2. Keep the ORIGINAL index order: [0], [1], [2], ... [{len(urls) - 1}].
+3. NEVER repeat an index and NEVER omit an index.
+4. Do NOT sort/reorder papers by score.
+5. Output exactly {len(urls)} lines and nothing else.
+6. Format each line exactly as: [Index] Score
+7. Scores may repeat if necessary; index correctness is more important than forcing unique scores.
+"""
+
+    # 长列表容易触发输出截断。按论文数量动态给足输出空间。
+    ranking_max_tokens = max(800, min(2000, len(urls) * 18))
+
     rank_res = call_llm(
         ranking_system_prompt,
         paper_list_str,
-        max_tokens=500,
+        max_tokens=ranking_max_tokens,
         strict=True,
         label="Ranking"
     )
 
-    # 解析排序结果 [Index] Score
+    # 解析排序结果 [Index] Score。
+    # 对重复 index 只接受第一次出现，防止模型后续格式漂移覆盖前面的合理分数。
     parsed_indices = set()
-    for line in rank_res.split('\n'):
-        match = re.search(r"\[(\d+)\]\s*[:=-]?\s*([\d]+(?:\.[\d]+)?)", line)
-        if match:
-            idx = int(match.group(1))
-            score = float(match.group(2))
-            if idx < len(urls) and 0 <= score <= 100:
-                verified_data[urls[idx]]['ai_score'] = score
-                parsed_indices.add(idx)
+    duplicate_indices = []
+    invalid_lines = []
 
-    # 评分响应格式异常时也不能静默把缺失项写成 0。
-    if len(parsed_indices) != len(urls):
-        missing = sorted(set(range(len(urls))) - parsed_indices)
-        print(f"❌ [Ranking] 原始返回内容:\n{rank_res}")
-        raise RuntimeError(
-            f"Ranking 解析不完整：期望 {len(urls)} 个分数，"
-            f"实际解析 {len(parsed_indices)} 个，缺失 index={missing}"
+    for line in rank_res.split('\n'):
+        clean_line = line.strip()
+        if not clean_line:
+            continue
+
+        match = re.search(r"\[(\d+)\]\s*[:=-]?\s*([\d]+(?:\.[\d]+)?)", clean_line)
+        if not match:
+            invalid_lines.append(clean_line)
+            continue
+
+        idx = int(match.group(1))
+        score = float(match.group(2))
+
+        if not (0 <= idx < len(urls) and 0 <= score <= 100):
+            invalid_lines.append(clean_line)
+            continue
+
+        if idx in parsed_indices:
+            duplicate_indices.append(idx)
+            continue
+
+        verified_data[urls[idx]]['ai_score'] = score
+        parsed_indices.add(idx)
+
+    missing = sorted(set(range(len(urls))) - parsed_indices)
+
+    if duplicate_indices:
+        print(
+            f"⚠️ [Ranking] 检测到重复 index，已忽略后续重复值: "
+            f"{sorted(set(duplicate_indices))}"
         )
 
+    if invalid_lines:
+        print(
+            f"⚠️ [Ranking] 有 {len(invalid_lines)} 行无法解析，已忽略。"
+        )
+
+    # 容错策略：少量论文未获得有效 score 时，直接从本轮结果中删除，
+    # 防止 score=0 的假数据进入 daily_papers.json，同时不让整个 Action 失败。
+    if missing:
+        print(f"⚠️ [Ranking] 评分缺失 index={missing}")
+        for idx in missing:
+            url = urls[idx]
+            paper_title = verified_data[url]['paper'].get('title', url)
+            print(f"   🗑️ 删除未获得有效评分的论文 [{idx}]: {paper_title}")
+            verified_data.pop(url, None)
+
     print(
-        f"✅ [Stage 3] 摘要生成完成；评分解析完成 "
-        f"({len(parsed_indices)}/{len(urls)})"
+        f"✅ [Stage 3] 摘要生成完成；有效评分 "
+        f"{len(parsed_indices)}/{len(urls)}，"
+        f"最终保留 {len(verified_data)} 篇。"
     )
     return verified_data
 
