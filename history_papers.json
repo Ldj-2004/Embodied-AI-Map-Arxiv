@@ -8159,20 +8159,6 @@
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
     },
     {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
-    },
-    {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
       "url": "https://arxiv.org/abs/2606.03335",
       "date": "2026-10-06",
@@ -9769,20 +9755,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10479/2610.10479v1/fig_teaser.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
-    },
-    {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
     },
     {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
@@ -11383,20 +11355,6 @@
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
     },
     {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
-    },
-    {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
       "url": "https://arxiv.org/abs/2606.03335",
       "date": "2026-10-06",
@@ -12993,20 +12951,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10479/2610.10479v1/fig_teaser.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
-    },
-    {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
     },
     {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
@@ -14607,20 +14551,6 @@
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
     },
     {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
-    },
-    {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
       "url": "https://arxiv.org/abs/2606.03335",
       "date": "2026-10-06",
@@ -16217,20 +16147,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10479/2610.10479v1/fig_teaser.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from privileged object poses to visual observations and randomized simulation. The policy can interleave multiple observations and actions within one invocation, while the agent uses execution feedback to continue, retry, or revise its approach. A shared task-level interface carries the policy and accumulated experience to the real robot, where fresh observations and safety checks guide execution. Across 18 reconstructed scenes involving two robots, the mean four-view Depth MAE against reference depth estimates is 0.1057 m, the mean Lab $ΔE_{76}$ is 11.04, and the mean grayscale SSIM is 0.6990. In real-robot experiments, the aggregate task success rate reaches 80% of the simulation task success rate, indicating substantial retention of simulated performance on hardware. Code and reconstructed scene data will be made publicly available."
-    },
-    {
-      "title": "DistScene: Object-to-Scene Distillation for 3D Scene Generation",
-      "url": "https://arxiv.org/abs/2610.06960",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Kunming Luo, Hongyu Yan, Ken Deng, Chengcheng Zhou, Tianyu Liu",
-      "is_highlight": false,
-      "score": 72.0,
-      "summary": "DistScene introduces a novel framework for 3D scene generation that integrates environment modeling with object placement, enhancing spatial coherence through joint generation and refinement techniques.",
-      "teaser_image": "https://arxiv.org/html/2610.06960/2610.06960v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "We present DistScene, a framework for single-image compositional 3D scene generation by jointly modeling the environment and individual objects. Unlike existing methods that represent scenes primarily as collections of objects, we model the environment as an explicit scene component to provide geometric context for object placement. Specifically, we introduce Scene-Frame Generation, which jointly generates separate environment and object components in a shared coordinate frame, allowing their geometry and relative placement to be learned together. Then we introduce Object-Centric Refinement to refine each object in a local frame with scene context. Finally, we develop Object-to-Scene Distillation to transfer pretrained object-generation priors to scene generation through automatically composed and rendered synthetic scenes. Evaluations on indoor and outdoor benchmarks demonstrate improved scene-level spatial coherence over the evaluated baselines. Project page: https://coolbeam.github.io/DistScene/"
     },
     {
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
@@ -28807,20 +28723,6 @@
       "debug_abstract": "Vision-language models (VLMs) are increasingly used to detect whether AI-generated images contain visible artifacts, yet their ability to analyze such artifacts remains poorly understood. A correct image-level decision can still hide important failures: a model may correctly flag an artifact while relying on the wrong visual cue, selecting the wrong region, or describing a defect that the image does not support. To evaluate these behaviors directly, we introduce SalArt-VQA, a diagnostic benchmark for fine-grained SALient ARTifact understanding in AI-generated images. SalArt-VQA contains 950 images and 3,681 human-authored multiple-choice questions spanning artifact images, matched real reference images, and paired generated reference images. Four aligned question types evaluate presence detection, semantic localization, spatial grounding, and evidence-grounded defect identification, while the reference splits test calibration and abstention when the annotated defect is absent. Across 20 VLMs, SalArt-VQA reveals failures that image-level detection accuracy hides: the strongest model reaches 99.37% detection recall on artifact images but answers all four artifact-side questions correctly on only 53.26% of images. Comparing artifact images with artifact-free references reveals a sensitivity-calibration tradeoff: sensitive models often make unsupported artifact claims, while conservative models avoid false alarms largely by missing real artifacts. These results show that high artifact detection accuracy alone does not imply grounded artifact understanding. SalArt-VQA exposes these hidden failure modes and provides a fine-grained evaluation of whether VLM artifact claims are supported by local visual evidence."
     },
     {
-      "title": "Learning Modular Policy for Multi-Floor Object Navigation:A Factorized Framework for Diagnostic Study",
-      "url": "https://arxiv.org/abs/2610.06958",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Shichao Zhai, Shuhao Ye, Rong Xiong, Yue Wang",
-      "is_highlight": false,
-      "score": 84.0,
-      "summary": "This paper introduces a modular framework for multi-floor object navigation, utilizing a hierarchical factorization policy to enhance decision-making and diagnose performance bottlenecks.",
-      "teaser_image": "https://arxiv.org/html/2610.06958/2610.06958v1/fig2_0414.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Object-goal navigation (ObjectNav) in multi-floor scenarios presents a challenge due to sparse rewards caused by long-horizon decision-making. In this paper, we propose a diagnostic study based on a modular framework with an effective learnable policy to analyze failure factors in multi-floor scenarios. To achieve an effective policy for diagnosis, we design the hierarchical factorization policy that deconstructs a single global policy into an intra-floor exploration policy and an inter-floor switching policy. To providing an effective initialization for Reinforcement Learning (RL), the lightweight intra-floor policy is learned by distilling the exploration logic of Visual Language Models (VLMs). Under idealized assumptions, we show that the factorized policy is theoretically equivalent to a single global policy at the policy-representation level. Experiment results indicate that perception performance and stair climbing stability are the primary bottlenecks in multi-floor navigation."
-    },
-    {
       "title": "LoDEOT: Low-Dimensional and Efficient Offset Tokens for Building Footprint Extraction from Off-Nadir Imagery",
       "url": "https://arxiv.org/abs/2610.05899",
       "date": "2026-10-06",
@@ -32043,20 +31945,6 @@
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
     },
     {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
-    },
-    {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
       "url": "https://arxiv.org/abs/2610.07652",
       "date": "2026-10-06",
@@ -35251,20 +35139,6 @@
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
     },
     {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
-    },
-    {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
       "url": "https://arxiv.org/abs/2610.07652",
       "date": "2026-10-06",
@@ -38457,20 +38331,6 @@
       "teaser_image": "https://arxiv.org/html/2610.08791/2610.08791v1/teaser.png",
       "source_oai_date": "2026-10-07",
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
-    },
-    {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
     },
     {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
@@ -43559,20 +43419,6 @@
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
     },
     {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
-    },
-    {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
       "url": "https://arxiv.org/abs/2610.07652",
       "date": "2026-10-06",
@@ -46765,20 +46611,6 @@
       "teaser_image": "https://arxiv.org/html/2610.08791/2610.08791v1/teaser.png",
       "source_oai_date": "2026-10-07",
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
-    },
-    {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
     },
     {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
@@ -49975,20 +49807,6 @@
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
     },
     {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
-    },
-    {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
       "url": "https://arxiv.org/abs/2610.07652",
       "date": "2026-10-06",
@@ -53183,20 +53001,6 @@
       "debug_abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models."
     },
     {
-      "title": "RADC: Risk-Aware Dual Caching for Vision-Language Test-Time Adaptation",
-      "url": "https://arxiv.org/abs/2610.06932",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Siyu Huang, Yueyong Chen, Xuejiao Li, Jun Zhou",
-      "is_highlight": false,
-      "score": 81.0,
-      "summary": "RADC enhances vision-language test-time adaptation by introducing dual caching with a Semantic Foreground Cache and Gaussian Risk Admission for improved prototype learning and robust inference.",
-      "teaser_image": "https://arxiv.org/html/2610.06932/2610.06932v1/fig/framework.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Cache-based test-time adaptation (TTA) for vision-language models is often hindered by background bias in global representations and unreliable entropy-based cache admission under representation variations. To address these limitations, we propose RADC, which enhances prototype learning through reliable dual caching. RADC introduces a Semantic Foreground Cache that aggregates category-consistent spatial evidence from CLIP representations, yielding foreground prototypes that complement the global cache while mitigating background interference. To reliably manage both caches, Gaussian Risk Admission models multi-view representations as diagonal Gaussian distributions and jointly considers class separation and feature uncertainty to prioritize reliable cache candidates. RADC integrates zero-shot logits with complementary global- and foreground-cache predictions for robust inference. Extensive experiments on cross-domain and out-of-distribution benchmarks demonstrate consistent state-of-the-art performance."
-    },
-    {
       "title": "SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining",
       "url": "https://arxiv.org/abs/2610.07652",
       "date": "2026-10-06",
@@ -53463,20 +53267,6 @@
       "teaser_image": "https://arxiv.org/html/2610.04432/2610.04432v2/video2world.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Building interactive simulators from real-world observations is a promising way to scale embodied data, but current pipelines still rely heavily on manual environment construction and calibration. We study whether frontier foundation models and coding agents can automate this process end to end. We formulate \\emph{autonomous video-to-simulation} as a software engineering task in which an agent observes an embodied video, constructs the corresponding simulated environment and robot behavior, and iteratively refines the result through execution feedback. To evaluate this capability, we introduce \\textbf{Video2World}, a benchmark comprising 222 reconstruction instances derived from 189 robot and human demonstration videos. Video2World measures reconstructed worlds along geometric fidelity, dynamic fidelity, and functional correctness, capturing spatial perception, physical reasoning, and executable interaction. Evaluating 9 frontier coding-agent systems reveals a sharp improvement in Task success beginning with Claude Opus 5, rising from below 5\\% to over 15\\%, while substantial gaps to human-assisted reconstruction remain. We further find that worlds that look better could work worse: better visual fidelity does not always lead to higher task success. This echoes the broader gap between perceptual realism and factual correctness observed in generative models."
-    },
-    {
-      "title": "Physical Twins: Accelerating and Enabling Robot Learning with Phantom Platforms",
-      "url": "https://arxiv.org/abs/2610.06929",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Elizabeth Peiros, Derek Chen, Lucas Yager, Edward Lee, Kevin Wang",
-      "is_highlight": false,
-      "score": 91.0,
-      "summary": "The paper introduces a phantom device, or physical twin, that enhances robot learning in physical human-robot interaction by simulating complex shoulder motions and joint limits.",
-      "teaser_image": "https://arxiv.org/html/2610.06929/2610.06929v1/joint2mech.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Improvements in human-robot physical interaction (pHRI) can have major implications for physical therapy, search and rescue, and telemedicine. However, a major challenge concerns human constraints and safety in human-robot physical experiments. Concerns about human studies also include repeatability, scalability, and participant diversity. To conduct such experiments, an IRB and willing human participants are required. In this work, we present an improved phantom device, a physical twin, that enables real-world RL-type testing for physically interactive algorithms. The new device not only replicates the ball-and-socket motion of the shoulder but also renders scapular and protraction/retraction motions. The experiments showcase the device's ability to render multiple 3D joint limits and demonstrate a Franka Panda arm sensing limits and interacting with the device as an arm for ADLs (activities of daily living) and pHRI tasks."
     }
   ],
   "Stanford AI Lab (SAIL)": [
@@ -63417,20 +63207,6 @@
       "debug_abstract": "Animal evidence shows that precise voluntary movements arise from rotational neural population dynamics in motor cortex, but their physical effects remain unknown. We developed a robotic analog of biological motor systems with artificial muscles, multimodal sensors, and a neural network controller trained via reinforcement learning. The robotic analog exhibited accurate movements, robustness to damage, and neural population dynamics akin to animals. This task-driven, embodied model illuminates the causal link between neural population dynamics and motor outcomes. We discovered that neural rotations generate oscillatory maneuvers orthogonal to the reaching direction, optimizing trajectory adjustments, which is confirmed by primate neural data. The model also revealed counterintuitive neural energy principles under sensor and motor redundancies, and striking Eureka moments during motor learning, bridging biological and artificial systems. These findings provide new perspectives on how neural dynamics contribute to accurate and flexible movement, inspiring future intelligent robots with animal-like mobility."
     },
     {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
-    },
-    {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
       "url": "https://arxiv.org/abs/2610.07969",
       "date": "2026-10-06",
@@ -65503,20 +65279,6 @@
       "teaser_image": "https://arxiv.org/html/2610.09977/2610.09977v1/fig2.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Animal evidence shows that precise voluntary movements arise from rotational neural population dynamics in motor cortex, but their physical effects remain unknown. We developed a robotic analog of biological motor systems with artificial muscles, multimodal sensors, and a neural network controller trained via reinforcement learning. The robotic analog exhibited accurate movements, robustness to damage, and neural population dynamics akin to animals. This task-driven, embodied model illuminates the causal link between neural population dynamics and motor outcomes. We discovered that neural rotations generate oscillatory maneuvers orthogonal to the reaching direction, optimizing trajectory adjustments, which is confirmed by primate neural data. The model also revealed counterintuitive neural energy principles under sensor and motor redundancies, and striking Eureka moments during motor learning, bridging biological and artificial systems. These findings provide new perspectives on how neural dynamics contribute to accurate and flexible movement, inspiring future intelligent robots with animal-like mobility."
-    },
-    {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
     },
     {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
@@ -67593,20 +67355,6 @@
       "debug_abstract": "Animal evidence shows that precise voluntary movements arise from rotational neural population dynamics in motor cortex, but their physical effects remain unknown. We developed a robotic analog of biological motor systems with artificial muscles, multimodal sensors, and a neural network controller trained via reinforcement learning. The robotic analog exhibited accurate movements, robustness to damage, and neural population dynamics akin to animals. This task-driven, embodied model illuminates the causal link between neural population dynamics and motor outcomes. We discovered that neural rotations generate oscillatory maneuvers orthogonal to the reaching direction, optimizing trajectory adjustments, which is confirmed by primate neural data. The model also revealed counterintuitive neural energy principles under sensor and motor redundancies, and striking Eureka moments during motor learning, bridging biological and artificial systems. These findings provide new perspectives on how neural dynamics contribute to accurate and flexible movement, inspiring future intelligent robots with animal-like mobility."
     },
     {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
-    },
-    {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
       "url": "https://arxiv.org/abs/2610.07969",
       "date": "2026-10-06",
@@ -69679,20 +69427,6 @@
       "teaser_image": "https://arxiv.org/html/2610.09977/2610.09977v1/fig2.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Animal evidence shows that precise voluntary movements arise from rotational neural population dynamics in motor cortex, but their physical effects remain unknown. We developed a robotic analog of biological motor systems with artificial muscles, multimodal sensors, and a neural network controller trained via reinforcement learning. The robotic analog exhibited accurate movements, robustness to damage, and neural population dynamics akin to animals. This task-driven, embodied model illuminates the causal link between neural population dynamics and motor outcomes. We discovered that neural rotations generate oscillatory maneuvers orthogonal to the reaching direction, optimizing trajectory adjustments, which is confirmed by primate neural data. The model also revealed counterintuitive neural energy principles under sensor and motor redundancies, and striking Eureka moments during motor learning, bridging biological and artificial systems. These findings provide new perspectives on how neural dynamics contribute to accurate and flexible movement, inspiring future intelligent robots with animal-like mobility."
-    },
-    {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
     },
     {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
@@ -95361,20 +95095,6 @@
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
     },
     {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
-    },
-    {
       "title": "DTFormer: Text-Guided Semantic Alignment for RGB-D Segmentation",
       "url": "https://arxiv.org/abs/2610.07014",
       "date": "2026-10-04",
@@ -95993,20 +95713,6 @@
       "teaser_image": "https://arxiv.org/html/2610.12061/2610.12061v1/LoGiC.png",
       "source_oai_date": "2026-10-09",
       "debug_abstract": "Large language model (LLM)-based agents have demonstrated strong capabilities on complex tasks. They typically perform reasoning before each action throughout an interaction trajectory. However, reasoning may not be necessary at every turn, as reasoning produced earlier can continue to support subsequent actions. A key challenge is therefore to determine when existing reasoning remains sufficient and when a new reasoning step is needed, without relying on costly generation-based verification. We find that decreases in the likelihood of subsequent reference actions after removing additional reasoning closely track whether those actions remain recoverable given earlier reasoning, providing an effective and lightweight signal for estimating cross-turn action support. Based on this observation, we propose Reasoning Adaptation through Cross-Turn Estimation (RACE), a training approach for adaptive agent reasoning. RACE introduces a Likelihood-Guided Progressive Reasoning Cover Detection (LoGiC) procedure that progressively identifies reasoning turns whose removal has limited impact on the current and subsequent reference actions. The resulting removal signals are incorporated into both supervised fine-tuning and agentic reinforcement learning, enabling the policy to learn when to reason and when to act directly. Extensive experiments on four representative agent benchmarks show that RACE substantially reduces reasoning cost while maintaining or improving task performance."
-    },
-    {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
     },
     {
       "title": "Learning to Retrieve via Reinforcement Learning in Embedding Space",
@@ -104735,20 +104441,6 @@
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
     },
     {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
-    },
-    {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
       "url": "https://arxiv.org/abs/2610.07015",
       "date": "2026-10-04",
@@ -106933,20 +106625,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10183/2610.10183v1/framework.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
-    },
-    {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
     },
     {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
@@ -109135,20 +108813,6 @@
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
     },
     {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
-    },
-    {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
       "url": "https://arxiv.org/abs/2610.07015",
       "date": "2026-10-04",
@@ -111333,20 +110997,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10183/2610.10183v1/framework.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
-    },
-    {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
     },
     {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
@@ -113535,20 +113185,6 @@
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
     },
     {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
-    },
-    {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
       "url": "https://arxiv.org/abs/2610.07015",
       "date": "2026-10-04",
@@ -115733,20 +115369,6 @@
       "teaser_image": "https://arxiv.org/html/2610.10183/2610.10183v1/framework.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Long video understanding increasingly relies on external memory to organize massive visual streams into compact representations. However, most memory-based methods dynamically adapt how information is retrieved for different questions, while largely fixing what is remembered. This mismatch makes missing details costly to recover, whereas stored information is valuable only when it can be reliably retrieved. To address this issue, we propose VideoEvolve, a novel self-evolving framework that jointly evolves memory and retrieval for long video understanding. Specifically, starting from a coarse low-frame-rate overview, VideoEvolve couples a Memory Evolver for selective memory augmentation with a Retrieval Evolver for adaptive retrieval over the evolving memory. We then co-evolve the two Evolvers through alternating agentic reinforcement learning (Agentic RL), updating one while freezing the other. To steer this alternating evolution, Bottleneck-Aware Evolution Feedback (BEF) identifies whether the current bottleneck lies in memory or retrieval and directs optimization toward the more limiting side. Furthermore, VideoEvolve introduces Capability-Aware Evolution Feedback (CEF) to alleviate downstream feedback from over-specializing memory to a fixed set of training questions, shifting training toward underdeveloped yet learnable video capabilities. By integrating Agentic RL with BEF and CEF, VideoEvolve transforms downstream reasoning experience into transferable capability updates, providing a concrete path from static long-video systems toward experience-driven, self-improving multimodal intelligence. Extensive experiments on multiple long video understanding benchmarks demonstrate the effectiveness of VideoEvolve."
-    },
-    {
-      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
-      "url": "https://arxiv.org/abs/2610.06964",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Bowen Ye, Yongchao Xu, Junkai Ma, Xiang Yin, Wenzhao Li",
-      "is_highlight": false,
-      "score": 74.0,
-      "summary": "The SAGA framework enables LLM agents to evolve by transforming experiences into abstract, reusable knowledge, enhancing task performance through a feedback loop of execution and abstraction.",
-      "teaser_image": "https://arxiv.org/html/2610.06964/2610.06964v1/framework_new.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Large language model (LLM) agents have demonstrated strong capabilities in interactive environments, yet their ability to continually evolve from experience remains limited. Although fine-tuning enables adaptation, its dependence on parameter access and high computational costs restrict its flexibility, especially for large-scale and closed-source LLMs. External memory offers an alternative by allowing agents to accumulate experience without modifying model parameters. However, existing methods mainly focus on experience representation and organization, while the acquired knowledge remains tightly coupled with specific tasks and contexts, limiting generalization. A key challenge is how to transform concrete interactions into abstract and reusable knowledge that guides future decisions beyond individual experiences. To address this challenge, we propose SAGA (\\underline{\\textbf{S}}elf-evolving \\underline{\\textbf{A}}gents through Experience-\\underline{\\textbf{G}}rounded \\underline{\\textbf{A}}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents. SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence. Retrieved principles are instantiated into task-specific guidance and used to refine candidate actions through corrective feedback and resampling. This creates an execution--abstraction feedback loop, where accumulated knowledge guides future interactions and new experiences continuously update hierarchical memory. Experiments on ScienceWorld and ALFWorld demonstrate improved task performance, with ablation studies highlighting the importance of contextual instantiation and action regulation for leveraging principle-level knowledge."
     },
     {
       "title": "LEAP: Making Privileged Geometry Supervision Effective for Visuomotor Learning",
@@ -118677,20 +118299,6 @@
       "debug_abstract": "Large language models (LLMs) can translate natural-language instructions for robotic manipulation into executable code, but ambiguity, noisy generations, and limited context windows make ultra-long-horizon tasks unreliable. Closed-loop approaches that rely only on LLM feedback also struggle because LLMs have limited robotic reasoning, even when task errors are obvious to humans. Feedback is often stored in representations that generalize poorly to unseen tasks and can cause catastrophic forgetting as new corrections accumulate. We propose LYRA, a human-guided lifelong skill learning and code generation framework that distills human feedback into modular, reusable skills and incrementally extends their functionality across successive interactions while preserving previously learned behavior. External memory stores learned skills and execution examples; retrieval-augmented generation selects relevant knowledge, while user hints guide reuse when retrieval is insufficient, supporting ultra-long-horizon execution. Experiments on Ravens, Franka Kitchen, LIBERO-long, MetaWorld, and real-world tasks show a 0.93 success rate, up to 27\\% higher than baselines, and a 42\\% improvement in correction efficiency. LYRA also robustly solves ``build a house'', which requires planning over 20 primitives."
     },
     {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
-    },
-    {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
       "url": "https://arxiv.org/abs/2610.07969",
       "date": "2026-10-06",
@@ -118929,20 +118537,6 @@
       "teaser_image": "https://arxiv.org/html/2509.18597/2509.18597v3/imgs/user.png",
       "source_oai_date": "2026-10-08",
       "debug_abstract": "Large language models (LLMs) can translate natural-language instructions for robotic manipulation into executable code, but ambiguity, noisy generations, and limited context windows make ultra-long-horizon tasks unreliable. Closed-loop approaches that rely only on LLM feedback also struggle because LLMs have limited robotic reasoning, even when task errors are obvious to humans. Feedback is often stored in representations that generalize poorly to unseen tasks and can cause catastrophic forgetting as new corrections accumulate. We propose LYRA, a human-guided lifelong skill learning and code generation framework that distills human feedback into modular, reusable skills and incrementally extends their functionality across successive interactions while preserving previously learned behavior. External memory stores learned skills and execution examples; retrieval-augmented generation selects relevant knowledge, while user hints guide reuse when retrieval is insufficient, supporting ultra-long-horizon execution. Experiments on Ravens, Franka Kitchen, LIBERO-long, MetaWorld, and real-world tasks show a 0.93 success rate, up to 27\\% higher than baselines, and a 42\\% improvement in correction efficiency. LYRA also robustly solves ``build a house'', which requires planning over 20 primitives."
-    },
-    {
-      "title": "ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception",
-      "url": "https://arxiv.org/abs/2610.06955",
-      "date": "2026-10-03",
-      "submitted_date": "2026-10-03",
-      "release_date": "2026-10-07",
-      "authors_text": "Ruoxuan Feng, Yutong Chen, Ruihua Song, Huan Yang, Zhongyuan Wang",
-      "is_highlight": false,
-      "score": 87.0,
-      "summary": "ROMA is an LLM-based system that enhances multi-sensory active perception by actively acquiring missing evidence through interactions, supported by a comprehensive dataset and evaluation framework.",
-      "teaser_image": "https://arxiv.org/html/2610.06955/2610.06955v1/teaser.png",
-      "source_oai_date": "2026-10-07",
-      "debug_abstract": "Humans inherently understand the physical world through an active process. When sensory evidence is insufficient to infer physical properties, we naturally interact with the environment by deciding what information is missing, how to acquire it, and when sufficient evidence has been obtained. In stark contrast, existing multi-sensory robot systems mainly integrate sensory inputs rather than actively acquiring missing evidence through interactions. In this work, we introduce ROMA, an LLM-based system for Real-World Object-Centric Multi-Sensory Active Perception. ROMA integrates vision, audio, tactile, and force sensing into a reasoning-interaction-feedback loop. The model identifies missing evidence and determines the target objects, interactions, and modalities, while a physical interface executes the selected interactions and collects the multi-sensory feedback. To support this capability, we construct ROMI-2K, a large-scale real-world multi-sensory object interaction dataset covering nearly 2,000 objects and 6 atomic interactions with synchronized sensory feedback. Building on these data, we develop a two-stage training framework that aligns sensory modalities and equips the LLM to assess evidence sufficiency, select informative interactions, and reason over the multi-sensory feedback. We further characterize active perception as perception chains, where acquired evidence guides subsequent interactions and reasoning, and establish ROMA Bench to evaluate single-attribute, long-horizon multi-attribute, and intent-driven active perception. Experiments show that ROMA can actively acquire missing evidence and solve complex, long-chain multi-sensory perception tasks that existing methods struggle to handle, laying a strong perceptual foundation for active multi-sensory embodied agents."
     },
     {
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
