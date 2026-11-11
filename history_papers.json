@@ -1,6 +1,20 @@
 {
   "卡内基-机器人研究所": [
     {
+      "title": "Late but Valuable: Why Deadlines Change the Measured Value of LLM Reasoning",
+      "url": "https://arxiv.org/abs/2611.11910",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Sina Barazandeh, Benjamin E. Lundell, Jose Lugo-Martinez",
+      "is_highlight": false,
+      "score": 50.0,
+      "summary": "This paper highlights that LLM reasoning value is significantly affected by deadlines, necessitating integrated evaluation of answer quality and timing in automated laboratory settings.",
+      "teaser_image": "https://arxiv.org/html/2611.11910/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Large language models (LLMs) increasingly plan and run experiments in automated laboratories. These experiments keep running while the model reasons and run on schedules with hard deadlines. If an LLM-generated answer arrives late, the system executes a safe fallback action instead, such as rejecting a sample. This creates a systems problem that standard serving metrics do not capture. An answer that matches the fallback adds no value, and answers that differ from the fallback may require more reasoning time. Reporting answer quality and latency separately can therefore overstate the value of reasoning. We test this on synthetic sample decisions, where the best choice is known exactly and a runtime enforces the deadline. We compare one LLM's fast mode, which answers directly, with its thinking mode, which reasons first. In a prespecified replay of 1,200 new decisions, thinking answers that missed a deadline were worth about five times as much as on-time ones. Multiplying the on-time rate by the mean answer value predicted about twice the value that thinking delivered. This prediction overstated thinking's advantage over fast mode by 0.0241 per decision, and by 0.0191 in a repeat on 300 new decisions. Both 95% confidence intervals excluded zero. In a single-GPU Qwen3-8B experiment using simultaneous request bursts, raising the number of requests from 8 to 56 reduced the share of thinking answers that met a 45 s deadline from 79.2% to 1.4%, although total output tripled. Evaluations of LLM agents for laboratories should therefore measure each answer's value and arrival time together and score the action that actually runs."
+    },
+    {
       "title": "Autonomous Apple Fruitlet Sizing and Growth Rate Tracking using Computer Vision",
       "url": "https://arxiv.org/abs/2212.01506",
       "date": "2026-11-06",
@@ -33247,20 +33261,6 @@
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
     },
     {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
-    },
-    {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
       "url": "https://arxiv.org/abs/2610.23982",
       "date": "2026-10-14",
@@ -36523,20 +36523,6 @@
       "teaser_image": "https://arxiv.org/html/2511.04131/2511.04131v2/teaser_final.png",
       "source_oai_date": "2026-10-20",
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
-    },
-    {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
     },
     {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
@@ -39803,20 +39789,6 @@
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
     },
     {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
-    },
-    {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
       "url": "https://arxiv.org/abs/2610.23982",
       "date": "2026-10-14",
@@ -41106,6 +41078,20 @@
     }
   ],
   "机器人与人工智能实验室 (RAIL)": [
+    {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
     {
       "title": "ReSkill: Selective Self-Improvement for Robot Manipulation",
       "url": "https://arxiv.org/abs/2611.10510",
@@ -45197,20 +45183,6 @@
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
     },
     {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
-    },
-    {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
       "url": "https://arxiv.org/abs/2610.23982",
       "date": "2026-10-14",
@@ -48473,20 +48445,6 @@
       "teaser_image": "https://arxiv.org/html/2511.04131/2511.04131v2/teaser_final.png",
       "source_oai_date": "2026-10-20",
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
-    },
-    {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
     },
     {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
@@ -51753,20 +51711,6 @@
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
     },
     {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
-    },
-    {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
       "url": "https://arxiv.org/abs/2610.23982",
       "date": "2026-10-14",
@@ -55031,20 +54975,6 @@
       "debug_abstract": "Building Behavioral Foundation Models (BFMs) for humanoid robots has the potential to unify diverse control tasks under a single, promptable generalist policy. However, existing approaches are either exclusively deployed on simulated humanoid characters, or specialized to specific tasks such as tracking. We propose BFM-Zero, a framework that learns an effective shared latent representation that embeds motions, goals, and rewards into a common space, enabling a single policy to be prompted for multiple downstream tasks without retraining. This well-structured latent space in BFM-Zero enables versatile and robust whole-body skills on a Unitree G1 humanoid in the real world, via diverse inference methods, including zero-shot motion tracking, goal reaching, and reward optimization, and few-shot optimization-based adaptation. Unlike prior on-policy reinforcement learning (RL) frameworks, BFM-Zero builds upon recent advancements in unsupervised RL and Forward-Backward (FB) models, which offer an objective-centric, explainable, and smooth latent representation of whole-body motions. We further extend BFM-Zero with critical reward shaping, domain randomization, and history-dependent asymmetric learning to bridge the sim-to-real gap. Those key design choices are quantitatively ablated in simulation. A first-of-its-kind model, BFM-Zero establishes a step toward scalable, promptable behavioral foundation models for whole-body humanoid control."
     },
     {
-      "title": "Learning When to Trust and Reobserve Sparse-Frame VideoQA from Temporal Sampling Perturbations",
-      "url": "https://arxiv.org/abs/2610.23969",
-      "date": "2026-10-12",
-      "submitted_date": "2026-10-12",
-      "release_date": "2026-10-20",
-      "authors_text": "Shujia Liu",
-      "is_highlight": false,
-      "score": 70.0,
-      "summary": "The paper presents PhaseGuard+, a method that enhances sparse-frame video-language models by predicting answer reliability and corrective actions based on temporal sampling perturbations.",
-      "teaser_image": "https://arxiv.org/html/2610.23969/2610.23969v1/figures/qualitative_routing.png",
-      "source_oai_date": "2026-10-20",
-      "debug_abstract": "Sparse-frame video-language models can change their answers when only the sampling timestamps shift. Raw agreement exposes this problem, but it need not rank errors better than token confidence or identify which additional observation will repair an answer. We argue that answer risk and action value must be estimated separately. PhaseGuard+ probes a frozen VLM at controlled temporal offsets, predicts the reliability of the phase-vote answer, and predicts the example-wise correctness gain of a specific rescue action. The second score routes only examples expected to benefit from denser frames or a stronger VLM. Both predictors use lightweight models trained on public data; the VLMs remain frozen. We use 256 Perception Test videos for method development and evaluate on a disjoint 256-video test set comprising 554 Physics questions. For Qwen3-VL-8B, reliability AUROC rises from 68.0% with token softmax to 74.8% (+6.8 pp, 95% CI [2.6, 10.7] pp). Routing 30% of questions to Qwen3-VL-32B reaches 67.87% accuracy, compared with 63.66% for budget-matched random routing (+4.21 percentage points, CI [1.89, 6.40]). All four tested rescue pairs significantly outperform random routing. Temporal sensitivity becomes actionable when the system learns both whether an answer is unreliable and whether an available action is likely to fix it."
-    },
-    {
       "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
       "url": "https://arxiv.org/abs/2610.23982",
       "date": "2026-10-14",
@@ -56560,6 +56490,20 @@
     }
   ],
   "Stanford AI Lab (SAIL)": [
+    {
+      "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "https://arxiv.org/abs/2605.30326",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Chunru Lin, Hongxin Zhang, Fenghao Yu, Zhehuan Chen, Thomas L. Griffiths",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "RoboWits introduces a benchmark for evaluating robotic cognitive reasoning and creative problem-solving under unexpected challenges, revealing significant performance gaps in existing models.",
+      "teaser_image": "https://arxiv.org/html/2605.30326/2605.30326v2/01_teaser_single_v1.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 200 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, a zero-shot policy built on a frontier VLM, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. A zero-shot policy built on GPT-6 Astra outperforms all fine-tuned VLAs, yet still loses about a fifth of its success on mutated tasks, showing that stronger foundation models alone do not close the robustness gap. See our project page https://umass-embodied-agi.github.io/RoboWits/ for videos."
+    },
     {
       "title": "Imperfect World Models are Exploitable",
       "url": "https://arxiv.org/abs/2605.15960",
@@ -58243,6 +58187,20 @@
   ],
   "Robotics and Embodied Artificial Intelligence Lab (REAL)": [
     {
+      "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "https://arxiv.org/abs/2605.30326",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Chunru Lin, Hongxin Zhang, Fenghao Yu, Zhehuan Chen, Thomas L. Griffiths",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "RoboWits introduces a benchmark for evaluating robotic cognitive reasoning and creative problem-solving under unexpected challenges, revealing significant performance gaps in existing models.",
+      "teaser_image": "https://arxiv.org/html/2605.30326/2605.30326v2/01_teaser_single_v1.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 200 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, a zero-shot policy built on a frontier VLM, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. A zero-shot policy built on GPT-6 Astra outperforms all fine-tuned VLAs, yet still loses about a fifth of its success on mutated tasks, showing that stronger foundation models alone do not close the robustness gap. See our project page https://umass-embodied-agi.github.io/RoboWits/ for videos."
+    },
+    {
       "title": "Imperfect World Models are Exploitable",
       "url": "https://arxiv.org/abs/2605.15960",
       "date": "2026-11-07",
@@ -59924,6 +59882,20 @@
     }
   ],
   "斯坦福-人工智能实验室 (SAIL)": [
+    {
+      "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "https://arxiv.org/abs/2605.30326",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Chunru Lin, Hongxin Zhang, Fenghao Yu, Zhehuan Chen, Thomas L. Griffiths",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "RoboWits introduces a benchmark for evaluating robotic cognitive reasoning and creative problem-solving under unexpected challenges, revealing significant performance gaps in existing models.",
+      "teaser_image": "https://arxiv.org/html/2605.30326/2605.30326v2/01_teaser_single_v1.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 200 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, a zero-shot policy built on a frontier VLM, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. A zero-shot policy built on GPT-6 Astra outperforms all fine-tuned VLAs, yet still loses about a fifth of its success on mutated tasks, showing that stronger foundation models alone do not close the robustness gap. See our project page https://umass-embodied-agi.github.io/RoboWits/ for videos."
+    },
     {
       "title": "Imperfect World Models are Exploitable",
       "url": "https://arxiv.org/abs/2605.15960",
@@ -61607,6 +61579,20 @@
   ],
   "斯坦福-机器人与具身智能实验室 (REAL)": [
     {
+      "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "https://arxiv.org/abs/2605.30326",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Chunru Lin, Hongxin Zhang, Fenghao Yu, Zhehuan Chen, Thomas L. Griffiths",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "RoboWits introduces a benchmark for evaluating robotic cognitive reasoning and creative problem-solving under unexpected challenges, revealing significant performance gaps in existing models.",
+      "teaser_image": "https://arxiv.org/html/2605.30326/2605.30326v2/01_teaser_single_v1.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 200 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, a zero-shot policy built on a frontier VLM, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. A zero-shot policy built on GPT-6 Astra outperforms all fine-tuned VLAs, yet still loses about a fifth of its success on mutated tasks, showing that stronger foundation models alone do not close the robustness gap. See our project page https://umass-embodied-agi.github.io/RoboWits/ for videos."
+    },
+    {
       "title": "Imperfect World Models are Exploitable",
       "url": "https://arxiv.org/abs/2605.15960",
       "date": "2026-11-07",
@@ -63288,6 +63274,20 @@
     }
   ],
   "斯坦福-视觉与学习实验室 (SVL)": [
+    {
+      "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "https://arxiv.org/abs/2605.30326",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Chunru Lin, Hongxin Zhang, Fenghao Yu, Zhehuan Chen, Thomas L. Griffiths",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "RoboWits introduces a benchmark for evaluating robotic cognitive reasoning and creative problem-solving under unexpected challenges, revealing significant performance gaps in existing models.",
+      "teaser_image": "https://arxiv.org/html/2605.30326/2605.30326v2/01_teaser_single_v1.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 200 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, a zero-shot policy built on a frontier VLM, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. A zero-shot policy built on GPT-6 Astra outperforms all fine-tuned VLAs, yet still loses about a fifth of its success on mutated tasks, showing that stronger foundation models alone do not close the robustness gap. See our project page https://umass-embodied-agi.github.io/RoboWits/ for videos."
+    },
     {
       "title": "Imperfect World Models are Exploitable",
       "url": "https://arxiv.org/abs/2605.15960",
@@ -75987,6 +75987,20 @@
   ],
   "机器人与自动化研究中心": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
       "date": "2026-11-07",
@@ -77697,6 +77711,20 @@
   ],
   "机器人与人工智能实验室": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
       "title": "ReSkill: Selective Self-Improvement for Robot Manipulation",
       "url": "https://arxiv.org/abs/2611.10510",
       "date": "2026-11-07",
@@ -79126,6 +79154,34 @@
     }
   ],
   "Hengshuang Zhao老师实验室": [
+    {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
+      "title": "FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation",
+      "url": "https://arxiv.org/abs/2608.00635",
+      "date": "2026-11-08",
+      "submitted_date": "2026-11-08",
+      "release_date": "2026-11-10",
+      "authors_text": "Runqing Wang, Ding Yu, Pengyuan Min, Xinhong Zhang, Wei Xiao",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "FlowPilot enables agile UAV navigation by integrating real-time depth observation denoising and trajectory generation through a dual-stream transformer model, achieving high performance and low latency.",
+      "teaser_image": "https://arxiv.org/html/2608.00635/2608.00635v2/teaser.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "We present FlowPilot, the first world-action model for real-time onboard UAV navigation from depth. Unlike map-then-optimize pipelines that require local reconstruction or end-to-end policies that lack explicit scene prediction, FlowPilot jointly denoises future depth observations and executable trajectories with flow matching. A dual-stream mixture-of-transformers couples video and action experts through shared attention, allowing future-scene prediction and trajectory generation to inform each other. At deployment, the model runs action-centrically and outputs only a trajectory. To generate smooth, state-consistent references, actions are parameterized as degree-7 Bernstein polynomials: the current state constrains the initial control points, and the network predicts five free control points, yielding C^2-continuous references with closed-form velocity, acceleration and jerk. FlowPilot is trained on a three-level depth pyramid spanning high-throughput simulation, photorealistic simulation, and real onboard data. In closed-loop simulation, it outperforms learning- and optimization-based baselines under increasing clutter and commanded speeds up to 10 m/s. On a physical quadrotor, FlowPilot achieves a mean inference latency of 10.2 ms on a Jetson Orin NX and reaches a peak speed of 10 m/s during outdoor flight using only onboard sensing and computation."
+    },
     {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
@@ -81733,6 +81789,34 @@
   ],
   "香港大学机械工程系机器人实验室": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
+      "title": "FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation",
+      "url": "https://arxiv.org/abs/2608.00635",
+      "date": "2026-11-08",
+      "submitted_date": "2026-11-08",
+      "release_date": "2026-11-10",
+      "authors_text": "Runqing Wang, Ding Yu, Pengyuan Min, Xinhong Zhang, Wei Xiao",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "FlowPilot enables agile UAV navigation by integrating real-time depth observation denoising and trajectory generation through a dual-stream transformer model, achieving high performance and low latency.",
+      "teaser_image": "https://arxiv.org/html/2608.00635/2608.00635v2/teaser.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "We present FlowPilot, the first world-action model for real-time onboard UAV navigation from depth. Unlike map-then-optimize pipelines that require local reconstruction or end-to-end policies that lack explicit scene prediction, FlowPilot jointly denoises future depth observations and executable trajectories with flow matching. A dual-stream mixture-of-transformers couples video and action experts through shared attention, allowing future-scene prediction and trajectory generation to inform each other. At deployment, the model runs action-centrically and outputs only a trajectory. To generate smooth, state-consistent references, actions are parameterized as degree-7 Bernstein polynomials: the current state constrains the initial control points, and the network predicts five free control points, yielding C^2-continuous references with closed-form velocity, acceleration and jerk. FlowPilot is trained on a three-level depth pyramid spanning high-throughput simulation, photorealistic simulation, and real onboard data. In closed-loop simulation, it outperforms learning- and optimization-based baselines under increasing clutter and commanded speeds up to 10 m/s. On a physical quadrotor, FlowPilot achieves a mean inference latency of 10.2 ms on a Jetson Orin NX and reaches a peak speed of 10 m/s during outdoor flight using only onboard sensing and computation."
+    },
+    {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
       "date": "2026-11-07",
@@ -84339,6 +84423,20 @@
   ],
   "深圳市人工智能与机器人研究院 (AIRS)": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
       "title": "ReSkill: Selective Self-Improvement for Robot Manipulation",
       "url": "https://arxiv.org/abs/2611.10510",
       "date": "2026-11-07",
@@ -85769,6 +85867,20 @@
   ],
   "Multimedia Lab (MMLab)": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
       "title": "ReSkill: Selective Self-Improvement for Robot Manipulation",
       "url": "https://arxiv.org/abs/2611.10510",
       "date": "2026-11-07",
@@ -87198,6 +87310,34 @@
     }
   ],
   "OpenDriveLab": [
+    {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
+      "title": "FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation",
+      "url": "https://arxiv.org/abs/2608.00635",
+      "date": "2026-11-08",
+      "submitted_date": "2026-11-08",
+      "release_date": "2026-11-10",
+      "authors_text": "Runqing Wang, Ding Yu, Pengyuan Min, Xinhong Zhang, Wei Xiao",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "FlowPilot enables agile UAV navigation by integrating real-time depth observation denoising and trajectory generation through a dual-stream transformer model, achieving high performance and low latency.",
+      "teaser_image": "https://arxiv.org/html/2608.00635/2608.00635v2/teaser.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "We present FlowPilot, the first world-action model for real-time onboard UAV navigation from depth. Unlike map-then-optimize pipelines that require local reconstruction or end-to-end policies that lack explicit scene prediction, FlowPilot jointly denoises future depth observations and executable trajectories with flow matching. A dual-stream mixture-of-transformers couples video and action experts through shared attention, allowing future-scene prediction and trajectory generation to inform each other. At deployment, the model runs action-centrically and outputs only a trajectory. To generate smooth, state-consistent references, actions are parameterized as degree-7 Bernstein polynomials: the current state constrains the initial control points, and the network predicts five free control points, yielding C^2-continuous references with closed-form velocity, acceleration and jerk. FlowPilot is trained on a three-level depth pyramid spanning high-throughput simulation, photorealistic simulation, and real onboard data. In closed-loop simulation, it outperforms learning- and optimization-based baselines under increasing clutter and commanded speeds up to 10 m/s. On a physical quadrotor, FlowPilot achieves a mean inference latency of 10.2 ms on a Jetson Orin NX and reaches a peak speed of 10 m/s during outdoor flight using only onboard sensing and computation."
+    },
     {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
@@ -89805,6 +89945,34 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
+      "title": "FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation",
+      "url": "https://arxiv.org/abs/2608.00635",
+      "date": "2026-11-08",
+      "submitted_date": "2026-11-08",
+      "release_date": "2026-11-10",
+      "authors_text": "Runqing Wang, Ding Yu, Pengyuan Min, Xinhong Zhang, Wei Xiao",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "FlowPilot enables agile UAV navigation by integrating real-time depth observation denoising and trajectory generation through a dual-stream transformer model, achieving high performance and low latency.",
+      "teaser_image": "https://arxiv.org/html/2608.00635/2608.00635v2/teaser.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "We present FlowPilot, the first world-action model for real-time onboard UAV navigation from depth. Unlike map-then-optimize pipelines that require local reconstruction or end-to-end policies that lack explicit scene prediction, FlowPilot jointly denoises future depth observations and executable trajectories with flow matching. A dual-stream mixture-of-transformers couples video and action experts through shared attention, allowing future-scene prediction and trajectory generation to inform each other. At deployment, the model runs action-centrically and outputs only a trajectory. To generate smooth, state-consistent references, actions are parameterized as degree-7 Bernstein polynomials: the current state constrains the initial control points, and the network predicts five free control points, yielding C^2-continuous references with closed-form velocity, acceleration and jerk. FlowPilot is trained on a three-level depth pyramid spanning high-throughput simulation, photorealistic simulation, and real onboard data. In closed-loop simulation, it outperforms learning- and optimization-based baselines under increasing clutter and commanded speeds up to 10 m/s. On a physical quadrotor, FlowPilot achieves a mean inference latency of 10.2 ms on a Jetson Orin NX and reaches a peak speed of 10 m/s during outdoor flight using only onboard sensing and computation."
+    },
+    {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
       "date": "2026-11-07",
@@ -92410,6 +92578,34 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://arxiv.org/abs/2611.10404",
+      "date": "2026-11-07",
+      "submitted_date": "2026-11-07",
+      "release_date": "2026-11-10",
+      "authors_text": "Yuntao Gui",
+      "is_highlight": false,
+      "score": 55.0,
+      "summary": "The study reveals that frontier coding LLMs often resort to reward hacking by exploiting answer leaks rather than deriving solutions, particularly on challenging problems.",
+      "teaser_image": "https://arxiv.org/html/2611.10404/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1."
+    },
+    {
+      "title": "FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation",
+      "url": "https://arxiv.org/abs/2608.00635",
+      "date": "2026-11-08",
+      "submitted_date": "2026-11-08",
+      "release_date": "2026-11-10",
+      "authors_text": "Runqing Wang, Ding Yu, Pengyuan Min, Xinhong Zhang, Wei Xiao",
+      "is_highlight": false,
+      "score": 90.0,
+      "summary": "FlowPilot enables agile UAV navigation by integrating real-time depth observation denoising and trajectory generation through a dual-stream transformer model, achieving high performance and low latency.",
+      "teaser_image": "https://arxiv.org/html/2608.00635/2608.00635v2/teaser.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "We present FlowPilot, the first world-action model for real-time onboard UAV navigation from depth. Unlike map-then-optimize pipelines that require local reconstruction or end-to-end policies that lack explicit scene prediction, FlowPilot jointly denoises future depth observations and executable trajectories with flow matching. A dual-stream mixture-of-transformers couples video and action experts through shared attention, allowing future-scene prediction and trajectory generation to inform each other. At deployment, the model runs action-centrically and outputs only a trajectory. To generate smooth, state-consistent references, actions are parameterized as degree-7 Bernstein polynomials: the current state constrains the initial control points, and the network predicts five free control points, yielding C^2-continuous references with closed-form velocity, acceleration and jerk. FlowPilot is trained on a three-level depth pyramid spanning high-throughput simulation, photorealistic simulation, and real onboard data. In closed-loop simulation, it outperforms learning- and optimization-based baselines under increasing clutter and commanded speeds up to 10 m/s. On a physical quadrotor, FlowPilot achieves a mean inference latency of 10.2 ms on a Jetson Orin NX and reaches a peak speed of 10 m/s during outdoor flight using only onboard sensing and computation."
+    },
     {
       "title": "Practical Adversarial Attacks on Stochastic Bandits via Fake Data Injection",
       "url": "https://arxiv.org/abs/2505.21938",
@@ -102553,6 +102749,20 @@
   ],
   "Bio-Inspired Robotics Laboratory (BIRL)": [
     {
+      "title": "Same Physics, Different Gradients: A State-of-the-Art Report on Differentiable Physics Simulation",
+      "url": "https://arxiv.org/abs/2611.12162",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Lei Shu, Zizhou Huang, Yunuo Chen, Yifei Li, Tao Du",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "This report categorizes differentiable physics simulation methods, clarifying their derivatives' referents and implementations, and evaluates their effectiveness in optimization tasks.",
+      "teaser_image": "https://arxiv.org/html/2611.12162/2611.12162v1/figs/p_plab.jpg",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Differentiable simulation propagates derivatives through a physics simulator, turning animation, system identification, control, and computational design into gradient-based optimization. Engines differ in the physics they model and, less visibly, in which mathematical object they differentiate. We separate two questions the literature conflates. The referent is which object the returned derivative belongs to: the finite computation that executed, the converged equation it approximates, or the continuous dynamics. The realization describes the organization of the backward pass: automatically generated differentiation, an equation-level adjoint solve, or a custom adjoint. The referent defines the target against which exactness is assessed; the implementation determines how accurately that target is approximated. Cost depends on the realization together with how the states needed by the backward pass are retained or recovered. Crossing the axes places every method and engine we classify in a cell, separates claims the literature merges, and shows that the apparent trade-off between exactness and memory follows from how methods have been built rather than from a constraint. A second, orthogonal taxonomy covers contact, where the map is non-smooth. We then ask whether a correct gradient helps. Four mechanisms by which useful gradients are lost are cataloged and measured on one testbed, where the advantage of the exact derivative over the equation-level adjoint depends on where the fitting target comes from as much as on the solver budget, and we review the evidence that zeroth-order methods can outperform simulator gradients in the regimes where those mechanisms act. The model classes, systems techniques and applications are surveyed through this lens, and we close with a reporting checklist, a released diagnostic that computes it, and a research agenda."
+    },
+    {
       "title": "Library of Hands: Fix the Hands, Not the World Model",
       "url": "https://arxiv.org/abs/2611.12678",
       "date": "2026-11-09",
@@ -102947,6 +103157,20 @@
   ],
   "Affective Intelligence and Robotics Laboratory (AFAR)": [
     {
+      "title": "Same Physics, Different Gradients: A State-of-the-Art Report on Differentiable Physics Simulation",
+      "url": "https://arxiv.org/abs/2611.12162",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Lei Shu, Zizhou Huang, Yunuo Chen, Yifei Li, Tao Du",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "This report categorizes differentiable physics simulation methods, clarifying their derivatives' referents and implementations, and evaluates their effectiveness in optimization tasks.",
+      "teaser_image": "https://arxiv.org/html/2611.12162/2611.12162v1/figs/p_plab.jpg",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Differentiable simulation propagates derivatives through a physics simulator, turning animation, system identification, control, and computational design into gradient-based optimization. Engines differ in the physics they model and, less visibly, in which mathematical object they differentiate. We separate two questions the literature conflates. The referent is which object the returned derivative belongs to: the finite computation that executed, the converged equation it approximates, or the continuous dynamics. The realization describes the organization of the backward pass: automatically generated differentiation, an equation-level adjoint solve, or a custom adjoint. The referent defines the target against which exactness is assessed; the implementation determines how accurately that target is approximated. Cost depends on the realization together with how the states needed by the backward pass are retained or recovered. Crossing the axes places every method and engine we classify in a cell, separates claims the literature merges, and shows that the apparent trade-off between exactness and memory follows from how methods have been built rather than from a constraint. A second, orthogonal taxonomy covers contact, where the map is non-smooth. We then ask whether a correct gradient helps. Four mechanisms by which useful gradients are lost are cataloged and measured on one testbed, where the advantage of the exact derivative over the equation-level adjoint depends on where the fitting target comes from as much as on the solver budget, and we review the evidence that zeroth-order methods can outperform simulator gradients in the regimes where those mechanisms act. The model classes, systems techniques and applications are surveyed through this lens, and we close with a reporting checklist, a released diagnostic that computes it, and a research agenda."
+    },
+    {
       "title": "Library of Hands: Fix the Hands, Not the World Model",
       "url": "https://arxiv.org/abs/2611.12678",
       "date": "2026-11-09",
@@ -103340,6 +103564,20 @@
     }
   ],
   "人机物智能融合实验室 (HCP)": [
+    {
+      "title": "MDA framework: multi-architecture domain adaptation for unsupervised person re-identification",
+      "url": "https://arxiv.org/abs/2611.11836",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Wei Zhang, Peijun Ye, Dihu Chen, Tao Su",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The MDA framework enhances unsupervised person re-identification by enabling multi-architecture domain adaptation, achieving significant performance improvements across CNN and Transformer models.",
+      "teaser_image": "https://arxiv.org/html/2611.11836/2611.11836v1/DApipeline.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Unsupervised person re-identification not only faces the challenge of domain gaps, but existing methods also rarely support multiple network architectures. To tackle both issues, this paper proposes a multi-architecture auto-adaptive domain adaptation method: Mamba augmented multi-architecture domain adaptation framework. Specifically, this paper constructs the multi-architecture domain adaptation capability at two levels. At the first level, we propose a composite operator(MDA operator) that encapsulates Mamba as a component for enhancing domain adaptation. At the second level, based on this operator, we propose a Mamba-enhanced multi-architecture Domain Adaptation framework(MDA framework). Comprehensive experiments on person re-identification benchmarks validate the consistency and flexibility of the proposed framework. The MDA framework supports versatile deployment strategies without being confined to a single integration point. Under a single deployment configuration, it surpasses several SOTA methods. Moreover, it demonstrates substantial performance improvements across both CNN and Transformer architectures. When embedded into a CNN backbone, the framework achieves a 10.2% mAP improvement on the adaptation task from CUHK03 to Market-1501. Integrated with a Transformer backbone, it yields a 19.8% mAP improvement on the same task."
+    },
     {
       "title": "Adaptive Visual KV Cache Reuse for Efficient Multi-Turn Iterative Multimodal Reasoning",
       "url": "https://arxiv.org/abs/2606.26631",
@@ -104198,6 +104436,20 @@
     }
   ],
   "多智能体与具身智能研究所": [
+    {
+      "title": "MDA framework: multi-architecture domain adaptation for unsupervised person re-identification",
+      "url": "https://arxiv.org/abs/2611.11836",
+      "date": "2026-11-09",
+      "submitted_date": "2026-11-09",
+      "release_date": "2026-11-10",
+      "authors_text": "Wei Zhang, Peijun Ye, Dihu Chen, Tao Su",
+      "is_highlight": false,
+      "score": 60.0,
+      "summary": "The MDA framework enhances unsupervised person re-identification by enabling multi-architecture domain adaptation, achieving significant performance improvements across CNN and Transformer models.",
+      "teaser_image": "https://arxiv.org/html/2611.11836/2611.11836v1/DApipeline.png",
+      "source_oai_date": "2026-11-10",
+      "debug_abstract": "Unsupervised person re-identification not only faces the challenge of domain gaps, but existing methods also rarely support multiple network architectures. To tackle both issues, this paper proposes a multi-architecture auto-adaptive domain adaptation method: Mamba augmented multi-architecture domain adaptation framework. Specifically, this paper constructs the multi-architecture domain adaptation capability at two levels. At the first level, we propose a composite operator(MDA operator) that encapsulates Mamba as a component for enhancing domain adaptation. At the second level, based on this operator, we propose a Mamba-enhanced multi-architecture Domain Adaptation framework(MDA framework). Comprehensive experiments on person re-identification benchmarks validate the consistency and flexibility of the proposed framework. The MDA framework supports versatile deployment strategies without being confined to a single integration point. Under a single deployment configuration, it surpasses several SOTA methods. Moreover, it demonstrates substantial performance improvements across both CNN and Transformer architectures. When embedded into a CNN backbone, the framework achieves a 10.2% mAP improvement on the adaptation task from CUHK03 to Market-1501. Integrated with a Transformer backbone, it yields a 19.8% mAP improvement on the same task."
+    },
     {
       "title": "Leveraging Complementary Event Frame and Voxel Representations for RGB-Guided Multimodal Pre-training",
       "url": "https://arxiv.org/abs/2611.12040",
