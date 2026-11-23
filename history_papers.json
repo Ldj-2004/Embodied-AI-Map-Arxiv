@@ -7459,6 +7459,34 @@
   ],
   "范明明老师实验室": [
     {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
       "date": "2026-11-19",
@@ -8944,6 +8972,34 @@
     }
   ],
   "机器人研究所 (CKSRI)": [
+    {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
@@ -10431,6 +10487,34 @@
   ],
   "Precognition Lab": [
     {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
       "date": "2026-11-19",
@@ -11916,6 +12000,34 @@
     }
   ],
   "机器人研究所": [
+    {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
@@ -13403,6 +13515,34 @@
   ],
   "Jun MA老师实验室": [
     {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
       "date": "2026-11-19",
@@ -14889,6 +15029,34 @@
   ],
   "Cheng Kar-Shun Robotics Institute (CKSRI)": [
     {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
       "url": "https://arxiv.org/abs/2611.22432",
       "date": "2026-11-19",
@@ -16374,6 +16542,20 @@
     }
   ],
   "武汉大学": [
+    {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
     {
       "title": "Blurring Modal Boundaries: A Unified Survey from Single- to Multi-Modal Person Re-ldentification",
       "url": "https://arxiv.org/abs/2607.14821",
@@ -28921,6 +29103,20 @@
   ],
   "MARS多模态学习实验室": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
       "date": "2026-11-19",
@@ -31779,6 +31975,20 @@
   ],
   "机器人控制实验室": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
       "date": "2026-11-19",
@@ -34636,6 +34846,20 @@
     }
   ],
   "具身智能实验室 (TEA Lab)": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
@@ -39261,6 +39485,20 @@
   ],
   "智能技术与系统实验室": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
       "date": "2026-11-19",
@@ -42118,6 +42356,20 @@
     }
   ],
   "智能系统与机器人实验室 (ISR Lab)": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
@@ -44977,6 +45229,20 @@
   ],
   "具身视觉与机器人实验室 (EVAR Lab)": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
       "date": "2026-11-19",
@@ -47834,6 +48100,20 @@
     }
   ],
   "智能产业研究院 (AIR)": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "Breaking the Discretization Barrier of Continuous Physics Simulation Learning",
       "url": "https://arxiv.org/abs/2509.17955",
@@ -57229,6 +57509,20 @@
   ],
   "HMI Lab": [
     {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Search or Scoring? Diagnosing Why Visual World-Model Planners Fail",
       "url": "https://arxiv.org/abs/2611.25347",
       "date": "2026-11-19",
@@ -59120,6 +59414,20 @@
     }
   ],
   "具身感知与交互实验室 (EPIC Lab)": [
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "Search or Scoring? Diagnosing Why Visual World-Model Planners Fail",
       "url": "https://arxiv.org/abs/2611.25347",
@@ -61013,6 +61321,20 @@
   ],
   "智元机器人联合实验室 (PKU-Agibot)": [
     {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "Search or Scoring? Diagnosing Why Visual World-Model Planners Fail",
       "url": "https://arxiv.org/abs/2611.25347",
       "date": "2026-11-19",
@@ -62904,6 +63226,20 @@
     }
   ],
   "情感与认知智能机器人实验室 (ACIR)": [
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "Search or Scoring? Diagnosing Why Visual World-Model Planners Fail",
       "url": "https://arxiv.org/abs/2611.25347",
@@ -64797,6 +65133,20 @@
   ],
   "北京航空航天大学": [
     {
+      "title": "Homeward: No Place Like the Training View",
+      "url": "https://arxiv.org/abs/2611.24455",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Mingyang Lyu, Yinqian Sun, Gongce Cao, Guobin Shen, Yuhao Zhang",
+      "is_highlight": false,
+      "score": 72.0,
+      "summary": "Homeward is a training-free adapter that recalibrates uncalibrated camera observations to improve vision-language-action policy performance in robotics, achieving significant success across diverse camera setups.",
+      "teaser_image": "https://arxiv.org/html/2611.24455/2611.24455v2/homeward.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Vision-language-action (VLA) policies implicitly assume that third-person cameras remain fixed at their data-collection poses; once a camera is bumped, remounted, or swapped at deployment, task success degrades precipitously even though the underlying task and robot remain unchanged. We present Homeward, a training-free, plug-and-play observation adapter that canonicalizes observations from an uncalibrated deployment camera back into the training view for frozen VLA policies. Our design stems from a closed-loop diagnostic paradox in simulation: while re-rendering perturbed views into the training camera with oracle geometry recovers much of the lost performance, substituting an off-the-shelf feed-forward 3D foundation model can leave the policy worse off than applying no correction at all. This degradation concentrates on the thin, articulated robot arm, which feed-forward depth prediction tears and scatters - yet the arm's exact 3D state is already known from robot kinematics. Homeward exploits this asymmetry: it estimates what is unknown - camera parameters and static scene depth - from the live RGB frame and a single training-view reference, and renders what is known - the moving robot links - directly from the kinematic model. Evaluated across $\\sim$300,000 closed-loop episodes spanning four frozen VLAs, Homeward boosts success across all 1,599 camera variants of LIBERO-Plus from 62.5%, 76.5%, 68.0%, and 3.6% to 77.6%, 95.1%, 91.2%, and 26.4% for OpenVLA-OFT, $π_{0.5}$, $π_0$, and OpenVLA, respectively. Without any scene fine-tuning or deployment camera calibration, Homeward extends to 6-DoF random placements, focal-length changes, and, with per-step pose estimation, continuous intra-episode camera drift, while matching or surpassing a calibrated, scene-trained view-synthesis baseline on three of four policies on LIBERO-Plus."
+    },
+    {
       "title": "UpliftMem: Learning Set-Level Uplift for Agent Memory Retrieval",
       "url": "https://arxiv.org/abs/2609.36805",
       "date": "2026-11-19",
@@ -65554,6 +65904,20 @@
     }
   ],
   "Oxford Robotics Institute (ORI)": [
+    {
+      "title": "WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming",
+      "url": "https://arxiv.org/abs/2611.25476",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Bo Li, Taoyong Cui, Bob Zhang, Mengran Li, Chengyang Zhang",
+      "is_highlight": false,
+      "score": 62.0,
+      "summary": "WeightCode introduces Weight-Space Programming to enhance neural networks' capabilities by directly modifying weights with executable programs, achieving significant performance improvements without retraining.",
+      "teaser_image": "https://arxiv.org/html/2611.25476/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Neural networks encode learned capabilities in their weights, yet extending those capabilities with explicit task knowledge remains a fundamental challenge. Here we show that Weight-Space Programming (WSP), in which executable programs read, construct or modify a network's weights directly, can install new capabilities within trained neural networks. WeightCode, a WSP framework, uses a frozen language model to write executable weight programs that install new computations into trained neural networks using task knowledge and their existing weights, without gradient-based training. Once installed, the new capabilities run independently of the language model. Given a grammar or eight demonstrations, weight programs enable previously unseen command compositions (0% to 99.8% exact match) and a new pickup action (0% to 98.4% success), while preserving the original command and navigation capabilities. On ImageNet, four weight programs achieve net gains of 8.84-17.62 points while preserving clean accuracy, outperforming the best of eight fine-tuning methods under matched examples, checks, and retention constraints. In a Vision Transformer, causal interventions show that installed noise-correction gates drive robustness gains, while their selective activation preserves clean accuracy. Rerun on five independently trained Vision Transformers without further language model calls, ten weight programs retain 83-110% of their source-network gains on average, whereas copying their fixed weight edits yields negligible gains. Six programs written for an already edited network add 5.23-14.50 points of contrast robustness while retaining the previously installed noise gain. Together, these results establish WSP as a new route to acquiring and accumulating capabilities in trained neural networks through reusable weight programs."
+    },
     {
       "title": "Learning to Think with Images Faithfully via Adaptive Data Selection",
       "url": "https://arxiv.org/abs/2611.26199",
@@ -68711,6 +69075,20 @@
   ],
   "Hengshuang Zhao老师实验室": [
     {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -70840,6 +71218,20 @@
     }
   ],
   "香港大学机械工程系机器人实验室": [
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
@@ -75131,6 +75523,20 @@
   ],
   "OpenDriveLab": [
     {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -77261,6 +77667,20 @@
   ],
   "Language and Vision (LaVi) Lab": [
     {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -79390,6 +79810,20 @@
     }
   ],
   "潘佳老师实验室": [
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
@@ -89647,6 +90081,20 @@
   ],
   "机器人技术与系统国家重点实验室": [
     {
+      "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+      "url": "https://arxiv.org/abs/2604.26509",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Tianwei Ye, Yifan Mao, Minwen Liao, Jian Liu, Chunchao Guo",
+      "is_highlight": false,
+      "score": 78.0,
+      "summary": "This survey reviews 3D generation's critical roles in embodied AI, emphasizing interaction readiness over visual realism and identifying key challenges for effective simulation and real-world application.",
+      "teaser_image": "https://arxiv.org/html/2604.26509/2604.26509v5/timeline.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey reviews 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In Data Generator, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in Simulation Environments, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in Sim2Real Bridge, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io."
+    },
+    {
       "title": "CoT-WAM: Collaborative Training of Vision-Language Models and World-Action Models via Plan Latents",
       "url": "https://arxiv.org/abs/2611.23803",
       "date": "2026-11-19",
@@ -90518,6 +90966,20 @@
     }
   ],
   "南京大学": [
+    {
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "date": "2026-11-19",
+      "submitted_date": "2026-11-19",
+      "release_date": "2026-11-20",
+      "authors_text": "Yiyan Ji, Qixun Wang, Yang Shi, Zhuoran Zhang, Yifan Xu",
+      "is_highlight": true,
+      "score": 65.0,
+      "summary": "Coda-DaVinci enhances video generation by optimizing proxy construction and prompting, balancing granularity and physics simulation for improved realism and consistency.",
+      "teaser_image": "https://arxiv.org/html/2611.26595/2611.26595v1/method_new.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings."
+    },
     {
       "title": "SimVLA: Attributing Gains in VLA Models Through Controlled Ablation",
       "url": "https://arxiv.org/abs/2602.18224",
@@ -92569,6 +93031,20 @@
   ],
   "ReThinkLab": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -94516,6 +94992,20 @@
     }
   ],
   "赵波老师实验室": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
@@ -96465,6 +96955,20 @@
   ],
   "机器视觉与智能学习实验室 (MVIG)": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -98412,6 +98916,20 @@
     }
   ],
   "智能机器人与机器视觉(IRMV)实验室": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
@@ -100361,6 +100879,20 @@
   ],
   "IWIN-FINS实验室": [
     {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
+    {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
       "date": "2026-11-19",
@@ -102308,6 +102840,20 @@
     }
   ],
   "数字媒体与计算机视觉实验室": [
+    {
+      "title": "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2405.15125",
+      "date": "2026-11-18",
+      "submitted_date": "2026-11-18",
+      "release_date": "2026-11-20",
+      "authors_text": "Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang",
+      "is_highlight": false,
+      "score": 70.0,
+      "summary": "The HDR-GS framework achieves 1000x faster high dynamic range novel view synthesis using Gaussian splatting, outperforming NeRF methods in quality and efficiency.",
+      "teaser_image": "https://arxiv.org/html/2405.15125/2405.15125v5/pipeline_v3.png",
+      "source_oai_date": "2026-11-20",
+      "debug_abstract": "High dynamic range (HDR) novel view synthesis (NVS) aims to create photorealistic images from novel viewpoints using HDR imaging techniques. The rendered HDR images capture a wider range of brightness levels containing more details of the scene than normal low dynamic range (LDR) images. Existing HDR NVS methods are mainly based on NeRF. They suffer from long training time and slow inference speed. In this paper, we propose a new framework, High Dynamic Range Gaussian Splatting (HDR-GS), which can efficiently render novel HDR views and reconstruct LDR images with a user input exposure time. Specifically, we design a Dual Dynamic Range (DDR) Gaussian point cloud model that uses spherical harmonics to fit HDR color and employs an MLP-based tone-mapper to render LDR color. The HDR and LDR colors are then fed into two Parallel Differentiable Rasterization (PDR) processes to reconstruct HDR and LDR views. To establish the data foundation for the research of 3D Gaussian splatting-based methods in HDR NVS, we recalibrate the camera parameters and compute the initial positions for Gaussian point clouds. Experiments demonstrate that our HDR-GS surpasses the state-of-the-art NeRF-based method by 3.84 and 1.91 dB on LDR and HDR NVS while enjoying 1000x inference speed and only requiring 6.3% training time. Code and recalibrated data will be publicly available at https://github.com/caiyuanhao1998/HDR-GS . Our project page at https://caiyuanhao1998.github.io/project/HDR-GS/ shows more video and interactive results. An online Gradio demo is also available on HuggingFace at https://huggingface.co/spaces/CaiYuanhao/HDR-GS"
+    },
     {
       "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
       "url": "https://arxiv.org/abs/2609.27695",
